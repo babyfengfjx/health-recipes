@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>养生知识库 - 顺时而养，健康常伴</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <h1>🌿 养生知识库</h1>
+            <p class="subtitle">顺时而养，健康常伴 | 收录 <strong id="headerCount">0</strong> 条内容</p>
+        </header>
+        
+        <!-- 内容类型选择器 -->
+        <div class="type-selector" id="typeSelector">
+            <span class="type-tag active" data-type="recipe">
+                🌿 食疗方子 <span class="count">0</span>
+            </span>
+            <span class="type-tag" data-type="acupoint">
+                👆 穴位按摩 <span class="count">0</span>
+            </span>
+            <span class="type-tag" data-type="exercise">
+                🧘 养生功法 <span class="count">0</span>
+            </span>
+            <span class="type-tag" data-type="knowledge">
+                📖 健康知识 <span class="count">0</span>
+            </span>
+        </div>
+        
+        <!-- 热门搜索 -->
+        <div class="hot-searches">
+            <span class="hot-label">🔥 热门：</span>
+            <span class="hot-tag" onclick="quickSearch('感冒')">感冒</span>
+            <span class="hot-tag" onclick="quickSearch('咳嗽')">咳嗽</span>
+            <span class="hot-tag" onclick="quickSearch('失眠')">失眠</span>
+            <span class="hot-tag" onclick="quickSearch('补血')">补血</span>
+            <span class="hot-tag" onclick="quickSearch('姜枣茶')">姜枣茶</span>
+            <span class="hot-tag" onclick="quickSearch('银耳')">银耳</span>
+            <span class="hot-tag highlight" onclick="openSmartRecommend()">🤖 智能推荐</span>
+            <span class="hot-tag highlight" onclick="showSeasonalTip()">🌸 节气养生</span>
+            <span class="hot-tag" onclick="randomItem()">🎲 随机推荐</span>
+        </div>
+
+        <!-- 搜索区域 -->
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="搜索内容、症状、食材...">
+                <button id="searchBtn">🔍 搜索</button>
+            </div>
+        </div>
+
+        <!-- 分类筛选 -->
+        <div class="filter-section">
+            <div class="filter-group" id="seasonFilterGroup">
+                <label>季节：</label>
+                <div class="filter-tags" id="seasonFilter">
+                    <!-- 动态生成 -->
+                </div>
+            </div>
+            <div class="filter-group" id="symptomFilterGroup">
+                <label>症状：</label>
+                <div class="filter-tags" id="symptomFilter">
+                    <!-- 动态生成 -->
+                </div>
+            </div>
+            <div class="filter-group" id="recipeTypeFilterGroup">
+                <label>类型：</label>
+                <div class="filter-tags" id="recipeTypeFilter">
+                    <!-- 动态生成 -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 统计信息 -->
+        <div class="stats">
+            <span id="totalCount">共 <strong>0</strong> 条内容</span>
+            <span id="filteredCount">当前显示 <strong>0</strong> 条</span>
+        </div>
+
+        <!-- 内容列表 -->
+        <div class="recipes-list" id="recipesList">
+            <div class="loading"></div>
+        </div>
+
+        <!-- 加载更多 -->
+        <div class="load-more" id="loadMore" style="display: none;">
+            <button id="loadMoreBtn">加载更多</button>
+        </div>
+    </div>
+
+    <!-- 详情模态框 -->
+    <div class="modal" id="recipeModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- 详情内容 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app_v2.js"></script>
+</body>
+</html>

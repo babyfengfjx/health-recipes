@@ -1,0 +1,12 @@
+{
+  "total": 795,
+  "completeness": {
+    "efficacy": "85.5%",
+    "method": "97.5%",
+    "ingredients": "96.6%",
+    "precautions": "67.5%",
+    "suitableFor": "68.1%",
+    "contraindicatedFor": "10.4%"
+  },
+  "missing_method_count": 20
+}
