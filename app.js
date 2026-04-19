@@ -64,6 +64,8 @@ async function loadIndex() {
 
 // 加载指定类型的数据
 async function loadDataType(type) {
+    console.log('开始加载类型:', type);
+    
     if (state.allData[type]) {
         // 已加载过
         state.currentType = type;
@@ -72,25 +74,52 @@ async function loadDataType(type) {
     }
     
     // 显示加载状态
-    document.getElementById('recipesList').innerHTML = '<div class="loading"></div>';
+    const listEl = document.getElementById('recipesList');
+    if (listEl) {
+        listEl.innerHTML = '<div class="loading"></div>';
+    }
     
     const dataFile = state.index?.dataFiles?.[type];
+    console.log('数据文件路径:', dataFile);
+    
     if (!dataFile) {
         console.error('未找到数据文件配置:', type);
+        if (listEl) {
+            listEl.innerHTML = '<div class="error-state"><h3>⚠️ 配置错误</h3><p>未找到数据文件配置</p></div>';
+        }
         return;
     }
     
     try {
+        console.log('正在fetch:', dataFile);
         const response = await fetch(dataFile);
+        console.log('fetch响应状态:', response.status);
+        
         if (response.ok) {
             const data = await response.json();
+            console.log('解析到的数据:', data);
+            
             state.allData[type] = data.recipes || data.items || data;
             state.currentType = type;
-            console.log(`加载 ${type} 数据: ${state.allData[type].length} 条`);
+            
+            console.log(`加载 ${type} 数据成功，共 ${state.allData[type].length} 条`);
+            
+            if (state.allData[type].length === 0) {
+                console.warn('数据为空！');
+            }
+            
             filterData();
+        } else {
+            console.error('fetch失败:', response.status, response.statusText);
+            if (listEl) {
+                listEl.innerHTML = `<div class="error-state"><h3>⚠️ 加载失败</h3><p>HTTP ${response.status}</p></div>`;
+            }
         }
     } catch (e) {
-        console.error('数据加载失败:', e);
+        console.error('数据加载异常:', e);
+        if (listEl) {
+            listEl.innerHTML = `<div class="error-state"><h3>⚠️ 加载异常</h3><p>${e.message}</p></div>`;
+        }
     }
 }
 
