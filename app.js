@@ -39,9 +39,26 @@ async function loadIndex() {
             state.index = await response.json();
             console.log('索引加载成功:', state.index.stats);
             updateUI();
+        } else {
+            console.error('索引文件加载失败，状态码:', response.status);
+            document.getElementById('recipesList').innerHTML = `
+                <div class="error-state">
+                    <h3>⚠️ 数据加载失败</h3>
+                    <p>请尝试刷新页面，或等待几分钟后重试</p>
+                    <p>状态码: ${response.status}</p>
+                </div>
+            `;
         }
     } catch (e) {
         console.error('索引加载失败:', e);
+        document.getElementById('recipesList').innerHTML = `
+            <div class="error-state">
+                <h3>⚠️ 数据加载失败</h3>
+                <p>GitHub Pages 可能还在部署中，请稍后刷新重试</p>
+                <p>错误: ${e.message}</p>
+                <button onclick="location.reload()">刷新页面</button>
+            </div>
+        `;
     }
 }
 
