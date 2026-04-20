@@ -1,13 +1,13 @@
 {
-  "version": "1.2",
+  "version": "1.4",
   "generated": "2026-04-20",
   "stats": {
-    "total": 877,
+    "total": 937,
     "byType": {
       "recipe": 871,
       "acupoint": 3,
       "exercise": 2,
-      "knowledge": 1
+      "knowledge": 61
     },
     "bySeason": {
       "春季": 102,
@@ -1025,15 +1025,7 @@
       "autumn": "秋季🍂",
       "winter": "冬季❄️"
     },
-    "symptoms": {
-      "ganmao": "感冒",
-      "kesou": "咳嗽",
-      "shimian": "失眠",
-      "bipi": "补脾",
-      "buxue": "补血",
-      "qvxie": "祛湿",
-      "shanghuo": "上火"
-    },
+    "symptoms": {},
     "recipeTypes": [
       {
         "id": "tea",
@@ -1076,6 +1068,10 @@
       {
         "id": "罗大伦",
         "name": "罗大伦"
+      },
+      {
+        "id": "徐文兵",
+        "name": "徐文兵"
       }
     ]
   }
