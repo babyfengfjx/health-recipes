@@ -154,7 +154,7 @@ function renderTypeSelector() {
     
     container.innerHTML = Object.entries(types).map(([id, info]) => `
         <span class="type-tag ${id === state.currentType ? 'active' : ''}" data-type="${id}" onclick="switchType('${id}')">
-            ${info.icon} ${info.name} <span class="count">${typeStats[id] || (Array.isArray(typeStats[id]) ? typeStats[id].length : 871)}</span>
+            ${info.icon} ${info.name} <span class="count">${typeStats[id] !== undefined ? (Array.isArray(typeStats[id]) ? typeStats[id].length : typeStats[id]) : (id === 'recipe' ? 871 : 0)}</span>
         </span>
     `).join('');
 }
@@ -166,13 +166,15 @@ function renderFilters() {
     const categories = state.index.categories || { seasons: {}, symptoms: {} };
     
     // 季节筛选
-    renderFilterGroup('seasonFilter', categories.seasons, 'season');
+    const seasonItems = Object.entries(categories.seasons || {}).map(([id, name]) => ({id, name}));
+    renderFilterGroup('seasonFilter', seasonItems, 'season');
     
     // 症状筛选
-    renderFilterGroup('symptomFilter', categories.symptoms, 'symptom');
+    const symptomItems = Object.entries(categories.symptoms || {}).map(([id, name]) => ({id, name}));
+    renderFilterGroup('symptomFilter', symptomItems, 'symptom');
     
     // 方子类型筛选（仅食疗方子时显示）
-    if (state.currentType === 'recipe') {
+    if (state.currentType === 'recipe' && categories.recipeTypes) {
         renderFilterGroup('recipeTypeFilter', categories.recipeTypes, 'recipeType');
     }
     
@@ -186,6 +188,7 @@ function renderFilters() {
 function renderFilterGroup(containerId, items, filterKey) {
     const container = document.getElementById(containerId);
     if (!container) return;
+    if (!items || !Array.isArray(items)) return;
     
     let html = `<span class="tag active" data-filter="" onclick="setFilter('${filterKey}', '')">全部</span>`;
     html += items.map(item => `
@@ -238,7 +241,7 @@ function filterData() {
     const { season, symptom, recipeType, group, search, author } = state.filters;
     
     // 获取中文名称（用于匹配数据）
-    const seasonName = season ? (state.index?.categories?.seasons?.find(s => s.id === season)?.name || season) : '';
+    const seasonName = season ? (state.index?.categories?.seasons?.[season] || season) : '';
     const recipeTypeName = recipeType ? (state.index?.categories?.recipeTypes?.find(t => t.id === recipeType)?.name || recipeType) : '';
     const authorName = author ? (state.index?.categories?.authors?.find(a => a.id === author)?.name || author) : '';
     
