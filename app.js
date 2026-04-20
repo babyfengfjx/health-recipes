@@ -223,8 +223,15 @@ function setFilter(key, value) {
 
 // 数据筛选
 function filterData() {
+    console.log('filterData 被调用');
+    console.log('当前类型:', state.currentType);
+    console.log('allData:', state.allData);
+    
     const data = state.allData[state.currentType] || [];
+    console.log('数据长度:', data.length);
+    
     const { season, symptom, recipeType, group, search } = state.filters;
+    console.log('筛选条件:', { season, symptom, recipeType, group, search });
     
     state.filteredData = data.filter(item => {
         // 搜索匹配
@@ -262,11 +269,15 @@ function filterData() {
         return true;
     });
     
+    console.log('筛选后数据长度:', state.filteredData.length);
+    
     renderList();
     
     // 更新筛选统计
-    document.getElementById('filteredCount').innerHTML = 
-        `当前显示 <strong>${state.filteredData.length}</strong> 条`;
+    const filteredCountEl = document.getElementById('filteredCount');
+    if (filteredCountEl) {
+        filteredCountEl.innerHTML = `当前显示 <strong>${state.filteredData.length}</strong> 条`;
+    }
 }
 
 // 渲染列表
