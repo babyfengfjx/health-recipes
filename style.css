@@ -1418,3 +1418,57 @@ body {
     margin-left: -30px;
     width: calc(100% + 60px); /* 撑满弹窗宽度 */
 }
+
+/* ============================================
+   🔄 无限滚动加载动画
+   ============================================ */
+
+.load-more {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.loading-more-text {
+    display: inline-block;
+    color: #4CAF50;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.loading-more-text span {
+    display: inline-block;
+    animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.loading-more-text span:nth-child(1) { animation-delay: -0.32s; }
+.loading-more-text span:nth-child(2) { animation-delay: -0.16s; }
+.loading-more-text span:nth-child(3) { animation-delay: 0s; }
+
+@keyframes bounce {
+    0%, 80%, 100% { transform: scale(0); opacity: 0.5; }
+    40% { transform: scale(1); opacity: 1; }
+}
+
+.no-more-data {
+    color: #9E9E9E;
+    font-size: 0.95rem;
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.no-more-data::before,
+.no-more-data::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 1px;
+    background: #E0E0E0;
+}
+
+.no-more-data::before { right: 100%; }
+.no-more-data::after { left: 100%; }

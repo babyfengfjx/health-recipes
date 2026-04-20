@@ -301,9 +301,12 @@ function filterData() {
 // 渲染列表
 function renderList() {
     const container = document.getElementById('recipesList');
-    const start = 0;
     const end = state.currentPage * CONFIG.itemsPerPage;
+    const start = (state.currentPage - 1) * CONFIG.itemsPerPage;
     const itemsToShow = state.filteredData.slice(start, end);
+    if (state.currentPage === 1 && container) {
+        container.innerHTML = '';
+    }
     
     if (itemsToShow.length === 0) {
         container.innerHTML = `
@@ -318,14 +321,32 @@ function renderList() {
     
     // 根据类型渲染不同的卡片
     const typeConfig = state.index?.categories?.types?.[state.currentType] || {};
-    
-    container.innerHTML = itemsToShow.map(item => 
+    const newHtml = itemsToShow.map(item => 
         renderCard(item, typeConfig)
     ).join('');
     
+    if (state.currentPage === 1) {
+        container.innerHTML = newHtml;
+    } else {
+        container.insertAdjacentHTML('beforeend', newHtml);
+    }
+    
+    // 更新加载状态标志
+    state.isLoadingMore = false;
+    
     // 显示/隐藏加载更多
-    document.getElementById('loadMore').style.display = 
-        state.filteredData.length > end ? 'block' : 'none';
+    const loadMoreEl = document.getElementById('loadMore');
+    if (loadMoreEl) {
+        if (state.filteredData.length > end) {
+            loadMoreEl.style.display = 'block';
+            loadMoreEl.innerHTML = '<div class="loading-more-text"><span>正</span><span>在</span><span>加</span><span>载</span><span>.</span><span>.</span><span>.</span></div>';
+        } else if (state.filteredData.length > 0) {
+            loadMoreEl.style.display = 'block';
+            loadMoreEl.innerHTML = '<p class="no-more-data">没有更多内容了 ~ 🌿</p>';
+        } else {
+            loadMoreEl.style.display = 'none';
+        }
+    }
 }
 
 // 渲染卡片
@@ -1043,8 +1064,21 @@ function randomItem() {
 
 // 加载更多
 function loadMore() {
+    if (state.isLoadingMore) return;
+    const end = state.currentPage * CONFIG.itemsPerPage;
+    if (state.filteredData && state.filteredData.length <= end) return; // 已经加载完
+    
+    state.isLoadingMore = true;
     state.currentPage++;
     renderList();
+}
+
+// 滚动监听实现自动加载
+function handleScroll() {
+    // 当滚动到距离底部 300px 时自动加载
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 300) {
+        loadMore();
+    }
 }
 
 // 关闭模态框
@@ -1073,6 +1107,9 @@ function initEventListeners() {
         if (e.target.id === 'recipeModal') closeModal();
     });
     
-    // 加载更多
-    document.getElementById('loadMoreBtn')?.addEventListener('click', loadMore);
+    // 移除旧按钮，添加无限滚动
+    window.addEventListener('scroll', handleScroll);
+    
+    // 添加无限滚动监听
+    window.addEventListener('scroll', handleScroll);
 }
