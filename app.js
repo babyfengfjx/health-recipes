@@ -734,7 +734,7 @@ function createSmartRecommendModal() {
 // 关闭智能推荐
 function closeSmartRecommend() {
     const modal = document.getElementById('smartRecommendModal');
-    if (modal) modal.classList.remove('active');
+    if (modal) modal.remove();
 }
 
 // 分析症状并推荐
