@@ -5802,8 +5802,12 @@
       ],
       "ingredients": [
         {
-          "name": "干蘑菇（松蘑、香菇等）",
-          "amount": "适量"
+          "name": "干蘑菇（松蘑",
+          "amount": ""
+        },
+        {
+          "name": "香菇等）",
+          "amount": ""
         }
       ],
       "method": "把市场上买来的晒干的蘑菇，什么蘑菇都行，比如松蘑、香菇等，用粉碎机打成粉末，装在调料瓶里。做菜的时候，撒一点蘑菇粉，跟用味精一样方便。",
@@ -9079,8 +9083,12 @@
       ],
       "ingredients": [
         {
-          "name": "肉类（如猪肉、牛肉）",
-          "amount": "适量"
+          "name": "肉类（如猪肉",
+          "amount": ""
+        },
+        {
+          "name": "牛肉）",
+          "amount": ""
         }
       ],
       "method": "立秋贴秋膘，吃肉补身体。",
@@ -14180,8 +14188,12 @@
       ],
       "ingredients": [
         {
-          "name": "红苋菜（嫩的、带根的）",
-          "amount": "1把"
+          "name": "红苋菜（嫩的",
+          "amount": ""
+        },
+        {
+          "name": "带根的）",
+          "amount": ""
         },
         {
           "name": "松花蛋",
@@ -17036,8 +17048,12 @@
           "amount": "3斤（1.5升）"
         },
         {
-          "name": "老冰糖（或红糖、蜂蜜）",
-          "amount": "半斤到1斤（250-500克）"
+          "name": "老冰糖（或红糖",
+          "amount": ""
+        },
+        {
+          "name": "蜂蜜）",
+          "amount": ""
         }
       ],
       "method": "将青梅洗净晾干，放入干净的玻璃瓶中，加入冰糖和酒，密封浸泡3个月以上。",
@@ -18302,7 +18318,7 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "绿豆。",
+          "name": "绿豆",
           "amount": ""
         }
       ],
@@ -18346,7 +18362,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "一斤（500克）黄梅（九成熟），半斤（250克）黄冰糖或红糖，少许的盐。",
+          "name": "一斤（500克）黄梅（九成熟）",
+          "amount": ""
+        },
+        {
+          "name": "半斤（250克）黄冰糖或红糖",
+          "amount": ""
+        },
+        {
+          "name": "少许的盐",
           "amount": ""
         }
       ],
@@ -18390,7 +18414,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "莲子心2克，甘草5克。",
+          "name": "莲子心",
+          "amount": "2克"
+        },
+        {
+          "name": "甘草5克",
           "amount": ""
         }
       ],
@@ -18435,7 +18463,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "艾叶和菖蒲叶各1把（新鲜的或干品都可以），或者您去药店购买艾叶、菖蒲各50克。",
+          "name": "艾叶和菖蒲叶各1把（新鲜的或干品都可以）",
+          "amount": ""
+        },
+        {
+          "name": "或者您去药店购买艾叶",
+          "amount": ""
+        },
+        {
+          "name": "菖蒲各50克",
           "amount": ""
         }
       ],
@@ -18479,7 +18515,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "佩兰30克，白芷15克，可以在药店买到。",
+          "name": "佩兰",
+          "amount": "30克"
+        },
+        {
+          "name": "白芷",
+          "amount": "15克"
+        },
+        {
+          "name": "可以在药店买到",
           "amount": ""
         }
       ],
@@ -18523,7 +18567,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "陈皮、丁香、山柰、艾绒（比例为1:1:1:1）、棉布、五色丝线。",
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "丁香",
+          "amount": ""
+        },
+        {
+          "name": "山柰",
+          "amount": ""
+        },
+        {
+          "name": "艾绒（比例为1:1:1:1）",
+          "amount": ""
+        },
+        {
+          "name": "棉布",
+          "amount": ""
+        },
+        {
+          "name": "五色丝线",
           "amount": ""
         }
       ],
@@ -18567,7 +18631,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "2头新蒜，4个鸡蛋。",
+          "name": "2头新蒜",
+          "amount": ""
+        },
+        {
+          "name": "4个鸡蛋",
           "amount": ""
         }
       ],
@@ -18655,7 +18723,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "樱桃500〜1000克，白酒或者黄酒2.5升。",
+          "name": "樱桃500〜",
+          "amount": "1000克"
+        },
+        {
+          "name": "白酒或者黄酒2.5升",
           "amount": ""
         }
       ],
@@ -18699,7 +18771,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "枸杞子6克，五味子6克，红糖（可不放）。",
+          "name": "枸杞子",
+          "amount": "6克"
+        },
+        {
+          "name": "五味子",
+          "amount": "6克"
+        },
+        {
+          "name": "红糖（可不放）",
           "amount": ""
         }
       ],
@@ -18743,7 +18823,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "新鲜马齿苋500克、白糖或蜂蜜适量。",
+          "name": "新鲜马齿苋",
+          "amount": "500克"
+        },
+        {
+          "name": "白糖或蜂蜜适量",
           "amount": ""
         }
       ],
@@ -18787,7 +18871,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "干玫瑰花12朵，红糖适量。",
+          "name": "干玫瑰花",
+          "amount": "12朵"
+        },
+        {
+          "name": "红糖适量",
           "amount": ""
         }
       ],
@@ -18831,7 +18919,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "豆腐1块，豇豆角1把，空心菜1把，胡椒粉、植物油和盐少许。",
+          "name": "豆腐",
+          "amount": "1块"
+        },
+        {
+          "name": "豇豆角",
+          "amount": "1把"
+        },
+        {
+          "name": "空心菜",
+          "amount": "1把"
+        },
+        {
+          "name": "胡椒粉",
+          "amount": ""
+        },
+        {
+          "name": "植物油和盐少许",
           "amount": ""
         }
       ],
@@ -18879,7 +18983,7 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "花生。",
+          "name": "花生",
           "amount": ""
         }
       ],
@@ -18923,7 +19027,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "空心菜、黄豆。",
+          "name": "空心菜",
+          "amount": ""
+        },
+        {
+          "name": "黄豆",
           "amount": ""
         }
       ],
@@ -18967,7 +19075,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "丝瓜皮、青椒（或酸豆角）、姜末、蒜末。",
+          "name": "丝瓜皮",
+          "amount": ""
+        },
+        {
+          "name": "青椒（或酸豆角）",
+          "amount": ""
+        },
+        {
+          "name": "姜末",
+          "amount": ""
+        },
+        {
+          "name": "蒜末",
           "amount": ""
         }
       ],
@@ -19011,7 +19131,7 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "丝瓜叶。",
+          "name": "丝瓜叶",
           "amount": ""
         }
       ],
@@ -19055,7 +19175,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "梨、红酒、丁香粉。",
+          "name": "梨",
+          "amount": ""
+        },
+        {
+          "name": "红酒",
+          "amount": ""
+        },
+        {
+          "name": "丁香粉",
           "amount": ""
         }
       ],
@@ -19099,7 +19227,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "葡萄、冰糖的比例为5∶1。",
+          "name": "葡萄",
+          "amount": ""
+        },
+        {
+          "name": "冰糖的比例为5∶1",
           "amount": ""
         }
       ],
@@ -19143,7 +19275,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "金银花10克、菊花10克。",
+          "name": "金银花",
+          "amount": "10克"
+        },
+        {
+          "name": "菊花10克",
           "amount": ""
         }
       ],
@@ -19454,7 +19590,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "糯米粉、大补养藏汤。",
+          "name": "糯米粉",
+          "amount": ""
+        },
+        {
+          "name": "大补养藏汤",
           "amount": ""
         }
       ],
@@ -19498,7 +19638,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "葱白连须2根，带皮生姜3片，半个到一个萝卜的皮。",
+          "name": "葱白连须",
+          "amount": "2根"
+        },
+        {
+          "name": "带皮生姜",
+          "amount": "3片"
+        },
+        {
+          "name": "半个到一个萝卜的皮",
           "amount": ""
         }
       ],
@@ -19542,7 +19690,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "羊肉1～2斤（500 ~ 1 000克），黄芪100克，当归20克，甘蔗2～4节，带皮生姜2块，大枣8个。",
+          "name": "羊肉1～2斤（500 ~ 1 000克）",
+          "amount": ""
+        },
+        {
+          "name": "黄芪",
+          "amount": "100克"
+        },
+        {
+          "name": "当归",
+          "amount": "20克"
+        },
+        {
+          "name": "甘蔗2～4节",
+          "amount": ""
+        },
+        {
+          "name": "带皮生姜",
+          "amount": "2块"
+        },
+        {
+          "name": "大枣8个",
           "amount": ""
         }
       ],
@@ -19586,7 +19754,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "1勺醋，1勺蜂蜜，1杯温水。",
+          "name": "1勺醋",
+          "amount": ""
+        },
+        {
+          "name": "1勺蜂蜜",
+          "amount": ""
+        },
+        {
+          "name": "1杯温水",
           "amount": ""
         }
       ],
@@ -19630,7 +19806,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "猕猴桃、水、糖。",
+          "name": "猕猴桃",
+          "amount": ""
+        },
+        {
+          "name": "水",
+          "amount": ""
+        },
+        {
+          "name": "糖",
           "amount": ""
         }
       ],
@@ -19674,7 +19858,35 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "黄芪、当归、大枣、川陈皮、羊肉、甘蔗、带皮生姜、花椒。",
+          "name": "黄芪",
+          "amount": ""
+        },
+        {
+          "name": "当归",
+          "amount": ""
+        },
+        {
+          "name": "大枣",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "羊肉",
+          "amount": ""
+        },
+        {
+          "name": "甘蔗",
+          "amount": ""
+        },
+        {
+          "name": "带皮生姜",
+          "amount": ""
+        },
+        {
+          "name": "花椒",
           "amount": ""
         }
       ],
@@ -19718,7 +19930,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "金丝小枣，喜饮茶者可加黑茶6克。",
+          "name": "金丝小枣",
+          "amount": ""
+        },
+        {
+          "name": "喜饮茶者可加黑茶6克",
           "amount": ""
         }
       ],
@@ -19762,7 +19978,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "银耳1小朵，桂圆肉（或桂圆去壳）30粒左右，怕上火者加百合1小把。",
+          "name": "银耳1小朵",
+          "amount": ""
+        },
+        {
+          "name": "桂圆肉（或桂圆去壳）30粒左右",
+          "amount": ""
+        },
+        {
+          "name": "怕上火者加百合1小把",
           "amount": ""
         }
       ],
@@ -19806,7 +20030,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "赤小豆、黍米、糯米、油、盐、紫苏子。",
+          "name": "赤小豆",
+          "amount": ""
+        },
+        {
+          "name": "黍米",
+          "amount": ""
+        },
+        {
+          "name": "糯米",
+          "amount": ""
+        },
+        {
+          "name": "油",
+          "amount": ""
+        },
+        {
+          "name": "盐",
+          "amount": ""
+        },
+        {
+          "name": "紫苏子",
           "amount": ""
         }
       ],
@@ -19850,7 +20094,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "银耳、百合。",
+          "name": "银耳",
+          "amount": ""
+        },
+        {
+          "name": "百合",
           "amount": ""
         }
       ],
@@ -19894,7 +20142,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "咖啡、牛奶、红糖。",
+          "name": "咖啡",
+          "amount": ""
+        },
+        {
+          "name": "牛奶",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
           "amount": ""
         }
       ],
@@ -19938,7 +20194,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "川红橘或橙子、罗汉果、牛蒡、枸杞、甘草陈皮梅子汤。",
+          "name": "川红橘或橙子",
+          "amount": ""
+        },
+        {
+          "name": "罗汉果",
+          "amount": ""
+        },
+        {
+          "name": "牛蒡",
+          "amount": ""
+        },
+        {
+          "name": "枸杞",
+          "amount": ""
+        },
+        {
+          "name": "甘草陈皮梅子汤",
           "amount": ""
         }
       ],
@@ -19982,7 +20254,7 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "（见1月13日）。",
+          "name": "（见1月13日）",
           "amount": ""
         }
       ],
@@ -20026,7 +20298,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "赤小豆、糯米、黍米、油、盐、紫苏子。",
+          "name": "赤小豆",
+          "amount": ""
+        },
+        {
+          "name": "糯米",
+          "amount": ""
+        },
+        {
+          "name": "黍米",
+          "amount": ""
+        },
+        {
+          "name": "油",
+          "amount": ""
+        },
+        {
+          "name": "盐",
+          "amount": ""
+        },
+        {
+          "name": "紫苏子",
           "amount": ""
         }
       ],
@@ -20070,7 +20362,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "赤小豆100克，糯米50克，黍米50克，油、盐、紫苏子各少许。",
+          "name": "赤小豆",
+          "amount": "100克"
+        },
+        {
+          "name": "糯米",
+          "amount": "50克"
+        },
+        {
+          "name": "黍米",
+          "amount": "50克"
+        },
+        {
+          "name": "油",
+          "amount": ""
+        },
+        {
+          "name": "盐",
+          "amount": ""
+        },
+        {
+          "name": "紫苏子各少许",
           "amount": ""
         }
       ],
@@ -20114,7 +20426,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "咖啡粉15克，开水250毫升，奶粉、红糖适量。",
+          "name": "咖啡粉",
+          "amount": "15克"
+        },
+        {
+          "name": "开水250毫升",
+          "amount": ""
+        },
+        {
+          "name": "奶粉",
+          "amount": ""
+        },
+        {
+          "name": "红糖适量",
           "amount": ""
         }
       ],
@@ -20158,7 +20482,35 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "糯米、粳米、小米、赤小豆、豌豆、黍米、茯苓、紫苏子。",
+          "name": "糯米",
+          "amount": ""
+        },
+        {
+          "name": "粳米",
+          "amount": ""
+        },
+        {
+          "name": "小米",
+          "amount": ""
+        },
+        {
+          "name": "赤小豆",
+          "amount": ""
+        },
+        {
+          "name": "豌豆",
+          "amount": ""
+        },
+        {
+          "name": "黍米",
+          "amount": ""
+        },
+        {
+          "name": "茯苓",
+          "amount": ""
+        },
+        {
+          "name": "紫苏子",
           "amount": ""
         }
       ],
@@ -20202,7 +20554,31 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "黄芪、当归、大枣、川陈皮、羊肉、甘蔗、带皮生姜。",
+          "name": "黄芪",
+          "amount": ""
+        },
+        {
+          "name": "当归",
+          "amount": ""
+        },
+        {
+          "name": "大枣",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "羊肉",
+          "amount": ""
+        },
+        {
+          "name": "甘蔗",
+          "amount": ""
+        },
+        {
+          "name": "带皮生姜",
           "amount": ""
         }
       ],
@@ -20246,7 +20622,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "银耳、桂圆。",
+          "name": "银耳",
+          "amount": ""
+        },
+        {
+          "name": "桂圆",
           "amount": ""
         }
       ],
@@ -20290,7 +20670,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "咖啡，可加牛奶、红糖。",
+          "name": "咖啡",
+          "amount": ""
+        },
+        {
+          "name": "可加牛奶",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
           "amount": ""
         }
       ],
@@ -20336,7 +20724,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "肉桂、陈皮、柠檬、麦芽糖。",
+          "name": "肉桂",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "柠檬",
+          "amount": ""
+        },
+        {
+          "name": "麦芽糖",
           "amount": ""
         }
       ],
@@ -20382,7 +20782,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "荠菜、葱叶、香菜、萝卜缨、芹菜、韭菜等辛味蔬菜任选5种。今年可以多准备荠菜和葱叶。",
+          "name": "荠菜",
+          "amount": ""
+        },
+        {
+          "name": "葱叶",
+          "amount": ""
+        },
+        {
+          "name": "香菜",
+          "amount": ""
+        },
+        {
+          "name": "萝卜缨",
+          "amount": ""
+        },
+        {
+          "name": "芹菜",
+          "amount": ""
+        },
+        {
+          "name": "韭菜等辛味蔬菜任选5种。今年可以多准备荠菜和葱叶",
           "amount": ""
         }
       ],
@@ -20428,7 +20848,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "鱼腥草、陈皮。",
+          "name": "鱼腥草",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
           "amount": ""
         }
       ],
@@ -20474,7 +20898,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "肉桂、陈皮、柠檬、麦芽糖。",
+          "name": "肉桂",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "柠檬",
+          "amount": ""
+        },
+        {
+          "name": "麦芽糖",
           "amount": ""
         }
       ],
@@ -20520,7 +20956,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "枸杞子、莲子、炒荷叶、川陈皮、茯苓、粥料。",
+          "name": "枸杞子",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "炒荷叶",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "茯苓",
+          "amount": ""
+        },
+        {
+          "name": "粥料",
           "amount": ""
         }
       ],
@@ -20566,7 +21022,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "鱼腥草茶15～30克（平时用量为15克，雾霾天时用量为30克）、陈皮1个。",
+          "name": "鱼腥草茶15～30克（平时用量为",
+          "amount": "15克"
+        },
+        {
+          "name": "雾霾天时用量为30克）",
+          "amount": ""
+        },
+        {
+          "name": "陈皮1个",
           "amount": ""
         }
       ],
@@ -20612,7 +21076,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "绿豆芽、嫩韭菜、生姜、紫苏子。",
+          "name": "绿豆芽",
+          "amount": ""
+        },
+        {
+          "name": "嫩韭菜",
+          "amount": ""
+        },
+        {
+          "name": "生姜",
+          "amount": ""
+        },
+        {
+          "name": "紫苏子",
           "amount": ""
         }
       ],
@@ -20658,7 +21134,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "荠菜、葱叶、桑叶等辛味蔬菜任选7种。",
+          "name": "荠菜",
+          "amount": ""
+        },
+        {
+          "name": "葱叶",
+          "amount": ""
+        },
+        {
+          "name": "桑叶等辛味蔬菜任选7种",
           "amount": ""
         }
       ],
@@ -20702,7 +21186,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "陈皮、竹茹、霜桑叶。",
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "竹茹",
+          "amount": ""
+        },
+        {
+          "name": "霜桑叶",
           "amount": ""
         }
       ],
@@ -20746,7 +21238,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "糯米、大米、花生、橘皮糖或红糖、椰子油。",
+          "name": "糯米",
+          "amount": ""
+        },
+        {
+          "name": "大米",
+          "amount": ""
+        },
+        {
+          "name": "花生",
+          "amount": ""
+        },
+        {
+          "name": "橘皮糖或红糖",
+          "amount": ""
+        },
+        {
+          "name": "椰子油",
           "amount": ""
         }
       ],
@@ -20790,7 +21298,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "肉桂、陈皮、柠檬、麦芽糖。",
+          "name": "肉桂",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "柠檬",
+          "amount": ""
+        },
+        {
+          "name": "麦芽糖",
           "amount": ""
         }
       ],
@@ -20834,7 +21354,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "枸杞子、莲子、炒荷叶、川陈皮、茯苓、粥料。",
+          "name": "枸杞子",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "炒荷叶",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "茯苓",
+          "amount": ""
+        },
+        {
+          "name": "粥料",
           "amount": ""
         }
       ],
@@ -20878,7 +21418,63 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "荠菜、葱叶、桑叶、大蒜、蒜苗、香菜、萝卜缨（或萝卜）、芹菜、芥菜、韭菜、蔓菁、油菜薹、繁缕等辛味蔬菜任选7种。今年可以多吃荠菜、葱叶、桑叶。",
+          "name": "荠菜",
+          "amount": ""
+        },
+        {
+          "name": "葱叶",
+          "amount": ""
+        },
+        {
+          "name": "桑叶",
+          "amount": ""
+        },
+        {
+          "name": "大蒜",
+          "amount": ""
+        },
+        {
+          "name": "蒜苗",
+          "amount": ""
+        },
+        {
+          "name": "香菜",
+          "amount": ""
+        },
+        {
+          "name": "萝卜缨（或萝卜）",
+          "amount": ""
+        },
+        {
+          "name": "芹菜",
+          "amount": ""
+        },
+        {
+          "name": "芥菜",
+          "amount": ""
+        },
+        {
+          "name": "韭菜",
+          "amount": ""
+        },
+        {
+          "name": "蔓菁",
+          "amount": ""
+        },
+        {
+          "name": "油菜薹",
+          "amount": ""
+        },
+        {
+          "name": "繁缕等辛味蔬菜任选7种。今年可以多吃荠菜",
+          "amount": ""
+        },
+        {
+          "name": "葱叶",
+          "amount": ""
+        },
+        {
+          "name": "桑叶",
           "amount": ""
         }
       ],
@@ -20922,7 +21518,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "川陈皮1个，竹茹3克，霜桑叶6克。",
+          "name": "川陈皮",
+          "amount": "1个"
+        },
+        {
+          "name": "竹茹",
+          "amount": "3克"
+        },
+        {
+          "name": "霜桑叶6克",
           "amount": ""
         }
       ],
@@ -20966,7 +21570,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "黄豆、白萝卜、大葱或小葱、蒲公英根。",
+          "name": "黄豆",
+          "amount": ""
+        },
+        {
+          "name": "白萝卜",
+          "amount": ""
+        },
+        {
+          "name": "大葱或小葱",
+          "amount": ""
+        },
+        {
+          "name": "蒲公英根",
           "amount": ""
         }
       ],
@@ -21010,7 +21626,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "霜桑叶、牛蒡茶。",
+          "name": "霜桑叶",
+          "amount": ""
+        },
+        {
+          "name": "牛蒡茶",
           "amount": ""
         }
       ],
@@ -21054,7 +21674,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "肉桂、陈皮、柠檬、麦芽糖。",
+          "name": "肉桂",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "柠檬",
+          "amount": ""
+        },
+        {
+          "name": "麦芽糖",
           "amount": ""
         }
       ],
@@ -21098,7 +21730,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "枸杞子、莲子、炒荷叶、川陈皮、茯苓、粥料。",
+          "name": "枸杞子",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "炒荷叶",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "茯苓",
+          "amount": ""
+        },
+        {
+          "name": "粥料",
           "amount": ""
         }
       ],
@@ -21144,7 +21796,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "黄豆、白萝卜、葱白连须、蒲公英根。",
+          "name": "黄豆",
+          "amount": ""
+        },
+        {
+          "name": "白萝卜",
+          "amount": ""
+        },
+        {
+          "name": "葱白连须",
+          "amount": ""
+        },
+        {
+          "name": "蒲公英根",
           "amount": ""
         }
       ],
@@ -21190,7 +21854,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "黄豆50克，白萝卜150克，葱白连须1根(大葱)或3根（小葱），蒲公英根（干品50克）。",
+          "name": "黄豆",
+          "amount": "50克"
+        },
+        {
+          "name": "白萝卜",
+          "amount": "150克"
+        },
+        {
+          "name": "葱白连须1根(大葱)或3根（小葱）",
+          "amount": ""
+        },
+        {
+          "name": "蒲公英根（干品50克）",
           "amount": ""
         }
       ],
@@ -21236,7 +21912,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "肉桂10克、陈皮1个、柠檬1个、麦芽糖。",
+          "name": "肉桂",
+          "amount": "10克"
+        },
+        {
+          "name": "陈皮",
+          "amount": "1个"
+        },
+        {
+          "name": "柠檬",
+          "amount": "1个"
+        },
+        {
+          "name": "麦芽糖",
           "amount": ""
         }
       ],
@@ -21282,7 +21970,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "牛蒡、荠菜、萝卜缨、干香菇。",
+          "name": "牛蒡",
+          "amount": ""
+        },
+        {
+          "name": "荠菜",
+          "amount": ""
+        },
+        {
+          "name": "萝卜缨",
+          "amount": ""
+        },
+        {
+          "name": "干香菇",
           "amount": ""
         }
       ],
@@ -21328,7 +22028,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "大麦仁、甜杏仁、麦芽糖或蜂蜜。",
+          "name": "大麦仁",
+          "amount": ""
+        },
+        {
+          "name": "甜杏仁",
+          "amount": ""
+        },
+        {
+          "name": "麦芽糖或蜂蜜",
           "amount": ""
         }
       ],
@@ -21374,7 +22082,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "蒲公英根、牛蒡、罗汉果、菊花、鱼腥草。",
+          "name": "蒲公英根",
+          "amount": ""
+        },
+        {
+          "name": "牛蒡",
+          "amount": ""
+        },
+        {
+          "name": "罗汉果",
+          "amount": ""
+        },
+        {
+          "name": "菊花",
+          "amount": ""
+        },
+        {
+          "name": "鱼腥草",
           "amount": ""
         }
       ],
@@ -21420,7 +22144,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "枸杞子、莲子、炒荷叶、川陈皮、茯苓、粥料。",
+          "name": "枸杞子",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "炒荷叶",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "茯苓",
+          "amount": ""
+        },
+        {
+          "name": "粥料",
           "amount": ""
         }
       ],
@@ -21466,7 +22210,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "鱼腥草5克、菊花1克、罗汉果1/3个、蒲公英根5克、牛蒡10克。",
+          "name": "鱼腥草",
+          "amount": "5克"
+        },
+        {
+          "name": "菊花",
+          "amount": "1克"
+        },
+        {
+          "name": "罗汉果1/",
+          "amount": "3个"
+        },
+        {
+          "name": "蒲公英根",
+          "amount": "5克"
+        },
+        {
+          "name": "牛蒡10克",
           "amount": ""
         }
       ],
@@ -21512,7 +22272,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "野艾或田艾（清明菜）、糯米粉、红糖。",
+          "name": "野艾或田艾（清明菜）",
+          "amount": ""
+        },
+        {
+          "name": "糯米粉",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
           "amount": ""
         }
       ],
@@ -21558,7 +22326,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "鸭蛋、白酒、盐。",
+          "name": "鸭蛋",
+          "amount": ""
+        },
+        {
+          "name": "白酒",
+          "amount": ""
+        },
+        {
+          "name": "盐",
           "amount": ""
         }
       ],
@@ -21604,7 +22380,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "荠菜、鸡蛋、红枣、生姜。",
+          "name": "荠菜",
+          "amount": ""
+        },
+        {
+          "name": "鸡蛋",
+          "amount": ""
+        },
+        {
+          "name": "红枣",
+          "amount": ""
+        },
+        {
+          "name": "生姜",
           "amount": ""
         }
       ],
@@ -21650,7 +22438,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "藿香、佩兰、苍术等芳香化湿抗病毒的中药。",
+          "name": "藿香",
+          "amount": ""
+        },
+        {
+          "name": "佩兰",
+          "amount": ""
+        },
+        {
+          "name": "苍术等芳香化湿抗病毒的中药",
           "amount": ""
         }
       ],
@@ -21696,7 +22492,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "蒲公英根、牛蒡、罗汉果、菊花、鱼腥草。",
+          "name": "蒲公英根",
+          "amount": ""
+        },
+        {
+          "name": "牛蒡",
+          "amount": ""
+        },
+        {
+          "name": "罗汉果",
+          "amount": ""
+        },
+        {
+          "name": "菊花",
+          "amount": ""
+        },
+        {
+          "name": "鱼腥草",
           "amount": ""
         }
       ],
@@ -21742,7 +22554,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "枸杞子、莲子、炒荷叶、川陈皮、茯苓、粥料。",
+          "name": "枸杞子",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "炒荷叶",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "茯苓",
+          "amount": ""
+        },
+        {
+          "name": "粥料",
           "amount": ""
         }
       ],
@@ -21788,7 +22620,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "野艾或田艾（清明菜）、糯米粉、红糖。",
+          "name": "野艾或田艾（清明菜）",
+          "amount": ""
+        },
+        {
+          "name": "糯米粉",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
           "amount": ""
         }
       ],
@@ -21834,7 +22674,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "野艾或田艾（清明菜）、糯米粉、红糖。",
+          "name": "野艾或田艾（清明菜）",
+          "amount": ""
+        },
+        {
+          "name": "糯米粉",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
           "amount": ""
         }
       ],
@@ -21880,7 +22728,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "荠菜（最好是连根带籽的老荠菜）1大把、鸡蛋6个、红枣12个、带皮生姜6片。",
+          "name": "荠菜（最好是连根带籽的老荠菜）1大把",
+          "amount": ""
+        },
+        {
+          "name": "鸡蛋",
+          "amount": "6个"
+        },
+        {
+          "name": "红枣",
+          "amount": "12个"
+        },
+        {
+          "name": "带皮生姜6片",
           "amount": ""
         }
       ],
@@ -21926,7 +22786,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "陈皮、蜂蜜、绿茶。",
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "蜂蜜",
+          "amount": ""
+        },
+        {
+          "name": "绿茶",
           "amount": ""
         }
       ],
@@ -21972,7 +22840,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "蒲公英根、牛蒡、罗汉果、菊花、鱼腥草。",
+          "name": "蒲公英根",
+          "amount": ""
+        },
+        {
+          "name": "牛蒡",
+          "amount": ""
+        },
+        {
+          "name": "罗汉果",
+          "amount": ""
+        },
+        {
+          "name": "菊花",
+          "amount": ""
+        },
+        {
+          "name": "鱼腥草",
           "amount": ""
         }
       ],
@@ -22018,7 +22902,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "枸杞子、莲子、炒荷叶、川陈皮、茯苓、粥料。",
+          "name": "枸杞子",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "炒荷叶",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "茯苓",
+          "amount": ""
+        },
+        {
+          "name": "粥料",
           "amount": ""
         }
       ],
@@ -22064,7 +22968,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "干黄花菜25克、蜂蜜适量。",
+          "name": "干黄花菜",
+          "amount": "25克"
+        },
+        {
+          "name": "蜂蜜适量",
           "amount": ""
         }
       ],
@@ -22110,7 +23018,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "核桃壳、鸡蛋、酱油、盐。",
+          "name": "核桃壳",
+          "amount": ""
+        },
+        {
+          "name": "鸡蛋",
+          "amount": ""
+        },
+        {
+          "name": "酱油",
+          "amount": ""
+        },
+        {
+          "name": "盐",
           "amount": ""
         }
       ],
@@ -22156,8 +23076,28 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "带皮生姜2～3片、红枣6个。",
-          "amount": ""
+          "name": "带皮生姜",
+          "amount": "2-3片"
+        },
+        {
+          "name": "红枣",
+          "amount": "6个"
+        },
+        {
+          "name": "五味子",
+          "amount": "适量"
+        },
+        {
+          "name": "甘草",
+          "amount": "适量"
+        },
+        {
+          "name": "陈皮",
+          "amount": "适量"
+        },
+        {
+          "name": "罗汉果",
+          "amount": "适量"
         }
       ],
       "method": "将带皮生姜、红枣加水煮开，转小火煮10-15分钟。\n加味配方：加入五味子、甘草、陈皮、罗汉果一起煮。\n气血虚的人可加黄芪、党参。",
@@ -22202,7 +23142,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "带皮生姜、红枣、五味子、甘草、陈皮、罗汉果。",
+          "name": "带皮生姜",
+          "amount": ""
+        },
+        {
+          "name": "红枣",
+          "amount": ""
+        },
+        {
+          "name": "五味子",
+          "amount": ""
+        },
+        {
+          "name": "甘草",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "罗汉果",
           "amount": ""
         }
       ],
@@ -22248,8 +23208,28 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "带皮生姜2～3片、红枣6个。",
-          "amount": ""
+          "name": "带皮生姜",
+          "amount": "2-3片"
+        },
+        {
+          "name": "红枣",
+          "amount": "6个"
+        },
+        {
+          "name": "五味子",
+          "amount": "适量"
+        },
+        {
+          "name": "甘草",
+          "amount": "适量"
+        },
+        {
+          "name": "陈皮",
+          "amount": "适量"
+        },
+        {
+          "name": "罗汉果",
+          "amount": "适量"
         }
       ],
       "method": "将罗汉果压破，全部原料一起加水煮40分钟以上。可以煮3次，也可提前煮好放冰箱，需要时取出温热后饮用。\n注意：女性经期只用基础配方，加红糖。",
@@ -22292,7 +23272,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "桑椹600克、百合120克、莲子120克、酸枣仁600克、红糖适量。",
+          "name": "桑椹",
+          "amount": "600克"
+        },
+        {
+          "name": "百合",
+          "amount": "120克"
+        },
+        {
+          "name": "莲子",
+          "amount": "120克"
+        },
+        {
+          "name": "酸枣仁",
+          "amount": "600克"
+        },
+        {
+          "name": "红糖适量",
           "amount": ""
         }
       ],
@@ -22336,7 +23332,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "新鲜柠檬1个、荸荠10个。",
+          "name": "新鲜柠檬",
+          "amount": "1个"
+        },
+        {
+          "name": "荸荠10个",
           "amount": ""
         }
       ],
@@ -22380,7 +23380,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "枳椇12克、葛花15克（脾胃虚弱用葛根）、山楂16克、川陈皮1个。",
+          "name": "枳椇",
+          "amount": "12克"
+        },
+        {
+          "name": "葛花15克（脾胃虚弱用葛根）",
+          "amount": ""
+        },
+        {
+          "name": "山楂",
+          "amount": "16克"
+        },
+        {
+          "name": "川陈皮1个",
           "amount": ""
         }
       ],
@@ -22424,7 +23436,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "青梅、白酒、蜂蜜或红糖。",
+          "name": "青梅",
+          "amount": ""
+        },
+        {
+          "name": "白酒",
+          "amount": ""
+        },
+        {
+          "name": "蜂蜜或红糖",
           "amount": ""
         }
       ],
@@ -22468,7 +23488,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "黄梅、蜂蜜或红糖、盐。",
+          "name": "黄梅",
+          "amount": ""
+        },
+        {
+          "name": "蜂蜜或红糖",
+          "amount": ""
+        },
+        {
+          "name": "盐",
           "amount": ""
         }
       ],
@@ -22512,7 +23540,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "桑椹600克、百合120克、莲子120克、酸枣仁600克、红糖适量。",
+          "name": "桑椹",
+          "amount": "600克"
+        },
+        {
+          "name": "百合",
+          "amount": "120克"
+        },
+        {
+          "name": "莲子",
+          "amount": "120克"
+        },
+        {
+          "name": "酸枣仁",
+          "amount": "600克"
+        },
+        {
+          "name": "红糖适量",
           "amount": ""
         }
       ],
@@ -22556,8 +23600,28 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "带皮生姜2～3片、红枣6个。",
-          "amount": ""
+          "name": "带皮生姜",
+          "amount": "2-3片"
+        },
+        {
+          "name": "红枣",
+          "amount": "6个"
+        },
+        {
+          "name": "五味子",
+          "amount": "适量"
+        },
+        {
+          "name": "甘草",
+          "amount": "适量"
+        },
+        {
+          "name": "陈皮",
+          "amount": "适量"
+        },
+        {
+          "name": "罗汉果",
+          "amount": "适量"
         }
       ],
       "method": "见2月11日）",
@@ -22600,7 +23664,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "枸杞子、莲子、炒荷叶、川陈皮、茯苓、粥料。",
+          "name": "枸杞子",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "炒荷叶",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "茯苓",
+          "amount": ""
+        },
+        {
+          "name": "粥料",
           "amount": ""
         }
       ],
@@ -22644,7 +23728,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "樱桃、鸡蛋、醪糟（米酒）。",
+          "name": "樱桃",
+          "amount": ""
+        },
+        {
+          "name": "鸡蛋",
+          "amount": ""
+        },
+        {
+          "name": "醪糟（米酒）",
           "amount": ""
         }
       ],
@@ -22688,7 +23780,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "毛樱桃、纯粮酒。",
+          "name": "毛樱桃",
+          "amount": ""
+        },
+        {
+          "name": "纯粮酒",
           "amount": ""
         }
       ],
@@ -22734,7 +23830,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "胡萝卜、番茄。",
+          "name": "胡萝卜",
+          "amount": ""
+        },
+        {
+          "name": "番茄",
           "amount": ""
         }
       ],
@@ -22780,7 +23880,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "桑椹、百合、莲子、酸枣仁、红糖。",
+          "name": "桑椹",
+          "amount": ""
+        },
+        {
+          "name": "百合",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "酸枣仁",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
           "amount": ""
         }
       ],
@@ -22826,7 +23942,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "樱桃、鸡蛋、醪糟（米酒）。",
+          "name": "樱桃",
+          "amount": ""
+        },
+        {
+          "name": "鸡蛋",
+          "amount": ""
+        },
+        {
+          "name": "醪糟（米酒）",
           "amount": ""
         }
       ],
@@ -22872,7 +23996,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "新鲜黑桑椹、红糖。",
+          "name": "新鲜黑桑椹",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
           "amount": ""
         }
       ],
@@ -22918,7 +24046,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "桑椹、百合、莲子、酸枣仁、红糖。",
+          "name": "桑椹",
+          "amount": ""
+        },
+        {
+          "name": "百合",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "酸枣仁",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
           "amount": ""
         }
       ],
@@ -22964,7 +24108,31 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "艾叶、菖蒲、药浴中药、端午香包、豆沙粽、咸鸭蛋、新蒜。",
+          "name": "艾叶",
+          "amount": ""
+        },
+        {
+          "name": "菖蒲",
+          "amount": ""
+        },
+        {
+          "name": "药浴中药",
+          "amount": ""
+        },
+        {
+          "name": "端午香包",
+          "amount": ""
+        },
+        {
+          "name": "豆沙粽",
+          "amount": ""
+        },
+        {
+          "name": "咸鸭蛋",
+          "amount": ""
+        },
+        {
+          "name": "新蒜",
           "amount": ""
         }
       ],
@@ -23010,7 +24178,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "五味子、枸杞子。",
+          "name": "五味子",
+          "amount": ""
+        },
+        {
+          "name": "枸杞子",
           "amount": ""
         }
       ],
@@ -23056,7 +24228,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "桑椹、百合、莲子、酸枣仁、红糖。",
+          "name": "桑椹",
+          "amount": ""
+        },
+        {
+          "name": "百合",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "酸枣仁",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
           "amount": ""
         }
       ],
@@ -23102,7 +24290,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "新鲜马齿苋1斤（500克）、蜂蜜适量。",
+          "name": "新鲜马齿苋1斤（500克）",
+          "amount": ""
+        },
+        {
+          "name": "蜂蜜适量",
           "amount": ""
         }
       ],
@@ -23148,7 +24340,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "玫瑰花、红糖。",
+          "name": "玫瑰花",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
           "amount": ""
         }
       ],
@@ -23194,7 +24390,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "红苋菜、松花蛋、大蒜。",
+          "name": "红苋菜",
+          "amount": ""
+        },
+        {
+          "name": "松花蛋",
+          "amount": ""
+        },
+        {
+          "name": "大蒜",
           "amount": ""
         }
       ],
@@ -23240,7 +24444,35 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "五味子6克、罗汉果1个、乌梅6个、大枣6个、山楂10克、甘草10克、川陈皮1/4到1/2个，气虚的人加黄芪15～30克。",
+          "name": "五味子",
+          "amount": "6克"
+        },
+        {
+          "name": "罗汉果",
+          "amount": "1个"
+        },
+        {
+          "name": "乌梅",
+          "amount": "6个"
+        },
+        {
+          "name": "大枣",
+          "amount": "6个"
+        },
+        {
+          "name": "山楂",
+          "amount": "10克"
+        },
+        {
+          "name": "甘草",
+          "amount": "10克"
+        },
+        {
+          "name": "川陈皮1/4到1/",
+          "amount": "2个"
+        },
+        {
+          "name": "气虚的人加黄芪15～30克",
           "amount": ""
         }
       ],
@@ -23286,7 +24518,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "甜杏仁、茴香菜。",
+          "name": "甜杏仁",
+          "amount": ""
+        },
+        {
+          "name": "茴香菜",
           "amount": ""
         }
       ],
@@ -23332,7 +24568,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "金银花、甘草。",
+          "name": "金银花",
+          "amount": ""
+        },
+        {
+          "name": "甘草",
           "amount": ""
         }
       ],
@@ -23378,7 +24618,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "葛根粉、桂花（干品）、枸杞、蜂蜜（糖尿病人可以用罗汉果甜味料代替）各适量。",
+          "name": "葛根粉",
+          "amount": ""
+        },
+        {
+          "name": "桂花（干品）",
+          "amount": ""
+        },
+        {
+          "name": "枸杞",
+          "amount": ""
+        },
+        {
+          "name": "蜂蜜（糖尿病人可以用罗汉果甜味料代替）各适量",
           "amount": ""
         }
       ],
@@ -23424,7 +24676,7 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "见7月4日。",
+          "name": "见7月4日",
           "amount": ""
         }
       ],
@@ -23470,7 +24722,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "甜杏仁、茴香菜。",
+          "name": "甜杏仁",
+          "amount": ""
+        },
+        {
+          "name": "茴香菜",
           "amount": ""
         }
       ],
@@ -23732,7 +24988,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "葛根粉、桂花（干品）、枸杞、蜂蜜（糖尿病病人可以用罗汉果甜味料代替）各适量。",
+          "name": "葛根粉",
+          "amount": ""
+        },
+        {
+          "name": "桂花（干品）",
+          "amount": ""
+        },
+        {
+          "name": "枸杞",
+          "amount": ""
+        },
+        {
+          "name": "蜂蜜（糖尿病病人可以用罗汉果甜味料代替）各适量",
           "amount": ""
         }
       ],
@@ -23828,7 +25096,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "柴鸡、酒酿、油、盐。",
+          "name": "柴鸡",
+          "amount": ""
+        },
+        {
+          "name": "酒酿",
+          "amount": ""
+        },
+        {
+          "name": "油",
+          "amount": ""
+        },
+        {
+          "name": "盐",
           "amount": ""
         }
       ],
@@ -23877,7 +25157,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "赤小豆、绿豆、花生、大米。",
+          "name": "赤小豆",
+          "amount": ""
+        },
+        {
+          "name": "绿豆",
+          "amount": ""
+        },
+        {
+          "name": "花生",
+          "amount": ""
+        },
+        {
+          "name": "大米",
           "amount": ""
         }
       ],
@@ -23973,7 +25265,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "炒荷叶6克、陈皮1/2个、气虚者加黄芪30克。",
+          "name": "炒荷叶",
+          "amount": "6克"
+        },
+        {
+          "name": "陈皮1/",
+          "amount": "2个"
+        },
+        {
+          "name": "气虚者加黄芪30克",
           "amount": ""
         }
       ],
@@ -24019,7 +25319,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "莲花干品（鲜花晒干或去药房买干品）70克、藕粉80克、莲子90克。",
+          "name": "莲花干品（鲜花晒干或去药房买干品）",
+          "amount": "70克"
+        },
+        {
+          "name": "藕粉",
+          "amount": "80克"
+        },
+        {
+          "name": "莲子90克",
           "amount": ""
         }
       ],
@@ -24065,7 +25373,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "豆腐、豇豆角、空心菜、胡椒粉、油、盐。",
+          "name": "豆腐",
+          "amount": ""
+        },
+        {
+          "name": "豇豆角",
+          "amount": ""
+        },
+        {
+          "name": "空心菜",
+          "amount": ""
+        },
+        {
+          "name": "胡椒粉",
+          "amount": ""
+        },
+        {
+          "name": "油",
+          "amount": ""
+        },
+        {
+          "name": "盐",
           "amount": ""
         }
       ],
@@ -24115,7 +25443,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "葛根粉、桂花（干品）、枸杞、蜂蜜（糖尿病病人可以用罗汉果甜味料代替）各适量。",
+          "name": "葛根粉",
+          "amount": ""
+        },
+        {
+          "name": "桂花（干品）",
+          "amount": ""
+        },
+        {
+          "name": "枸杞",
+          "amount": ""
+        },
+        {
+          "name": "蜂蜜（糖尿病病人可以用罗汉果甜味料代替）各适量",
           "amount": ""
         }
       ],
@@ -24161,7 +25501,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "马齿苋、蒲公英。",
+          "name": "马齿苋",
+          "amount": ""
+        },
+        {
+          "name": "蒲公英",
           "amount": ""
         }
       ],
@@ -24207,7 +25551,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "炒荷叶、川陈皮、莲子、枸杞子、茯苓、粥料。",
+          "name": "炒荷叶",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "枸杞子",
+          "amount": ""
+        },
+        {
+          "name": "茯苓",
+          "amount": ""
+        },
+        {
+          "name": "粥料",
           "amount": ""
         }
       ],
@@ -24253,7 +25617,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "豆腐、豇豆角、空心菜、胡椒粉、油、盐。",
+          "name": "豆腐",
+          "amount": ""
+        },
+        {
+          "name": "豇豆角",
+          "amount": ""
+        },
+        {
+          "name": "空心菜",
+          "amount": ""
+        },
+        {
+          "name": "胡椒粉",
+          "amount": ""
+        },
+        {
+          "name": "油",
+          "amount": ""
+        },
+        {
+          "name": "盐",
           "amount": ""
         }
       ],
@@ -24303,7 +25687,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "马齿苋10克、蒲公英10克。",
+          "name": "马齿苋",
+          "amount": "10克"
+        },
+        {
+          "name": "蒲公英10克",
           "amount": ""
         }
       ],
@@ -24349,7 +25737,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "小茴香、大青盐、纯棉布（不能含化纤成分）。",
+          "name": "小茴香",
+          "amount": ""
+        },
+        {
+          "name": "大青盐",
+          "amount": ""
+        },
+        {
+          "name": "纯棉布（不能含化纤成分）",
           "amount": ""
         }
       ],
@@ -24395,7 +25791,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "枸杞子、五味子各6克。",
+          "name": "枸杞子",
+          "amount": ""
+        },
+        {
+          "name": "五味子各6克",
           "amount": ""
         }
       ],
@@ -24441,7 +25841,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "梨、红酒、丁香粉。",
+          "name": "梨",
+          "amount": ""
+        },
+        {
+          "name": "红酒",
+          "amount": ""
+        },
+        {
+          "name": "丁香粉",
           "amount": ""
         }
       ],
@@ -24487,7 +25895,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "桂花、枸杞。",
+          "name": "桂花",
+          "amount": ""
+        },
+        {
+          "name": "枸杞",
           "amount": ""
         }
       ],
@@ -24533,7 +25945,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "炒荷叶、川陈皮、莲子、枸杞子、茯苓、粥料。",
+          "name": "炒荷叶",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "枸杞子",
+          "amount": ""
+        },
+        {
+          "name": "茯苓",
+          "amount": ""
+        },
+        {
+          "name": "粥料",
           "amount": ""
         }
       ],
@@ -24579,7 +26011,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "梨、红酒、丁香粉。",
+          "name": "梨",
+          "amount": ""
+        },
+        {
+          "name": "红酒",
+          "amount": ""
+        },
+        {
+          "name": "丁香粉",
           "amount": ""
         }
       ],
@@ -24625,7 +26065,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "冬瓜皮6克、山楂15克、乌龙茶3克。",
+          "name": "冬瓜皮",
+          "amount": "6克"
+        },
+        {
+          "name": "山楂",
+          "amount": "15克"
+        },
+        {
+          "name": "乌龙茶3克",
           "amount": ""
         }
       ],
@@ -24671,7 +26119,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "干山楂600克、陈皮20个、红糖40小块。（20日量）",
+          "name": "干山楂",
+          "amount": "600克"
+        },
+        {
+          "name": "陈皮",
+          "amount": "20个"
+        },
+        {
+          "name": "红糖40小块。（20日量）",
           "amount": ""
         }
       ],
@@ -24717,7 +26173,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "桂花3克、乌梅6个、蜂蜜适量。",
+          "name": "桂花",
+          "amount": "3克"
+        },
+        {
+          "name": "乌梅",
+          "amount": "6个"
+        },
+        {
+          "name": "蜂蜜适量",
           "amount": ""
         }
       ],
@@ -24763,7 +26227,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "银耳、桑椹。",
+          "name": "银耳",
+          "amount": ""
+        },
+        {
+          "name": "桑椹",
           "amount": ""
         }
       ],
@@ -24809,7 +26277,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "螃蟹、冬瓜、生地、生姜、黄酒、肥肉。",
+          "name": "螃蟹",
+          "amount": ""
+        },
+        {
+          "name": "冬瓜",
+          "amount": ""
+        },
+        {
+          "name": "生地",
+          "amount": ""
+        },
+        {
+          "name": "生姜",
+          "amount": ""
+        },
+        {
+          "name": "黄酒",
+          "amount": ""
+        },
+        {
+          "name": "肥肉",
           "amount": ""
         }
       ],
@@ -24855,7 +26343,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "玫瑰花、金银花、茉莉花、川陈皮、甘草。",
+          "name": "玫瑰花",
+          "amount": ""
+        },
+        {
+          "name": "金银花",
+          "amount": ""
+        },
+        {
+          "name": "茉莉花",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "甘草",
           "amount": ""
         }
       ],
@@ -24901,7 +26405,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "银耳、百合。",
+          "name": "银耳",
+          "amount": ""
+        },
+        {
+          "name": "百合",
           "amount": ""
         }
       ],
@@ -24947,7 +26455,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "桂花(干品）、枸杞。",
+          "name": "桂花(干品）",
+          "amount": ""
+        },
+        {
+          "name": "枸杞",
           "amount": ""
         }
       ],
@@ -24993,7 +26505,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "山茱萸、五味子、罗汉果、桂花、甘草陈皮梅子汤。",
+          "name": "山茱萸",
+          "amount": ""
+        },
+        {
+          "name": "五味子",
+          "amount": ""
+        },
+        {
+          "name": "罗汉果",
+          "amount": ""
+        },
+        {
+          "name": "桂花",
+          "amount": ""
+        },
+        {
+          "name": "甘草陈皮梅子汤",
           "amount": ""
         }
       ],
@@ -25039,7 +26567,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "吴茱萸、醋。",
+          "name": "吴茱萸",
+          "amount": ""
+        },
+        {
+          "name": "醋",
           "amount": ""
         }
       ],
@@ -25085,7 +26617,31 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "墨鱼1～2只、肥肉或鸡肉50克、莲藕250克、莲子20粒、枸杞20粒、陈皮1/2个、带皮生姜3片。",
+          "name": "墨鱼1～2只",
+          "amount": ""
+        },
+        {
+          "name": "肥肉或鸡肉",
+          "amount": "50克"
+        },
+        {
+          "name": "莲藕",
+          "amount": "250克"
+        },
+        {
+          "name": "莲子",
+          "amount": "20粒"
+        },
+        {
+          "name": "枸杞",
+          "amount": "20粒"
+        },
+        {
+          "name": "陈皮1/",
+          "amount": "2个"
+        },
+        {
+          "name": "带皮生姜3片",
           "amount": ""
         }
       ],
@@ -25131,7 +26687,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "带壳桂圆干、红枣、枸杞子、杭菊花，喜饮茶者可加红茶。",
+          "name": "带壳桂圆干",
+          "amount": ""
+        },
+        {
+          "name": "红枣",
+          "amount": ""
+        },
+        {
+          "name": "枸杞子",
+          "amount": ""
+        },
+        {
+          "name": "杭菊花",
+          "amount": ""
+        },
+        {
+          "name": "喜饮茶者可加红茶",
           "amount": ""
         }
       ],
@@ -25177,7 +26749,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "银耳1小朵，桂圆肉、百合、枸杞子各1把。",
+          "name": "银耳1小朵",
+          "amount": ""
+        },
+        {
+          "name": "桂圆肉",
+          "amount": ""
+        },
+        {
+          "name": "百合",
+          "amount": ""
+        },
+        {
+          "name": "枸杞子各1把",
           "amount": ""
         }
       ],
@@ -25223,7 +26807,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "带壳桂圆干6粒、红枣4个、枸杞子5克、杭菊花2朵，喜饮茶者可加红茶6克。",
+          "name": "带壳桂圆干",
+          "amount": "6粒"
+        },
+        {
+          "name": "红枣",
+          "amount": "4个"
+        },
+        {
+          "name": "枸杞子",
+          "amount": "5克"
+        },
+        {
+          "name": "杭菊花",
+          "amount": "2朵"
+        },
+        {
+          "name": "喜饮茶者可加红茶6克",
           "amount": ""
         }
       ],
@@ -25269,7 +26869,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "栀子、桃仁、杏仁、白胡椒各7粒。",
+          "name": "栀子",
+          "amount": ""
+        },
+        {
+          "name": "桃仁",
+          "amount": ""
+        },
+        {
+          "name": "杏仁",
+          "amount": ""
+        },
+        {
+          "name": "白胡椒各7粒",
           "amount": ""
         }
       ],
@@ -25315,7 +26927,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "新鲜茴香菜、豆瓣酱。",
+          "name": "新鲜茴香菜",
+          "amount": ""
+        },
+        {
+          "name": "豆瓣酱",
           "amount": ""
         }
       ],
@@ -25361,7 +26977,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "白果、墨鱼干、肥肉或鸡肉、枸杞、生姜、川陈皮。",
+          "name": "白果",
+          "amount": ""
+        },
+        {
+          "name": "墨鱼干",
+          "amount": ""
+        },
+        {
+          "name": "肥肉或鸡肉",
+          "amount": ""
+        },
+        {
+          "name": "枸杞",
+          "amount": ""
+        },
+        {
+          "name": "生姜",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
           "amount": ""
         }
       ],
@@ -25407,7 +27043,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "小茴香、甘草、红雪茶。",
+          "name": "小茴香",
+          "amount": ""
+        },
+        {
+          "name": "甘草",
+          "amount": ""
+        },
+        {
+          "name": "红雪茶",
           "amount": ""
         }
       ],
@@ -25453,7 +27097,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "银耳、枸杞、桂圆、百合等。",
+          "name": "银耳",
+          "amount": ""
+        },
+        {
+          "name": "枸杞",
+          "amount": ""
+        },
+        {
+          "name": "桂圆",
+          "amount": ""
+        },
+        {
+          "name": "百合等",
           "amount": ""
         }
       ],
@@ -25499,7 +27155,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "葱白连须、生姜、白萝卜。",
+          "name": "葱白连须",
+          "amount": ""
+        },
+        {
+          "name": "生姜",
+          "amount": ""
+        },
+        {
+          "name": "白萝卜",
           "amount": ""
         }
       ],
@@ -25545,7 +27209,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "炒荷叶、川陈皮、枸杞子、莲子、茯苓、粥料。",
+          "name": "炒荷叶",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "枸杞子",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "茯苓",
+          "amount": ""
+        },
+        {
+          "name": "粥料",
           "amount": ""
         }
       ],
@@ -25591,7 +27275,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "小茴香9克、甘草6克、红雪茶适量。",
+          "name": "小茴香",
+          "amount": "9克"
+        },
+        {
+          "name": "甘草",
+          "amount": "6克"
+        },
+        {
+          "name": "红雪茶适量",
           "amount": ""
         }
       ],
@@ -25637,7 +27329,7 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "小麦的麸皮。",
+          "name": "小麦的麸皮",
           "amount": ""
         }
       ],
@@ -25683,7 +27375,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "葱白连须2根（大葱）或5根（小葱）、带皮生姜3片、白萝卜1个。",
+          "name": "葱白连须2根（大葱）或5根（小葱）",
+          "amount": ""
+        },
+        {
+          "name": "带皮生姜",
+          "amount": "3片"
+        },
+        {
+          "name": "白萝卜1个",
           "amount": ""
         }
       ],
@@ -25729,7 +27429,35 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "栗子、核桃、枸杞子、川陈皮、莲子、茯苓、粥米、植物油。",
+          "name": "栗子",
+          "amount": ""
+        },
+        {
+          "name": "核桃",
+          "amount": ""
+        },
+        {
+          "name": "枸杞子",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "茯苓",
+          "amount": ""
+        },
+        {
+          "name": "粥米",
+          "amount": ""
+        },
+        {
+          "name": "植物油",
           "amount": ""
         }
       ],
@@ -25775,7 +27503,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "银耳、桂圆、百合、枸杞等。",
+          "name": "银耳",
+          "amount": ""
+        },
+        {
+          "name": "桂圆",
+          "amount": ""
+        },
+        {
+          "name": "百合",
+          "amount": ""
+        },
+        {
+          "name": "枸杞等",
           "amount": ""
         }
       ],
@@ -25821,7 +27561,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "墨鱼、山茱萸。",
+          "name": "墨鱼",
+          "amount": ""
+        },
+        {
+          "name": "山茱萸",
           "amount": ""
         }
       ],
@@ -25867,7 +27611,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "葡萄干15克、黑桑椹干15克，血虚者加红枣3个。",
+          "name": "葡萄干",
+          "amount": "15克"
+        },
+        {
+          "name": "黑桑椹干",
+          "amount": "15克"
+        },
+        {
+          "name": "血虚者加红枣3个",
           "amount": ""
         }
       ],
@@ -25913,7 +27665,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "百合、枸杞、莲子各1把。",
+          "name": "百合",
+          "amount": ""
+        },
+        {
+          "name": "枸杞",
+          "amount": ""
+        },
+        {
+          "name": "莲子各1把",
           "amount": ""
         }
       ],
@@ -25959,7 +27719,31 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "党参15克、黄芪15克、甘草6克、当归6克、陈皮1/2个、带皮生姜3片、大枣6个。",
+          "name": "党参",
+          "amount": "15克"
+        },
+        {
+          "name": "黄芪",
+          "amount": "15克"
+        },
+        {
+          "name": "甘草",
+          "amount": "6克"
+        },
+        {
+          "name": "当归",
+          "amount": "6克"
+        },
+        {
+          "name": "陈皮1/",
+          "amount": "2个"
+        },
+        {
+          "name": "带皮生姜",
+          "amount": "3片"
+        },
+        {
+          "name": "大枣6个",
           "amount": ""
         }
       ],
@@ -26005,7 +27789,31 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "栗子、核桃、枸杞子、陈皮、莲子、茯苓、粥料。",
+          "name": "栗子",
+          "amount": ""
+        },
+        {
+          "name": "核桃",
+          "amount": ""
+        },
+        {
+          "name": "枸杞子",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "茯苓",
+          "amount": ""
+        },
+        {
+          "name": "粥料",
           "amount": ""
         }
       ],
@@ -26051,7 +27859,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "大枣、甘草、葱白连须、鱼腥茶嫩尖茶。",
+          "name": "大枣",
+          "amount": ""
+        },
+        {
+          "name": "甘草",
+          "amount": ""
+        },
+        {
+          "name": "葱白连须",
+          "amount": ""
+        },
+        {
+          "name": "鱼腥茶嫩尖茶",
           "amount": ""
         }
       ],
@@ -26097,7 +27917,43 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "党参、黄芪、甘草、当归、陈皮、生姜、大枣、甘蔗或牛蒡、羊肉、胡椒粉。",
+          "name": "党参",
+          "amount": ""
+        },
+        {
+          "name": "黄芪",
+          "amount": ""
+        },
+        {
+          "name": "甘草",
+          "amount": ""
+        },
+        {
+          "name": "当归",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "生姜",
+          "amount": ""
+        },
+        {
+          "name": "大枣",
+          "amount": ""
+        },
+        {
+          "name": "甘蔗或牛蒡",
+          "amount": ""
+        },
+        {
+          "name": "羊肉",
+          "amount": ""
+        },
+        {
+          "name": "胡椒粉",
           "amount": ""
         }
       ],
@@ -26143,7 +27999,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "大枣、甘草、葱白连须、鱼腥茶嫩尖茶。",
+          "name": "大枣",
+          "amount": ""
+        },
+        {
+          "name": "甘草",
+          "amount": ""
+        },
+        {
+          "name": "葱白连须",
+          "amount": ""
+        },
+        {
+          "name": "鱼腥茶嫩尖茶",
           "amount": ""
         }
       ],
@@ -26189,7 +28057,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "青皮子3克或四花青皮1个、陈皮1～2个、红糖适量。",
+          "name": "青皮子3克或四花青皮",
+          "amount": "1个"
+        },
+        {
+          "name": "陈皮1～",
+          "amount": "2个"
+        },
+        {
+          "name": "红糖适量",
           "amount": ""
         }
       ],
@@ -26235,7 +28111,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "甘草9克、小麦（带麸皮）15克、大枣9个。",
+          "name": "甘草",
+          "amount": "9克"
+        },
+        {
+          "name": "小麦（带麸皮）",
+          "amount": "15克"
+        },
+        {
+          "name": "大枣9个",
           "amount": ""
         }
       ],
@@ -26281,7 +28165,43 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "党参、黄芪、甘草、当归、陈皮、生姜、大枣、甘蔗或牛蒡、羊肉、胡椒粉。",
+          "name": "党参",
+          "amount": ""
+        },
+        {
+          "name": "黄芪",
+          "amount": ""
+        },
+        {
+          "name": "甘草",
+          "amount": ""
+        },
+        {
+          "name": "当归",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "生姜",
+          "amount": ""
+        },
+        {
+          "name": "大枣",
+          "amount": ""
+        },
+        {
+          "name": "甘蔗或牛蒡",
+          "amount": ""
+        },
+        {
+          "name": "羊肉",
+          "amount": ""
+        },
+        {
+          "name": "胡椒粉",
           "amount": ""
         }
       ],
@@ -26327,7 +28247,35 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "党参、黄芪、甘草、当归、陈皮、带皮生姜、大枣、羊肉。",
+          "name": "党参",
+          "amount": ""
+        },
+        {
+          "name": "黄芪",
+          "amount": ""
+        },
+        {
+          "name": "甘草",
+          "amount": ""
+        },
+        {
+          "name": "当归",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "带皮生姜",
+          "amount": ""
+        },
+        {
+          "name": "大枣",
+          "amount": ""
+        },
+        {
+          "name": "羊肉",
           "amount": ""
         }
       ],
@@ -26373,7 +28321,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "共12种，按中药君臣佐使法搭配。",
+          "name": "共12种",
+          "amount": ""
+        },
+        {
+          "name": "按中药君臣佐使法搭配",
           "amount": ""
         }
       ],
@@ -26419,7 +28371,51 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "丁香、山柰各3克，菖蒲、砂仁、白豆蔻、川陈皮各2克，甘松、川芎、苍术、藿香、苏合香、冰片各1克。",
+          "name": "丁香",
+          "amount": ""
+        },
+        {
+          "name": "山柰各",
+          "amount": "3克"
+        },
+        {
+          "name": "菖蒲",
+          "amount": ""
+        },
+        {
+          "name": "砂仁",
+          "amount": ""
+        },
+        {
+          "name": "白豆蔻",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮各",
+          "amount": "2克"
+        },
+        {
+          "name": "甘松",
+          "amount": ""
+        },
+        {
+          "name": "川芎",
+          "amount": ""
+        },
+        {
+          "name": "苍术",
+          "amount": ""
+        },
+        {
+          "name": "藿香",
+          "amount": ""
+        },
+        {
+          "name": "苏合香",
+          "amount": ""
+        },
+        {
+          "name": "冰片各1克",
           "amount": ""
         }
       ],
@@ -26465,7 +28461,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "藿香15克，佩兰15克，白芷10克，艾叶10克，菖蒲10克，陈皮1个。",
+          "name": "藿香",
+          "amount": "15克"
+        },
+        {
+          "name": "佩兰",
+          "amount": "15克"
+        },
+        {
+          "name": "白芷",
+          "amount": "10克"
+        },
+        {
+          "name": "艾叶",
+          "amount": "10克"
+        },
+        {
+          "name": "菖蒲",
+          "amount": "10克"
+        },
+        {
+          "name": "陈皮1个",
           "amount": ""
         }
       ],
@@ -26512,7 +28528,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "艾叶90克，花椒60克，小黄姜60克。",
+          "name": "艾叶",
+          "amount": "90克"
+        },
+        {
+          "name": "花椒",
+          "amount": "60克"
+        },
+        {
+          "name": "小黄姜60克",
           "amount": ""
         }
       ],
@@ -26558,7 +28582,7 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "鱼腥草干品30克。",
+          "name": "鱼腥草干品30克",
           "amount": ""
         }
       ],
@@ -26604,7 +28628,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "香菜（芫荽）3〜5棵，鲜橘皮或川陈皮1个，带皮生姜3片。",
+          "name": "香菜（芫荽）3〜5棵",
+          "amount": ""
+        },
+        {
+          "name": "鲜橘皮或川陈皮",
+          "amount": "1个"
+        },
+        {
+          "name": "带皮生姜3片",
           "amount": ""
         }
       ],
@@ -26648,7 +28680,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "葱半根、淡豆豉两大勺（如果没有淡豆豉，用家里普通的豆豉也可以，要先用清水泡洗一下，去掉一些咸味）。",
+          "name": "葱半根",
+          "amount": ""
+        },
+        {
+          "name": "淡豆豉两大勺（如果没有淡豆豉",
+          "amount": ""
+        },
+        {
+          "name": "用家里普通的豆豉也可以",
+          "amount": ""
+        },
+        {
+          "name": "要先用清水泡洗一下",
+          "amount": ""
+        },
+        {
+          "name": "去掉一些咸味）",
           "amount": ""
         }
       ],
@@ -26692,7 +28740,7 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "罗汉果１个。",
+          "name": "罗汉果１个",
           "amount": ""
         }
       ],
@@ -26736,7 +28784,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "干百合15克，蜂蜜适量。",
+          "name": "干百合",
+          "amount": "15克"
+        },
+        {
+          "name": "蜂蜜适量",
           "amount": ""
         }
       ],
@@ -26780,7 +28832,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "乌梅 6 个，川陈皮 1/4〜1/2个，大枣 6 个，山楂 10 克，甘草 5 克。",
+          "name": "乌梅 6 个",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮 1/4〜1/",
+          "amount": "2个"
+        },
+        {
+          "name": "大枣 6 个",
+          "amount": ""
+        },
+        {
+          "name": "山楂 10 克",
+          "amount": ""
+        },
+        {
+          "name": "甘草 5 克",
           "amount": ""
         }
       ],
@@ -26824,7 +28892,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "山茱萸、熟地黄、淮山药、茯苓各30克，牛骨髓250〜500克。",
+          "name": "山茱萸",
+          "amount": ""
+        },
+        {
+          "name": "熟地黄",
+          "amount": ""
+        },
+        {
+          "name": "淮山药",
+          "amount": ""
+        },
+        {
+          "name": "茯苓各",
+          "amount": "30克"
+        },
+        {
+          "name": "牛骨髓250〜500克",
           "amount": ""
         }
       ],
@@ -26868,7 +28952,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "桑叶茶，黑桑葚干1把。",
+          "name": "桑叶茶",
+          "amount": ""
+        },
+        {
+          "name": "黑桑葚干1把",
           "amount": ""
         }
       ],
@@ -26912,7 +29000,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "牛蒡茶6克，枸杞子12〜30粒。",
+          "name": "牛蒡茶",
+          "amount": "6克"
+        },
+        {
+          "name": "枸杞子12〜30粒",
           "amount": ""
         }
       ],
@@ -26956,7 +29048,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "枸杞子6克，五味子6克。",
+          "name": "枸杞子",
+          "amount": "6克"
+        },
+        {
+          "name": "五味子6克",
           "amount": ""
         }
       ],
@@ -27000,7 +29096,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "川陈皮、丁香、山柰、白芷、艾叶等。",
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "丁香",
+          "amount": ""
+        },
+        {
+          "name": "山柰",
+          "amount": ""
+        },
+        {
+          "name": "白芷",
+          "amount": ""
+        },
+        {
+          "name": "艾叶等",
           "amount": ""
         }
       ],
@@ -27044,7 +29156,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "纯粮白酒、川椒。",
+          "name": "纯粮白酒",
+          "amount": ""
+        },
+        {
+          "name": "川椒",
           "amount": ""
         }
       ],
@@ -27088,7 +29204,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "花椒 5〜7 粒，小黄姜 3 克，红枣 6 个，红糖 2 小块。",
+          "name": "花椒 5〜7 粒",
+          "amount": ""
+        },
+        {
+          "name": "小黄姜 3 克",
+          "amount": ""
+        },
+        {
+          "name": "红枣 6 个",
+          "amount": ""
+        },
+        {
+          "name": "红糖 2 小块",
           "amount": ""
         }
       ],
@@ -27132,7 +29260,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "干玫瑰花120 朵、干柠檬片30 片、红糖20 小块。",
+          "name": "干玫瑰花120 朵",
+          "amount": ""
+        },
+        {
+          "name": "干柠檬片30 片",
+          "amount": ""
+        },
+        {
+          "name": "红糖20 小块",
           "amount": ""
         }
       ],
@@ -27176,7 +29312,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "田艾（清明菜）、糯米粉、红糖。",
+          "name": "田艾（清明菜）",
+          "amount": ""
+        },
+        {
+          "name": "糯米粉",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
           "amount": ""
         }
       ],
@@ -27220,7 +29364,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "绿茶、陈皮半个（或15 克）、蜂蜜（油菜蜜最佳）。",
+          "name": "绿茶",
+          "amount": ""
+        },
+        {
+          "name": "陈皮半个（或15 克）",
+          "amount": ""
+        },
+        {
+          "name": "蜂蜜（油菜蜜最佳）",
           "amount": ""
         }
       ],
@@ -27264,7 +29416,39 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "陈皮1 个（或30 克）、蜂蜜半杯（枣花蜜最佳）。做法：① 将1 个陈皮和5 杯冷水下锅，水开后转小火煮5 ～ 10 分钟。② 将煮好的陈皮水晾到温热，加半杯蜂蜜调化，分成3 份。③ 早、午、晚饭前空腹喝1 杯，1 日3 次。功效：理气止痛，促进胃溃疡愈合。适合人群：慢性胃溃疡春季发作者。",
+          "name": "陈皮1 个（或30 克）",
+          "amount": ""
+        },
+        {
+          "name": "蜂蜜半杯（枣花蜜最佳）。做法：① 将1 个陈皮和5 杯冷水下锅",
+          "amount": ""
+        },
+        {
+          "name": "水开后转小火煮5 ～ 10 分钟。② 将煮好的陈皮水晾到温热",
+          "amount": ""
+        },
+        {
+          "name": "加半杯蜂蜜调化",
+          "amount": ""
+        },
+        {
+          "name": "分成3 份。③ 早",
+          "amount": ""
+        },
+        {
+          "name": "午",
+          "amount": ""
+        },
+        {
+          "name": "晚饭前空腹喝1 杯",
+          "amount": ""
+        },
+        {
+          "name": "1 日3 次。功效：理气止痛",
+          "amount": ""
+        },
+        {
+          "name": "促进胃溃疡愈合。适合人群：慢性胃溃疡春季发作者",
           "amount": ""
         }
       ],
@@ -27308,7 +29492,39 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "绿茶、蜂蜜（槐花蜜最佳）。做法：① 泡一杯浓一点的绿茶，晾温后加2 勺蜂蜜搅匀。② 每隔十几分钟喝一小口，尽量让茶水在咽喉处多停留一会儿，时刻保持嗓子的滋润。③ 大约1 天，咽炎的症状就可以缓解了。功效：缓解咽炎疼痛。适合人群：咽炎急性发作者（嗓子干疼、想咳嗽、声音嘶哑）。允斌叮嘱绿茶要泡得浓浓的，为的是加强清热去火的功效。",
+          "name": "绿茶",
+          "amount": ""
+        },
+        {
+          "name": "蜂蜜（槐花蜜最佳）。做法：① 泡一杯浓一点的绿茶",
+          "amount": ""
+        },
+        {
+          "name": "晾温后加2 勺蜂蜜搅匀。② 每隔十几分钟喝一小口",
+          "amount": ""
+        },
+        {
+          "name": "尽量让茶水在咽喉处多停留一会儿",
+          "amount": ""
+        },
+        {
+          "name": "时刻保持嗓子的滋润。③ 大约1 天",
+          "amount": ""
+        },
+        {
+          "name": "咽炎的症状就可以缓解了。功效：缓解咽炎疼痛。适合人群：咽炎急性发作者（嗓子干疼",
+          "amount": ""
+        },
+        {
+          "name": "想咳嗽",
+          "amount": ""
+        },
+        {
+          "name": "声音嘶哑）。允斌叮嘱绿茶要泡得浓浓的",
+          "amount": ""
+        },
+        {
+          "name": "为的是加强清热去火的功效",
           "amount": ""
         }
       ],
@@ -27352,7 +29568,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "竹茹3克、麦芽5克、桑叶5克、陈皮10克（四味药均可在正规中药店里买到）。",
+          "name": "竹茹",
+          "amount": "3克"
+        },
+        {
+          "name": "麦芽",
+          "amount": "5克"
+        },
+        {
+          "name": "桑叶",
+          "amount": "5克"
+        },
+        {
+          "name": "陈皮10克（四味药均可在正规中药店里买到）",
           "amount": ""
         }
       ],
@@ -27398,7 +29626,7 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "鱼腥草干品15 ~ 30克（药店购买）。",
+          "name": "鱼腥草干品15 ~ 30克（药店购买）",
           "amount": ""
         }
       ],
@@ -27444,7 +29672,7 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "鱼腥草干品30 ~ 60克。",
+          "name": "鱼腥草干品30 ~ 60克",
           "amount": ""
         }
       ],
@@ -27490,7 +29718,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "新鲜鱼腥草1 500克、带皮生姜2片。",
+          "name": "新鲜鱼腥草1",
+          "amount": "500克"
+        },
+        {
+          "name": "带皮生姜2片",
           "amount": ""
         }
       ],
@@ -27536,7 +29768,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "海带、白萝卜、荸荠、新鲜橘子、橘络（中药店购买）、新鲜鱼腥草。",
+          "name": "海带",
+          "amount": ""
+        },
+        {
+          "name": "白萝卜",
+          "amount": ""
+        },
+        {
+          "name": "荸荠",
+          "amount": ""
+        },
+        {
+          "name": "新鲜橘子",
+          "amount": ""
+        },
+        {
+          "name": "橘络（中药店购买）",
+          "amount": ""
+        },
+        {
+          "name": "新鲜鱼腥草",
           "amount": ""
         }
       ],
@@ -27582,7 +29834,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "小麦1 两（50 克）、大枣9 个、甘草9 克、大米。",
+          "name": "小麦1 两（50 克）",
+          "amount": ""
+        },
+        {
+          "name": "大枣9 个",
+          "amount": ""
+        },
+        {
+          "name": "甘草9 克",
+          "amount": ""
+        },
+        {
+          "name": "大米",
           "amount": ""
         }
       ],
@@ -27629,7 +29893,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "艾叶、菖蒲叶各1 把，或者药店购买艾叶、菖蒲各50克（药店买到的是菖蒲根）。",
+          "name": "艾叶",
+          "amount": ""
+        },
+        {
+          "name": "菖蒲叶各1 把",
+          "amount": ""
+        },
+        {
+          "name": "或者药店购买艾叶",
+          "amount": ""
+        },
+        {
+          "name": "菖蒲各50克（药店买到的是菖蒲根）",
           "amount": ""
         }
       ],
@@ -27675,7 +29951,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "金银花（采摘鲜品，或药店、茶叶店购买干品60克）、纱布。",
+          "name": "金银花（采摘鲜品",
+          "amount": ""
+        },
+        {
+          "name": "或药店",
+          "amount": ""
+        },
+        {
+          "name": "茶叶店购买干品60克）",
+          "amount": ""
+        },
+        {
+          "name": "纱布",
           "amount": ""
         }
       ],
@@ -27721,7 +30009,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "佩兰30克、白芷15克（药店购买）。",
+          "name": "佩兰",
+          "amount": "30克"
+        },
+        {
+          "name": "白芷15克（药店购买）",
           "amount": ""
         }
       ],
@@ -27767,7 +30059,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "陈皮、丁香、山柰、艾条各等量，棉布、五色丝线。",
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "丁香",
+          "amount": ""
+        },
+        {
+          "name": "山柰",
+          "amount": ""
+        },
+        {
+          "name": "艾条各等量",
+          "amount": ""
+        },
+        {
+          "name": "棉布",
+          "amount": ""
+        },
+        {
+          "name": "五色丝线",
           "amount": ""
         }
       ],
@@ -27811,7 +30123,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "新蒜2头、鸡蛋4个。",
+          "name": "新蒜2头",
+          "amount": ""
+        },
+        {
+          "name": "鸡蛋4个",
           "amount": ""
         }
       ],
@@ -27855,7 +30171,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "雄黄粉1两（50克）、高度白酒2两（100毫升）。",
+          "name": "雄黄粉1两（50克）",
+          "amount": ""
+        },
+        {
+          "name": "高度白酒2两（100毫升）",
           "amount": ""
         }
       ],
@@ -27899,7 +30219,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "枸杞60克、五味子60克、蜂蜜适量。",
+          "name": "枸杞",
+          "amount": "60克"
+        },
+        {
+          "name": "五味子",
+          "amount": "60克"
+        },
+        {
+          "name": "蜂蜜适量",
           "amount": ""
         }
       ],
@@ -27943,7 +30271,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "五味子300克、红糖1 000克。",
+          "name": "五味子",
+          "amount": "300克"
+        },
+        {
+          "name": "红糖1 000克",
           "amount": ""
         }
       ],
@@ -27987,7 +30319,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "红苋菜（嫩的、带根的）1把、松花蛋2只、大蒜2~3瓣、油（猪油最好）、盐少许。",
+          "name": "红苋菜（嫩的",
+          "amount": ""
+        },
+        {
+          "name": "带根的）",
+          "amount": "1把"
+        },
+        {
+          "name": "松花蛋2只",
+          "amount": ""
+        },
+        {
+          "name": "大蒜2~3瓣",
+          "amount": ""
+        },
+        {
+          "name": "油（猪油最好）",
+          "amount": ""
+        },
+        {
+          "name": "盐少许",
           "amount": ""
         }
       ],
@@ -28031,7 +30383,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "莲子心2克、甘草3克。",
+          "name": "莲子心",
+          "amount": "2克"
+        },
+        {
+          "name": "甘草3克",
           "amount": ""
         }
       ],
@@ -28075,7 +30431,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "西红柿、胡萝卜。",
+          "name": "西红柿",
+          "amount": ""
+        },
+        {
+          "name": "胡萝卜",
           "amount": ""
         }
       ],
@@ -28119,7 +30479,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "黄芪 300克、大米 500克（2人份5天用量）。",
+          "name": "黄芪",
+          "amount": "300克"
+        },
+        {
+          "name": "大米 500克（2人份5天用量）",
           "amount": ""
         }
       ],
@@ -28163,7 +30527,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "黄芪（柳叶片） 60克、大米 100克（2人份1天用量）。",
+          "name": "黄芪（柳叶片）",
+          "amount": "60克"
+        },
+        {
+          "name": "大米 100克（2人份1天用量）",
           "amount": ""
         }
       ],
@@ -28207,7 +30575,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "豆腐1块、豇豆角1把、空心菜1把、胡椒粉、油、盐。",
+          "name": "豆腐",
+          "amount": "1块"
+        },
+        {
+          "name": "豇豆角",
+          "amount": "1把"
+        },
+        {
+          "name": "空心菜",
+          "amount": "1把"
+        },
+        {
+          "name": "胡椒粉",
+          "amount": ""
+        },
+        {
+          "name": "油",
+          "amount": ""
+        },
+        {
+          "name": "盐",
           "amount": ""
         }
       ],
@@ -28253,7 +30641,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "吴茱萸3~6克（药店购买），碎布头一块，丝线一条。",
+          "name": "吴茱萸3~6克（药店购买）",
+          "amount": ""
+        },
+        {
+          "name": "碎布头一块",
+          "amount": ""
+        },
+        {
+          "name": "丝线一条",
           "amount": ""
         }
       ],
@@ -28299,7 +30695,7 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "白菊花1斤（500克）。",
+          "name": "白菊花1斤（500克）",
           "amount": ""
         }
       ],
@@ -28345,7 +30741,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "桑叶10克、黄菊花10克。",
+          "name": "桑叶",
+          "amount": "10克"
+        },
+        {
+          "name": "黄菊花10克",
           "amount": ""
         }
       ],
@@ -28391,7 +30791,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "罗汉果1个，野菊花30克（药店有售）。",
+          "name": "罗汉果",
+          "amount": "1个"
+        },
+        {
+          "name": "野菊花30克（药店有售）",
           "amount": ""
         }
       ],
@@ -28437,7 +30841,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "山楂30克、白菊花6克、甘草6克。",
+          "name": "山楂",
+          "amount": "30克"
+        },
+        {
+          "name": "白菊花",
+          "amount": "6克"
+        },
+        {
+          "name": "甘草6克",
           "amount": ""
         }
       ],
@@ -28483,7 +30895,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "新鲜茴香菜、豆瓣酱、植物油。",
+          "name": "新鲜茴香菜",
+          "amount": ""
+        },
+        {
+          "name": "豆瓣酱",
+          "amount": ""
+        },
+        {
+          "name": "植物油",
           "amount": ""
         }
       ],
@@ -28529,7 +30949,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "小茴香9克、干山楂（中药名：生山楂）30克、甘草6克（一人份一天的量，小茴香在超市调料柜台有售，干山楂和甘草在药店和部分超市可以买到）。",
+          "name": "小茴香",
+          "amount": "9克"
+        },
+        {
+          "name": "干山楂（中药名：生山楂）",
+          "amount": "30克"
+        },
+        {
+          "name": "甘草6克（一人份一天的量",
+          "amount": ""
+        },
+        {
+          "name": "小茴香在超市调料柜台有售",
+          "amount": ""
+        },
+        {
+          "name": "干山楂和甘草在药店和部分超市可以买到）",
           "amount": ""
         }
       ],
@@ -28575,7 +31011,27 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "红苋菜（嫩的、带根）1把、松花蛋2只、大蒜2～3瓣、油（猪油最好）、盐少许。",
+          "name": "红苋菜（嫩的",
+          "amount": ""
+        },
+        {
+          "name": "带根）",
+          "amount": "1把"
+        },
+        {
+          "name": "松花蛋2只",
+          "amount": ""
+        },
+        {
+          "name": "大蒜2～3瓣",
+          "amount": ""
+        },
+        {
+          "name": "油（猪油最好）",
+          "amount": ""
+        },
+        {
+          "name": "盐少许",
           "amount": ""
         }
       ],
@@ -28621,7 +31077,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "金银花（干品30克，或鲜品1大把）、生甘草3克。",
+          "name": "金银花（干品",
+          "amount": "30克"
+        },
+        {
+          "name": "或鲜品1大把）",
+          "amount": ""
+        },
+        {
+          "name": "生甘草3克",
           "amount": ""
         }
       ],
@@ -28667,7 +31131,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "2人份1天用量，黄芪（柳叶片）60克、大米100克。",
+          "name": "2人份1天用量",
+          "amount": ""
+        },
+        {
+          "name": "黄芪（柳叶片）",
+          "amount": "60克"
+        },
+        {
+          "name": "大米100克",
           "amount": ""
         }
       ],
@@ -28713,7 +31185,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "3片带皮的生姜，1个陈皮，1小把香菜。",
+          "name": "3片带皮的生姜",
+          "amount": ""
+        },
+        {
+          "name": "1个陈皮",
+          "amount": ""
+        },
+        {
+          "name": "1小把香菜",
           "amount": ""
         }
       ],
@@ -28757,7 +31237,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "半个生姜，6个大枣。",
+          "name": "半个生姜",
+          "amount": ""
+        },
+        {
+          "name": "6个大枣",
           "amount": ""
         }
       ],
@@ -28801,7 +31285,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "小茴香籽30克，生首乌60克，猪肚1只。",
+          "name": "小茴香籽",
+          "amount": "30克"
+        },
+        {
+          "name": "生首乌",
+          "amount": "60克"
+        },
+        {
+          "name": "猪肚1只",
           "amount": ""
         }
       ],
@@ -28845,8 +31337,16 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "6枚大枣，3片带皮的生姜。",
-          "amount": ""
+          "name": "大枣",
+          "amount": "6枚"
+        },
+        {
+          "name": "带皮生姜",
+          "amount": "3片"
+        },
+        {
+          "name": "麦芽糖",
+          "amount": "2勺"
         }
       ],
       "method": "1.取6枚大枣掰开，加3片带皮的生姜，冷水下锅一起煮。\n2.水开以后，转小火再煮10分钟起锅。\n3.加两勺麦芽糖，调化了给孩子喝。\n4.每天煮一次，一般的小孩喝两周就可以看到效果。\n姜枣饴糖水能健脾，又能去掉胃里边的寒气，还能补气血。孩子喝了这个汤以后，胃口就容易打开，吃得比较多。\n注意：这个方子里用到的生姜，不要去皮。并且，汤水要在中午前喝完，最好是在早饭后喝。孩子喝完以后，如果出汗比较多，就要减少生姜的用量。孩子感冒、积食、咳嗽的时候，暂时不要喝，等病好了再喝。",
@@ -28889,7 +31389,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "新鲜橘皮（最好用红橘的皮）、白糖，二者用量比例为2∶1。",
+          "name": "新鲜橘皮（最好用红橘的皮）",
+          "amount": ""
+        },
+        {
+          "name": "白糖",
+          "amount": ""
+        },
+        {
+          "name": "二者用量比例为2∶1",
           "amount": ""
         }
       ],
@@ -28933,7 +31441,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "五六个茄蒂，一个新鲜的尖椒。",
+          "name": "五六个茄蒂",
+          "amount": ""
+        },
+        {
+          "name": "一个新鲜的尖椒",
           "amount": ""
         }
       ],
@@ -28977,7 +31489,7 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "糯米和大米的比例为1∶4。",
+          "name": "糯米和大米的比例为1∶4",
           "amount": ""
         }
       ],
@@ -29021,7 +31533,23 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "1块连贴，50克（1两）大米，6个大枣，1个陈皮，2片生姜。",
+          "name": "1块连贴",
+          "amount": ""
+        },
+        {
+          "name": "50克（1两）大米",
+          "amount": ""
+        },
+        {
+          "name": "6个大枣",
+          "amount": ""
+        },
+        {
+          "name": "1个陈皮",
+          "amount": ""
+        },
+        {
+          "name": "2片生姜",
           "amount": ""
         }
       ],
@@ -29065,7 +31593,19 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "准备盐、红糖、醋，比例是1∶2∶3。",
+          "name": "准备盐",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
+          "amount": ""
+        },
+        {
+          "name": "醋",
+          "amount": ""
+        },
+        {
+          "name": "比例是1∶2∶3",
           "amount": ""
         }
       ],
@@ -29109,7 +31649,11 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "5千克（10斤）大米、0.5千克（1斤）大麦。",
+          "name": "5千克（10斤）大米",
+          "amount": ""
+        },
+        {
+          "name": "0.5千克（1斤）大麦",
           "amount": ""
         }
       ],
@@ -29153,7 +31697,15 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "中药粉、蜂蜜、香油。",
+          "name": "中药粉",
+          "amount": ""
+        },
+        {
+          "name": "蜂蜜",
+          "amount": ""
+        },
+        {
+          "name": "香油",
           "amount": ""
         }
       ],
@@ -29197,7 +31749,39 @@
       "symptoms": [],
       "ingredients": [
         {
-          "name": "干净无油的广口玻璃瓶1只，醪糟1千克（2斤），红糖，花椒，盐，新鲜辣椒，子姜，时令蔬菜。没有新鲜辣椒和子姜，可以用干辣椒和老姜代替。",
+          "name": "干净无油的广口玻璃瓶1只",
+          "amount": ""
+        },
+        {
+          "name": "醪糟1千克（2斤）",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
+          "amount": ""
+        },
+        {
+          "name": "花椒",
+          "amount": ""
+        },
+        {
+          "name": "盐",
+          "amount": ""
+        },
+        {
+          "name": "新鲜辣椒",
+          "amount": ""
+        },
+        {
+          "name": "子姜",
+          "amount": ""
+        },
+        {
+          "name": "时令蔬菜。没有新鲜辣椒和子姜",
+          "amount": ""
+        },
+        {
+          "name": "可以用干辣椒和老姜代替",
           "amount": ""
         }
       ],
@@ -36841,8 +39425,12 @@
       ],
       "ingredients": [
         {
-          "name": "干蘑菇（松蘑、香菇等）",
-          "amount": "适量"
+          "name": "干蘑菇（松蘑",
+          "amount": ""
+        },
+        {
+          "name": "香菇等）",
+          "amount": ""
         }
       ],
       "method": "把市场上买来的晒干的蘑菇，什么蘑菇都行，比如松蘑、香菇等，用粉碎机打成粉末，装在调料瓶里。做菜的时候，撒一点蘑菇粉，跟用味精一样方便。",
