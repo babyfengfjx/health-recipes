@@ -960,6 +960,7 @@ function showSeasonalTip() {
             <div class="modal" style="max-width: 500px;">
                 <div class="modal-header" style="background: linear-gradient(135deg, #FF9800 0%, #FFB74D 100%);">
                     <h2 class="modal-title">🌸 ${term.name}养生</h2>
+                    <p class="term-date" style="margin: 5px 0 0 0; opacity: 0.9; font-size: 0.95rem;">${term.date}</p>
                     <button class="modal-close" onclick="closeSeasonal()">&times;</button>
                 </div>
                 
@@ -999,7 +1000,9 @@ function showSeasonalTip() {
 
 function closeSeasonal() {
     const modal = document.getElementById('seasonalModal');
-    if (modal) modal.classList.remove('active');
+    if (modal) {
+        modal.remove(); // 直接移除元素而不是隐藏
+    }
 }
 
 // 页面加载时显示季节提示（延迟显示）
