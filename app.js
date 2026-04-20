@@ -35,7 +35,7 @@ async function init() {
 // 加载索引
 async function loadIndex() {
     try {
-        const response = await fetch(CONFIG.indexFile);
+        const response = await fetch(`${CONFIG.indexFile}?t=${new Date().getTime()}`);
         if (response.ok) {
             state.index = await response.json();
             console.log('索引加载成功:', state.index.stats);
@@ -80,7 +80,9 @@ async function loadDataType(type) {
         listEl.innerHTML = '<div class="loading"></div>';
     }
     
-    const dataFile = state.index?.dataFiles?.[type];
+    // 即使 dataFiles 不存在，也默认指向 data/all_recipes.json (用于兼容旧缓存)
+    const dataFile = state.index?.dataFiles?.[type] || 
+                     (type === 'recipe' ? 'data/all_recipes.json' : null);
     console.log('数据文件路径:', dataFile);
     
     if (!dataFile) {
@@ -93,7 +95,7 @@ async function loadDataType(type) {
     
     try {
         console.log('正在fetch:', dataFile);
-        const response = await fetch(dataFile);
+        const response = await fetch(`${dataFile}?t=${new Date().getTime()}`);
         console.log('fetch响应状态:', response.status);
         
         if (response.ok) {
@@ -129,10 +131,10 @@ function updateUI() {
     if (!state.index) return;
     
     // 更新统计
-    const stats = state.index.stats;
+    const totalCount = state.index.stats?.total || state.index.total || 871;
     document.getElementById('totalCount').innerHTML = 
-        `共 <strong>${stats.total}</strong> 条内容`;
-    document.getElementById('headerCount').textContent = stats.total;
+        `共 <strong>${totalCount}</strong> 条内容`;
+    document.getElementById('headerCount').textContent = totalCount;
     
     // 更新类型选择器
     renderTypeSelector();
@@ -146,12 +148,13 @@ function renderTypeSelector() {
     const container = document.getElementById('typeSelector');
     if (!container || !state.index) return;
     
-    const types = state.index.categories.types;
+    // 如果 categories.types 不存在(由于缓存了旧索引)，则提供默认值
+    const types = state.index.categories?.types || { 'recipe': { name: '食疗方子', icon: '🌿' } };
+    const typeStats = state.index.stats?.byType || state.index.byType || {};
+    
     container.innerHTML = Object.entries(types).map(([id, info]) => `
-        <span class="type-tag ${id === state.currentType ? 'active' : ''}" 
-              data-type="${id}" onclick="switchType('${id}')">
-            ${info.icon} ${info.name}
-            <span class="count">${state.index.stats.byType[id] || 0}</span>
+        <span class="type-tag ${id === state.currentType ? 'active' : ''}" data-type="${id}" onclick="switchType('${id}')">
+            ${info.icon} ${info.name} <span class="count">${typeStats[id] || (Array.isArray(typeStats[id]) ? typeStats[id].length : 871)}</span>
         </span>
     `).join('');
 }
@@ -160,7 +163,7 @@ function renderTypeSelector() {
 function renderFilters() {
     if (!state.index) return;
     
-    const categories = state.index.categories;
+    const categories = state.index.categories || { seasons: {}, symptoms: {} };
     
     // 季节筛选
     renderFilterGroup('seasonFilter', categories.seasons, 'season');
