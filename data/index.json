@@ -42,6 +42,84 @@
         "name": "冬季",
         "icon": "❄️"
       }
+    ],
+    "types": {
+      "recipe": {
+        "name": "食疗方子",
+        "icon": "🍲"
+      },
+      "acupoint": {
+        "name": "穴位按摩",
+        "icon": "👆"
+      },
+      "exercise": {
+        "name": "养生功法",
+        "icon": "🧘"
+      },
+      "knowledge": {
+        "name": "养生知识",
+        "icon": "📖"
+      }
+    },
+    "symptoms": [
+      {
+        "id": "cold",
+        "name": "感冒"
+      },
+      {
+        "id": "cough",
+        "name": "咳嗽"
+      },
+      {
+        "id": "insomnia",
+        "name": "失眠"
+      },
+      {
+        "id": "digestion",
+        "name": "消化不良"
+      },
+      {
+        "id": "fatigue",
+        "name": "疲劳"
+      },
+      {
+        "id": "anemia",
+        "name": "贫血"
+      },
+      {
+        "id": "eczema",
+        "name": "湿疹"
+      },
+      {
+        "id": "rhinitis",
+        "name": "鼻炎"
+      }
+    ],
+    "recipeTypes": [
+      {
+        "id": "tea",
+        "name": "茶饮"
+      },
+      {
+        "id": "soup",
+        "name": "汤品"
+      },
+      {
+        "id": "porridge",
+        "name": "粥品"
+      },
+      {
+        "id": "dish",
+        "name": "菜品"
+      },
+      {
+        "id": "dessert",
+        "name": "甜品"
+      },
+      {
+        "id": "medicine",
+        "name": "药膳"
+      }
     ]
   }
 }

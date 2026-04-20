@@ -449,6 +449,14 @@ body {
     margin-bottom: 30px;
 }
 
+/* 加载状态 */
+.recipes-list:has(.loading) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
 /* 方子卡片 */
 .recipe-card {
     background: white;
