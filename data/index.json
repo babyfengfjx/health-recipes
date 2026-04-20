@@ -2,12 +2,12 @@
   "version": "1.1",
   "generated": "2026-04-20",
   "stats": {
-    "total": 871,
+    "total": 877,
     "byType": {
       "recipe": 871,
-      "acupoint": 0,
-      "exercise": 0,
-      "knowledge": 0
+      "acupoint": 3,
+      "exercise": 2,
+      "knowledge": 1
     },
     "bySeason": {
       "春季": 102,
