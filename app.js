@@ -224,14 +224,15 @@ function setFilter(key, value) {
 // 数据筛选
 function filterData() {
     console.log('filterData 被调用');
-    console.log('当前类型:', state.currentType);
-    console.log('allData:', state.allData);
     
     const data = state.allData[state.currentType] || [];
-    console.log('数据长度:', data.length);
-    
     const { season, symptom, recipeType, group, search } = state.filters;
-    console.log('筛选条件:', { season, symptom, recipeType, group, search });
+    
+    // 获取中文名称（用于匹配数据）
+    const seasonName = season ? (state.index?.categories?.seasons?.find(s => s.id === season)?.name || season) : '';
+    const recipeTypeName = recipeType ? (state.index?.categories?.recipeTypes?.find(t => t.id === recipeType)?.name || recipeType) : '';
+    
+    console.log('筛选条件:', { season, seasonName, symptom, recipeType, recipeTypeName });
     
     state.filteredData = data.filter(item => {
         // 搜索匹配
@@ -246,24 +247,23 @@ function filterData() {
         }
         
         // 季节筛选
-        if (season && item.categories?.season) {
-            if (!item.categories.season.some(s => s.includes(season) || season.includes(s))) {
+        if (seasonName && item.categories?.season) {
+            if (!item.categories.season.some(s => s.includes(seasonName) || seasonName.includes(s))) {
                 return false;
             }
         }
         
         // 症状筛选
-        if (symptom && item.symptoms) {
+        if (symptom) {
             const symptomName = state.index?.categories?.symptoms?.find(s => s.id === symptom)?.name || symptom;
-            if (!item.symptoms.some(s => s.includes(symptomName) || symptomName.includes(s))) {
-                if (!item.efficacy?.includes(symptomName)) return false;
-            }
+            const hasSymptom = (item.symptoms && item.symptoms.some(s => s.includes(symptomName) || symptomName.includes(s))) ||
+                              (item.efficacy && item.efficacy.includes(symptomName));
+            if (!hasSymptom) return false;
         }
         
         // 方子类型筛选
-        if (recipeType && state.currentType === 'recipe') {
-            const typeName = state.index?.categories?.recipeTypes?.find(t => t.id === recipeType)?.name || recipeType;
-            if (!item.categories?.type?.includes(typeName)) return false;
+        if (recipeTypeName && state.currentType === 'recipe') {
+            if (!item.categories?.type?.includes(recipeTypeName)) return false;
         }
         
         return true;
