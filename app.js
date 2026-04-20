@@ -169,8 +169,13 @@ function renderFilters() {
     const seasonItems = Object.entries(categories.seasons || {}).map(([id, name]) => ({id, name}));
     renderFilterGroup('seasonFilter', seasonItems, 'season');
     
-    // 症状筛选
-    const symptomItems = Object.entries(categories.symptoms || {}).map(([id, name]) => ({id, name}));
+    // 症状筛选（从stats.bySymptom获取，只显示出现次数>=5的症状）
+    const symptomStats = state.index.stats?.bySymptom || {};
+    const symptomItems = Object.entries(symptomStats)
+        .filter(([name, count]) => count >= 5)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 20)
+        .map(([name, count]) => ({id: name, name: \`\${name} (\${count})\`}));
     renderFilterGroup('symptomFilter', symptomItems, 'symptom');
     
     // 方子类型筛选（仅食疗方子时显示）
