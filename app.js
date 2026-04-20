@@ -489,33 +489,60 @@ function formatSteps(text) {
     // 统一换行符
     text = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
     
-    // 尝试识别步骤编号
-    const stepPatterns = [
-        /^(\d+)[.、．]\s*/gm,  // 1. 或 1、
-        /^([一二三四五六七八九十]+)[、.]\s*/gm,  // 一、或 一.
-        /^\((\d+)\)\s*/gm  // (1)
+    // 检查是否包含"做法一"、"做法二"格式
+    const methodPatterns = [
+        /做法[一二三四五六七八九十]+/g,
+        /方法[一二三四五六七八九十]+/g,
+        /步骤[一二三四五六七八九十]+/g
     ];
     
-    let hasSteps = false;
-    for (const pattern of stepPatterns) {
+    let hasMethodPattern = false;
+    for (const pattern of methodPatterns) {
         if (pattern.test(text)) {
-            hasSteps = true;
+            hasMethodPattern = true;
             break;
         }
     }
     
-    if (hasSteps) {
-        // 将文本按步骤拆分
-        let lines = text.split('\n');
-        let steps = [];
+    if (hasMethodPattern) {
+        // 按"做法一"、"做法二"等拆分
+        const parts = text.split(/(?=做法[一二三四五六七八九十]+|方法[一二三四五六七八九十]+|步骤[一二三四五六七八九十]+)/);
+        const steps = [];
+        
+        for (let part of parts) {
+            part = part.trim();
+            if (!part) continue;
+            
+            // 提取标题和内容
+            const match = part.match(/^(做法[一二三四五六七八九十]+|方法[一二三四五六七八九十]+|步骤[一二三四五六七八九十]+)[：:）)]?\s*(.*)/s);
+            if (match) {
+                const title = match[1];
+                const content = match[2].trim();
+                steps.push({ title, content });
+            }
+        }
+        
+        if (steps.length > 0) {
+            return steps.map((step, index) => {
+                return '<div class="method-step"><div class="step-title">' + 
+                    step.title + '</div><div class="step-content">' + 
+                    step.content.replace(/\n/g, '<br>') + '</div></div>';
+            }).join('');
+        }
+    }
+    
+    // 检查是否包含数字编号（1. 2. 3.）
+    const numberPattern = /^\d+[.、．]\s/m;
+    if (numberPattern.test(text)) {
+        const lines = text.split('\n');
+        const steps = [];
         let currentStep = '';
         
         for (let line of lines) {
             line = line.trim();
             if (!line) continue;
             
-            // 检查是否是新步骤的开始
-            const isNewStep = /^(\d+[.、．]|[一二三四五六七八九十]+[、.]|\(\d+\))/.test(line);
+            const isNewStep = /^\d+[.、．]/.test(line);
             
             if (isNewStep && currentStep) {
                 steps.push(currentStep);
@@ -533,20 +560,89 @@ function formatSteps(text) {
             steps.push(currentStep);
         }
         
-        // 渲染为有序列表
         if (steps.length > 0) {
             return '<ol class="steps-list">' + steps.map(s => {
-                // 去掉步骤编号（因为有序列表会自动编号）
-                s = s.replace(/^(\d+[.、．]|[一二三四五六七八九十]+[、.]|\(\d+\))\s*/, '');
+                s = s.replace(/^\d+[.、．]\s*/, '');
                 return '<li>' + s + '</li>';
             }).join('') + '</ol>';
         }
     }
     
-    // 如果没有识别到步骤，按段落显示
-    let paragraphs = text.split(/\n\n+/);
-    if (paragraphs.length > 1) {
-        return paragraphs.map(p => '<p>' + p.replace(/\n/g, '<br>') + '</p>').join('');
+    // 检查是否包含"xxx："格式的列表（如"女性："、"男性："）
+    const colonPattern = /^[^：:
+]+[：:]/m;
+    if (colonPattern.test(text)) {
+        const lines = text.split('\n');
+        const items = [];
+        
+        for (let line of lines) {
+            line = line.trim();
+            if (!line) continue;
+            
+            // 检查是否是列表项（以中文冒号结尾的标题）
+            if (colonPattern.test(line)) {
+                const match = line.match(/^([^：:]+)[：:](.*)$/);
+                if (match) {
+                    const title = match[1].trim();
+                    const content = match[2].trim();
+                    items.push({ title, content });
+                }
+            }
+        }
+        
+        if (items.length > 1) {
+            return items.map(item => {
+                return '<div class="method-step"><div class="step-title">' + 
+                    item.title + '</div><div class="step-content">' + 
+                    item.content + '</div></div>';
+            }).join('');
+        }
+    }
+    
+    // 检查是否包含"准备工作："等标题
+    const titlePattern = /^[^：:
+]+[：:]/m;
+    if (titlePattern.test(text)) {
+        const lines = text.split('\n');
+        const sections = [];
+        let currentTitle = '';
+        let currentContent = [];
+        
+        for (let line of lines) {
+            line = line.trim();
+            if (!line) continue;
+            
+            if (titlePattern.test(line) && !/^\d/.test(line)) {
+                // 新的标题
+                if (currentTitle || currentContent.length > 0) {
+                    sections.push({ title: currentTitle, content: currentContent.join('\n') });
+                }
+                const match = line.match(/^([^：:]+)[：:](.*)$/);
+                if (match) {
+                    currentTitle = match[1].trim();
+                    currentContent = match[2].trim() ? [match[2].trim()] : [];
+                }
+            } else {
+                currentContent.push(line);
+            }
+        }
+        
+        if (currentTitle || currentContent.length > 0) {
+            sections.push({ title: currentTitle, content: currentContent.join('\n') });
+        }
+        
+        if (sections.length > 1) {
+            return sections.map(section => {
+                let html = '<div class="method-section">';
+                if (section.title) {
+                    html += '<div class="step-title">' + section.title + '</div>';
+                }
+                // 递归处理内容（可能包含数字列表）
+                html += '<div class="step-content">' + formatSteps(section.content) + '</div>';
+                html += '</div>';
+                return html;
+            }).join('');
+        }
     }
     
     // 默认按换行显示

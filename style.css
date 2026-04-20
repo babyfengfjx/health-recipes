@@ -1612,3 +1612,57 @@ body {
     left: 0;
     top: 10px;
 }
+
+/* 方法步骤样式 */
+.method-step {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, #F5F5F5 0%, #FAFAFA 100%);
+    border-radius: 12px;
+    border-left: 4px solid #4CAF50;
+}
+
+.method-step:last-child {
+    margin-bottom: 0;
+}
+
+.step-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #2E7D32;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.step-content {
+    line-height: 1.8;
+    color: #424242;
+}
+
+/* 方法区块样式 */
+.method-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #FAFAFA;
+    border-radius: 12px;
+}
+
+.method-section:last-child {
+    margin-bottom: 0;
+}
+
+.method-section > .step-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #1565C0;
+    margin-bottom: 12px;
+}
+
+.method-section > .step-content {
+    line-height: 1.8;
+}
+
+.method-section .steps-list {
+    margin-top: 10px;
+}
