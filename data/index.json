@@ -1,255 +1,47 @@
 {
   "version": "2.0",
-  "updated": "2026-04-18",
+  "updated": "2026-04-20",
   "stats": {
-    "total": 801,
+    "total": 967,
     "byType": {
-      "recipe": 795,
+      "recipe": 967,
       "acupoint": 3,
       "exercise": 2,
-      "knowledge": 1,
-      "formula": 0
+      "knowledge": 1
     },
     "bySource": {
-      "陈允斌": 795
+      "陈允斌": 795,
+      "罗大伦": 172
     }
-  },
-  "sources": [
-    {
-      "id": "chen_yunbin",
-      "name": "陈允斌",
-      "description": "中医世家，知名食疗养生专家",
-      "books": [
-        {
-          "id": "spring",
-          "name": "二十四节气顺时饮食法春生",
-          "count": 53
-        },
-        {
-          "id": "summer",
-          "name": "二十四节气顺时饮食法夏长",
-          "count": 51
-        },
-        {
-          "id": "autumn",
-          "name": "二十四节气顺时饮食法秋收",
-          "count": 19
-        },
-        {
-          "id": "winter",
-          "name": "二十四节气顺时饮食法冬藏",
-          "count": 253
-        },
-        {
-          "id": "home_wisdom",
-          "name": "回家吃饭的智慧",
-          "count": 178
-        },
-        {
-          "id": "tea_book",
-          "name": "茶包小偏方喝出大健康",
-          "count": 100
-        },
-        {
-          "id": "eating_method",
-          "name": "吃法决定活法",
-          "count": 61
-        },
-        {
-          "id": "anti_virus",
-          "name": "抗病毒应急食方",
-          "count": 14
-        },
-        {
-          "id": "calendar_2021",
-          "name": "顺时生活2021健康日历",
-          "count": 33
-        },
-        {
-          "id": "wisdom_12",
-          "name": "顺时生活的智慧全12册",
-          "count": 33
-        }
-      ],
-      "total": 795
-    }
-  ],
-  "categories": {
-    "types": {
-      "recipe": {
-        "name": "食疗方子",
-        "icon": "🌿",
-        "description": "饮食调理方子"
-      },
-      "acupoint": {
-        "name": "穴位按摩",
-        "icon": "👆",
-        "description": "经络穴位调理"
-      },
-      "exercise": {
-        "name": "养生功法",
-        "icon": "🧘",
-        "description": "运动养生方法"
-      },
-      "knowledge": {
-        "name": "健康知识",
-        "icon": "📖",
-        "description": "养生保健知识"
-      },
-      "formula": {
-        "name": "中药方剂",
-        "icon": "💊",
-        "description": "传统中药方剂"
-      }
-    },
-    "seasons": [
-      {
-        "id": "spring",
-        "name": "春季",
-        "icon": "🌸",
-        "description": "立春至立夏"
-      },
-      {
-        "id": "summer",
-        "name": "夏季",
-        "icon": "☀️",
-        "description": "立夏至立秋"
-      },
-      {
-        "id": "autumn",
-        "name": "秋季",
-        "icon": "🍂",
-        "description": "立秋至立冬"
-      },
-      {
-        "id": "winter",
-        "name": "冬季",
-        "icon": "❄️",
-        "description": "立冬至立春"
-      },
-      {
-        "id": "all_season",
-        "name": "四季通用",
-        "icon": "🔄",
-        "description": "全年适用"
-      }
-    ],
-    "symptoms": [
-      {
-        "id": "cough",
-        "name": "咳嗽",
-        "icon": "🤧"
-      },
-      {
-        "id": "cold",
-        "name": "感冒",
-        "icon": "😷"
-      },
-      {
-        "id": "insomnia",
-        "name": "失眠",
-        "icon": "😴"
-      },
-      {
-        "id": "constipation",
-        "name": "便秘",
-        "icon": "💩"
-      },
-      {
-        "id": "fatigue",
-        "name": "疲劳",
-        "icon": "😫"
-      },
-      {
-        "id": "stomach",
-        "name": "胃病",
-        "icon": "🤢"
-      },
-      {
-        "id": "headache",
-        "name": "头痛",
-        "icon": "🤕"
-      },
-      {
-        "id": "anemia",
-        "name": "贫血",
-        "icon": "🩸"
-      },
-      {
-        "id": "hypertension",
-        "name": "高血压",
-        "icon": "❤️"
-      },
-      {
-        "id": "diabetes",
-        "name": "糖尿病",
-        "icon": "🩺"
-      }
-    ],
-    "groups": [
-      {
-        "id": "elderly",
-        "name": "老年人",
-        "icon": "👴"
-      },
-      {
-        "id": "women",
-        "name": "女性",
-        "icon": "👩"
-      },
-      {
-        "id": "men",
-        "name": "男性",
-        "icon": "👨"
-      },
-      {
-        "id": "children",
-        "name": "儿童",
-        "icon": "👶"
-      },
-      {
-        "id": "pregnant",
-        "name": "孕妇",
-        "icon": "🤰"
-      }
-    ],
-    "recipeTypes": [
-      {
-        "id": "tea",
-        "name": "茶饮",
-        "icon": "🍵"
-      },
-      {
-        "id": "soup",
-        "name": "汤品",
-        "icon": "🍲"
-      },
-      {
-        "id": "porridge",
-        "name": "粥品",
-        "icon": "🥣"
-      },
-      {
-        "id": "dish",
-        "name": "菜品",
-        "icon": "🥗"
-      },
-      {
-        "id": "dessert",
-        "name": "甜品",
-        "icon": "🍰"
-      },
-      {
-        "id": "medicine",
-        "name": "药膳",
-        "icon": "💊"
-      }
-    ]
   },
   "dataFiles": {
     "recipe": "data/all_recipes.json",
     "acupoint": "data/acupoints.json",
     "exercise": "data/exercises.json",
     "knowledge": "data/knowledge.json"
+  },
+  "categories": {
+    "seasons": [
+      {
+        "id": "spring",
+        "name": "春季",
+        "icon": "🌸"
+      },
+      {
+        "id": "summer",
+        "name": "夏季",
+        "icon": "☀️"
+      },
+      {
+        "id": "autumn",
+        "name": "秋季",
+        "icon": "🍂"
+      },
+      {
+        "id": "winter",
+        "name": "冬季",
+        "icon": "❄️"
+      }
+    ]
   }
 }
