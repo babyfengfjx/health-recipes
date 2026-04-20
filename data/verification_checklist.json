@@ -1,0 +1,2355 @@
+{
+  "generated": "2026-04-20T18:02:42.711352",
+  "total_empty_method": 114,
+  "by_book": {
+    "陈允斌二十四节气顺时饮食法春生": 1,
+    "回家吃饭的智慧": 15,
+    "茶包小偏方喝出大健康": 21,
+    "顺时生活2021健康日历": 4,
+    "陈允斌抗病毒应急食方": 2,
+    "陈允斌二十四节气顺时饮食法秋收": 1,
+    "陈允斌二十四节气顺时饮食法冬藏": 67,
+    "吃法决定活法": 2,
+    "罗大伦教您用中医方法，轻松呵护全家老小的身心健康": 1
+  },
+  "items": [
+    {
+      "id": "spring-020",
+      "name": "桑叶茶",
+      "book": "陈允斌二十四节气顺时饮食法春生",
+      "current_method": "桑叶泡茶饮用。",
+      "current_ingredients": [
+        {
+          "name": "桑叶",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "清肺润燥、清肝明目、补髓填精、促孕安胎、改善睡眠"
+    },
+    {
+      "id": "wisdom-114",
+      "name": "吃灵芝安神",
+      "book": "回家吃饭的智慧",
+      "current_method": "将灵芝煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "灵芝",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "安神、止咳"
+    },
+    {
+      "id": "teabag-061",
+      "name": "葛根茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将葛根煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "葛根",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "解肌退热、生津"
+    },
+    {
+      "id": "teabag-062",
+      "name": "丹参茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将丹参煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "丹参",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "活血化瘀"
+    },
+    {
+      "id": "teabag-063",
+      "name": "三七茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将三七粉冲水饮用。",
+      "current_ingredients": [
+        {
+          "name": "三七",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "活血化瘀、止血"
+    },
+    {
+      "id": "teabag-064",
+      "name": "党参茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将党参煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "党参",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "补中益气、健脾"
+    },
+    {
+      "id": "teabag-065",
+      "name": "太子参茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将太子参煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "太子参",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "补气、生津"
+    },
+    {
+      "id": "teabag-066",
+      "name": "白术茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将白术煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "白术",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "健脾、祛湿"
+    },
+    {
+      "id": "teabag-068",
+      "name": "甘草茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将甘草煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "甘草",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "补脾益气、清热解毒、祛痰止咳"
+    },
+    {
+      "id": "wisdom-117",
+      "name": "吃青皮破气",
+      "book": "回家吃饭的智慧",
+      "current_method": "将青皮煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "青皮",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "破气疏肝"
+    },
+    {
+      "id": "wisdom-119",
+      "name": "吃橘络化痰通络",
+      "book": "回家吃饭的智慧",
+      "current_method": "将橘络泡水饮用。",
+      "current_ingredients": [
+        {
+          "name": "橘络",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "化痰、通络"
+    },
+    {
+      "id": "wisdom-121",
+      "name": "吃橘核理气散结",
+      "book": "回家吃饭的智慧",
+      "current_method": "将橘核煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "橘核",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "理气、散结、止痛"
+    },
+    {
+      "id": "wisdom-129",
+      "name": "早上吃生姜",
+      "book": "回家吃饭的智慧",
+      "current_method": "早上吃点生姜。",
+      "current_ingredients": [
+        {
+          "name": "生姜",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "暖胃、散寒、止呕"
+    },
+    {
+      "id": "wisdom-130",
+      "name": "晚上吃大蒜",
+      "book": "回家吃饭的智慧",
+      "current_method": "晚上吃点大蒜。",
+      "current_ingredients": [
+        {
+          "name": "大蒜",
+          "amount": "3瓣"
+        }
+      ],
+      "current_efficacy": "保健养生"
+    },
+    {
+      "id": "wisdom-145",
+      "name": "分心木煮水",
+      "book": "回家吃饭的智慧",
+      "current_method": "将分心木煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "分心木（核桃中间的薄隔膜）",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "补肾固精、安神"
+    },
+    {
+      "id": "calendar-042",
+      "name": "霜降吃柿子",
+      "book": "顺时生活2021健康日历",
+      "current_method": "霜降时节吃柿子。",
+      "current_ingredients": [
+        {
+          "name": "柿子",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "润肺止咳、生津"
+    },
+    {
+      "id": "calendar-044",
+      "name": "小雪吃糍粑",
+      "book": "顺时生活2021健康日历",
+      "current_method": "小雪时节吃糍粑。",
+      "current_ingredients": [
+        {
+          "name": "糍粑",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "补养身体"
+    },
+    {
+      "id": "calendar-047",
+      "name": "小寒吃糯米饭",
+      "book": "顺时生活2021健康日历",
+      "current_method": "小寒时节吃糯米饭。",
+      "current_ingredients": [
+        {
+          "name": "糯米",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "补养身体"
+    },
+    {
+      "id": "calendar-048",
+      "name": "大寒吃腊八粥",
+      "book": "顺时生活2021健康日历",
+      "current_method": "大寒时节吃腊八粥。",
+      "current_ingredients": [
+        {
+          "name": "腊八粥",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "补养身体"
+    },
+    {
+      "id": "antiviral-033",
+      "name": "艾叶泡脚方",
+      "book": "陈允斌抗病毒应急食方",
+      "current_method": "将艾叶煮水泡脚。",
+      "current_ingredients": [
+        {
+          "name": "艾叶",
+          "amount": "一把"
+        }
+      ],
+      "current_efficacy": "祛寒湿、预防感冒"
+    },
+    {
+      "id": "antiviral-035",
+      "name": "鱼腥草水",
+      "book": "陈允斌抗病毒应急食方",
+      "current_method": "将鱼腥草煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "鱼腥草",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "清热解毒"
+    },
+    {
+      "id": "autumn-057",
+      "name": "吴茱萸泡脚",
+      "book": "陈允斌二十四节气顺时饮食法秋收",
+      "current_method": "用吴茱萸煮水泡脚。",
+      "current_ingredients": [
+        {
+          "name": "吴茱萸",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "治疗失眠"
+    },
+    {
+      "id": "epub-232",
+      "name": "4.庚子岁六气保健方：橘香梅子汤",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "川红橘或橙子",
+          "amount": ""
+        },
+        {
+          "name": "罗汉果",
+          "amount": ""
+        },
+        {
+          "name": "牛蒡",
+          "amount": ""
+        },
+        {
+          "name": "枸杞",
+          "amount": ""
+        },
+        {
+          "name": "甘草陈皮梅子汤",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-237",
+      "name": "1.腊八粥",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月12日）",
+      "current_ingredients": [
+        {
+          "name": "糯米",
+          "amount": ""
+        },
+        {
+          "name": "粳米",
+          "amount": ""
+        },
+        {
+          "name": "小米",
+          "amount": ""
+        },
+        {
+          "name": "赤小豆",
+          "amount": ""
+        },
+        {
+          "name": "豌豆",
+          "amount": ""
+        },
+        {
+          "name": "黍米",
+          "amount": ""
+        },
+        {
+          "name": "茯苓",
+          "amount": ""
+        },
+        {
+          "name": "紫苏子",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "清热解毒，降火止渴。"
+    },
+    {
+      "id": "epub-238",
+      "name": "2.补心养阳汤",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月12日）",
+      "current_ingredients": [
+        {
+          "name": "黄芪",
+          "amount": ""
+        },
+        {
+          "name": "当归",
+          "amount": ""
+        },
+        {
+          "name": "大枣",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "羊肉",
+          "amount": ""
+        },
+        {
+          "name": "甘蔗",
+          "amount": ""
+        },
+        {
+          "name": "带皮生姜",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "清热解毒，降火止渴。"
+    },
+    {
+      "id": "epub-239",
+      "name": "3.银耳桂圆羹",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月12日）",
+      "current_ingredients": [
+        {
+          "name": "银耳",
+          "amount": ""
+        },
+        {
+          "name": "桂圆",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "清热解毒，降火止渴。"
+    },
+    {
+      "id": "epub-240",
+      "name": "4.节气养生茶饮",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月12日）",
+      "current_ingredients": [
+        {
+          "name": "咖啡",
+          "amount": ""
+        },
+        {
+          "name": "可加牛奶",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "清热解毒，降火止渴。"
+    },
+    {
+      "id": "epub-241",
+      "name": "5. 辛丑岁初气保健方：肉桂陈皮四物饮（做法见3月12日）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "肉桂",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "柠檬",
+          "amount": ""
+        },
+        {
+          "name": "麦芽糖",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "清热解毒，降火止渴。"
+    },
+    {
+      "id": "epub-243",
+      "name": "5.节气养生茶",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月12日）",
+      "current_ingredients": [
+        {
+          "name": "鱼腥草",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-244",
+      "name": "6. 辛丑岁初气保健方：肉桂陈皮四物饮（从大寒吃到春分前日，做法见3月12日）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见2月11日）",
+      "current_ingredients": [
+        {
+          "name": "肉桂",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "柠檬",
+          "amount": ""
+        },
+        {
+          "name": "麦芽糖",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-248",
+      "name": "抗雾霾茶",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "沸水冲泡。",
+      "current_ingredients": [
+        {
+          "name": "鱼腥草茶15～30克（平时用量为",
+          "amount": "15克"
+        },
+        {
+          "name": "雾霾天时用量为30克）",
+          "amount": ""
+        },
+        {
+          "name": "陈皮1个",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "清肺止咳、解烟毒、消炎、抗感染，调理慢性咽炎、气管炎、肺炎、皮肤疱疹、全身各处炎症。"
+    },
+    {
+      "id": "epub-249",
+      "name": "1.凉拌青韭芽",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月12日）",
+      "current_ingredients": [
+        {
+          "name": "绿豆芽",
+          "amount": ""
+        },
+        {
+          "name": "嫩韭菜",
+          "amount": ""
+        },
+        {
+          "name": "生姜",
+          "amount": ""
+        },
+        {
+          "name": "紫苏子",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-250",
+      "name": "2.人日七菜羹/七菜粥",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月12日）",
+      "current_ingredients": [
+        {
+          "name": "荠菜",
+          "amount": ""
+        },
+        {
+          "name": "葱叶",
+          "amount": ""
+        },
+        {
+          "name": "桑叶等辛味蔬菜任选7种",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-251",
+      "name": "3.节气养生茶",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月12日）",
+      "current_ingredients": [
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "竹茹",
+          "amount": ""
+        },
+        {
+          "name": "霜桑叶",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-252",
+      "name": "4.元宵节自制汤圆",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月12日）",
+      "current_ingredients": [
+        {
+          "name": "糯米",
+          "amount": ""
+        },
+        {
+          "name": "大米",
+          "amount": ""
+        },
+        {
+          "name": "花生",
+          "amount": ""
+        },
+        {
+          "name": "橘皮糖或红糖",
+          "amount": ""
+        },
+        {
+          "name": "椰子油",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-253",
+      "name": "5. 辛丑岁初气保健方：肉桂陈皮四物饮（从大寒吃到春分前日，做法见3月12日）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见2月11日）",
+      "current_ingredients": [
+        {
+          "name": "肉桂",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "柠檬",
+          "amount": ""
+        },
+        {
+          "name": "麦芽糖",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-254",
+      "name": "6.辛丑岁全年保健粥（做法见2月11日）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "枸杞子",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "炒荷叶",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "茯苓",
+          "amount": ""
+        },
+        {
+          "name": "粥料",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-256",
+      "name": "解春困：散热排浊茶。",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "沸水冲泡。",
+      "current_ingredients": [
+        {
+          "name": "川陈皮",
+          "amount": "1个"
+        },
+        {
+          "name": "竹茹",
+          "amount": "3克"
+        },
+        {
+          "name": "霜桑叶6克",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "消食解腻，化痰止咳，调理春困。"
+    },
+    {
+      "id": "epub-257",
+      "name": "1.黄豆萝卜汤（辛丑岁配方）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月12日）",
+      "current_ingredients": [
+        {
+          "name": "黄豆",
+          "amount": ""
+        },
+        {
+          "name": "白萝卜",
+          "amount": ""
+        },
+        {
+          "name": "大葱或小葱",
+          "amount": ""
+        },
+        {
+          "name": "蒲公英根",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-258",
+      "name": "2.节气养生茶",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月12日）",
+      "current_ingredients": [
+        {
+          "name": "霜桑叶",
+          "amount": ""
+        },
+        {
+          "name": "牛蒡茶",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-259",
+      "name": "3. 辛丑岁初气保健方：肉桂陈皮四物饮（从大寒吃到春分前日，做法见3月12日）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见2月11日）",
+      "current_ingredients": [
+        {
+          "name": "肉桂",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "柠檬",
+          "amount": ""
+        },
+        {
+          "name": "麦芽糖",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-261",
+      "name": "（辛丑岁配方）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "黄豆",
+          "amount": ""
+        },
+        {
+          "name": "白萝卜",
+          "amount": ""
+        },
+        {
+          "name": "葱白连须",
+          "amount": ""
+        },
+        {
+          "name": "蒲公英根",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "用于调理风痈肿毒、赤疣。"
+    },
+    {
+      "id": "epub-264",
+      "name": "1.防感护生汤",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月30日）",
+      "current_ingredients": [
+        {
+          "name": "牛蒡",
+          "amount": ""
+        },
+        {
+          "name": "荠菜",
+          "amount": ""
+        },
+        {
+          "name": "萝卜缨",
+          "amount": ""
+        },
+        {
+          "name": "干香菇",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-266",
+      "name": "3.寒食节：寒食平安粥",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月30日）",
+      "current_ingredients": [
+        {
+          "name": "大麦仁",
+          "amount": ""
+        },
+        {
+          "name": "甜杏仁",
+          "amount": ""
+        },
+        {
+          "name": "麦芽糖或蜂蜜",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-267",
+      "name": "4. 辛丑岁二气保健方：加味果菊清饮（从春分吃到小满前日，做法见3月30日）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见2月11日）",
+      "current_ingredients": [
+        {
+          "name": "蒲公英根",
+          "amount": ""
+        },
+        {
+          "name": "牛蒡",
+          "amount": ""
+        },
+        {
+          "name": "罗汉果",
+          "amount": ""
+        },
+        {
+          "name": "菊花",
+          "amount": ""
+        },
+        {
+          "name": "鱼腥草",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-271",
+      "name": "1.清明果/艾粑",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月30日）",
+      "current_ingredients": [
+        {
+          "name": "野艾或田艾（清明菜）",
+          "amount": ""
+        },
+        {
+          "name": "糯米粉",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-273",
+      "name": "3.腌制咸鸭蛋",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月30日）",
+      "current_ingredients": [
+        {
+          "name": "鸭蛋",
+          "amount": ""
+        },
+        {
+          "name": "白酒",
+          "amount": ""
+        },
+        {
+          "name": "盐",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-274",
+      "name": "4.上巳节食方：荠菜鸡蛋汤",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月30日）",
+      "current_ingredients": [
+        {
+          "name": "荠菜",
+          "amount": ""
+        },
+        {
+          "name": "鸡蛋",
+          "amount": ""
+        },
+        {
+          "name": "红枣",
+          "amount": ""
+        },
+        {
+          "name": "生姜",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-275",
+      "name": "5.兰汤沐浴",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月30日）",
+      "current_ingredients": [
+        {
+          "name": "藿香",
+          "amount": ""
+        },
+        {
+          "name": "佩兰",
+          "amount": ""
+        },
+        {
+          "name": "苍术等芳香化湿抗病毒的中药",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-276",
+      "name": "6. 辛丑岁二气保健方：加味果菊清饮（从春分吃到小满前日，做法见3月30日）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见2月11日）",
+      "current_ingredients": [
+        {
+          "name": "蒲公英根",
+          "amount": ""
+        },
+        {
+          "name": "牛蒡",
+          "amount": ""
+        },
+        {
+          "name": "罗汉果",
+          "amount": ""
+        },
+        {
+          "name": "菊花",
+          "amount": ""
+        },
+        {
+          "name": "鱼腥草",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-278",
+      "name": "清明果／艾粑",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "野艾或田艾（清明菜）",
+          "amount": ""
+        },
+        {
+          "name": "糯米粉",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "止咳平喘，降血压，祛风湿。用于调理感冒咳嗽、支气管炎、哮喘、高血压。"
+    },
+    {
+      "id": "epub-282",
+      "name": "1.节气茶方",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月30日）",
+      "current_ingredients": [
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "蜂蜜",
+          "amount": ""
+        },
+        {
+          "name": "绿茶",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-283",
+      "name": "2. 辛丑岁二气保健方：加味果菊清饮（从春分吃到小满前日，做法见3月30日）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见2月11日）",
+      "current_ingredients": [
+        {
+          "name": "蒲公英根",
+          "amount": ""
+        },
+        {
+          "name": "牛蒡",
+          "amount": ""
+        },
+        {
+          "name": "罗汉果",
+          "amount": ""
+        },
+        {
+          "name": "菊花",
+          "amount": ""
+        },
+        {
+          "name": "鱼腥草",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-286",
+      "name": "1.核桃壳煮鸡蛋",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见3月30日）",
+      "current_ingredients": [
+        {
+          "name": "核桃壳",
+          "amount": ""
+        },
+        {
+          "name": "鸡蛋",
+          "amount": ""
+        },
+        {
+          "name": "酱油",
+          "amount": ""
+        },
+        {
+          "name": "盐",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-289",
+      "name": "（辛丑岁基础配方）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "带皮生姜",
+          "amount": ""
+        },
+        {
+          "name": "红枣",
+          "amount": ""
+        },
+        {
+          "name": "五味子",
+          "amount": ""
+        },
+        {
+          "name": "甘草",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "罗汉果",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "止血。"
+    },
+    {
+      "id": "epub-294",
+      "name": "1.青梅酒",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见2月11日）",
+      "current_ingredients": [
+        {
+          "name": "青梅",
+          "amount": ""
+        },
+        {
+          "name": "白酒",
+          "amount": ""
+        },
+        {
+          "name": "蜂蜜或红糖",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-295",
+      "name": "2.冰梅酱",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见2月11日）",
+      "current_ingredients": [
+        {
+          "name": "黄梅",
+          "amount": ""
+        },
+        {
+          "name": "蜂蜜或红糖",
+          "amount": ""
+        },
+        {
+          "name": "盐",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-296",
+      "name": "3. 辛丑岁三气保健方：桑果百合四物膏（小满、芒种、夏至、小暑）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见2月11日）",
+      "current_ingredients": [
+        {
+          "name": "桑椹",
+          "amount": "600克"
+        },
+        {
+          "name": "百合",
+          "amount": "120克"
+        },
+        {
+          "name": "莲子",
+          "amount": "120克"
+        },
+        {
+          "name": "酸枣仁",
+          "amount": "600克"
+        },
+        {
+          "name": "红糖适量",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-297",
+      "name": "4.五味姜枣茶",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见2月11日）",
+      "current_ingredients": [
+        {
+          "name": "带皮生姜",
+          "amount": "2-3片"
+        },
+        {
+          "name": "红枣",
+          "amount": "6个"
+        },
+        {
+          "name": "五味子",
+          "amount": "适量"
+        },
+        {
+          "name": "甘草",
+          "amount": "适量"
+        },
+        {
+          "name": "陈皮",
+          "amount": "适量"
+        },
+        {
+          "name": "罗汉果",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "健脾护胃、补中益气、祛寒湿"
+    },
+    {
+      "id": "epub-299",
+      "name": "1. 樱桃鸡蛋汤（做法见6月5日）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见5月13日）",
+      "current_ingredients": [
+        {
+          "name": "樱桃",
+          "amount": ""
+        },
+        {
+          "name": "鸡蛋",
+          "amount": ""
+        },
+        {
+          "name": "醪糟（米酒）",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "补血养颜"
+    },
+    {
+      "id": "epub-300",
+      "name": "2. 樱桃酒",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见5月13日）",
+      "current_ingredients": [
+        {
+          "name": "毛樱桃",
+          "amount": ""
+        },
+        {
+          "name": "纯粮酒",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-301",
+      "name": "3. 夏季防晒食方：胡萝卜番茄汁",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见5月13日）",
+      "current_ingredients": [
+        {
+          "name": "胡萝卜",
+          "amount": ""
+        },
+        {
+          "name": "番茄",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-302",
+      "name": "4. 辛丑岁三气保健方：桑果百合四物膏（从小满吃到入伏前，做法见5月13日）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "桑椹",
+          "amount": ""
+        },
+        {
+          "name": "百合",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "酸枣仁",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-305",
+      "name": "1.桑椹食方：黑桑椹或滋阴养血桑椹膏",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见5月13日）",
+      "current_ingredients": [
+        {
+          "name": "新鲜黑桑椹",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-306",
+      "name": "2. 辛丑岁三气保健方：桑果百合四物膏（从小满吃到入伏前，做法见5月13日）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "桑椹",
+          "amount": ""
+        },
+        {
+          "name": "百合",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "酸枣仁",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-307",
+      "name": "3.五月养生方（见6月14日）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "艾叶",
+          "amount": ""
+        },
+        {
+          "name": "菖蒲",
+          "amount": ""
+        },
+        {
+          "name": "药浴中药",
+          "amount": ""
+        },
+        {
+          "name": "端午香包",
+          "amount": ""
+        },
+        {
+          "name": "豆沙粽",
+          "amount": ""
+        },
+        {
+          "name": "咸鸭蛋",
+          "amount": ""
+        },
+        {
+          "name": "新蒜",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-309",
+      "name": "桑果百合四物膏",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "桑椹",
+          "amount": ""
+        },
+        {
+          "name": "百合",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "酸枣仁",
+          "amount": ""
+        },
+        {
+          "name": "红糖",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "用于调理腹痛冷痢、反胃、月经过多、小便失禁。"
+    },
+    {
+      "id": "epub-312",
+      "name": "1.松花蛋红苋汤",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见5月13日）",
+      "current_ingredients": [
+        {
+          "name": "红苋菜",
+          "amount": ""
+        },
+        {
+          "name": "松花蛋",
+          "amount": ""
+        },
+        {
+          "name": "大蒜",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-314",
+      "name": "3. 辛丑岁三伏茶方：五味茱萸梅子汤（做法见10月5日）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "五味子",
+          "amount": "6克"
+        },
+        {
+          "name": "罗汉果",
+          "amount": "1个"
+        },
+        {
+          "name": "乌梅",
+          "amount": "6个"
+        },
+        {
+          "name": "大枣",
+          "amount": "6个"
+        },
+        {
+          "name": "山楂",
+          "amount": "10克"
+        },
+        {
+          "name": "甘草",
+          "amount": "10克"
+        },
+        {
+          "name": "川陈皮1/4到1/",
+          "amount": "2个"
+        },
+        {
+          "name": "气虚的人加黄芪15～30克",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-315",
+      "name": "1. 杏仁拌茴香",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见7月29日）",
+      "current_ingredients": [
+        {
+          "name": "甜杏仁",
+          "amount": ""
+        },
+        {
+          "name": "茴香菜",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "温肾散寒"
+    },
+    {
+      "id": "epub-316",
+      "name": "2. 银花甘草茶",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见7月29日）",
+      "current_ingredients": [
+        {
+          "name": "金银花",
+          "amount": ""
+        },
+        {
+          "name": "甘草",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-317",
+      "name": "3. 辛丑岁四气保健方：桂花葛根粉（从大暑喝到秋分前日，做法见7月29日）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "葛根粉",
+          "amount": ""
+        },
+        {
+          "name": "桂花（干品）",
+          "amount": ""
+        },
+        {
+          "name": "枸杞",
+          "amount": ""
+        },
+        {
+          "name": "蜂蜜（糖尿病人可以用罗汉果甜味料代替）各适量",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-318",
+      "name": "4. 三伏贴",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "见7月4日",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-328",
+      "name": "祛湿降脂茶",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "煮水或冲泡饮用。",
+      "current_ingredients": [
+        {
+          "name": "炒荷叶",
+          "amount": "6克"
+        },
+        {
+          "name": "陈皮1/",
+          "amount": "2个"
+        },
+        {
+          "name": "气虚者加黄芪30克",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "补气祛湿、降脂瘦身。"
+    },
+    {
+      "id": "epub-330",
+      "name": "1. 出伏送暑汤",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见7月29日）",
+      "current_ingredients": [
+        {
+          "name": "豆腐",
+          "amount": ""
+        },
+        {
+          "name": "豇豆角",
+          "amount": ""
+        },
+        {
+          "name": "空心菜",
+          "amount": ""
+        },
+        {
+          "name": "胡椒粉",
+          "amount": ""
+        },
+        {
+          "name": "油",
+          "amount": ""
+        },
+        {
+          "name": "盐",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "补肾排湿、送走暑湿"
+    },
+    {
+      "id": "epub-331",
+      "name": "2. 辛丑岁四气保健方：桂花葛根粉（从大暑喝到秋分前日，做法见7月29日）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "葛根粉",
+          "amount": ""
+        },
+        {
+          "name": "桂花（干品）",
+          "amount": ""
+        },
+        {
+          "name": "枸杞",
+          "amount": ""
+        },
+        {
+          "name": "蜂蜜（糖尿病病人可以用罗汉果甜味料代替）各适量",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-336",
+      "name": "清痘排毒茶",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "沸水冲泡，代茶饮。",
+      "current_ingredients": [
+        {
+          "name": "马齿苋",
+          "amount": "10克"
+        },
+        {
+          "name": "蒲公英10克",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "清湿热；适合鼻部、面颊长青春痘同时经常便秘的人饮用。"
+    },
+    {
+      "id": "epub-339",
+      "name": "1. 红酒炖梨",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见7月29日）",
+      "current_ingredients": [
+        {
+          "name": "梨",
+          "amount": ""
+        },
+        {
+          "name": "红酒",
+          "amount": ""
+        },
+        {
+          "name": "丁香粉",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "润肺、美肤、滋阴"
+    },
+    {
+      "id": "epub-350",
+      "name": "4.三花陈皮茶",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "玫瑰花",
+          "amount": ""
+        },
+        {
+          "name": "金银花",
+          "amount": ""
+        },
+        {
+          "name": "茉莉花",
+          "amount": ""
+        },
+        {
+          "name": "川陈皮",
+          "amount": ""
+        },
+        {
+          "name": "甘草",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-352",
+      "name": "1. 银耳百合羹",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见10月5日）",
+      "current_ingredients": [
+        {
+          "name": "银耳",
+          "amount": ""
+        },
+        {
+          "name": "百合",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-353",
+      "name": "2. 桂子暖香茶",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见10月5日）",
+      "current_ingredients": [
+        {
+          "name": "桂花(干品）",
+          "amount": ""
+        },
+        {
+          "name": "枸杞",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "暖胃散寒、调理肝血虚"
+    },
+    {
+      "id": "epub-354",
+      "name": "3. 辛丑岁五气保健方：五味茱萸梅子汤（从秋分喝到立冬，做法见10月5日）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "山茱萸",
+          "amount": ""
+        },
+        {
+          "name": "五味子",
+          "amount": ""
+        },
+        {
+          "name": "罗汉果",
+          "amount": ""
+        },
+        {
+          "name": "桂花",
+          "amount": ""
+        },
+        {
+          "name": "甘草陈皮梅子汤",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-358",
+      "name": "2. 双莲墨鱼汤",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见10月5日）",
+      "current_ingredients": [
+        {
+          "name": "墨鱼1～2只",
+          "amount": ""
+        },
+        {
+          "name": "肥肉或鸡肉",
+          "amount": "50克"
+        },
+        {
+          "name": "莲藕",
+          "amount": "250克"
+        },
+        {
+          "name": "莲子",
+          "amount": "20粒"
+        },
+        {
+          "name": "枸杞",
+          "amount": "20粒"
+        },
+        {
+          "name": "陈皮1/",
+          "amount": "2个"
+        },
+        {
+          "name": "带皮生姜3片",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-363",
+      "name": "养肝明目茶",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "沸水闷泡饮用。",
+      "current_ingredients": [
+        {
+          "name": "带壳桂圆干",
+          "amount": "6粒"
+        },
+        {
+          "name": "红枣",
+          "amount": "4个"
+        },
+        {
+          "name": "枸杞子",
+          "amount": "5克"
+        },
+        {
+          "name": "杭菊花",
+          "amount": "2朵"
+        },
+        {
+          "name": "喜饮茶者可加红茶6克",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "滋养双目，缓解用眼疲劳，防止双眼干涩发红。"
+    },
+    {
+      "id": "epub-381",
+      "name": "1. 莲杞顺时粥（小雪到小寒期间的配方）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见12月21日）",
+      "current_ingredients": [
+        {
+          "name": "栗子",
+          "amount": ""
+        },
+        {
+          "name": "核桃",
+          "amount": ""
+        },
+        {
+          "name": "枸杞子",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "莲子",
+          "amount": ""
+        },
+        {
+          "name": "茯苓",
+          "amount": ""
+        },
+        {
+          "name": "粥料",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-384",
+      "name": "4. 预防气管炎茶",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "见12月21日）",
+      "current_ingredients": [
+        {
+          "name": "大枣",
+          "amount": ""
+        },
+        {
+          "name": "甘草",
+          "amount": ""
+        },
+        {
+          "name": "葱白连须",
+          "amount": ""
+        },
+        {
+          "name": "鱼腥茶嫩尖茶",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "预防气管炎"
+    },
+    {
+      "id": "epub-385",
+      "name": "5. 参芪补心养阳汤（从小雪吃到明年大寒前日，做法见12月21日）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "党参",
+          "amount": ""
+        },
+        {
+          "name": "黄芪",
+          "amount": ""
+        },
+        {
+          "name": "甘草",
+          "amount": ""
+        },
+        {
+          "name": "当归",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "生姜",
+          "amount": ""
+        },
+        {
+          "name": "大枣",
+          "amount": ""
+        },
+        {
+          "name": "甘蔗或牛蒡",
+          "amount": ""
+        },
+        {
+          "name": "羊肉",
+          "amount": ""
+        },
+        {
+          "name": "胡椒粉",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": ""
+    },
+    {
+      "id": "epub-389",
+      "name": "千古名方：甘麦大枣汤",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "煮汤。",
+      "current_ingredients": [
+        {
+          "name": "甘草",
+          "amount": "9克"
+        },
+        {
+          "name": "小麦（带麸皮）",
+          "amount": "15克"
+        },
+        {
+          "name": "大枣9个",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "养心，安神，镇静，助眠，止虚汗，缓解精神紧张、焦虑和心理压力，调理抑郁症、更年期综合征、帕金森病、抽动症、儿童多动症。"
+    },
+    {
+      "id": "epub-393",
+      "name": "（羊汤版）",
+      "book": "陈允斌二十四节气顺时饮食法冬藏",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "党参",
+          "amount": ""
+        },
+        {
+          "name": "黄芪",
+          "amount": ""
+        },
+        {
+          "name": "甘草",
+          "amount": ""
+        },
+        {
+          "name": "当归",
+          "amount": ""
+        },
+        {
+          "name": "陈皮",
+          "amount": ""
+        },
+        {
+          "name": "带皮生姜",
+          "amount": ""
+        },
+        {
+          "name": "大枣",
+          "amount": ""
+        },
+        {
+          "name": "羊肉",
+          "amount": ""
+        }
+      ],
+      "current_efficacy": "明目益精，安五脏，通百节，利九窍，下乳汁。"
+    },
+    {
+      "id": "teabag-025",
+      "name": "板蓝根冲剂替代方",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将板蓝根煮水喝。",
+      "current_ingredients": [
+        {
+          "name": "板蓝根",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "清热解毒、调理咽喉肿痛"
+    },
+    {
+      "id": "wisdom-044",
+      "name": "葡萄酒助眠",
+      "book": "回家吃饭的智慧",
+      "current_method": "喝一小杯葡萄酒。",
+      "current_ingredients": [
+        {
+          "name": "葡萄酒",
+          "amount": "一小杯"
+        }
+      ],
+      "current_efficacy": "放松身心、助眠"
+    },
+    {
+      "id": "method-022",
+      "name": "熟萝卜消食化痰",
+      "book": "吃法决定活法",
+      "current_method": "将白萝卜煮熟食用。",
+      "current_ingredients": [
+        {
+          "name": "白萝卜",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "健脾消食、下气化痰、促进消化排泄"
+    },
+    {
+      "id": "teabag-039",
+      "name": "绿豆汤",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将绿豆煮汤饮用。",
+      "current_ingredients": [
+        {
+          "name": "绿豆",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "清热解毒、消暑利水"
+    },
+    {
+      "id": "teabag-040",
+      "name": "红豆汤",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将红豆煮汤饮用。",
+      "current_ingredients": [
+        {
+          "name": "红豆",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "利水消肿、祛湿、补血"
+    },
+    {
+      "id": "wisdom-070",
+      "name": "吃芡实固肾",
+      "book": "回家吃饭的智慧",
+      "current_method": "将芡实煮粥食用。",
+      "current_ingredients": [
+        {
+          "name": "芡实",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "固肾涩精、健脾"
+    },
+    {
+      "id": "wisdom-071",
+      "name": "吃麦仁养心",
+      "book": "回家吃饭的智慧",
+      "current_method": "将麦仁煮粥食用。",
+      "current_ingredients": [
+        {
+          "name": "麦仁",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "养心安神"
+    },
+    {
+      "id": "wisdom-079",
+      "name": "吃糯米补肾",
+      "book": "回家吃饭的智慧",
+      "current_method": "将糯米煮粥食用。",
+      "current_ingredients": [
+        {
+          "name": "糯米",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "补肾气、调理夜尿"
+    },
+    {
+      "id": "wisdom-080",
+      "name": "吃小米养胃",
+      "book": "回家吃饭的智慧",
+      "current_method": "将小米煮粥食用。",
+      "current_ingredients": [
+        {
+          "name": "小米",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "养胃、安神"
+    },
+    {
+      "id": "wisdom-081",
+      "name": "吃粳米补气",
+      "book": "回家吃饭的智慧",
+      "current_method": "将粳米煮粥食用。",
+      "current_ingredients": [
+        {
+          "name": "粳米",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "补中益气、健脾"
+    },
+    {
+      "id": "wisdom-083",
+      "name": "吃羊肉温补",
+      "book": "回家吃饭的智慧",
+      "current_method": "将羊肉炖汤食用。",
+      "current_ingredients": [
+        {
+          "name": "羊肉",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "温补气血、补肾阳"
+    },
+    {
+      "id": "teabag-044",
+      "name": "连翘茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将连翘煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "连翘",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "清热解毒、消肿散结"
+    },
+    {
+      "id": "teabag-045",
+      "name": "黄芩茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将黄芩煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "黄芩",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "清热燥湿、泻火解毒"
+    },
+    {
+      "id": "teabag-046",
+      "name": "藿香茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将藿香煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "藿香",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "芳香化湿、和胃止呕"
+    },
+    {
+      "id": "teabag-047",
+      "name": "厚朴茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将厚朴煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "厚朴",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "行气消积、燥湿除满"
+    },
+    {
+      "id": "teabag-048",
+      "name": "竹茹茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将竹茹煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "竹茹",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "清热化痰、除烦止呕"
+    },
+    {
+      "id": "teabag-050",
+      "name": "玄参茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将玄参煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "玄参",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "清热凉血、滋阴解毒"
+    },
+    {
+      "id": "teabag-051",
+      "name": "桔梗茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将桔梗煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "桔梗",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "宣肺利咽、祛痰排脓"
+    },
+    {
+      "id": "teabag-052",
+      "name": "炒麦芽茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将炒麦芽煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "炒麦芽",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "消食健胃、回乳"
+    },
+    {
+      "id": "teabag-054",
+      "name": "丝瓜络茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将丝瓜络煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "丝瓜络",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "通经络、祛风湿"
+    },
+    {
+      "id": "teabag-055",
+      "name": "橘络茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将橘络泡水饮用。",
+      "current_ingredients": [
+        {
+          "name": "橘络",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "化痰、通络"
+    },
+    {
+      "id": "teabag-056",
+      "name": "蚕沙茶",
+      "book": "茶包小偏方喝出大健康",
+      "current_method": "将蚕沙煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "蚕沙",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "祛风湿、退热"
+    },
+    {
+      "id": "wisdom-106",
+      "name": "吃葱须通鼻",
+      "book": "回家吃饭的智慧",
+      "current_method": "将葱须煮水饮用。",
+      "current_ingredients": [
+        {
+          "name": "葱须",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "通鼻塞、散风寒"
+    },
+    {
+      "id": "method-043",
+      "name": "吃水芹降血糖",
+      "book": "吃法决定活法",
+      "current_method": "将水芹做菜食用。",
+      "current_ingredients": [
+        {
+          "name": "水芹（香芹）",
+          "amount": "适量"
+        }
+      ],
+      "current_efficacy": "降血糖、调理咳嗽"
+    },
+    {
+      "id": "luodalun-021",
+      "name": "滋阴泻火方",
+      "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
+      "current_method": "",
+      "current_ingredients": [
+        {
+          "name": "生地",
+          "amount": "9克"
+        },
+        {
+          "name": "麦冬",
+          "amount": "9克"
+        },
+        {
+          "name": "石斛",
+          "amount": "9克"
+        },
+        {
+          "name": "白芍",
+          "amount": "9克"
+        },
+        {
+          "name": "枸杞子",
+          "amount": "9克"
+        },
+        {
+          "name": "当归",
+          "amount": "6克"
+        },
+        {
+          "name": "炙甘草",
+          "amount": "6克"
+        }
+      ],
+      "current_efficacy": "滋阴泻火，调理阴虚火旺"
+    }
+  ]
+}
