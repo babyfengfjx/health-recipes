@@ -324,21 +324,25 @@ function renderCard(item, typeConfig) {
 
 // 渲染食疗方子卡片
 function renderRecipeCard(recipe) {
+    const hasImage = recipe.image && recipe.image.trim();
     return `
-        <div class="recipe-card" onclick="showDetail('${recipe.id}')">
-            <h3>${getTypeIcon(recipe)} ${recipe.name}</h3>
-            <div class="categories">
-                ${renderCategoryTags(recipe.categories)}
-            </div>
-            <div class="efficacy">${recipe.efficacy || '暂无功效描述'}</div>
-            <div class="ingredients-preview">
-                📋 ${recipe.ingredients?.map(i => i.name).join('、') || '暂无食材信息'}
-            </div>
-            ${recipe.source ? `
-                <div class="source">
-                    📖 《${recipe.source.book}》
+        <div class="recipe-card ${hasImage ? 'has-image' : ''}" onclick="showDetail('${recipe.id}')">
+            ${hasImage ? `<div class="card-image"><img src="${recipe.image}" alt="${recipe.name}" loading="lazy"/></div>` : ''}
+            <div class="card-content">
+                <h3>${getTypeIcon(recipe)} ${recipe.name}</h3>
+                <div class="categories">
+                    ${renderCategoryTags(recipe.categories)}
                 </div>
-            ` : ''}
+                <div class="efficacy">${recipe.efficacy || '暂无功效描述'}</div>
+                <div class="ingredients-preview">
+                    📋 ${recipe.ingredients?.map(i => i.name).join('、') || '暂无食材信息'}
+                </div>
+                ${recipe.source ? `
+                    <div class="source">
+                        📖 《${recipe.source.book}》
+                    </div>
+                ` : ''}
+            </div>
         </div>
     `;
 }
@@ -402,6 +406,7 @@ function showDetail(id) {
 // 渲染食疗方子详情
 function renderRecipeDetail(recipe) {
     return `
+        ${recipe.image ? `<img src="${recipe.image}" alt="${recipe.name}" class="detail-image" loading="lazy"/>` : ''}
         <h2>${recipe.name}</h2>
         
         <div class="detail-section">
@@ -439,7 +444,7 @@ function renderRecipeDetail(recipe) {
                     ).join('')}
                 </ul>
             </div>
-        ` : ''}
+        ` : ''}`
         
         ${recipe.method ? `
             <div class="detail-section">

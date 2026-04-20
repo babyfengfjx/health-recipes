@@ -817,3 +817,43 @@ body {
 .empty-state p {
     font-size: 18px;
 }
+
+/* 卡片图片样式 */
+.recipe-card.has-image {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    overflow: hidden;
+}
+
+.recipe-card .card-image {
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 12px 0 0 12px;
+}
+
+.recipe-card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recipe-card .card-content {
+    flex: 1;
+    padding: 15px;
+}
+
+.recipe-card .card-content h3 {
+    margin-top: 0;
+}
+
+/* 详情页图片 */
+.detail-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
