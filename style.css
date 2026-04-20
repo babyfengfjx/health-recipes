@@ -857,13 +857,6 @@ body {
 }
 
 /* 详情区块 */
-.detail-section {
-    background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
-    padding: 20px 25px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    border-left: 4px solid var(--primary);
-}
 
 .detail-section h4 {
     font-size: 1.1rem;
@@ -967,6 +960,147 @@ body {
     background: #f5f5f5 !important;
 }
 
+
+/* ============================================
+   📋 详情区块 - 彩色主题区分
+   ============================================ */
+
+/* 基础区块样式 */
 .detail-section {
-    background: #f9f9f9 !important;
+    padding: 20px 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 4px solid;
+    transition: all 0.2s;
+}
+
+.detail-section:hover {
+    transform: translateX(3px);
+}
+
+.detail-section h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.detail-section p {
+    color: #333;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* 📌 功效 - 橙黄色 */
+.detail-section.efficacy-section {
+    background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+    border-left-color: #FF9800;
+}
+
+.detail-section.efficacy-section h4 {
+    color: #E65100;
+}
+
+/* 🎯 适应症状 - 蓝色 */
+.detail-section.symptom-section {
+    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+    border-left-color: #2196F3;
+}
+
+.detail-section.symptom-section h4 {
+    color: #1565C0;
+}
+
+/* ✅ 适用人群 - 绿色 */
+.detail-section.suitable-section {
+    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+    border-left-color: #4CAF50;
+}
+
+.detail-section.suitable-section h4 {
+    color: #2E7D32;
+}
+
+/* ❌ 禁忌人群 - 红色 */
+.detail-section.warning-section {
+    background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);
+    border-left-color: #F44336;
+}
+
+.detail-section.warning-section h4 {
+    color: #C62828;
+}
+
+/* 🥄 所需食材 - 紫色 */
+.detail-section.ingredient-section {
+    background: linear-gradient(135deg, #F3E5F5 0%, #E1BEE7 100%);
+    border-left-color: #9C27B0;
+}
+
+.detail-section.ingredient-section h4 {
+    color: #7B1FA2;
+}
+
+/* 📝 制作方法 - 青色 */
+.detail-section.method-section {
+    background: linear-gradient(135deg, #E0F7FA 0%, #B2EBF2 100%);
+    border-left-color: #00BCD4;
+}
+
+.detail-section.method-section h4 {
+    color: #00838F;
+}
+
+/* ⚠️ 注意事项 - 深红 */
+.detail-section.precaution-section {
+    background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);
+    border-left-color: #E53935;
+}
+
+.detail-section.precaution-section h4 {
+    color: #B71C1C;
+}
+
+/* 📍 位置 - 灰色 */
+.detail-section.location-section {
+    background: linear-gradient(135deg, #FAFAFA 0%, #EEEEEE 100%);
+    border-left-color: #757575;
+}
+
+.detail-section.location-section h4 {
+    color: #424242;
+}
+
+/* 复制按钮样式 */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px solid #E0E0E0;
+}
+
+.copy-btn {
+    flex: 1;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+    transition: all 0.3s;
+}
+
+.copy-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+.copy-btn:active {
+    transform: translateY(0);
 }

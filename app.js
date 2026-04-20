@@ -421,34 +421,34 @@ function renderRecipeDetail(recipe) {
         ${recipe.image ? `<img src="${recipe.image}" alt="${recipe.name}" class="detail-image" loading="lazy"/>` : ''}
         <h2>${recipe.name}</h2>
         
-        <div class="detail-section">
+        <div class="detail-section efficacy-section">
             <h4>📌 功效</h4>
             <p>${recipe.efficacy || '暂无'}</p>
         </div>
         
         ${recipe.symptoms?.length ? `
-            <div class="detail-section">
+            <div class="detail-section symptom-section">
                 <h4>🎯 适应症状</h4>
                 <p>${recipe.symptoms.join('、')}</p>
             </div>
         ` : ''}
         
         ${recipe.suitableFor?.length ? `
-            <div class="detail-section">
+            <div class="detail-section suitable-section">
                 <h4>✅ 适用人群</h4>
                 <p>${recipe.suitableFor.join('、')}</p>
             </div>
         ` : ''}
         
         ${recipe.contraindicatedFor?.length ? `
-            <div class="detail-section">
+            <div class="detail-section warning-section">
                 <h4>❌ 禁忌人群</h4>
                 <p class="warning-text">${recipe.contraindicatedFor.join('、')}</p>
             </div>
         ` : ''}
         
         ${recipe.ingredients?.length ? `
-            <div class="detail-section">
+            <div class="detail-section ingredient-section">
                 <h4>🥄 所需食材</h4>
                 <ul class="ingredients-list">
                     ${recipe.ingredients.map(i => 
@@ -459,14 +459,28 @@ function renderRecipeDetail(recipe) {
         ` : ''}
         
         ${recipe.method ? `
-            <div class="detail-section">
+            <div class="detail-section method-section">
                 <h4>📝 制作方法</h4>
                 <div class="method-content">${recipe.method.replace(/\n/g, '<br>')}</div>
             </div>
         ` : ''}
         
         ${recipe.precautions ? `
-            <div class="detail-section">
+            <div class="detail-section precaution-section">
+                <h4>⚠️ 注意事项</h4>
+                <div class="precautions-content">${recipe.precautions.replace(/\n/g, '<br>')}</div>
+            </div>
+        ` : ''}
+        
+        ${recipe.source ? `
+            <div class="source-info">
+                📖 来源：《${recipe.source.book}》${recipe.source.author ? ` - ${recipe.source.author}` : ''}
+            </div>
+        ` : ''}
+        
+        ${renderActionButtons(recipe)}
+    `;
+}
                 <h4>⚠️ 注意事项</h4>
                 <div class="precautions-content">${recipe.precautions.replace(/\n/g, '<br>')}</div>
             </div>
@@ -487,25 +501,25 @@ function renderAcupointDetail(item) {
     return `
         <h2>${item.name}</h2>
         
-        <div class="detail-section">
+        <div class="detail-section location-section">
             <h4>📍 位置</h4>
             <p>${item.location || '暂无'}</p>
         </div>
         
-        <div class="detail-section">
+        <div class="detail-section efficacy-section">
             <h4>📌 功效</h4>
             <p>${item.efficacy || '暂无'}</p>
         </div>
         
         ${item.method ? `
-            <div class="detail-section">
+            <div class="detail-section method-section">
                 <h4>👆 按摩方法</h4>
                 <div class="method-content">${item.method.replace(/\n/g, '<br>')}</div>
             </div>
         ` : ''}
         
         ${item.symptoms?.length ? `
-            <div class="detail-section">
+            <div class="detail-section symptom-section">
                 <h4>🎯 适用症状</h4>
                 <p>${item.symptoms.join('、')}</p>
             </div>
@@ -567,8 +581,7 @@ function renderDefaultDetail(item) {
 function renderActionButtons(item) {
     return `
         <div class="action-buttons">
-            <button class="share-btn" onclick="shareItem('${item.name || item.title}')">📤 分享</button>
-            <button class="copy-btn" onclick="copyItem('${item.id}')">📋 复制</button>
+            <button class="copy-btn" onclick="copyItem('${item.id}')">📋 复制方子</button>
         </div>
     `;
 }
