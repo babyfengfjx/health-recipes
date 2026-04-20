@@ -479,7 +479,7 @@ function showDetail(id) {
 // 渲染食疗方子详情
 function renderRecipeDetail(recipe) {
     return `
-        ${recipe.image ? `<img src="${recipe.image}" alt="${recipe.name}" class="detail-image" loading="lazy"/>` : ''}
+        ${recipe.image ? `<img src="${recipe.image}" alt="${recipe.name}" class="detail-image" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 250%22%3E%3Crect fill=%22%23E8F5E9%22 width=%22400%22 height=%22250%22/%3E%3Ctext x=%22200%22 y=%22125%22 text-anchor=%22middle%22 font-size=%2248%22%3E🌿%3C/text%3E%3C/svg%3E';"/>` : '<div class="detail-image-placeholder">🌿</div>'}
         <h2>${recipe.name}</h2>
         
         <div class="detail-section efficacy-section">
