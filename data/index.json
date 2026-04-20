@@ -1034,7 +1034,49 @@
       "qvxie": "祛湿",
       "shanghuo": "上火"
     },
-    "recipeTypes": [],
-    "sources": []
+    "recipeTypes": [
+      {
+        "id": "tea",
+        "name": "茶饮"
+      },
+      {
+        "id": "soup",
+        "name": "汤品"
+      },
+      {
+        "id": "porridge",
+        "name": "粥品"
+      },
+      {
+        "id": "dish",
+        "name": "菜品"
+      },
+      {
+        "id": "dessert",
+        "name": "甜品"
+      },
+      {
+        "id": "herb",
+        "name": "药膳"
+      },
+      {
+        "id": "external",
+        "name": "外用"
+      },
+      {
+        "id": "footbath",
+        "name": "泡脚方"
+      }
+    ],
+    "authors": [
+      {
+        "id": "陈允斌",
+        "name": "陈允斌"
+      },
+      {
+        "id": "罗大伦",
+        "name": "罗大伦"
+      }
+    ]
   }
 }
