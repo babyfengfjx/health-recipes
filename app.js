@@ -242,6 +242,9 @@ function setFilter(key, value) {
 // 数据筛选
 function filterData() {
     console.log('filterData 被调用');
+    console.log('当前类型:', state.currentType);
+    console.log('allData keys:', Object.keys(state.allData));
+    console.log('当前数据长度:', state.allData[state.currentType]?.length || 0);
     
     const data = state.allData[state.currentType] || [];
     const { season, symptom, recipeType, group, search, author } = state.filters;
