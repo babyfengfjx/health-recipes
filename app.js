@@ -759,8 +759,7 @@ function renderRecipeDetail(recipe) {
             </div>
         ` : ''}
         
-            </div>
-        ` : ''}
+
         
         ${renderActionButtons(recipe)}
     `;
