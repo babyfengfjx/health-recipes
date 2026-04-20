@@ -956,36 +956,35 @@ function showSeasonalTip() {
     ).filter(Boolean);
     
     const modalHtml = `
-        <div class="modal active" id="seasonalModal">
-            <div class="modal-content seasonal-content">
-                <span class="close-btn" onclick="closeSeasonal()">&times;</span>
-                <div class="seasonal-header">
-                    <h2>🌸 ${term.name}养生</h2>
-                    <p class="term-date">${term.date}</p>
+        <div class="modal-overlay active" id="seasonalModal" onclick="if(event.target===this)closeSeasonal()">
+            <div class="modal" style="max-width: 500px;">
+                <div class="modal-header" style="background: linear-gradient(135deg, #FF9800 0%, #FFB74D 100%);">
+                    <h2 class="modal-title">🌸 ${term.name}养生</h2>
+                    <button class="modal-close" onclick="closeSeasonal()">&times;</button>
                 </div>
                 
-                <div class="seasonal-tips">
-                    <h4>💡 养生要点</h4>
-                    <p>${term.tips}</p>
-                </div>
-                
-                <div class="seasonal-recipes">
-                    <h4>🌿 推荐食方</h4>
-                    <div class="recipe-mini-cards">
-                        ${recommendedRecipes.length > 0 ? 
-                            recommendedRecipes.map(r => `
-                                <div class="recipe-mini-card" onclick="showDetail('${r.id}')">
-                                    <span>${r.name}</span>
-                                </div>
-                            `).join('') :
-                            term.recipes.map(name => `<span class="recipe-name">${name}</span>`).join('')
-                        }
+                <div class="modal-body">
+                    <div class="seasonal-section">
+                        <h4>💡 养生要点</h4>
+                        <p>${term.tips}</p>
                     </div>
-                </div>
-                
-                <div class="seasonal-acupoints">
-                    <h4>👆 推荐穴位</h4>
-                    <p>${term.acupoints.join('、')}</p>
+                    
+                    <div class="seasonal-section">
+                        <h4>🌿 推荐食方</h4>
+                        <div class="recipe-mini-cards">
+                            ${recommendedRecipes.length > 0 ? 
+                                recommendedRecipes.map(r => `
+                                    <span class="recipe-mini-card" onclick="closeSeasonal();showDetail('${r.id}')">${r.name}</span>
+                                `).join('') :
+                                term.recipes.map(name => `<span class="recipe-name">${name}</span>`).join('')
+                            }
+                        </div>
+                    </div>
+                    
+                    <div class="seasonal-section">
+                        <h4>👆 推荐穴位</h4>
+                        <p>${term.acupoints.join('、')}</p>
+                    </div>
                 </div>
             </div>
         </div>
