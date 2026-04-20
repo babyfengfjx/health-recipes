@@ -175,7 +175,7 @@ function renderFilters() {
         .filter(([name, count]) => count >= 5)
         .sort((a, b) => b[1] - a[1])
         .slice(0, 20)
-        .map(([name, count]) => ({id: name, name: \`\${name} (\${count})\`}));
+        .map(([name, count]) => ({id: name, name: `${name} (${count})`}));
     renderFilterGroup('symptomFilter', symptomItems, 'symptom');
     
     // 方子类型筛选（仅食疗方子时显示）
