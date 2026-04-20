@@ -2,16 +2,16 @@
   "version": "2.0",
   "updated": "2026-04-20",
   "stats": {
-    "total": 900,
+    "total": 871,
     "byType": {
-      "recipe": 900,
+      "recipe": 871,
       "acupoint": 3,
       "exercise": 2,
       "knowledge": 1
     },
     "bySource": {
       "陈允斌": 764,
-      "罗大伦": 136
+      "罗大伦": 107
     }
   },
   "dataFiles": {
