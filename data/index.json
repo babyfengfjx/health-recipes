@@ -1,13 +1,13 @@
 {
-  "version": "1.4",
+  "version": "1.5",
   "generated": "2026-04-20",
   "stats": {
-    "total": 937,
+    "total": 895,
     "byType": {
       "recipe": 871,
       "acupoint": 3,
       "exercise": 2,
-      "knowledge": 61
+      "knowledge": 19
     },
     "bySeason": {
       "春季": 102,
