@@ -218,7 +218,13 @@ function switchType(type) {
 
 // 设置筛选条件
 function setFilter(key, value) {
-    state.filters[key] = value;
+    // 如果点击的是已经选中的项（非'全部'），则取消选中（回到'全部'状态）
+    if (state.filters[key] === value && value !== '') {
+        state.filters[key] = '';
+    } else {
+        state.filters[key] = value;
+    }
+    
     state.currentPage = 1;
     
     // 更新标签状态
@@ -226,7 +232,7 @@ function setFilter(key, value) {
     const container = document.getElementById(containerId);
     if (container) {
         container.querySelectorAll('.tag').forEach(tag => {
-            tag.classList.toggle('active', tag.dataset.filter === value);
+            tag.classList.toggle('active', tag.dataset.filter === state.filters[key]);
         });
     }
     
