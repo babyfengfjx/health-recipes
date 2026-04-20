@@ -404,8 +404,13 @@ function renderCard(item, typeConfig) {
 function renderRecipeCard(recipe) {
     const hasImage = recipe.image && recipe.image.trim();
     return `
-        <div class="recipe-card ${hasImage ? 'has-image' : ''}" onclick="showDetail('${recipe.id}')">
-            ${hasImage ? `<div class="card-image"><img src="${recipe.image}" alt="${recipe.name}" loading="lazy"/></div>` : ''}
+        <div class="recipe-card has-image" onclick="showDetail('${recipe.id}')">
+            <div class="card-image">
+                ${hasImage ? 
+                    `<img src="${recipe.image}" alt="${recipe.name}" loading="lazy" onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'card-image-placeholder\'>🌿</div>'"/>` : 
+                    '<div class="card-image-placeholder">🌿</div>'
+                }
+            </div>
             <div class="card-content">
                 <h3>${getTypeIcon(recipe)} ${recipe.name}</h3>
                 <div class="categories">
