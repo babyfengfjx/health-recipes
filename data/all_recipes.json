@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "generated": "2026-04-20",
-  "total": 967,
+  "total": 900,
   "recipes": [
     {
       "id": "mom-001",
@@ -1149,77 +1149,6 @@
       ],
       "tags": [
         "易制作",
-        "低成本",
-        "无副作用"
-      ]
-    },
-    {
-      "id": "spring-001",
-      "name": "春饼",
-      "categories": {
-        "season": [
-          "春季"
-        ],
-        "symptom": [
-          "脾虚",
-          "肝毒"
-        ],
-        "ingredient": [
-          "面粉",
-          "绿豆芽",
-          "韭菜"
-        ],
-        "type": [
-          "菜品"
-        ]
-      },
-      "efficacy": "健脾养胃，提升生发之气，排肝毒",
-      "symptoms": [
-        "脾虚",
-        "肝毒积存",
-        "春季养生"
-      ],
-      "ingredients": [
-        {
-          "name": "面粉或米粉",
-          "amount": "适量"
-        },
-        {
-          "name": "绿豆芽",
-          "amount": "适量"
-        },
-        {
-          "name": "萝卜苗",
-          "amount": "可选"
-        },
-        {
-          "name": "香椿芽",
-          "amount": "可选"
-        }
-      ],
-      "method": "用面粉（北方）或米粉（南方）做成薄饼。卷入早春蔬菜，如绿豆芽、萝卜苗、香椿芽等。绿豆芽可以自己在家发：把绿豆放入瓶中，放约1/5，加水泡透，然后把水倒出来。每天用水冲洗一次，几天后就能发芽。",
-      "precautions": "立春开始可以吃一整个月。春饼里要卷早春的蔬菜，不是大棚种植的。如果没有当季蔬菜，就用绿豆芽，排肝毒效果更好。绿豆芽清热解毒，又没有绿豆那么寒凉，适合早春天冷时食用。",
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法春生",
-        "author": "陈允斌"
-      },
-      "feedback": [
-        "开春以来一直吃春盘、凉拌韭菜，之前每到春天手指都会长湿疹，人也经常感冒。今年不长了，人也没感冒，精神也比以前好了。"
-      ],
-      "suitableFor": [
-        "一般人群"
-      ],
-      "contraindicatedFor": [],
-      "difficulty": "中等",
-      "prepTime": "5分钟",
-      "cookTime": "5-15分钟",
-      "bestTimeToEat": "随餐食用",
-      "frequency": "每周2-3次",
-      "storage": "现做现吃",
-      "keywords": [
-        "春季养生"
-      ],
-      "tags": [
         "低成本",
         "无副作用"
       ]
@@ -19336,49 +19265,6 @@
       "feedback": []
     },
     {
-      "id": "epub-223",
-      "name": "腊八粥，整个腊月都可以喝",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "糯米、红小豆。",
-          "amount": ""
-        }
-      ],
-      "method": "\n1.把主料和配料用清水泡一晚。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
       "id": "epub-224",
       "name": "蜂蜜醋水",
       "categories": {
@@ -20317,51 +20203,6 @@
         }
       ],
       "method": "1. 栗子和核桃都剥去外壳，留下内皮。\n2. 全部原料一起加水浸泡后，放少许油，煮成粥。\n3. 将栗子内皮捞出来不要，放入枸杞。\n枸杞可以多放一些，调和栗子和核桃的苦味。\n这个配方加入了补肾养藏汤，增强了健脾补肾的作用，可以滋阴、温阳、补精气。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": [],
-      "_file": "/home/ut003483@uos/.openclaw/workspace/health-website/data/recipes-162.json",
-      "_source": "陈允斌二十四节气顺时饮食法冬藏"
-    },
-    {
-      "id": "epub-246",
-      "name": "春盘、春饼",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "用于调理妇人赤带、崩下及月经不断。",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "荠菜、香菜、萝卜缨、芹菜、韭菜、蒜苗、油菜薹等。",
-          "amount": ""
-        }
-      ],
-      "method": "清炒，或焯水后（香菜不用焯水）凉拌，或用春饼卷着来吃。",
       "precautions": "",
       "suitableFor": [],
       "contraindicatedFor": [],
@@ -21664,51 +21505,6 @@
       },
       "feedback": [],
       "_file": "/home/ut003483@uos/.openclaw/workspace/health-website/data/recipes-165.json",
-      "_source": "陈允斌二十四节气顺时饮食法冬藏"
-    },
-    {
-      "id": "epub-280",
-      "name": "清明后腌鸭蛋。这个时节的鸭蛋最饱满，营养好。现在腌制，到端午节正好可以吃。",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "一小碗白酒、一碟盐。",
-          "amount": ""
-        }
-      ],
-      "method": "\n1. 将鸭蛋放酒里沾湿。\n2. 把蛋全身沾上盐。\n3. 装干净饭盒，放冰箱保存。\n两周后就可以吃了，放时间长一些会更有味。\n若鸭蛋较脏或有印记，不要水洗，否则腌制时容易坏。可以将鸭蛋沾白酒后，将冬天吃墨鱼干留下的墨鱼骨掰开，用断面轻轻擦掉鸭蛋表面的污渍和印记。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": [],
-      "_file": "/home/ut003483@uos/.openclaw/workspace/health-website/data/recipes-166.json",
       "_source": "陈允斌二十四节气顺时饮食法冬藏"
     },
     {
@@ -26850,92 +26646,6 @@
       "feedback": []
     },
     {
-      "id": "epub-412",
-      "name": "葱须小菜：防感冒、鼻炎",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "有开胃、散寒、防感冒的作用。",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "葱须、豆腐丝、盐、糖、酱油、辣椒油。",
-          "amount": ""
-        }
-      ],
-      "method": "1.葱须洗净，加盐揉透，腌制20分钟。\n2.和豆腐丝一起拌匀，加少许糖提鲜，再放酱油、辣椒油调味。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
-      "id": "epub-413",
-      "name": "肉桂苹果茶、桂皮苹果茶",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "强健脾胃，调理胃寒、肝胃不和引起的胃痛。",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "肉桂或桂皮2块，苹果1个，红糖适量。",
-          "amount": ""
-        }
-      ],
-      "method": "1.将 2 块肉桂或桂皮，放入半锅水中煮。\n2.15 分钟后，待桂皮煮出味道，放入1个切好的苹果。\n3.再煮3分钟，放入适量红糖，趁热饮用。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
       "id": "epub-414",
       "name": "爱心食方",
       "categories": {
@@ -26961,49 +26671,6 @@
         }
       ],
       "method": "\n① 把这3 种原料分成10 份，每份装入一个茶包袋（茶艺市场或网络上有售），或者用细纱布自制小袋。\n② 把装好的茶包放进一个漂亮的盒子里，系上彩色丝带装饰。\n③ 别忘了附上一份手写的祝福卡，并写上茶包的功效说明。饮用方法： 每次取1 袋，沸水冲泡，焖制5 分钟当茶饮，可以冲泡3 遍。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
-      "id": "epub-415",
-      "name": "一、凉拌青韭芽的做法",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "通气血，消除疲劳，清肠排毒。",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "嫩韭菜、绿豆芽、白芝麻。",
-          "amount": ""
-        }
-      ],
-      "method": "\n① 白芝麻放炒锅里用小火稍炒一下，炒出香味就起锅，用擀面杖擀碎。\n② 生姜连皮一起切碎末。\n③ 用少许盐、糖、米醋、芝麻油拌成调味汁。\n④ 韭菜洗干净，不要切。\n⑤ 锅里多加些水烧开，把调好的调味汁倒1/3进去（留2/3备用），保持大火，放入韭菜快速地焯烫一下，马上捞出来，用凉水冲淋一遍。\n⑥ 将焯好的韭菜切成1寸长的段。\n⑦ 把豆芽放锅里焯熟，大约1分钟，捞出过一下凉水。\n⑧ 把韭菜和豆芽放在碗里，倒入姜末和调味汁，拌匀。\n⑨ 准备一个小碗和一个盘子，将拌好的韭菜和豆芽放进小碗里，压实，然后倒扣在盘中，撒上芝麻碎。",
       "precautions": "",
       "suitableFor": [],
       "contraindicatedFor": [],
@@ -28389,481 +28056,6 @@
       "_source": "陈允斌二十四节气顺时饮食法冬藏"
     },
     {
-      "id": "epub-450",
-      "name": "13.冬季脚后跟已经裂口子了，怎么急救呢",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "有些许区别。熟板栗脾肾兼补，偏于补气，老人经常腹泻，吃熟板栗可以调理。生板栗偏于补骨，治腰腿病或是预防牙齿松动，吃生的效果才好。",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "醋、香蕉皮。",
-          "amount": ""
-        }
-      ],
-      "method": "",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
-      "id": "epub-451",
-      "name": "（注：素食的朋友，可以去掉此方中的羊肉，买一个榴梿，用榴梿壳内的白色部分和榴梿核来煲冬至养心汤。）",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "与美味推向极致，我怎么可能不喜欢不接受。羊肉美味，汤汁香甜微辣，甘蔗解腻，黄芪补气……整个料理，取长补短，相辅相成。食时酣畅淋漓，食后周身融暖，又回味无穷。",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "羊肉1~2斤（500克~1 000克）、黄芪100克、当归（全归）20克、甘蔗2~4节、带皮生姜2块、大枣8个（这是一家人喝的量）。",
-          "amount": ""
-        }
-      ],
-      "method": "\n① 黄芪、当归用清水浸泡30分钟。\n② 香菜切成末，甘蔗去皮后，纵向剖开，带皮生姜拍扁。\n③ 锅内烧开水，将羊肉下锅煮出血沫，将水倒掉，羊肉冲洗干净。\n④ 锅内重新加水，将全部原料一起下锅，大火煮开后，放黄酒，转中火炖1个小时。\n⑤ 放入胡椒粉，关火起锅。\n⑥ 在汤碗里放入香菜末和少许盐，将羊肉汤盛入汤碗。\n⑦ 将锅里的羊肉捞出，切成块，配盐和辣椒粉混合做成的蘸料食用。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
-      "id": "epub-452",
-      "name": "一到春季，各种流行病多发，为了预防春季流行病，特别是流行性感冒，我们可以煮一锅好喝又有效的护生汤。",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "鲜荠菜1把、萝卜缨1把、牛蒡半根、干香菇3个、植物油、盐、醋。",
-          "amount": ""
-        }
-      ],
-      "method": "\na 将香菇洗净泡发，切成小块。\nb 在清水中放入少许醋，调成醋水。牛蒡带皮用面粉水洗净，切成滚刀块，泡在醋水中备用。\nc 将新鲜荠菜（带根）切成2厘米小段。\nd 锅里放入水，加少许植物油、盐，放入香菇、牛蒡煮开，再放萝卜缨煮20分钟。\ne 放入荠菜煮1分钟，关火起锅。\n立春节气食方\n春饼、春盘\n立春时节，各种各样的病毒复苏，我们在冬天所受的风寒还残留在体内，吃的肥甘厚味又蓄积了内热。此时，不宜进补，宜吃春饼和春盘菜抗病毒。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
-      "id": "epub-453",
-      "name": "春饼、春盘",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "，可以很好地帮助人们预防春天的流行病。",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "芹菜、韭菜、香菜、荠菜、萝卜缨。",
-          "amount": ""
-        }
-      ],
-      "method": "\na 白芝麻炒熟擀碎；生姜连皮切碎末，用少许盐、糖、米醋、芝麻油拌成调味汁。\nb 韭菜、绿豆芽焯熟，倒入姜末和调味汁，拌匀即可。\n惊蛰节气食方\n黄豆萝卜汤\n惊蛰时节，病毒活跃。为了预防春季流行病，此时可以常喝黄豆萝卜汤，提高人体抵抗力。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
-      "id": "epub-454",
-      "name": "雨水节气，谨记 “春捂秋冻”。我们可以多吃韭菜，它专门温暖我们的下半身，给人体肾系统增加阳气。",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "，可以很好地帮助人们预防春天的流行病。",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "嫩韭菜、绿豆芽、白芝麻。",
-          "amount": ""
-        }
-      ],
-      "method": "\na 白芝麻炒熟擀碎；生姜连皮切碎末，用少许盐、糖、米醋、芝麻油拌成调味汁。\nb 韭菜、绿豆芽焯熟，倒入姜末和调味汁，拌匀即可。\n惊蛰节气食方\n黄豆萝卜汤\n惊蛰时节，病毒活跃。为了预防春季流行病，此时可以常喝黄豆萝卜汤，提高人体抵抗力。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
-      "id": "epub-455",
-      "name": "惊蛰时节，病毒活跃。为了预防春季流行病，此时可以常喝黄豆萝卜汤，提高人体抵抗力。",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "，可以很好地帮助人们预防春天的流行病。",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "生黄豆50克、白萝卜250克、葱白连须1根(大葱)或3根（小葱）、盐和胡椒粉各适量。",
-          "amount": ""
-        }
-      ],
-      "method": "将三种花用沸水冲泡即可。\n清明节气食方\n艾粑、清明粥、清明止咳糖水\n清明时节生长的野菜，大多具有消炎抗菌、清肠排毒的功效，可以很好地帮助人们预防春天的流行病。\n艾粑",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
-      "id": "epub-456",
-      "name": "春分节气，我们可以用疏肝理气的药食来舒发肝气。在诸多药食中，我推荐一款用三种香花搭配成花草茶给朋友们。",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "，可以很好地帮助人们预防春天的流行病。",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "月季花6朵、玫瑰花6朵、茉莉花12朵。",
-          "amount": ""
-        }
-      ],
-      "method": "将三种花用沸水冲泡即可。\n清明节气食方\n艾粑、清明粥、清明止咳糖水\n清明时节生长的野菜，大多具有消炎抗菌、清肠排毒的功效，可以很好地帮助人们预防春天的流行病。\n艾粑",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
-      "id": "epub-457",
-      "name": "清明时节生长的野菜，大多具有消炎抗菌、清肠排毒的功效，可以很好地帮助人们预防春天的流行病。",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "田艾（清明菜）、糯米粉、红糖。",
-          "amount": ""
-        }
-      ],
-      "method": "\na 将新鲜田艾的嫩尖洗净，切碎，剁成茸。\nb 水开后放入田艾，不要盖锅盖，大火煮30分钟，加入红糖化开，关火。\nc 将田艾和水与糯米粉混合，用筷子搅拌，用手揉成团。\nd 搓成长条，切段，揉成椭圆形，放笼屉里，用大火蒸20分钟。\n清明粥",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
-      "id": "epub-458",
-      "name": "谷雨时上市的新茶滋味清润，带有回甘。这是因为新茶中茶氨酸的含量更高。茶氨酸既能使人放松，缓解身心疲劳，又能提高注意力。",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "绿茶、陈皮半个（或15克）、蜂蜜（油菜蜜最佳）。",
-          "amount": ""
-        }
-      ],
-      "method": "陈皮切丝，与适量绿茶一起冲泡，晾温后加少量蜂蜜饮用。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
-      "id": "epub-459",
-      "name": "立夏节气，我们重点要固摄肾气，可以常吃糯米、豆子和鸡蛋。吃核桃壳煮鸡蛋，固肾的效果更好。",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "核桃壳6个（带分心木一起入锅）、鸡蛋6个、酱油适量、盐少许。",
-          "amount": ""
-        }
-      ],
-      "method": "\na 核桃壳洗净，加清水泡30分钟。\nb 大火煮开，转小火煮1小时，晾凉。\nc 将鸡蛋（带壳）放入核桃水中，加入适量酱油、盐，大火煮开，转小火煮6～7分钟。\nd 不要关火，等蛋白凝固，将鸡蛋壳敲出裂纹。\ne 继续煮10分钟，关火起锅。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
-      "id": "epub-461",
-      "name": "桑葚可以说是水果中的“乌鸡白凤丸”，可滋阴，养血。更年期女性可以常年吃，男性吃，能补肾，清虚热。",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "新鲜黑桑葚、红糖。",
-          "amount": ""
-        }
-      ],
-      "method": "\na 桑葚打汁，用小火熬到浓稠。\nb 放入红糖，用筷子搅拌，避免糊锅，红糖完全溶化后起锅。\nc 将桑葚膏装在干净无油的玻璃瓶里，放冰箱冷藏。\n小暑节气食方\n松花蛋红苋汤\n夏天的阳气已经帮我们打通了毛孔，我们就重点打通肠道，使血毒能够排出去。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": [],
-      "_file": "/home/ut003483@uos/.openclaw/workspace/health-website/data/recipes-184.json",
-      "_source": "陈允斌二十四节气顺时饮食法冬藏"
-    },
-    {
       "id": "epub-462",
       "name": "夏天的阳气已经帮我们打通了毛孔，我们就重点打通肠道，使血毒能够排出去。",
       "categories": {
@@ -28997,401 +28189,6 @@
       "feedback": [],
       "_file": "/home/ut003483@uos/.openclaw/workspace/health-website/data/recipes-184.json",
       "_source": "陈允斌二十四节气顺时饮食法冬藏"
-    },
-    {
-      "id": "epub-465",
-      "name": "出伏送暑补肾汤是纯素的，补养效果却很好，可以清热利湿，补益肾气，调理下焦湿热、小便异常、白带异常，还能补肾健脾。",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "",
-          "amount": ""
-        }
-      ],
-      "method": "\na 豆腐切成小方块，豇豆角切成约6厘米长的段，空心菜取嫩茎叶。\nb 锅内放清水，水开后放少许盐、植物油，放入豆腐和豇豆角煮熟。\nc 加入空心菜，不要盖锅盖，待再次沸腾后，撒胡椒粉起锅。\n白露节气食方\n红酒炖梨\n秋天的应季水果——梨是专门润肺的。但梨偏寒性，怎么吃梨才能让老年人以及体弱、体寒的人达到润肺而又不寒凉的效果呢？可以吃红酒炖梨。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": [],
-      "_file": "/home/ut003483@uos/.openclaw/workspace/health-website/data/recipes-184.json",
-      "_source": "陈允斌二十四节气顺时饮食法冬藏"
-    },
-    {
-      "id": "epub-467",
-      "name": "熬夜极伤肝血，肝血不足，夜里更难入睡。一旦熬夜伤了肝血，第二天要赶紧从饮食上弥补，墨鱼汤就是养肝血的宝贝。",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "墨鱼干1～2只、肥猪肉1小块、莲藕250克、莲子20粒、枸杞20粒、陈皮半个（或10～20克）、生姜（带皮）3片。",
-          "amount": ""
-        }
-      ],
-      "method": "\na 用冷水泡发墨鱼干和莲子。墨鱼干不要拆骨。莲藕切块。\nb 把全部原料冷水下锅，大火烧开后转小火炖40～60分钟。\nc 加少许盐，关火。起锅后将墨鱼骨取出。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": [],
-      "_file": "/home/ut003483@uos/.openclaw/workspace/health-website/data/recipes-184.json",
-      "_source": "陈允斌二十四节气顺时饮食法冬藏"
-    },
-    {
-      "id": "epub-468",
-      "name": "白果墨鱼汤是比较平和的大补汤，老少皆宜。阴虚的朋友，如果你喝了觉得身体舒服，可以在整个冬天时常做一些来喝。",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "白果7粒、墨鱼干1只、肥猪肉50克、枸杞20粒、陈皮1个、生姜3片。",
-          "amount": ""
-        }
-      ],
-      "method": "用冷水泡发墨鱼干和白果，放入锅内，加入其他配料，注入冷水，炖1小时后就可以喝了。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": [],
-      "_file": "/home/ut003483@uos/.openclaw/workspace/health-website/data/recipes-184.json",
-      "_source": "陈允斌二十四节气顺时饮食法冬藏"
-    },
-    {
-      "id": "epub-469",
-      "name": "要闭藏就要先养肾，要全面补肾，才可以防止精气外泄，同时也给身体保暖。我们可以喝一道补肾养藏汤。",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "生栗子6个（不要炒栗子）、生核桃6个、枸杞1把，陈皮1/4～1/2个。",
-          "amount": ""
-        }
-      ],
-      "method": "\na 栗子剥去外壳，带内皮切成两半。\nb 核桃剥去外壳，掰开。\nc 将栗子、核桃、枸杞和陈皮一起冷水下锅，煮开后20～40分钟起锅。\nd 用筷子把栗子内皮捞出扔掉。\ne 可以加少量糖调味，喝汤，将栗子、核桃和枸杞吃掉。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": [],
-      "_file": "/home/ut003483@uos/.openclaw/workspace/health-website/data/recipes-184.json",
-      "_source": "陈允斌二十四节气顺时饮食法冬藏"
-    },
-    {
-      "id": "epub-470",
-      "name": "进入大雪节气，可以痛痛快快地开始大补身体，主要以补肾精为主，但要注意进补是补漏洞，补薄弱环节。另外，要避免精气外泄。",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "生栗子6个、生核桃6个、莲子6个、枸杞1把、葡萄干1把、陈皮1/4～1/2个（根据大小）。",
-          "amount": ""
-        }
-      ],
-      "method": "\na 莲子用水泡1～2小时。\nb 栗子剥去外壳，带内皮切成两半。\nc 核桃剥去外壳，掰开。\nd 将所有原料冷水下锅，煮开后20～40分钟起锅。\ne 用筷子把栗子内皮捞出扔掉。\nf 可以加少量糖调味，喝汤，将栗子、核桃和枸杞吃掉。\n冬至节气食方\n补心养阳汤\n冬至是冬天到极点之时，这会天地一片萧瑟。看似没有生机，其实阳气马上要开始萌芽，所以这是天地阴阳转换的关键节点。此时进补，有平时的三倍之功。\n（注：素食者可以去掉羊肉，用榴梿壳内的白色部分和榴梿核来煲。）",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
-      "id": "epub-471",
-      "name": "（注：素食者可以去掉羊肉，用榴梿壳内的白色部分和榴梿核来煲。）",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "羊肉500～1 000克、黄芪100克、当归（全归）20克、甘蔗2～4节、带皮生姜2块、大枣8个。",
-          "amount": ""
-        }
-      ],
-      "method": "\na 黄芪、当归用清水浸泡30分钟。\nb 甘蔗去皮，纵向剖开，生姜拍扁。\nc 将羊肉开水下锅，煮出血沫，捞出洗净。\nd 将全部原料下锅，大火煮开，放黄酒转中火炖1小时。\ne 放入胡椒粉，关火起锅。\nf 在汤碗里放入香菜末和少许盐，将羊肉汤盛入汤碗。\ng 将羊肉捞出，切成块，蘸着盐和辣椒粉做成的调料食用。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
-      "id": "epub-472",
-      "name": "凡是进补，都要给病气留下一个排出的通道。我们进补的时候，不论怎样大补，总要配一点“泄”的东西，才不会变成“呆补”。",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "红小豆100克、糯米100克、油（最好用猪油或黄油）、盐、芝麻各少许。",
-          "amount": ""
-        }
-      ],
-      "method": "\na 红小豆放锅内，注入适量清水，煮开后10分钟关火。\nb 炒锅内多放油，烧热后放少许盐，放糯米用小火不停翻炒。\nc 炒到糯米微微发黄，把红豆连汤一起倒入，小火焖熟后起锅。\nd 芝麻放炒锅内，不要加油，开小火炒香，撒在焖好的糯米红豆饭上。\n大寒节气食方\n消寒糯米饭\n消寒糯米饭能给我们的身体增加热量，既滋补，又健脾胃。这个饭吃起来又香又甜，孩子经常吃，就能长得胖一点。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
-      "id": "epub-473",
-      "name": "消寒糯米饭能给我们的身体增加热量，既滋补，又健脾胃。这个饭吃起来又香又甜，孩子经常吃，就能长得胖一点。",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "糯米100克、红枣10个、腊肉50克、猪板油、陈皮少许。",
-          "amount": ""
-        }
-      ],
-      "method": "\na 糯米泡2小时后，沥干水分。\nb 腊肉切片，红枣掰开去核备用。\nc 猪板油下锅加少许陈皮，炼出猪油，捞出油渣和陈皮。\nd 锅里继续放腊肉煸出油，捞出腊肉。\ne 放入糯米，用小火不停翻炒，炒到九成熟，放入掰开的红枣，等红枣局部变黑，出焦香味后，加入腊肉一起拌匀。\nf 出锅沥干油。",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
-    },
-    {
-      "id": "epub-474",
-      "name": "2.问：因为我肝火旺，黑眼圈、眼袋比较重，而且晚上特别多梦。春天吃什么会比较好，能祛除这些呢？",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "舒肝理气，活血通脉，解忧郁，预防黄褐斑，调理肝火引起的睡眠问题。",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "月季花6朵，玫瑰花6朵，茉莉花12朵，沸水冲泡。功效：舒肝理气，活血通脉，解忧郁，预防黄褐斑，调理肝火引起的睡眠问题。",
-          "amount": ""
-        }
-      ],
-      "method": "",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": []
     },
     {
       "id": "epub-475",
@@ -30009,147 +28806,6 @@
       ],
       "_file": "/home/ut003483@uos/.openclaw/workspace/health-website/data/recipes-19.json",
       "_source": "陈允斌二十四节气顺时饮食法冬藏"
-    },
-    {
-      "id": "summer-013",
-      "name": "麦饭",
-      "categories": {
-        "season": [
-          "夏季"
-        ],
-        "symptom": [
-          "心气虚",
-          "烦热",
-          "虚汗",
-          "注意力不集中",
-          "脾胃虚弱"
-        ],
-        "ingredient": [
-          "小麦"
-        ],
-        "type": [
-          "主食"
-        ]
-      },
-      "efficacy": "养心气、止烦热、止虚汗、营养神经、养心脾",
-      "symptoms": [
-        "心气虚",
-        "烦热（皮肤表面一阵热出汗）",
-        "出虚汗",
-        "注意力不集中",
-        "孩子坐不住",
-        "脾胃虚弱"
-      ],
-      "ingredients": [
-        {
-          "name": "小麦粒或麦仁",
-          "amount": "适量"
-        },
-        {
-          "name": "大米（可选）",
-          "amount": "适量"
-        }
-      ],
-      "method": "煮法有两种：\n\n1. 煮稀饭：一半小麦粒和一半大米掺在一起煮稀饭，也可以单独煮小麦粒。单煮小麦粒像小麦汤，带皮要先咀嚼。\n\n2. 煮饭：把麦粒和大米掺在一起煮，或者直接把小麦粒煮成麦饭。\n\n注意：煮的时间要非常长，最好提前一晚上用水泡起来第二天再煮。\n\n一定要整粒麦子煮，不能磨面。要珍惜麸皮（含丰富维生素B族，营养神经，止虚汗）。",
-      "precautions": "芒种时节收获的冬小麦得四时之气（秋冬春夏都经历了），营养最丰富。麸皮和麦粒营养互相补充。整粒麦子跟面粉有很大区别，麦饭养心效果更好。新收的小麦不能磨面（有后熟过程，要等两个月），都是整粒煮着吃。",
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法夏长",
-        "author": "陈允斌"
-      },
-      "feedback": [],
-      "suitableFor": [
-        "一般人群"
-      ],
-      "contraindicatedFor": [],
-      "difficulty": "简单",
-      "prepTime": "2分钟",
-      "cookTime": "10分钟",
-      "bestTimeToEat": "随餐食用",
-      "frequency": "每周2-3次",
-      "storage": "现做现吃",
-      "keywords": [
-        "夏季必备"
-      ],
-      "tags": [
-        "易制作",
-        "低成本",
-        "无副作用"
-      ]
-    },
-    {
-      "id": "summer-014",
-      "name": "炒面",
-      "categories": {
-        "season": [
-          "夏季"
-        ],
-        "symptom": [
-          "脾胃虚弱",
-          "腹泻",
-          "大便不成形",
-          "食欲不振"
-        ],
-        "ingredient": [
-          "面粉",
-          "牛骨髓油",
-          "核桃"
-        ],
-        "type": [
-          "主食"
-        ]
-      },
-      "efficacy": "滋养心脾、调理腹泻、调理大便不成形",
-      "symptoms": [
-        "脾胃虚弱",
-        "经常拉肚子",
-        "大便溏薄不成形",
-        "夏天食欲不振",
-        "孩子不吃饭"
-      ],
-      "ingredients": [
-        {
-          "name": "面粉",
-          "amount": "适量"
-        },
-        {
-          "name": "牛骨髓油",
-          "amount": "少许"
-        },
-        {
-          "name": "核桃（可选）",
-          "amount": "少许"
-        },
-        {
-          "name": "盐或糖",
-          "amount": "少许"
-        }
-      ],
-      "method": "1. 用麦粉或磨好的面粉，放一点牛骨髓油在铁锅里炒熟。\n2. 可以加一点核桃。\n3. 可以加盐或糖调味。\n4. 炒好后保存起来，每次吃的时候用开水冲调。",
-      "precautions": "不仅适合芒种节气，整个夏秋季都适合。大便不成形或脾胃虚弱的人一年四季都可以吃。",
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法夏长",
-        "author": "陈允斌"
-      },
-      "feedback": [
-        "昨晚做了炒面，还加了点核桃，特别好吃，有小时候妈妈做的味道。"
-      ],
-      "suitableFor": [
-        "一般人群"
-      ],
-      "contraindicatedFor": [],
-      "difficulty": "中等",
-      "prepTime": "5分钟",
-      "cookTime": "10分钟",
-      "bestTimeToEat": "随餐食用",
-      "frequency": "每周2-3次",
-      "storage": "现做现吃",
-      "keywords": [
-        "夏季必备"
-      ],
-      "tags": [
-        "低成本",
-        "无副作用"
-      ]
     },
     {
       "id": "summer-015",
@@ -34417,78 +33073,6 @@
       ]
     },
     {
-      "id": "method-006",
-      "name": "艾粑",
-      "categories": {
-        "season": [
-          "春季",
-          "清明"
-        ],
-        "symptom": [
-          "痰多咳喘",
-          "荨麻疹",
-          "青春痘",
-          "高血压"
-        ],
-        "ingredient": [
-          "田艾",
-          "糯米粉",
-          "红糖"
-        ],
-        "type": [
-          "点心"
-        ]
-      },
-      "efficacy": "调中益气、祛水肿、止白带、解毒、化痰止咳、祛风除湿、抗菌解毒",
-      "symptoms": [
-        "痰多咳喘",
-        "荨麻疹",
-        "青春痘",
-        "皮肤感染",
-        "高血压",
-        "蚕豆病"
-      ],
-      "ingredients": [
-        {
-          "name": "田艾（清明菜）",
-          "amount": "适量"
-        },
-        {
-          "name": "糯米粉",
-          "amount": "适量"
-        },
-        {
-          "name": "红糖",
-          "amount": "适量"
-        }
-      ],
-      "method": "1. 采摘新鲜田艾的嫩尖，洗净切碎，剁成茸。\n2. 锅里水烧开，放入田艾，不要盖锅盖，大火煮30分钟，加入红糖化开，关火。\n3. 将煮好的田艾连水趁热与糯米粉混合，用筷子搅拌，不烫手时用手揉匀成团。\n4. 搓成长条，切成段，揉成椭圆形，放笼屉里大火蒸20分钟。",
-      "precautions": "田艾尽量剁成茸，口感才细腻。煮田艾时不要盖锅盖，否则会发黄颜色不鲜亮。田艾是鼠曲草（佛耳草），不是艾蒿。糯米食物不好消化，田艾有调理胃痛作用，与糯米是很好的搭配。",
-      "source": {
-        "book": "吃法决定活法_2019版",
-        "author": "陈允斌"
-      },
-      "feedback": [],
-      "suitableFor": [
-        "一般人群"
-      ],
-      "contraindicatedFor": [],
-      "difficulty": "简单",
-      "prepTime": "5分钟",
-      "cookTime": "10分钟",
-      "bestTimeToEat": "随餐食用",
-      "frequency": "每周2-3次",
-      "storage": "现做现吃",
-      "keywords": [
-        "春季养生"
-      ],
-      "tags": [
-        "易制作",
-        "低成本",
-        "无副作用"
-      ]
-    },
-    {
       "id": "method-007",
       "name": "清明粥",
       "categories": {
@@ -36892,64 +35476,6 @@
       "storage": "现煮现喝",
       "keywords": [
         "祛湿"
-      ],
-      "tags": [
-        "易制作",
-        "低成本",
-        "无副作用"
-      ]
-    },
-    {
-      "id": "wisdom-024",
-      "name": "烤蒜",
-      "categories": {
-        "season": [
-          "四季"
-        ],
-        "symptom": [
-          "细菌感染",
-          "腹泻",
-          "菌痢"
-        ],
-        "ingredient": [
-          "大蒜"
-        ],
-        "type": [
-          "烤制"
-        ]
-      },
-      "efficacy": "抵抗细菌感染、预防肠道细菌感染",
-      "symptoms": [
-        "吃了不干净东西拉肚子",
-        "细菌性痢疾",
-        "脓血便",
-        "海鲜不洁"
-      ],
-      "ingredients": [
-        {
-          "name": "紫皮独头蒜",
-          "amount": "中等大小"
-        }
-      ],
-      "method": "1. 选取中等大小的紫皮独头蒜，放在炉子上，用火烧到外皮变焦脱落，蒜瓣变软。\n2. 取出蒜，剥掉皮，把蒜瓣直接吃掉，也可以蘸上一点白糖吃。",
-      "precautions": "大蒜能抵抗细菌感染，作用类似于青霉素，特别是对于肠道细菌感染和传染性肺病有预防作用。吃海鲜时吃两瓣生蒜杀菌消毒。外出旅游吃生猛海鲜或喝不干净水容易传染细菌性痢疾，每天吃一点烤蒜防止细菌感染引起的腹泻和咳嗽。把大蒜烤软是为了去其辛辣味，蘸白糖又甜又好吃。吃生蒜感觉烧心可以把大蒜烤来吃就不会烧心了。",
-      "source": {
-        "book": "回家吃饭的智慧",
-        "author": "陈允斌"
-      },
-      "feedback": [],
-      "suitableFor": [
-        "一般人群"
-      ],
-      "contraindicatedFor": [],
-      "difficulty": "简单",
-      "prepTime": "2分钟",
-      "cookTime": "10分钟",
-      "bestTimeToEat": "随餐食用",
-      "frequency": "每周2-3次",
-      "storage": "现做现吃",
-      "keywords": [
-        "养生保健"
       ],
       "tags": [
         "易制作",
@@ -46809,7 +45335,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "山药健脾胃，红枣补气血，补养小食，药性平和，入口软糯，味道清甜，易于消化",
       "symptoms": [],
       "ingredients": [
         {
@@ -46836,6 +45362,11 @@
         "images/luodalun/00018.jpeg",
         "images/luodalun/00019.jpeg",
         "images/luodalun/00020.jpeg"
+      ],
+      "suitableFor": [
+        "脾阴虚",
+        "脾阳虚",
+        "脾胃虚弱的孩子"
       ]
     },
     {
@@ -46851,7 +45382,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "补血养心，非常适合贫血的孩子吃",
       "symptoms": [],
       "ingredients": [
         {
@@ -46879,6 +45410,9 @@
         "images/luodalun/00028.jpeg",
         "images/luodalun/00029.jpeg",
         "images/luodalun/00030.jpeg"
+      ],
+      "suitableFor": [
+        "贫血的孩子"
       ]
     },
     {
@@ -46894,7 +45428,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "补血、益智、健脾养胃，适合贫血的孩子和学龄儿童",
       "symptoms": [],
       "ingredients": [
         {
@@ -46922,68 +45456,11 @@
         "images/luodalun/00034.jpeg",
         "images/luodalun/00035.jpeg",
         "images/luodalun/00036.jpeg"
-      ]
-    },
-    {
-      "id": "luodalun-004",
-      "name": "茯苓、甘草",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "杏仁",
-          "茯苓",
-          "甘草",
-          "法半夏",
-          "元参（即玄参）",
-          "生姜",
-          "橘皮",
-          "桔梗"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "桔梗",
-          "amount": "3克"
-        },
-        {
-          "name": "元参（即玄参）",
-          "amount": "3克"
-        },
-        {
-          "name": "杏仁",
-          "amount": "3克"
-        },
-        {
-          "name": "橘皮",
-          "amount": "3克"
-        },
-        {
-          "name": "法半夏",
-          "amount": "2克"
-        },
-        {
-          "name": "茯苓",
-          "amount": "3克"
-        },
-        {
-          "name": "甘草",
-          "amount": "2克"
-        },
-        {
-          "name": "生姜",
-          "amount": "3克"
-        }
       ],
-      "method": "熬水，大约放5碗水，熬至2碗的量，早晚各服用1碗即可。 叮嘱： 1. 此方专门用于调理鼻炎中鼻涕清的症状。若鼻涕的颜色为黄色，则不可服用。 2. 此方为三岁以上孩子的用量，七岁以上的孩子用双倍分量。 山药 莲子 芡实 薏仁 但很多人会把这种情况称为过敏性鼻炎。那么，这种鼻炎一般怎么治呢？我给大家讲过清朝黄元御的桔梗元参汤，这个方子大人可以用，孩子也可以用。只是孩子可以根据年龄的大小，将药材的用量用到成人用量的三分之一或一半。 这个方子治疗成人过敏性鼻炎的效果非常好，很多人用这个方子，几服必效。很多孩子使用起来效果也不错。 但这毕竟是个方子，平时我们要怎么给孩子保养呢？ 家长可以多用食疗的方法，帮助孩子增强脾胃功能，补足肺气。在饮食上多下功夫，您可以多给孩子吃一些怀山药、莲子、芡实、薏仁等食物，或多吃一些五谷杂粮，这对孩子的脾胃都非常有好处。 一旦孩子的脾气足了，肺气就足了。肺气坚固以后，很多问题身体自己会慢慢解决的。 因为孩子的阳气特别旺，身体会慢慢把外邪清除掉。如果家长此时给孩子吃一些补脾的食疗方，给他搭配按摩效果会更好。尤其是平时一定要让孩子多锻炼身体，经常跑跑跳跳，多晒晒太阳，对",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
+      "suitableFor": [
+        "贫血的孩子",
+        "学龄儿童"
+      ]
     },
     {
       "id": "luodalun-005",
@@ -46997,7 +45474,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "温阳解表散寒，帮助清除体内剩余寒气",
       "symptoms": [],
       "ingredients": [
         {
@@ -47019,6 +45496,10 @@
       "ingredientImages": [
         "images/luodalun/00064.jpeg",
         "images/luodalun/00065.jpeg"
+      ],
+      "suitableFor": [
+        "感冒后流鼻涕",
+        "外感未清"
       ]
     },
     {
@@ -47039,7 +45520,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "清热通窍，调理鼻窦炎流黄鼻涕",
       "symptoms": [],
       "ingredients": [
         {
@@ -47088,188 +45569,6 @@
       ]
     },
     {
-      "id": "luodalun-007",
-      "name": "白术、茯苓",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "焦三仙",
-          "桂枝",
-          "白芍",
-          "茯苓",
-          "山萸肉",
-          "白术",
-          "怀山药",
-          "炒薏米",
-          "炙甘草",
-          "炒莱菔子",
-          "生麦芽",
-          "炒鸡内金"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "生麦芽",
-          "amount": "6克"
-        },
-        {
-          "name": "焦三仙",
-          "amount": "6克"
-        },
-        {
-          "name": "炒鸡内金",
-          "amount": "6克"
-        },
-        {
-          "name": "炒莱菔子",
-          "amount": "3克"
-        },
-        {
-          "name": "白芍",
-          "amount": "6克"
-        },
-        {
-          "name": "山萸肉",
-          "amount": "6克"
-        },
-        {
-          "name": "桂枝",
-          "amount": "3克"
-        },
-        {
-          "name": "白术",
-          "amount": "6克"
-        },
-        {
-          "name": "茯苓",
-          "amount": "6克"
-        },
-        {
-          "name": "怀山药",
-          "amount": "6克"
-        },
-        {
-          "name": "炒薏米",
-          "amount": "6克"
-        },
-        {
-          "name": "炙甘草",
-          "amount": "6克"
-        }
-      ],
-      "method": "熬水，倒入5杯水，大火开锅后熬成3杯水即可。 叮嘱： 1. 方子里除了白芍，几乎都是食品级的，可以泡脚，也可以熬水代茶饮，根据孩子的接受程度饮用即可。 2. 给孩子泡脚的水是温热的就可以，时间不用太长。",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-008",
-      "name": "白术、白芍",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "焦三仙",
-          "茯苓",
-          "白术",
-          "法半夏",
-          "黄芩",
-          "枳壳",
-          "怀山药",
-          "炒薏米",
-          "炙甘草",
-          "党参",
-          "柴胡",
-          "竹茹",
-          "白芍",
-          "炒鸡内金",
-          "陈皮",
-          "连翘"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "柴胡",
-          "amount": "6克"
-        },
-        {
-          "name": "黄芩",
-          "amount": "6克"
-        },
-        {
-          "name": "党参",
-          "amount": "6克"
-        },
-        {
-          "name": "焦三仙",
-          "amount": "6克"
-        },
-        {
-          "name": "炒鸡内金",
-          "amount": "6克"
-        },
-        {
-          "name": "陈皮",
-          "amount": "6克"
-        },
-        {
-          "name": "法半夏",
-          "amount": "3克"
-        },
-        {
-          "name": "竹茹",
-          "amount": "3克"
-        },
-        {
-          "name": "枳壳",
-          "amount": "3克"
-        },
-        {
-          "name": "白芍",
-          "amount": "6克"
-        },
-        {
-          "name": "白术",
-          "amount": "6克"
-        },
-        {
-          "name": "茯苓",
-          "amount": "9克"
-        },
-        {
-          "name": "怀山药",
-          "amount": "6克"
-        },
-        {
-          "name": "炒薏米",
-          "amount": "6克"
-        },
-        {
-          "name": "连翘",
-          "amount": "6克"
-        },
-        {
-          "name": "炙甘草",
-          "amount": "6克"
-        }
-      ],
-      "method": "将上述药材一起煮水，大火开锅后，待水温适宜，给孩子泡脚即可。 本来我开这个方子的时候说，也可以给孩子喝一点儿。但是孩子不想喝，所以就都用来泡脚了。",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
       "id": "luodalun-009",
       "name": "三豆乌梅白糖汤",
       "categories": {
@@ -47281,7 +45580,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "祛湿养阴，调理湿疹，口感酸甜好喝",
       "symptoms": [],
       "ingredients": [
         {
@@ -47304,6 +45603,10 @@
         "images/luodalun/00107.jpeg",
         "images/luodalun/00108.jpeg",
         "images/luodalun/00109.jpeg"
+      ],
+      "suitableFor": [
+        "湿疹患儿",
+        "湿热体质"
       ]
     },
     {
@@ -47319,7 +45622,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "润肺止咳，调理哮喘",
       "symptoms": [],
       "ingredients": [
         {
@@ -47360,7 +45663,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "补脾养胃，适合肝气不舒的孩子",
       "symptoms": [],
       "ingredients": [
         {
@@ -47382,160 +45685,11 @@
       "ingredientImages": [
         "images/luodalun/00132.jpeg",
         "images/luodalun/00133.jpeg"
+      ],
+      "suitableFor": [
+        "肝气不舒的孩子",
+        "脾虚"
       ]
-    },
-    {
-      "id": "luodalun-012",
-      "name": "面粉、干姜",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "面粉",
-          "白术",
-          "红枣",
-          "鸡内金",
-          "干姜",
-          "菜油"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "白术",
-          "amount": "30克"
-        },
-        {
-          "name": "干姜",
-          "amount": "6克"
-        },
-        {
-          "name": "红枣",
-          "amount": "250克"
-        },
-        {
-          "name": "鸡内金",
-          "amount": "15克"
-        },
-        {
-          "name": "面粉",
-          "amount": "500克"
-        },
-        {
-          "name": "菜油",
-          "amount": "适量"
-        }
-      ],
-      "method": "1.将白术、干姜装入纱布袋，扎口，放入锅内，下红枣。 2.加水适量，用武火烧沸后，改用文火熬1小时左右。 3.除去纱布袋及枣核，把枣肉捣成枣泥待用。 4.将鸡内金轧成细粉，与面粉混合均匀。 5.倒入枣泥，加水适量，和成面团。 6.将面团分成若干小团，擀成薄饼，用文火烙熟即可。 功效：健脾益气，开胃消食。",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-013",
-      "name": "什么是慢性病呢？",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "荆芥",
-          "甘草",
-          "辛夷",
-          "白芷",
-          "桔梗",
-          "金银花",
-          "连翘"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "辛夷",
-          "amount": "3克"
-        },
-        {
-          "name": "白芷",
-          "amount": "3克"
-        },
-        {
-          "name": "荆芥",
-          "amount": "3克"
-        },
-        {
-          "name": "金银花",
-          "amount": "3克"
-        },
-        {
-          "name": "连翘",
-          "amount": "6克"
-        },
-        {
-          "name": "桔梗",
-          "amount": "3克"
-        },
-        {
-          "name": "甘草",
-          "amount": "3克"
-        }
-      ],
-      "method": "先将上述药材浸泡20分钟，然后大火开锅，开锅后转小火熬10分钟即可。 用法：漱口或者滴鼻子都可以。 叮嘱： 1.这是5岁以下孩子的量。5岁以上的孩子，量要增加1倍。 2.漱口后的药水要让孩子吐掉，不要吞下。 3.您可以请附近的中医根据孩子的情况进行加减。 白芷有散寒、祛湿、通窍的作用。辛夷专门通窍、散邪，尤其对鼻腔散邪的效果特别好。荆芥也有疏风、散邪的功效。这几味都是风药，能够通筋络和疏散邪气。 这个方子并不是死方子，只要是芳香通窍的药物，都可以适当加一些。金银花可以清热解毒。连翘也有解毒、散邪的作用。桔梗可以散结，让药性上行。 在煮这些药材的过程中，可以让孩子用蒸汽熏鼻子——往里吸这个蒸汽。水放温以后，可以用来漱口。有很多孩子不会漱口，家长可以慢慢教，太小的孩子最好还是用滴鼻子的方法。 如果您让孩子漱口，一天让他多漱几次是可以的。 如果您是给孩子滴鼻子，可以买一个氯霉素眼药水的塑料瓶，把药汁吸进去。然后，用这个往孩子的鼻子里滴，一次滴两滴，滴完一侧，堵上鼻孔，让孩子躺在床上，左右滚一滚（轻轻滚），这么一滚，药汁就会布满鼻腔。通过鼻黏膜、口腔黏膜来吸收药物，也能达到调理的效果。 如果孩",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-014",
-      "name": "藿香叶、石膏",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "甘草",
-          "石膏",
-          "防风",
-          "山栀子仁",
-          "藿香叶"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "藿香叶",
-          "amount": "7克"
-        },
-        {
-          "name": "山栀子仁",
-          "amount": "2克"
-        },
-        {
-          "name": "石膏",
-          "amount": "5克"
-        },
-        {
-          "name": "甘草",
-          "amount": "30克"
-        },
-        {
-          "name": "防风",
-          "amount": "40克"
-        }
-      ],
-      "method": "1.将上述药材加5杯水，大火开锅后，熬至2杯即可。 2.温服，不拘时。 叮嘱： 1.此方剂量适合于5岁孩子。 2.家长最好带孩子找附近的中医辨证加减后用药。",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
     },
     {
       "id": "luodalun-015",
@@ -47555,7 +45709,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "补脾镇肝，调理大便干燥、脾气大",
       "symptoms": [],
       "ingredients": [
         {
@@ -47636,62 +45790,6 @@
       }
     },
     {
-      "id": "luodalun-017",
-      "name": "半夏、枳实",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "枳实",
-          "茯苓",
-          "甘草",
-          "竹茹",
-          "川连",
-          "橘红",
-          "半夏"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "川连",
-          "amount": "6克"
-        },
-        {
-          "name": "竹茹",
-          "amount": "12克"
-        },
-        {
-          "name": "枳实",
-          "amount": "6克"
-        },
-        {
-          "name": "半夏",
-          "amount": "6克"
-        },
-        {
-          "name": "橘红",
-          "amount": "6克"
-        },
-        {
-          "name": "甘草",
-          "amount": "3克"
-        },
-        {
-          "name": "茯苓",
-          "amount": "10克"
-        }
-      ],
-      "method": "将上述药材熬水，开锅熬30分钟即可。然后滤出药汁，将其分为两份，早晚兑入温水泡脚，每次20分钟，水温适中就行。",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
       "id": "luodalun-018",
       "name": "甘麦枣藕汤",
       "categories": {
@@ -47706,7 +45804,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "益气养血、宁心安神，适合失眠多梦",
       "symptoms": [],
       "ingredients": [
         {
@@ -47741,95 +45839,12 @@
         "images/luodalun/00196.jpeg",
         "images/luodalun/00197.jpeg",
         "images/luodalun/00198.jpeg"
+      ],
+      "suitableFor": [
+        "失眠多梦",
+        "心火旺盛",
+        "焦虑烦躁"
       ]
-    },
-    {
-      "id": "luodalun-019",
-      "name": "莲子",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "冰糖",
-          "莲子（带芯）",
-          "粳米",
-          "干百合"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "干百合",
-          "amount": "30克"
-        },
-        {
-          "name": "莲子（带芯）",
-          "amount": "30克"
-        },
-        {
-          "name": "冰糖",
-          "amount": "30克"
-        },
-        {
-          "name": "粳米",
-          "amount": "100克"
-        }
-      ],
-      "method": "1.将莲子在水中泡发。 2.把干百合、粳米、莲子一同放入锅中熬煮。 3.快熟时加入冰糖。 此粥清热养阴、润肺安神，适合失眠多梦伴心火旺盛、焦虑烦躁的孩子食用。 作为家长，千万不能对孩子失眠的问题坐视不管。如果您真碰上了孩子不好好睡觉的情况，不妨试试上面几种方法！ 此外，家长一定要积极调整自己的心态，不要给孩子太大的学习压力。 我认为，如果您真的是为了孩子好，想让孩子学到更多东西，完全可以培养孩子自主学习的能力，让他发现获取知识的乐趣，而不是一味地要求孩子考高分。 如果家长能够做出改变，我相信孩子会变得积极阳光起来，生病的概率也会少很多。 压力大的孩子毛病多 15让孩子的嘴越来越“壮” 很多家长问：是不是有的食物特别好，有的食物没有那么好，我们应该选择特别好的食物吗？",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      },
-      "image": "images/luodalun/00200.jpeg"
-    },
-    {
-      "id": "luodalun-020",
-      "name": "冰糖、薏苡仁",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "麦冬",
-          "薏苡仁各",
-          "芡实",
-          "怀山药",
-          "莲子肉"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "怀山药",
-          "amount": "适量"
-        },
-        {
-          "name": "芡实",
-          "amount": "适量"
-        },
-        {
-          "name": "莲子肉",
-          "amount": "适量"
-        },
-        {
-          "name": "薏苡仁各",
-          "amount": "9克"
-        },
-        {
-          "name": "麦冬",
-          "amount": "6克"
-        }
-      ],
-      "method": "把这些药放入锅里，倒4杯水，用大火煎煮，开锅后用小火煎半小时，大约剩下2杯左右的药汁，把药汁滤出，放入1块冰糖，晾凉。 叮嘱： 1.这道汤喝起来甜甜的，孩子很喜欢，每天服用1次即可，最多连续服用1~2周。如果是感冒后用来滋补脾阴的话，喝5次就够了。 2. 大人脾阴不足，口干舌燥、舌头红、眼睛干、手心热，用这道食疗方也可以。 3. 此方用量以6岁孩子为例。 在这种情况下，您就不要给孩子整天喝粥了。一定要营养均衡，给他吃点儿鸡蛋，少量添点儿肉是可以的。 我见过很多家长听了中医讲座之后，一看到孩子积食了，就只给孩子喝粥。然后发现怎么我天天给孩子喝粥他还积食，于是就给孩子少吃点儿饭，一天吃两顿…… 我们所说的控制饮食指的是别让孩子过分积食，否则会重伤脾胃。脾胃已经弱了，您还让孩子吃大鱼大肉给它加负担是不行的，您可以给孩子吃稍微清淡一点儿的食物把脾胃功能补上来，补上来以后再给他添点儿鱼、添点儿肉是可以的。 大家一定要知道这里面的平衡，这也是需要掌握的忌口知识之一。 家长要有一个全局观，要知道如果我们什么食物都给孩子吃一些，他的身体会自己达到一个平衡，这些食物都能转化为有利于身体吸收的营养。 家长",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
     },
     {
       "id": "luodalun-021",
@@ -47848,7 +45863,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "滋阴泻火，调理阴虚火旺",
       "symptoms": [],
       "ingredients": [
         {
@@ -47910,7 +45925,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "养血祛风，调理唇炎",
       "symptoms": [],
       "ingredients": [
         {
@@ -47988,7 +46003,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "清热利咽，调理咽喉肿痛",
       "symptoms": [],
       "ingredients": [
         {
@@ -48017,48 +46032,11 @@
       "source": {
         "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
         "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-024",
-      "name": "第八，阴虚的朋友要防阴虚湿困",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "石斛",
-          "玉竹",
-          "麦冬",
-          "西洋参"
-        ],
-        "type": []
       },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "石斛",
-          "amount": "6克"
-        },
-        {
-          "name": "玉竹",
-          "amount": "6克"
-        },
-        {
-          "name": "麦冬",
-          "amount": "6克"
-        },
-        {
-          "name": "西洋参",
-          "amount": "3克"
-        }
-      ],
-      "method": "泡水代茶饮。 此方可以起到滋阴润燥的作用，对于阴虚之人，在夏天感觉口干舌燥、身体虚热的时候，如果能隔三岔五地饮用，可以起到改善体质的功效。 此外，可以滋阴的药物还有生地、沙参、麦冬、石斛、玉竹、女贞子、旱莲草、山萸肉等。大家可以根据自身的情况来选取。 麦冬 罗大伦教你四季食疗 九、夏天，气虚的朋友如何保养？",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
+      "suitableFor": [
+        "咽喉肿痛",
+        "嗓子不舒服"
+      ]
     },
     {
       "id": "luodalun-025",
@@ -48072,7 +46050,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "散寒宣肺，调理秋燥",
       "symptoms": [],
       "ingredients": [
         {
@@ -48090,7 +46068,11 @@
         "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
         "author": "罗大伦"
       },
-      "image": "images/luodalun/00063.jpeg"
+      "image": "images/luodalun/00063.jpeg",
+      "suitableFor": [
+        "秋燥",
+        "咳嗽"
+      ]
     },
     {
       "id": "luodalun-026",
@@ -48106,7 +46088,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "润燥生津，滋阴润燥",
       "symptoms": [],
       "ingredients": [
         {
@@ -48131,7 +46113,11 @@
       "source": {
         "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
         "author": "罗大伦"
-      }
+      },
+      "suitableFor": [
+        "阴虚",
+        "口干舌燥"
+      ]
     },
     {
       "id": "luodalun-027",
@@ -48150,7 +46136,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "润燥生津，秋季滋阴",
       "symptoms": [],
       "ingredients": [
         {
@@ -48295,57 +46281,6 @@
         }
       ],
       "method": "1. 将山药洗干净，去皮、切片。 2. 把几种药材清洗干净，浸泡一小会儿。 3.将瘦肉洗干净，切片。 4. 银耳用清水泡发后洗干净，去根，撕成小朵。 5. 烧开水，猪肉下锅焯水，撇掉浮沫，焯好捞出放凉。 6. 把泡好的药材倒进锅里，放上格挡。 7. 放入猪肉、银耳、山药后，给锅中添入足量水。 8. 选择快炖模式，水开后煲1.5小时就可以。也可以用砂锅煲，大火烧开后转小火慢炖1.5小时即可。 罗博士叮嘱 ❶ 由阳虚体质导致的皮肤干燥之人不适宜用此方。 ❷ 脾胃虚寒的人要少食或慎食。 沙参玉竹煲瘦肉汤里的食材有何神奇？ 这道汤里用了沙参和玉竹这两味滋阴的药材。 通常，滋阴时我们会选用北沙参，其性微寒，归肺、胃经，可以补肺阴、清肺热，同时可以滋养胃阴、清胃热，能治疗肺热燥咳，热病伤津，咽干口渴。 玉竹性微寒，其归肺、胃经，养阴润燥，生津止渴，功效与沙参相同。 再配以麦冬，其归心、肺、胃经，同样养阴润肺，益胃生津，能治疗阴虚内热，肠燥便秘，还增加了清心除烦的功效，对心阴虚导致的心烦失眠有调理作用。 沙参、麦冬、玉竹常相须为用，滋阴清热的效果更加。 玉竹 方中的山药，用的是普通鲜山药，如果用正宗",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-030",
-      "name": "炙甘草、芍药",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "葛根",
-          "炙甘草",
-          "生姜",
-          "麻黄",
-          "桂枝",
-          "芍药"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "葛根",
-          "amount": "12克"
-        },
-        {
-          "name": "麻黄",
-          "amount": "6克"
-        },
-        {
-          "name": "桂枝",
-          "amount": "6克"
-        },
-        {
-          "name": "生姜",
-          "amount": "9克"
-        },
-        {
-          "name": "炙甘草",
-          "amount": "6克"
-        },
-        {
-          "name": "芍药",
-          "amount": "6克"
-        }
-      ],
-      "method": "先用1升水煮麻黄、葛根，待水煮至800毫升时，去掉水面的浮沫，再下入其余药物一起煮。最后取300毫升，去滓（谓药渣）即可。 用法：每次温服150毫升。 叮嘱：服药以后注意保暖，多披件衣服，取微似汗（全身微微有汗）。特别要注意的是，对于正气不足、动辄汗出之人，服用时要去掉麻黄这味药。 记得当年有一位青岛兄弟，冬天的时候去了海港工作。回来后，他感觉面部一侧发木，于是立刻给我打电话，我给他开了葛根汤，他去药房抓药，当时药房的老中医看了，说“这是经方啊”。 我的这位朋友喝完药后，很快就解除了症状，病情没有继续发展，这就是他抓住了受寒的第一时间，及时调理的结果，所以效果很好。 在这个阶段，有些中医的散寒通络的方子也可以服用。临床上常用一些“风药”，比如，羌活、防风、白芷、麻黄等药，调理由受寒导致的面瘫都是可以的。 白芷 2）内热导致的面瘫，可服用清热散外寒的方子 得这类面瘫的人，一般是其体内有郁热，同时感受外寒，导致了外寒里热。 此时的药物，要用有散外寒功效的，同时也要有清里热的功效。 我举几个有此配伍的中医经验方，给大家讲解一下。 ①周围性面瘫，可服用菊青葛根汤 河北的老中医张秋才先生，他的菊",
       "precautions": "",
       "source": {
         "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
@@ -48668,42 +46603,6 @@
       "image": "images/luodalun/00106.jpeg"
     },
     {
-      "id": "luodalun-037",
-      "name": "龙眼肉、乌骨鸡",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "人参",
-          "龙眼肉",
-          "当归"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "人参",
-          "amount": "10克"
-        },
-        {
-          "name": "当归",
-          "amount": "10克"
-        },
-        {
-          "name": "龙眼肉",
-          "amount": "10颗"
-        }
-      ],
-      "method": "1. 将人参、当归、龙眼肉清洗干净。 2. 把人参的参芦去掉，参须留下。一般认为参芦有催吐的作用，所以家常进补时去掉为好。 3. 乌鸡处理干净，除去内脏，去掉鸡屁股后，凉水下锅焯水。焯水时可以放一些生姜或者料酒，帮助去除肉腥味。 4. 焯好后捞出，把处理好的人参、当归和龙眼肉塞入鸡腹内。 5. 我们用的是隔水炖的方法，将鸡和剩下的人参须放入锅中，内锅加入温水（冷水易使焯过的肉回生，导致肉的口感比较柴），外锅加入热水（可以缩短烹饪时间），煲汤模式定时为水开后炖3小时。或用砂锅在火上煲汤，水开后转小火慢炖3小时即可。 6. 时间到后，调入适量食盐，搅拌均匀，撕开鸡肉，即可盛碗享用。 这道汤不仅毫无苦味，味道还十分甘美醇香，再配合口感细嫩、入口即化的乌骨鸡肉，堪称冬日盛宴。 2）乌鸡汤，堪称美食版的名方“归脾汤” 其实，看这道汤的食材，人参、当归、龙眼肉，您就知道这道汤有多么滋补了。这三味药在治疗心脾两虚、气血不足的著名方剂归脾汤中被搭配应用，所以这道汤非常适合在年底因为操心劳累太过、消耗太多，有气短心悸、失眠健忘、体倦乏力等症状的人食用（如果嫌麻烦，服用归脾丸调补一下也可以）。 人参的功效",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
       "id": "luodalun-038",
       "name": "人参灵芝炖乌鸡汤",
       "categories": {
@@ -48822,47 +46721,6 @@
       }
     },
     {
-      "id": "luodalun-041",
-      "name": "以下是我平时习惯的用量。",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "桂枝",
-          "生姜",
-          "白芍",
-          "炙甘草"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "桂枝",
-          "amount": "30克"
-        },
-        {
-          "name": "白芍",
-          "amount": "30克"
-        },
-        {
-          "name": "炙甘草",
-          "amount": "20克"
-        },
-        {
-          "name": "生姜",
-          "amount": "5片"
-        }
-      ],
-      "method": "将上述药材倒入5杯水，大火开锅后熬至2杯。服用后，最好喝一碗热粥，以助药力。 叮嘱：只要感觉身体微微出汗，剩下的药就可以不喝了。 这个方子里面，桂枝与白芍的量是一样的。如果把白芍的量增加一倍，加上饴糖，就变成了补脾的小建中汤。在《辅行诀》里，这个方子叫建中补脾汤，另外加上了牛肉。 在小建中汤里，白芍量大，可以敛肝柔肝，肝柔则脾土得舒。所以，柔肝敛阴，以安脾土，是此方的一个重要思路。 因此，在调理因为情绪不好引起的脾胃问题时，我们用小建中汤，往往效果不错。 而且，张仲景专门告诉我们，在喝了桂枝汤以后，要“啜热稀粥一升余，以助药力。温覆令一时许，遍身漐漐（zhí），微似有汗者益佳”。意思就是让我们喝完药，要喝点儿粥，用于滋补胃气（因为“阴弱”），以为汗源——如果脾胃虚弱，则无法发汗，正如《素问·评热病论》中说：“人所以汗出者，皆生于谷。” 热粥 然后，张仲景告诉大家，要让身体微微出汗，不要大汗淋漓。 流正汗，身体才好 补足脾胃，使得人体正气恢复，微微出汗，是治疗外感病的一个重要的概念，叫“正汗”。 对于身体虚弱之人，在感受外寒之后，只有发出正汗，外寒才能清除，身体才能恢复。 老一辈著名中医",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
       "id": "luodalun-042",
       "name": "参茯五味芍药汤",
       "categories": {
@@ -48935,7 +46793,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "调理过敏性鼻炎，清鼻涕症状，祛寒通窍",
       "symptoms": [],
       "ingredients": [
         {
@@ -48980,6 +46838,10 @@
         "images/luodalun/00048.jpeg",
         "images/luodalun/00049.jpeg",
         "images/luodalun/00050.jpeg"
+      ],
+      "suitableFor": [
+        "过敏性鼻炎",
+        "流清鼻涕"
       ]
     },
     {
@@ -49058,52 +46920,6 @@
         }
       ],
       "method": "1. 将生姜去皮，把去皮的生姜切片。 2.将猪龙骨倒入水中煮。 3.将生姜皮随即倒入锅内。 4.关火，将猪龙骨捞出，扔掉生姜皮。 5.将熟地和生地放入锅中，先煲半小时。 6.在汤里下入猪龙骨、生姜片、蜜枣一起煲，再煲一小时左右。关火前10分钟左右，放入龙眼肉（有的煲汤方法不放龙眼肉）、少许盐（根据个人口味）。 叮嘱：阳虚之人、平时大便溏泄的人，不可服用此汤。 名医张景岳专补肾精的食疗方：地黄醴 下面我介绍一个普遍适用的方子给大家。 这是张景岳的一个著名食疗方，叫地黄醴，“醴”指的是甜酒、美酒。在《黄帝内经》中就曾提到过“汤液醪醴”，也就是如何用酒入药。由此可见，用药酒调理身体的历史很长。 这个方子的具体组成是这样的。 地黄醴 地黄醴",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-046",
-      "name": "这个方子的具体组成是这样的。",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "烘晒干以去水汽）",
-          "枸杞（用极肥者",
-          "沉香",
-          "亦烘晒以去润气）",
-          "大怀熟地（取味极甘者"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "大怀熟地（取味极甘者",
-          "amount": "适量"
-        },
-        {
-          "name": "烘晒干以去水汽）",
-          "amount": "240克"
-        },
-        {
-          "name": "沉香",
-          "amount": "3克"
-        },
-        {
-          "name": "枸杞（用极肥者",
-          "amount": "适量"
-        },
-        {
-          "name": "亦烘晒以去润气）",
-          "amount": "120克"
-        }
-      ],
-      "method": "《景岳全书》中记载的做法是“上约每药一斤，可用高烧酒十斤浸之，不必煮，但浸十日之外，即可用矣。凡服此者，不得过饮。服完又加酒六七斤，再浸半月，仍可用”。 按照张景岳的方法，药物和酒的比例是1:10，如果药物的分量是大怀熟地240克、沉香3克、枸杞120克，那至少需要3.5千克的白酒，我认为白酒的用量太多了，这个药量，用两瓶500克装的白酒就可以了。一般泡10天，就可以喝了。您可以每天喝一小杯，不可过饮。 这个方子中的沉香较为昂贵，张景岳说也可以换成一克的白檀香。如果大家认为白檀香的价格也很贵的话，也可以用一克砂仁来代替。 张景岳说此方主治“男妇精血不足，营卫不充”。我认为，此方对滋补肾精也非常有效，尤其是平时就有饮酒习惯的男士，肾精不足时可以试试。 女士滋补肾精不足，喝熟地脊骨汤 对于女士，我更推荐熟地脊骨汤。 熟地脊骨汤 熟地脊骨汤",
       "precautions": "",
       "source": {
         "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
@@ -49304,52 +47120,6 @@
         }
       ],
       "method": "把炒熟的黑芝麻、核桃、黑豆磨成粉，加点阿胶搅成膏状，每天用热水冲一勺儿即可。 叮嘱：在购买食材的时候一定要注意食材的品质，黑芝麻和核桃容易变质，做好后要放在冰箱里冷藏，这样就不会变质了。除此之外，我们还要尽量保持心情愉悦，生活有规律，这样有利于血管神经调节处于正常状态。平时也可以通过经常梳头增强血液循环来改善脱发的情况。 4 您以为黑眼圈只是影响了您的颜值吗?",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-052",
-      "name": "那问题出在哪里呢？",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "麦冬",
-          "巴戟天",
-          "茯苓",
-          "熟地",
-          "五味子"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "熟地",
-          "amount": "90克"
-        },
-        {
-          "name": "巴戟天",
-          "amount": "30克"
-        },
-        {
-          "name": "茯苓",
-          "amount": "15克"
-        },
-        {
-          "name": "麦冬",
-          "amount": "30克"
-        },
-        {
-          "name": "五味子",
-          "amount": "6克"
-        }
-      ],
-      "method": "",
       "precautions": "",
       "source": {
         "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
@@ -49558,32 +47328,6 @@
         }
       ],
       "method": "① 将鹿角霜与其他药物用冷水分开浸泡30~60分钟，用水量以高出药面为度。 ② 用砂锅小火先煎鹿角霜20~30分钟。 ③ 将其他药物连同浸泡药的水一起放入砂锅，小火煮沸后再煎30~40分钟，滤出药汤。 ④ 加入第一次煎药时1/3~1/2的水量，小火煮沸后再煎20~30分钟，滤出药汤。 ⑤ 将两次煎煮的药汤混合后分为2份，早、晚饭前1小时各温服1份。 治慢性前列腺炎的经验方 此方大部分药物都是补肾的，配合了少量清利湿热的药物，又佐以少许通络之品。 如果舌苔厚腻，可以考虑先化痰祛湿，然后再用此方调补。对于药物的选择和用量以上内容仅供参考，大家最好请附近的中医根据自身的身体状况进行加减后再用药。 当然慢性前列腺炎除了肾阳、肾气不足之外，还会出现肾阴不足的情况，对于这部分患者可以服用知柏地黄丸等方子进行调理。 如果伴有气滞血瘀的问题，我们可以用清代《医林改错》中的少腹逐瘀汤加减治疗，所用的药物可以有小茴香、干姜、延胡索、没药、当归、川芎、肉桂、赤芍、蒲黄、五灵脂等。也可以酌情加入一些桃仁、红花、丹参，用这些药物熬水饮用，至于伴有肝气郁结的患者，除了肾精亏虚的症状外还会见到情志不遂，精神郁闷，小",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-056",
-      "name": "那我们自己在家怎么做玉灵膏呢？",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "龙眼肉"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "龙眼肉",
-          "amount": "300克"
-        }
-      ],
-      "method": "将二者搅拌均匀，放入碗中，上锅隔水蒸，一般需要蒸4小时以上。 用法：每天一调羹，开水冲服。 对于经常感到心神不宁的人可以根据症状的轻重不同适量加入炒酸枣仁、茯苓、桑葚这三味药。 茯苓可以祛湿安神，但茯苓安神的作用被很多人都忽略了。茯苓中间抱着松树根的部分是茯神，茯神的安神效果更好，对于伴有心阳虚、水气凌心的心血虚患者最为合适。 心经没有湿气困扰，会更清明。然后加上炒酸枣仁，炒酸枣仁是养血的。 如果肝经血亏的话，这个人就会心烦，睡不着觉。 现代人的血亏，到底是哪儿亏的？实际是肝血亏，而长期吃酸枣仁养血的效果非常好。所以明代医家缪希雍曾说过：“补血须用酸枣仁。” 另外，桑葚入心、肝、肾经，具有补血滋阴的作用。 心血虚的人只有把心血补足了心脏才能得到滋养，人才能健康。否则病情会进一步发展，出现心的气血两亏、心阴虚、心阳虚。 心阴虚的朋友要如何调理? 心阴虚的人夏天一定要注意养心，因为五脏与季节是有对应关系的，而夏季对应的是心。夏天心火比较旺盛，如果一个人身体内部环境不够稳定，心经就容易出问题。这是为什么呢？ 夏季气候炎热，人体容易出汗，汗出本可以帮助人体降温，疏通体表，排出体内的淤积，促进气",
       "precautions": "",
       "source": {
         "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
@@ -50285,7 +48029,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "清热化痰，祛湿减肥",
       "symptoms": [],
       "ingredients": [
         {
@@ -50319,33 +48063,11 @@
         "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
         "author": "罗大伦"
       },
-      "image": "images/luodalun/00187.jpeg"
-    },
-    {
-      "id": "luodalun-073",
-      "name": "需要注意，喝荷叶茶是有讲究的：",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "荷叶"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "荷叶",
-          "amount": "适量"
-        }
-      ],
-      "method": "泡水喝即可。 （4）喝酵素、艾灸痞根穴也可以减肥 此外，我再给大家推荐一个很好的减肥方法：喝点儿酵素，配合灸。 酵素是调节肠道的食物。我们喝酵素，并不是喝里面的益生菌和酶（当然会有一部分可以通过胃酸进入肠道），我们摄入的主要成分是益生菌分解过后的食物成分。供给肠道里有益菌的食物，叫益生元，它可以改善肠道菌群。 很多网友服用了酵素以后留言说大便通畅了，次数增多了。尤其是便秘的患者，喝了之后效果更好（这就是肠道菌群改善后的反应）。 我自己服用酵素后，明显感觉大便通畅了，排除积滞的效果非常显著。之前我经常到各地讲课，当地的朋友都会推荐很多美食给我，美味诱惑之下，我也没能控制住自己（必须先检讨一下），导致有些发福。震惊之下，开始自我调理。除了喝酵素，我还配合了艾灸，大肚子很快就消下去了。下面，我就把艾灸的穴位介绍一下。 这是明代张景岳的经验，这个穴位名叫“痞根”，取后背脊柱的两侧，从肚脐的位置向后平移，然后和脊柱交会，在交会点旁开，左右各3.5寸的位置（张景岳说可以用手摸，能感觉到动脉跳动的位置最佳）。找到穴位后，就艾灸这里，每次20分钟左右，一天灸两三次即可。 注意，这里说的3.5寸，以自己",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
+      "image": "images/luodalun/00187.jpeg",
+      "suitableFor": [
+        "痰热体质",
+        "肥胖"
+      ]
     },
     {
       "id": "luodalun-074",
@@ -50490,47 +48212,6 @@
         }
       ],
       "method": "1. 将煮好的药汁置于窄口盆内，先蒸汽熏蒸外阴（窄口盆以防药气外溢）。 2.待水温近皮温后擦洗外阴，每次10分钟为宜；若当地温度较低，可适当缩短时长。 3.一服药物可煎煮2次，每天熏洗1次（若不适症状明显者，可酌情调整早晚各熏洗1次）。 4.也可1次煮取1周剂量，放入冰箱，密封保存，用时加热熏洗。 叮嘱： 1.经期停用。 2.大家可以找附近的中医根据自身情况，有针对性地对药物进行加减。 在此方中，君药为蛇床子，虽然叫蛇，但它和动物的蛇没有什么关系。它是一种伞形科植物蛇床的成熟果实，具有杀虫止痒，燥湿祛风，温肾壮阳的功效。在孙思邈《千金方》的30多个治疗肾虚阳痿的方子中，用蛇床子的方数可达半数以上（内服、外用均有），其功效可见一斑。而且现代药理研究也证明了这味药确切的止痒作用与拮抗组胺（当组织受到损伤或发生炎症和过敏反应时，都可释放组胺）释放有关。 方中的明矾为矿物药，是硫酸盐类矿物质明矾经加工提炼制成，又叫白矾、枯矾。外用可解毒杀虫、燥湿止痒。此药对于痔疮、脱肛、子宫脱垂亦有不错的疗效。 花椒，就是家中厨房必备的佐料，以四川产的为上品，又名川椒、蜀椒。单用一味花椒煮水外用，可以治疗脚气",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-078",
-      "name": "为什么白带会变成黄色",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "c芡实",
-          "d黄柏",
-          "e车前子",
-          "a山药"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "a山药",
-          "amount": "30克"
-        },
-        {
-          "name": "c芡实",
-          "amount": "30克"
-        },
-        {
-          "name": "d黄柏",
-          "amount": "6克"
-        },
-        {
-          "name": "e车前子",
-          "amount": "3克"
-        }
-      ],
-      "method": "将上述药材加水，大火开锅后，小火熬一小时。熬好的汤为一天用量，分两次服用。 叮嘱： 1.若口渴、烦躁、便秘、排尿感觉热、舌质红，是热重于湿，可于原方加知母6克；若口干又不爱喝水、不爱吃饭，肚子又有些胀、时常腹泻、舌苔厚腻，是湿盛于热，可在原方基础上加生薏苡仁15克；若白带色黄且量大者，可加椿根皮10克、萆薢（黄山姜）10克。 2.最好找附近的中医帮您根据自身情况进行加减，对症调理。 ★为什么银杏树又叫“公孙树”？ 很多人不知道白果是什么，白果就是银杏树的果实。银杏树又被称为“公孙树”，“公孙”其实就是老公公与乖孙子的意思。由于其生长极其缓慢，寿命却很长，从栽种到结果，需要历经30年左右的时间，常常是年轻时种下一棵树，待到儿孙绕膝之时才可品尝丰收的果实，是真正的“公公种树，孙子得果”，故此得名“公孙树”。 银杏树是地球一亿七千万年前，第四纪冰川时期的孓（jué）遗植物，也被人们称为珍贵的“植物活化石”。无论是银杏叶，还是银杏果，都是绝佳的中药材。民间一直流传着“银杏苦甘肺肾经，镇咳祛痰定喘灵”，说的就是银杏的果实——白果。 白果对于敛肺化痰定喘，止带缩尿的功效甚佳。需要注意，白果虽好，但",
       "precautions": "",
       "source": {
         "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
@@ -51168,7 +48849,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "清肝泻火，调理肝火旺盛",
       "symptoms": [],
       "ingredients": [
         {
@@ -52562,7 +50243,7 @@
         ],
         "type": []
       },
-      "efficacy": "",
+      "efficacy": "滋阴补肾",
       "symptoms": [],
       "ingredients": [
         {
@@ -52607,25 +50288,6 @@
         }
       ],
       "method": "每天用1～3克的三七粉，和砸开的鸡腿骨（肉剔掉）一起熬汤，可以放入一点儿盐和佐料。把熬好的鸡骨汤，分成2碗，早晚各服用1碗，可以在吃饭的时候，当作菜汤服用，也可以单独服用，从骨折的时候开始服用，一直坚持服用到骨折愈合。 身体血液不足，如何补 玉灵膏 适应人群：短时间蹲下猛地站起来，眼前会瞬间变黑；容易失眠、健忘、疲劳、头晕、心悸；血虚人群。",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-120",
-      "name": "身体血液不足，如何补",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [],
-      "method": "将二者搅拌均匀，放到碗里，上锅隔水蒸，蒸到4个小时以上。每天1调羹，开水冲泡服用。 专治被气憋出病来的人 逍遥丸 适应人群：爱生气、心情郁闷、爱失眠、胃口不好、手脚冷、胸胁胀痛、身困乏力、便秘、月经不调等情况的人。",
       "precautions": "",
       "source": {
         "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
@@ -52850,32 +50512,6 @@
       }
     },
     {
-      "id": "luodalun-127",
-      "name": "我可以给大家提供一个方法：",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "砂仁"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "砂仁",
-          "amount": "1个"
-        }
-      ],
-      "method": "将砂仁捣碎，泡开水，用这个水来冲服六味地黄丸。 砂仁的芳香之气可以振奋脾胃，就化解掉了熟地的滞腻之性，同时砂仁还可以引药气归肾经，一举两得。 当然，最好的办法是请老中医给自己诊脉，看看是否适合服用六味地黄丸进行调养。 救命之方（2018版） 第10章 感恩地龙粉，治痔疮不一定要手术了 “十人九痔”这个说法可能有些夸张，但痔疮确实已经成为折磨大多数现代人的一种难言之隐，坐卧难安，疼痛难忍，如果手术，更是痛苦万分。您可能不知道，小小的地龙就是解决痔疮的良药。 痔疮是一个很奇怪的病，因为只有人类才有。研究者分析，这和人直立行走有关，是由于局部血液循环不畅引起的。 痔疮的类型很多，按发生部位的不同，可分为内痔、外痔、混合痣。 痔疮的治疗，一般医院是用手术的方法，直接切掉。这种方法比较痛苦，我去肛肠医院的时候，患者对我说：“每次换药都是上刑啊，下辈子都不希望再来一次了！”现在还有一种电切术，是用电把痔疮烧掉，打麻药进行，但是术后也很痛苦。 中医一直在尝试用吃中药的方法来解决这个问题，但是效果很不稳定，比如这个方子对某个人有效，对别人就无效了。秘方大师许叔微就曾患痔疮，他也承认，药方这次有效，下次",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
       "id": "luodalun-128",
       "name": "适应证：便血。",
       "categories": {
@@ -52895,158 +50531,6 @@
         }
       ],
       "method": "每次用30克椿根皮熬水，熬出2碗，熬好后放入红糖 1调羹，早晚各喝1碗。 这个方子是一位老师提供的，当时我在给中医院学生上课，他在后面听。我讲完了痔疮这个病，下课后他就对我说，他以前患痔疮，便血很严重，什么药都用了，都不行，后来他用了这个椿根皮，就痊愈了。 （2）地龙灭痔粉 适应证：单纯的内痔、外痔，或者混合痔。",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-129",
-      "name": "第14章",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "杏仁",
-          "茯苓",
-          "甘草",
-          "法半夏",
-          "生姜",
-          "橘皮",
-          "桔梗",
-          "元参"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "桔梗",
-          "amount": "9克"
-        },
-        {
-          "name": "元参",
-          "amount": "9克"
-        },
-        {
-          "name": "杏仁",
-          "amount": "9克"
-        },
-        {
-          "name": "橘皮",
-          "amount": "9克"
-        },
-        {
-          "name": "法半夏",
-          "amount": "9克"
-        },
-        {
-          "name": "茯苓",
-          "amount": "9克"
-        },
-        {
-          "name": "甘草",
-          "amount": "6克"
-        },
-        {
-          "name": "生姜",
-          "amount": "9克"
-        }
-      ],
-      "method": "熬水，大约5碗水熬剩2碗，然后早晚各服用1碗。 必须强调一下，这个方子，是专门治疗鼻炎中鼻涕清的。可以升降气机，祛除寒邪。但是如果鼻涕的颜色是黄色的，则不可服用。 如果鼻炎中鼻涕黄的，就用他另外一个方子—五味石膏汤。",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-130",
-      "name": "第15章",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "僵蚕",
-          "牛蒡子",
-          "马勃",
-          "甘草",
-          "黄芩",
-          "板蓝根",
-          "薄荷",
-          "升麻",
-          "黄连",
-          "玄参",
-          "柴胡",
-          "桔梗",
-          "陈皮",
-          "连翘"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "黄芩",
-          "amount": "15克"
-        },
-        {
-          "name": "黄连",
-          "amount": "9克"
-        },
-        {
-          "name": "陈皮",
-          "amount": "6克"
-        },
-        {
-          "name": "甘草",
-          "amount": "6克"
-        },
-        {
-          "name": "玄参",
-          "amount": "9克"
-        },
-        {
-          "name": "柴胡",
-          "amount": "6克"
-        },
-        {
-          "name": "桔梗",
-          "amount": "6克"
-        },
-        {
-          "name": "连翘",
-          "amount": "15克"
-        },
-        {
-          "name": "板蓝根",
-          "amount": "9克"
-        },
-        {
-          "name": "马勃",
-          "amount": "6克"
-        },
-        {
-          "name": "牛蒡子",
-          "amount": "9克"
-        },
-        {
-          "name": "薄荷",
-          "amount": "6克"
-        },
-        {
-          "name": "僵蚕",
-          "amount": "9克"
-        },
-        {
-          "name": "升麻",
-          "amount": "2克"
-        }
-      ],
-      "method": "把药物先用冷水浸泡20分钟，然后熬开锅30分钟即可。分成3碗，早晨、中午、晚上各服用1碗。 此方古代是用来治疗大头瘟的，现在可以借鉴用来治疗恶寒发热、头面红肿灼痛、目不能开、咽喉不利、舌燥口渴、舌红苔白兼黄、脉浮数有力等各种上焦热毒壅结的症状。常用于治疗丹毒、腮腺炎、急性扁桃体炎、严重呼吸道感染、淋巴结炎伴淋巴管回流障碍等。 有段时间，我接连去了几个雾霾严重的城市，有一天突然感觉咽喉不适，因为当时要讲课，无暇顾及，也就没有吃药。结果第二天早晨起床，发现咽喉红肿严重，整个上焦极度不适，说话沙哑困难，已经到了无法发声的地步了。 当时感觉毒邪来势凶猛，咽喉的红肿也超出我的想象，可是，当天下午仍然有课要讲，怎么办？于是，赶紧到药店抓了普济消毒饮的药，熬好，喝了一次，仍难以说话，于是带剩下1大杯提前到课堂，不断地喝。2小时后嗓音渐开，到了时间竟然可以正常讲课了。最惊喜的是，下课后发现咽喉红肿已基本消失。 这样的经历很痛苦，我不想再有第二次，但也让我深深领略到此方的力道。 我当时发了微博，说：“感谢东垣先师立此良法！” 罗博士叮嘱 大家要记住，一定是在体内有热毒的时候，才可以用这个方子，因为这里面",
       "precautions": "",
       "source": {
         "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
@@ -53116,83 +50600,6 @@
       }
     },
     {
-      "id": "luodalun-133",
-      "name": "第18章",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "完整带核鲜山楂"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "完整带核鲜山楂",
-          "amount": "200克"
-        }
-      ],
-      "method": "山楂洗净，加入适量水，文火熬煮至山楂烂熟，加入红糖，搅拌均匀即可。经前3～5天开始服用，每日早晚各食1调羹山楂泥，可以用开水冲饮，直至经后3天停止服用。 延伸阅读一：山楂实在是一种药食同源的好东西 记得很多年前，每到初冬的时候，母亲都会让老家农村的亲戚带来很多山楂，这些山楂可以吃上一个冬天。母亲会把山楂熬水，熬得烂烂的，然后过滤去渣滓，剩下的就是红红的果汁了。然后母亲会放入一点儿冰糖，此时，就成了很美味的饮料。那个时候，市场上还没有什么饮料，每次父亲大学里的同事来串门的时候，母亲就会让他们尝尝我们家特制的山楂汁，喝过的人，无不交口称赞。 这也成了我对那个年代的特殊记忆。直到现在，我每次喝到山楂汁的时候，都会想起家里那浓浓的亲情。 有一天，路过街边土特产小店，发现有很多店在卖山楂，突然想起，这是好东西，需要给朋友们介绍一下，让大家可以在应季的时候买一点儿。一方面它很好吃；另一方面，如果应用得当，它还可以帮助我们保持健康呢。 山楂的应用早在《尔雅》中就有记载了。在陶弘景写的《本草经集注》中，就收录了山楂。历朝历代，山楂曾经有过很多个名字，什么“赤瓜”“棠梂子”等。直到明代李时珍，才把它们统",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-134",
-      "name": "2.对血虚、血瘀的女性特别好。",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "白芍",
-          "川芎",
-          "桃仁",
-          "当归",
-          "红花",
-          "熟地"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "熟地",
-          "amount": "6克"
-        },
-        {
-          "name": "当归",
-          "amount": "6克"
-        },
-        {
-          "name": "川芎",
-          "amount": "6克"
-        },
-        {
-          "name": "白芍",
-          "amount": "6克"
-        },
-        {
-          "name": "桃仁",
-          "amount": "6克"
-        },
-        {
-          "name": "红花",
-          "amount": "6克"
-        }
-      ],
-      "method": "熬水后，泡脚，水温不宜过热。 很多女性朋友在生完孩子之后，会经常出现体内有瘀血的情况。比如有的人不断地出汗，这就是瘀血导致的。如果开补药，那么不断出汗的症状会越来越严重，越补汗越多。这时我们需要看看她们的舌象，如果上面有瘀斑或者瘀点，瘀斑是一块一块的黑斑，瘀点是一个一个的黑点，还有的人嘴唇青紫，手指甲也青紫，眼睛周围有黑眼圈，皮肤干燥。有以上这些症状的人，往往就是有瘀血，可以用桃红四物汤来活血化瘀。 瘀血，是指我们体内的血液不能正常运行，在脏腑不正常地停留，或者去往经脉外边等情况。现在很多的心脑血管疾病与中医讲的瘀血有紧密的关系。 桃仁、红花都是活血化瘀的药物。桃仁就是桃子的仁，善于化解有形的瘀血；红花善于化解细微的瘀血，也就是肉眼看不到的络脉中的瘀血。 救命之方（2018版） 第20章 手脚冰凉，离不开当归熟地羊肉汤 为什么天一冷，手脚会冰凉呢？阳气不足是一个方面，更主要的原因是血虚。如果你平常手脚冰凉，感觉到自己阳气不足、血液不足的话，就可以喝当归熟地羊肉汤来调养。 为什么天一冷手脚会冰凉呢？阳气不足是一个方面，更主要的原因是血虚，血液输送不到四肢末端，手脚就会发凉。 如果你平常手",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
       "id": "luodalun-135",
       "name": "手脚冰凉，离不开当归熟地羊肉汤",
       "categories": {
@@ -53222,162 +50629,6 @@
         }
       ],
       "method": "用当归配上250克羊肉，再放熟地，然后切生姜片，加水熬成汤。 罗博士叮嘱 以前熬当归生姜羊肉汤的时候，人们往往不加熟地，这是张仲景的方子。但是我觉得，当归的药性燥，需要用熟地来平衡这个燥性。因此，平时养生的话，一定要加入10克熟地。不加熟地的当归生姜羊肉汤是用来治病的。大家一定要加以区分。 1.为什么要“当归” 有人认为当归“因能调气养血，使气血各有所归，故名当归”。意思是人的血液正常是在我们的经脉里运行的，如果运行不畅，或者其他原因出现了瘀血，那么这个时候就要用当归来活血，使血液回到它应当回到的地方，所以叫当归。 李时珍在《本草纲目》中说：“古人娶妻要嗣续也（古人娶妻为生儿育女），当归调血为女人要药，有思夫之意，故有当归之名。”意思是妇女想念丈夫之意，因此有当归之名。这层意思在唐诗“胡麻好种无人种，正是归时又不归”也有所体现。 当归自古被称为“女科之圣药”。但不只局限于妇科，如果有血虚指证的人以及需要活血的人都可以用它来调养。 中医认为，当归具有补血和血、调经止痛、润燥滑肠的作用。可以用来调理妇女月经不调，经闭腹痛，症瘕结聚，崩漏；同时治疗血虚头痛，眩晕，痿痹；肠燥便难，赤痢后重；痈",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-136",
-      "name": "可以用以下的方法试一试。",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [],
-      "method": "把紫苏叶用开水泡几分钟，再直接喝下去即可。 罗博士叮嘱 1.紫苏叶不能长时间地熬，它的挥发物质起着关键作用，用开水泡就可以，或者是熬开锅后再煮两三分钟就可以了。 2.不能空腹服用苏叶水。元气不足，无法发出汗，大家一定要记住，只有在肚子里面有食物的时候，才能采用发汗的方法来调理身体。 用紫苏叶驱寒还有一个方法，就是在喝苏叶水的同时，把剩下的苏叶水再添一些热水，泡脚，这样身体会更快暖和起来。 这个方法，生活中常常能用到。比如下大雨了，在风雨中回家，裤子湿了，鞋也浸水了，那么用苏叶水来泡脚，很快就暖和了，这是保养自己的一种方法。 有的人感冒加重了会变成热证，这说明体内局部的抵抗增加了。这个时候，除了使用连翘、蒲公英等解毒清热的药物来控制里热之外，一般还同时配合一点儿紫苏叶，来清除外寒，在保证气血运行的状态下，很快就能痊愈。 我在治疗感冒的过程中，紫苏叶几乎是每次必用，我自己对它的评价是：“效如桴鼓”—疗效像用鼓槌敲鼓一样，一敲就响，立竿见影，几乎没有失手的时候。 延伸阅读一：紫苏叶，“放邪气出路之要药也” 紫苏叶的具体作用是：发表，散寒，理气，和营。它性味辛温，是属“阳”的药物。 紫苏叶的味",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-137",
-      "name": "第25章",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "就再加上射干",
-          "蒲公英",
-          "金银花",
-          "连翘"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "蒲公英",
-          "amount": "适量"
-        },
-        {
-          "name": "连翘",
-          "amount": "适量"
-        },
-        {
-          "name": "金银花",
-          "amount": "适量"
-        },
-        {
-          "name": "就再加上射干",
-          "amount": "9克"
-        }
-      ],
-      "method": "将上述材料除紫苏叶外熬水，在水熬开锅的时候再放入紫苏叶，口服即可。 这个方子效果非常好，很快就可以控制感冒。 有一次，我到家门口的药店去闲逛，药店的老板和我打招呼，一听她说话，我吓了一跳，因为她的鼻音特别重，而且神色憔悴，一问，才知道她患了严重的流感，已经打了几天的抗生素了。问她为何不抓药治疗，她说：“实在是搞不懂患的是风寒感冒还是风热感冒。”（事实上，风寒和风热只是感冒的不同阶段，不是存在着两种感冒）。于是，我让她抓了双花、蒲公英等药，告诉她熬药到最后的时候再下一点儿紫苏叶。 结果，过了几天我再去逛那家药店，就看到了老板的笑脸，她说：“您抓的药还真管事儿，第二天就基本好了。”其实，中药自己就在那里摆着，即使是药店老板，离它那么近，如果不知道怎么用，它就不管事儿；如果我们知道怎么用了，它就“真管事儿”。 延伸阅读一：在苦寒的药物中，蒲公英最令人放心 蒲公英到底是治疗什么的呢？ 原来，蒲公英性味苦甘，寒，入肝、胃经，能够清热解毒，利尿散结，是一味属阴的药物。我在治疗属于里热证的感冒时，经常把金银花、地丁、连翘和蒲公英一起用，解毒清热的效果非常好。 《本草新编》对蒲公英的评价很高：“蒲公英",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-138",
-      "name": "这个方子的主方是这样的：",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "秦艽",
-          "牛膝",
-          "甘草",
-          "海风藤",
-          "白鲜皮",
-          "桃仁",
-          "青风藤",
-          "地龙",
-          "红花",
-          "桂枝",
-          "白芷",
-          "甲珠",
-          "土茯苓",
-          "薏苡仁",
-          "生黄芪"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "生黄芪",
-          "amount": "200克"
-        },
-        {
-          "name": "秦艽",
-          "amount": "20克"
-        },
-        {
-          "name": "红花",
-          "amount": "15克"
-        },
-        {
-          "name": "桃仁",
-          "amount": "15克"
-        },
-        {
-          "name": "青风藤",
-          "amount": "20克"
-        },
-        {
-          "name": "海风藤",
-          "amount": "20克"
-        },
-        {
-          "name": "地龙",
-          "amount": "15克"
-        },
-        {
-          "name": "桂枝",
-          "amount": "15克"
-        },
-        {
-          "name": "牛膝",
-          "amount": "15克"
-        },
-        {
-          "name": "甲珠",
-          "amount": "15克"
-        },
-        {
-          "name": "白芷",
-          "amount": "15克"
-        },
-        {
-          "name": "白鲜皮",
-          "amount": "15克"
-        },
-        {
-          "name": "甘草",
-          "amount": "15克"
-        },
-        {
-          "name": "薏苡仁",
-          "amount": "30克"
-        },
-        {
-          "name": "土茯苓",
-          "amount": "30克"
-        }
-      ],
-      "method": "以没过药物并超出一个指节深度的水，熬开锅20分钟后，将药汁倒出，再加入没过药物超出一个指节深度的水熬开锅20分钟后倒出药汁，如是3次，将3次的药汁混合即可。 叮嘱：如果患者阴虚明显，则加生地，一般用到30克左右。服药有上火症状的，加上知母15克。没有阴虚或者上火的，则不必加。 这个方子最大的特点，就是黄芪的用量大。这里的黄芪是生黄芪，一般我们也就用到30克左右，但是其实这是很有局限性的。要知道，黄芪的力量比较和缓，非大量不足以治病。清代的王清任，在“补阳还五汤”里面，甚至要用到100多克，这是善用黄芪之人。至于黄芪为何可以治疗此病，主要原因就是，无论是风寒湿热什么邪气侵袭经络，其实都是自己的正气不足、经络空虚、卫气羸弱导致。所以，此方可以通络，可以散寒祛湿，可以清除湿热，但是，正气是一定要补足的，这是扶正祛邪的路子。所以《神农本草经》里面说黄芪：“主痈疽久败创，排脓止痛，大风，痢疾，五痔，鼠瘘，补虚，小儿百病。” 而历代医家加以发扬补充，使得黄芪的作用得以彰显，比如清代黄元御说黄芪：“清虚和畅，专走经络，而益卫气。逆者敛之，陷者发之，郁者运之，阻者通之，是燮理卫气之要药，亦即调和营血之",
       "precautions": "",
       "source": {
         "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
@@ -53547,135 +50798,6 @@
       }
     },
     {
-      "id": "luodalun-143",
-      "name": "还有一个使用紫苏叶的方法。",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "紫苏叶"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "紫苏叶",
-          "amount": "3克"
-        }
-      ],
-      "method": "将两种药材放到锅里，倒入4杯水，盖上锅盖，熬开锅。3分钟后闭火，焖七八分钟，然后将药汁兑入温水，给孩子泡脚。泡一会儿，直到孩子身体微微出汗就可以了。 很多小朋友不喜欢紫苏叶的味道，因此拒绝喝紫苏叶水，那么用紫苏叶水给孩子泡脚就是一个很好的方法。 这个方法大人也可以使用。我把此法告诉了很多人，有很多朋友都说因此受益。我自己也经常用。比如哪天下大雨了，我在风雨中走一趟，裤子都湿了，鞋里面都是水，回到家里以后，我就会用紫苏叶水来泡脚，这样身体很快就暖和了过来，这是一种保养身体的方法。 如果小朋友没有泡脚的习惯，家长还可以把紫苏叶水兑入洗澡水里面，给孩子洗澡。有一次，我妹妹的孩子受寒了，打喷嚏，流清鼻涕，可是她不喜欢紫苏叶的味道，也不愿意泡脚。那个时候她才2岁多，要哄她做不愿意做的事儿是非常难的。怎么办？妹妹想起每天都要给她洗澡，于是就把紫苏叶水兑入了洗澡水里，孩子的身体很快就暖了过来。 还有网友总结了一个用紫苏叶水洗头的方法，说这个特别好，很快就可以让身体暖起来。这是为什么呢？原来，中医认为“头为诸阳之汇”，如果头暖了，那么身体就会很容易暖和起来。 别小看一片小小的紫苏叶，当人受寒的时候，它",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-144",
-      "name": "咽痛，通常称之为扁桃体发炎",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "薄荷",
-          "金银花"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "金银花",
-          "amount": "6克"
-        },
-        {
-          "name": "薄荷",
-          "amount": "3克"
-        }
-      ],
-      "method": "将上述两味药用开水泡，放入1块冰糖，当茶来喝，可以起到辅助治疗的作用。 让孩子不发烧、不咳嗽、不积食 24.如果孩子发烧到38℃以上， 就要请医生处理 孩子一旦发烧，没有医学常识的家长往往会不知所措。我曾经看到过有位父亲，因为孩子发烧很厉害，心疼得都痛哭流涕了。 孩子生病，没有一个家长不牵肠挂肚的。他们到医院后，一般都是要求医生立刻给孩子退烧，有的甚至主动要求使用抗生素。如果医生不给用，家长还会着急发火。 在这里，我要告诉家长们，发烧实际上并不是一种病，它只是一种症状，是伴随着外邪入侵而产生的。孩子发烧，标志着他的小身体正在和外邪进行搏斗。实际上，现代医学已经证明了，人体体温的升高有利于消除外来微生物。 中医认为，发烧是一个人的身体正气尚存，能够抵抗外邪入侵的标志。因此，发烧并不是坏事，如果一个人总不发烧，反而说明他身体可能有问题。 如果孩子发烧时体温没有超过38℃，一般情况下不会有大问题。此时，孩子的身体正在抵抗外邪，这个时候往往会分两种情况。如果孩子的身体热证明显，比如咽喉红肿热痛、舌质红、痰黄等，你可以请医生开一点儿清热解毒的药物，辅助孩子清透外邪；如果孩子的阳气不足，怕冷严重，",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-145",
-      "name": "我教给大家一个熏鼻法。",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "先去中药店买防风",
-          "辛夷",
-          "白芷",
-          "荆芥"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "先去中药店买防风",
-          "amount": "适量"
-        },
-        {
-          "name": "荆芥",
-          "amount": "适量"
-        },
-        {
-          "name": "白芷",
-          "amount": "适量"
-        },
-        {
-          "name": "辛夷",
-          "amount": "适量"
-        }
-      ],
-      "method": "将药材放到锅里，加入2杯水，盖上锅盖，开锅3分钟后闭火。然后将药汤倒入碗中，让孩子将头搁在离碗的上方半尺远的位置，闻药的蒸气，熏蒸10分钟左右即可。每天给孩子煎1服。 在此期间，药汁冷了可以再次放到炉子上加热。此时，即使鼻子堵住也不要紧，因为通过口腔呼吸也可以起到作用。 当然，也可以在这个方子的基础上加减，加上金银花6克、连翘6克。熬好药后，除了熏蒸外，给孩子滴入鼻子几滴，每天频频使用，效果更好。 让孩子不发烧、不咳嗽、不积食 28.孩子受湿会得寒湿和暑湿两种感冒 前面讲到的，主要是由寒邪引起的感冒。实际上，风、寒、暑、湿、燥、火这六淫，任何一种都会引起感冒的发生。因此，很多人在生活中也会患上因热邪、湿邪而导致的感冒，特别是后者在生活中是比较多见的。 从古至今，人们的习惯都一样—到了暑热天，都喜欢贪凉、饮冷。古人就有喝冰凉井水的习惯，用井水镇西瓜吃那也是常事儿，有的人甚至在砖地上铺上凉席睡觉。夏天气温高，肌肤的腠理（皮肤、肌肉的纹理）是开泄的，皮肤的毛孔都打开了，此时摄入那么多凉的东西，寒湿之气就比平时更容易侵入身体。 现代就更不得了了，冰箱给我们提供了很多便利，孩子玩得浑身大汗，然后",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-146",
-      "name": "那么，正气到底从何而来呢？",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "炒鸡内金",
-          "怀山药"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "怀山药",
-          "amount": "15克"
-        },
-        {
-          "name": "炒鸡内金",
-          "amount": "3克"
-        }
-      ],
-      "method": "熬水，每天喝2小杯，连用3天即可。 在中医里，这种通过调补脾胃来增强肺功能的思路，叫作“培土生金”，这是中医里一个常用治感冒的方法。 家长们一定要注意，在普通感冒的这几个阶段里，第一阶段和最后一个阶段是至关重要的。但这两个阶段很少有人重视，如果家长们能够上心，那么孩子绝大多数的情况下都能避免感冒，让妈妈们少担许多心。 让孩子不发烧、不咳嗽、不积食 32.常带孩子到郊外走走 现代都市里的空气都有一定程度的污染。我在前面讲过，孩子个子矮，呼吸频率快，他们比大人更容易吸进被污染的空气。 为了让孩子的呼吸系统健康，父母一定要定期带孩子到郊外，到有绿树、泉水，空气清新的地方，让他多呼吸新鲜空气，让孩子的肺得到滋养。 我在小的时候，父亲就经常带我去郊外走，一边散步，一边给我讲大自然的点点滴滴。很多年过去了，我还清晰地记得父亲带我走过的那些路，记得河边“扑通”跳进水中的青蛙，路边林子中各种鸣叫的小鸟。每每忆及这些，我都深感难忘父母恩情。 经常带孩子去外面走走，不但开阔了孩子的眼界，让他们接触到了大自然，也让孩子和父母有了增进感情的机会，同时还能滋养肺脏，何乐而不为呢？ 让孩子不发烧、不咳嗽、不积食 ",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
       "id": "luodalun-147",
       "name": "3.大便溏泄，不成形。",
       "categories": {
@@ -53787,98 +50909,6 @@
       }
     },
     {
-      "id": "luodalun-150",
-      "name": "那么，这个白萝卜水怎么制作呢？",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [],
-      "method": "1.把白萝卜洗净，切四五块薄片。 2.把白萝卜片放入小锅里面，加水，淹没萝卜片，待大火烧开后，再改用小火煮5分钟即可。 3.水稍凉后，可以给小朋友喝。同时，白萝卜片煮后也变得非常软，如果孩子2岁以上，可以给孩子慢慢地嚼，一点点吃下去；2岁以内的宝宝可以只喝这个白萝卜水。 一般每天可以这样做3次，连着喝3天，会起到很好的效果。 为何这个方子会有效果呢？ 原来，现代研究认为，白萝卜含芥子油、淀粉酶和粗纤维，具有促进消化，增强食欲，加快胃肠蠕动的作用。中医理论也认为白萝卜味辛甘，性凉，入肝、胃、肺、大肠经，具有清热生津、凉血止血、下气宽中、消食化滞、开胃健脾、顺气化痰的功效。 为何孩子咳嗽，喝白萝卜水会有效呢？ 是这样的，孩子之所以有外感咳嗽，一部分原因，是孩子喂养得太好了。比如，几岁的孩子，每天吃了过多的肉，导致了积食，出现了脾胃功能的障碍。中医认为，脾从左升，胃从右降；肝随脾升，胆随胃降。心肺居上，随着胃气下行，如果胃气被积食所阻滞，则肺胃不降，心火炽热于上。这样，稍微有点儿外邪，就容易化热，上焦就容易出现热证。 所以，您会发现，那种非常喜欢吃肉的孩子，稍微有点儿外感，第一个出现的症状，",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-151",
-      "name": "眼袋",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "麦冬",
-          "薏苡仁各",
-          "沙参",
-          "这个方子的分量是山药",
-          "莲子肉",
-          "生地各",
-          "山药",
-          "薏苡仁"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "山药",
-          "amount": "适量"
-        },
-        {
-          "name": "莲子肉",
-          "amount": "适量"
-        },
-        {
-          "name": "薏苡仁",
-          "amount": "适量"
-        },
-        {
-          "name": "麦冬",
-          "amount": "适量"
-        },
-        {
-          "name": "沙参",
-          "amount": "适量"
-        },
-        {
-          "name": "这个方子的分量是山药",
-          "amount": "适量"
-        },
-        {
-          "name": "莲子肉",
-          "amount": "适量"
-        },
-        {
-          "name": "薏苡仁各",
-          "amount": "9克"
-        },
-        {
-          "name": "麦冬",
-          "amount": "适量"
-        },
-        {
-          "name": "沙参",
-          "amount": "适量"
-        },
-        {
-          "name": "生地各",
-          "amount": "6克"
-        }
-      ],
-      "method": "把这些药放入锅里，加入4杯水，用大火煎煮，开锅后用小火煎半个小时。大约剩下2杯左右的药汁，把药汁滤出，加入1块冰糖，放凉即可。这就制作完毕了。 叮嘱：1.这道汤喝起来甜甜的，孩子很喜欢，可以像饮料一样随时服用。每天服用1次即可，连续服用1〜2周。感冒后滋补脾阴的话，5次就够了。 2.大人脾阴不足，口干舌燥、舌头红、眼睛干、手心热，喝这个也可以。 脾虚的孩子不长个、胃口差、爱感冒 3.如何知道自己孩子是否脾阳虚 孩子脾阳虚症状 （1）下眼袋大，但是不发红，颜色是淡的。 （2）嘴唇不是鲜红的，颜色是正常或者发白。 （3）舌头淡白，舌苔上往往布满齿痕（牙印）。 （4）怕冷，白天一动就出汗，气喘，四肢无力，少气懒言，精神萎靡。 （5）大便溏泻，不成形。 （6）吃完饭就肚子胀，同时身体很容易浮肿。 （7）常常有鼻炎、打喷嚏等情况，非常容易受寒感冒。 什么是脾阳虚？脾阳虚的孩子往往是抗生素用得太多了，或者是苦寒的药吃多了，再一个原因就是受了寒，阳气不足，比如经常吃冷饮、吹空调等，导致孩子的脾胃受伤了。 这种孩子阳气不足，就会有“冷”的症状，因为他往往是正气不足。 判断孩子是否脾阳虚，我一般看舌头。",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
       "id": "luodalun-152",
       "name": "大便溏泻，不成形。",
       "categories": {
@@ -53974,66 +51004,6 @@
         }
       ],
       "method": "详见下文内容。 叮嘱： （1）在孩子身体没有疾病症状时也可以给他做。 （2）以上四个动作并不一定每次都要做全，可以根据孩子当时的具体情况来选取。比如孩子是仰卧着的，家长就可以给他推脾经、摩腹、揉足三里，如果孩子比较不耐烦，家长也可以选择其中一两种给他揉一揉。 （3）作为保健，也不建议家长天天都给孩子做，1周给孩子做上两三回就可以了。 （4）家长在给孩子推拿前，一定要先搓搓手掌，让自己的手心微微发热，千万不能用冰凉的手去按揉孩子的穴位。 （5）按摩腹部的动作一定要在吃饭前，或吃饭1小时后进行。 这个推拿方由当归中医学堂的高其武大夫提供，具体方法如下： （1）推脾经 定位：拇指桡侧的赤白肉际处。 手法：推脾经有补法和泄法两种，循拇指桡侧边缘，沿指尖向关节处推为“补”。在治疗具体疾病的推拿手法中，泄法，力度要重一些，速度要快一些；补法，力度要轻一些，速度适中。力度越轻越好，因为孩子的皮肤比较娇嫩，太重的话孩子会疼、会难受，不让推。家长可以先在自己身上试做一下，有轻抚感即可。 时间：日常保健一般做是3〜5分钟，具体还要看孩子的年龄。几个月大的孩子，做2〜3分钟就可以了，两三岁的孩子做5分钟，3",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-154",
-      "name": "什么是应地",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [
-          "焦麦芽",
-          "正规药店都能买到）",
-          "焦神曲",
-          "焦三仙（焦山楂"
-        ],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "焦三仙（焦山楂",
-          "amount": "适量"
-        },
-        {
-          "name": "焦麦芽",
-          "amount": "适量"
-        },
-        {
-          "name": "焦神曲",
-          "amount": "适量"
-        },
-        {
-          "name": "正规药店都能买到）",
-          "amount": "适量"
-        }
-      ],
-      "method": "放入2杯水，开锅后小火煮20分钟即可。每天饭后喝，一般每天喝3次，每次煮够孩子1天喝的就行了。 叮嘱： 第一次服用后，余下的可以放冰箱里，下次喝的时候要再煮开一下。这个方子可以再配合一点儿山药、薏苡仁之类的补脾胃食物使用。 曾经有个妈妈找到我，说：“孩子就是不怎么吃饭，什么东西都不喜欢吃，胃口很差，瘦得一塌糊涂，怎么办呢？”我看了一下孩子的舌头，发现他舌头中间部分的舌苔很厚。 在中医诊断学里，舌头中间对应的是脾胃，如果这里的舌苔厚，就说明这个孩子有积食，而且比较严重。针对这种情况，我认为要赶紧给孩子化积食。化积食的同时稍微加一点儿补脾的东西，两者配合，因为我们不能光化积食，化完之后不做其他的补救。 不久后，这个妈妈在微信告诉我：“孩子现在胃口明显变好了，而且开始长胖了，以前没事就感冒，现在感冒也少了。” 为什么呢？因为孩子的正气足了。 治疗积食，其实中医的方法很简单，就是用焦三仙（焦三仙是焦山楂、焦麦芽、焦神曲这三味药，正规药店都能买到）、炒鸡内金各6克煮水给孩子喝。这个方子是3岁以上的小朋友都可以用的，实际上七八岁的孩子可以每味药用到9克，但为了平稳一点儿，就用6克；3岁以下的孩子各",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-155",
-      "name": "者一天只咳嗽那么几声。",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [],
-      "method": "熬水，熬半个小时即可，随意当水喝。感冒好了以后的2天内，只要孩子喝水，就给他喝怀山药水。 叮嘱：1.还可以用怀山药配薏苡仁煮水喝，当孩子舌苔厚腻的时候，这个方子比较适合。 2. 5岁左右的孩子用9克干怀山药配9克的薏苡仁，5岁以下孩子各用6克就可以，向下递减。孩子喝3天左右，就能够补脾胃。有时候也可以配一点儿莲子，用6克莲子就可以了。 3.感冒过后给孩子喝3〜5天怀山药水就行，不要一直喝。 每次孩子感冒过后，家长千万不要忘记给他调理一下脾胃，这样感冒才好得彻底。 经常有家长问我这样的问题：为什么我的孩子经常反复感冒，总是不好？为什么孩子感冒的症状全都没了，但还是每天都会咳嗽几声，有时甚至会咳嗽两三个月，用调理咳嗽的方法也不见效？ 这样的情况，我认为大多数是因为没有做最后的处理，这个时候家长需要给孩子补脾。 大家首先要想一个问题，为什么同样在一起玩耍，别人的孩子没有感冒，可是您的孩子却反复感冒？答案是：您的孩子很可能是正气不足，脾胃虚弱，这样才导致外邪容易入侵。 因此，每次孩子感冒过后，我都建议家长给孩子调理一下脾胃。孩子生病了，家长不能总想着靠清热解毒的药、靠外界的力量来帮孩子。在外邪",
       "precautions": "",
       "source": {
         "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
@@ -54529,25 +51499,6 @@
         }
       ],
       "method": "将原料放在一起蒸，小火蒸4个小时，然后放凉。蒸的时间越长，龙眼肉的热性就越小。放凉以后，每天用1调羹，开水冲泡服用。 叮嘱：如果能买到鲜龙眼，可以自己来做龙眼肉。龙眼买来以后，把皮、核去掉，剩下白色的肉，蒸完以后就变成黑红色的了。 这个方子我一直在大力推广，很多人用后都觉得受益匪浅。我觉得女性血虚的情况比较多，特别是很多妇女生完孩子后体质一落千丈，养血的正确方法又太少，而这个方子的确可以帮到大家。 有位女士，严重疲劳，总是没有力气，她自己说做什么事情都是无精打采的，感觉工作都难以胜任了，同时脸色苍白，怕风、怕冷，比别人要多穿衣服，头晕、失眠，总是无法正常入睡，白天又没精神。但是，她去医院，却又检查不出任何疾病，这让她很苦恼。 当她找到我时，问我这是什么病，把我给问住了。 这是什么病？这是一系列症状，如果你把它们当作“病”，失眠是病，可怕风是什么病呢？如果真的把它们当病，并且一个个研究，我相信此生也找不到答案，比如，怕风、怕冷，您去医院挂哪一科？而我们中医考虑的是您的体质如何，是血虚体质就要先养血，这样一来，因为血虚而出现的这些症状就会消失。 所以我当时的回答是：“我也不知道您这是什么‘",
-      "precautions": "",
-      "source": {
-        "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
-        "author": "罗大伦"
-      }
-    },
-    {
-      "id": "luodalun-169",
-      "name": "非常有效的治疗痔疮小方",
-      "categories": {
-        "season": [],
-        "symptom": [],
-        "ingredient": [],
-        "type": []
-      },
-      "efficacy": "",
-      "symptoms": [],
-      "ingredients": [],
-      "method": "用食物粉碎机将地龙打成粉末（或者让药店打成粉末），然后放入锅内翻炒，待微微发黄后闭火。每天温水冲服5克，如能装入胶囊服用更好。连用3天，如改善，用到5天即可。 叮嘱：此方孕妇忌用。 痔疮是一个很奇怪的病，因为只有人类才有，研究者分析，这和人的直立行走有关，是局部血液循环不畅引起的。痔疮的分类很多，开始时一般是内痔，然后出现外痔，这两者合起来叫混合痔，还有的是肛瘘等，也都被混叫为痔疮，实际上肛瘘是炎症消失后，造成的瘘管，把直肠和外界直接接通了。 西医对痔疮的治疗，一般是用手术的方法，直接切掉。这种方法可以根除痔疮，但是比较痛苦，我去肛肠医院的时候，患者对我说：“每次换药都是上刑啊，下辈子都不希望再来一次了。”现在还有一种电切术，用电把痔疮烧掉，虽然是在麻醉下进行，但是患者术后也很痛苦。 而这个方子，如果便血，可以用这样的方法，去药店买中药椿根皮200克，每次用30克熬水，熬出2碗，在熬好后放入红糖1调羹，早晚各喝1碗。这个方子是一位老师提供的，我当时在给中医院学生上课，他在后面听，我讲完了痔疮这个病，下课他就对我说，他以前这个便血很重，什么药都使用了，就是不行，后来别人告诉他用了这个椿根",
       "precautions": "",
       "source": {
         "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",

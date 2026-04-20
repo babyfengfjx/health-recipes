@@ -88,7 +88,10 @@
 
         <!-- 内容列表 -->
         <div class="recipes-list" id="recipesList">
-            <div class="loading"></div>
+            <div class="loading">
+                <div class="loading-spinner"></div>
+                <p class="loading-text">正在加载养生智慧...</p>
+            </div>
         </div>
 
         <!-- 加载更多 -->
@@ -98,11 +101,18 @@
     </div>
 
     <!-- 详情模态框 -->
-    <div class="modal" id="recipeModal">
-        <div class="modal-content">
-            <span class="close-btn" id="closeModal">&times;</span>
+    <div class="modal-overlay" id="recipeModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">养生方法详情</h2>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
             <div class="modal-body" id="modalBody">
                 <!-- 详情内容 -->
+            </div>
+            <div class="modal-footer" id="modalFooter">
+                <span class="badge" id="modalSource">来源：陈允斌养生著作</span>
+                <div id="modalTags"></div>
             </div>
         </div>
     </div>
