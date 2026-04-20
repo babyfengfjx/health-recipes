@@ -349,11 +349,6 @@ function renderRecipeCard(recipe) {
                 <div class="ingredients-preview">
                     📋 ${recipe.ingredients?.map(i => i.name).join('、') || '暂无食材信息'}
                 </div>
-                ${recipe.source ? `
-                    <div class="source">
-                        📖 《${recipe.source.book}》
-                    </div>
-                ` : ''}
             </div>
         </div>
     `;
@@ -469,26 +464,6 @@ function renderRecipeDetail(recipe) {
             <div class="detail-section precaution-section">
                 <h4>⚠️ 注意事项</h4>
                 <div class="precautions-content">${recipe.precautions.replace(/\n/g, '<br>')}</div>
-            </div>
-        ` : ''}
-        
-        ${recipe.source ? `
-            <div class="source-info">
-                📖 来源：《${recipe.source.book}》${recipe.source.author ? ` - ${recipe.source.author}` : ''}
-            </div>
-        ` : ''}
-        
-        ${renderActionButtons(recipe)}
-    `;
-}
-                <h4>⚠️ 注意事项</h4>
-                <div class="precautions-content">${recipe.precautions.replace(/\n/g, '<br>')}</div>
-            </div>
-        ` : ''}
-        
-        ${recipe.source ? `
-            <div class="source-info">
-                📖 来源：《${recipe.source.book}》${recipe.source.author ? ` - ${recipe.source.author}` : ''}
             </div>
         ` : ''}
         
