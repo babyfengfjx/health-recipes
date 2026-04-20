@@ -704,27 +704,33 @@ const SYMPTOM_KEYWORDS = {
 function openSmartRecommend() {
     const modal = document.getElementById('smartRecommendModal');
     if (modal) {
-        modal.classList.add('active');
-    } else {
-        createSmartRecommendModal();
+        modal.remove(); // 总是移除旧的，重新创建以保证是最新的
     }
+    createSmartRecommendModal();
 }
 
 // 创建智能推荐模态框
 function createSmartRecommendModal() {
     const modalHtml = `
-        <div class="modal active" id="smartRecommendModal">
-            <div class="modal-content smart-recommend-content">
-                <span class="close-btn" onclick="closeSmartRecommend()">&times;</span>
-                <h2>🤖 智能养生推荐</h2>
-                
-                <div class="recommend-section">
-                    <h4>📝 请描述您的症状或需求</h4>
-                    <textarea id="symptomInput" placeholder="例如：最近咳嗽有痰、睡眠不好、容易疲劳..."></textarea>
-                    <button class="recommend-btn" onclick="analyzeAndRecommend()">🔍 智能分析</button>
+        <div class="modal-overlay active" id="smartRecommendModal" onclick="if(event.target===this)closeSmartRecommend()">
+            <div class="modal" style="max-width: 600px;">
+                <div class="modal-header" style="background: linear-gradient(135deg, #4CAF50 0%, #81C784 100%);">
+                    <h2 class="modal-title" style="color: white; font-size: 1.6rem; margin: 0;">🤖 智能养生推荐</h2>
+                    <button class="modal-close" onclick="closeSmartRecommend()">&times;</button>
                 </div>
                 
-                <div id="recommendResult" class="recommend-result"></div>
+                <div class="modal-body">
+                    <div class="seasonal-section" style="border: none; padding-top: 5px;">
+                        <h4 style="margin-bottom: 12px; color: #388E3C;">📝 请详细描述您的症状或需求</h4>
+                        <textarea id="symptomInput" style="width: 100%; height: 120px; padding: 15px; border-radius: 12px; border: 2px solid #E8F5E9; font-size: 1rem; margin-bottom: 15px; resize: vertical; outline: none;" placeholder="例如：最近咳嗽有黄痰、晚上睡不好觉、白天容易疲劳没精神..."></textarea>
+                        
+                        <button style="width: 100%; padding: 14px; border-radius: 12px; background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%); color: white; font-weight: 600; font-size: 1.1rem; border: none; cursor: pointer; box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);" onclick="analyzeAndRecommend()">🔍 智能分析匹配</button>
+                    </div>
+                    
+                    <div id="recommendResult" style="margin-top: 15px; border-top: 1px solid #EEEEEE; padding-top: 15px;">
+                        <!-- 分析结果和推荐方子将显示在这里 -->
+                    </div>
+                </div>
             </div>
         </div>
     `;
