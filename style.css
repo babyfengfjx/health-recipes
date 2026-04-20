@@ -712,3 +712,260 @@ body {
     color: white;
     border-color: var(--primary);
 }
+
+/* ============================================
+   📋 详情弹窗 - 优化样式
+   ============================================ */
+
+/* 弹窗容器 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.modal-body {
+    padding: 40px;
+}
+
+/* 关闭按钮 */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.close-btn:hover {
+    background: #e0e0e0;
+    transform: rotate(90deg);
+}
+
+/* 详情标题 */
+.modal-body h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid var(--primary-light);
+}
+
+/* 详情图片 */
+.detail-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 详情区块 */
+.detail-section {
+    background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+    padding: 20px 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary);
+}
+
+.detail-section h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.detail-section p {
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* 功效 - 高亮样式 */
+.detail-section:has(h4:contains("功效")) {
+    background: linear-gradient(135deg, #fff8e1 0%, #fff3e0 100%);
+    border-left-color: #ff9800;
+}
+
+.detail-section:has(h4:contains("功效")) h4 {
+    color: #e65100;
+}
+
+/* 食材列表 */
+.ingredients-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.ingredients-list li {
+    background: white;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+    transition: all 0.2s;
+}
+
+.ingredients-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 做法/方法 */
+.method-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 2;
+    white-space: pre-wrap;
+}
+
+/* 注意事项 */
+.detail-section:has(h4:contains("注意")) {
+    background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+    border-left-color: #f44336;
+}
+
+.detail-section:has(h4:contains("注意")) h4 {
+    color: #c62828;
+}
+
+.warning-text {
+    color: #c62828;
+    font-weight: 500;
+}
+
+/* 适用人群 */
+.detail-section:has(h4:contains("适用")) {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    border-left-color: #4caf50;
+}
+
+/* 来源信息 */
+.source-info {
+    background: #f5f5f5;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+/* 症状标签 */
+.symptom-tag {
+    display: inline-block;
+    background: var(--primary-light);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    margin: 4px;
+}
+
+/* 操作按钮 */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.action-btn {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.action-btn.primary {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: white;
+}
+
+.action-btn.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(27, 94, 32, 0.3);
+}
+
+.action-btn.secondary {
+    background: white;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.action-btn.secondary:hover {
+    background: #e8f5e9;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+    .modal-body {
+        padding: 25px;
+    }
+    
+    .modal-body h2 {
+        font-size: 1.5rem;
+    }
+    
+    .ingredients-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+}
