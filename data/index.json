@@ -98,27 +98,43 @@
     "recipeTypes": [
       {
         "id": "tea",
-        "name": "茶饮"
+        "name": "茶饮",
+        "icon": "🍵"
       },
       {
         "id": "soup",
-        "name": "汤品"
+        "name": "汤品",
+        "icon": "🍲"
       },
       {
         "id": "porridge",
-        "name": "粥品"
+        "name": "粥品",
+        "icon": "🥣"
       },
       {
         "id": "dish",
-        "name": "菜品"
+        "name": "菜品",
+        "icon": "🥗"
       },
       {
         "id": "dessert",
-        "name": "甜品"
+        "name": "甜品",
+        "icon": "🍰"
       },
       {
         "id": "medicine",
-        "name": "药膳"
+        "name": "药膳",
+        "icon": "💊"
+      },
+      {
+        "id": "external",
+        "name": "外用",
+        "icon": "🦶"
+      },
+      {
+        "id": "footbath",
+        "name": "泡脚方",
+        "icon": "🛁"
       }
     ],
     "authors": [
