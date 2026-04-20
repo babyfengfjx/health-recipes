@@ -20,7 +20,8 @@ let state = {
         symptom: '',
         recipeType: '',
         group: '',
-        search: ''
+        search: '',
+        author: ''
     }
 };
 
@@ -171,6 +172,11 @@ function renderFilters() {
     if (state.currentType === 'recipe') {
         renderFilterGroup('recipeTypeFilter', categories.recipeTypes, 'recipeType');
     }
+    
+    // 作者筛选（仅食疗方子时显示）
+    if (state.currentType === 'recipe' && categories.authors) {
+        renderFilterGroup('authorFilter', categories.authors, 'author');
+    }
 }
 
 // 渲染筛选组
@@ -226,13 +232,14 @@ function filterData() {
     console.log('filterData 被调用');
     
     const data = state.allData[state.currentType] || [];
-    const { season, symptom, recipeType, group, search } = state.filters;
+    const { season, symptom, recipeType, group, search, author } = state.filters;
     
     // 获取中文名称（用于匹配数据）
     const seasonName = season ? (state.index?.categories?.seasons?.find(s => s.id === season)?.name || season) : '';
     const recipeTypeName = recipeType ? (state.index?.categories?.recipeTypes?.find(t => t.id === recipeType)?.name || recipeType) : '';
+    const authorName = author ? (state.index?.categories?.authors?.find(a => a.id === author)?.name || author) : '';
     
-    console.log('筛选条件:', { season, seasonName, symptom, recipeType, recipeTypeName });
+    console.log('筛选条件:', { season, seasonName, symptom, recipeType, recipeTypeName, author, authorName });
     
     state.filteredData = data.filter(item => {
         // 搜索匹配
@@ -264,6 +271,11 @@ function filterData() {
         // 方子类型筛选
         if (recipeTypeName && state.currentType === 'recipe') {
             if (!item.categories?.type?.includes(recipeTypeName)) return false;
+        }
+        
+        // 作者筛选
+        if (authorName && item.source?.author) {
+            if (item.source.author !== authorName) return false;
         }
         
         return true;
