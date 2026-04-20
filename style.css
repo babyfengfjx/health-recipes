@@ -1521,3 +1521,94 @@ body {
     font-size: 3rem;
     opacity: 0.6;
 }
+
+/* 步骤列表样式 */
+.steps-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: step-counter;
+}
+
+.steps-list li {
+    position: relative;
+    padding: 15px 15px 15px 50px;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, #F5F5F5 0%, #FAFAFA 100%);
+    border-radius: 12px;
+    line-height: 1.8;
+    border-left: 3px solid #4CAF50;
+    counter-increment: step-counter;
+}
+
+.steps-list li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(135deg, #4CAF50 0%, #81C784 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.steps-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* 注意事项和禁忌事项的样式优化 */
+.precautions-content,
+.contraindicated-content {
+    background: #FFF3E0;
+    padding: 15px;
+    border-radius: 12px;
+    line-height: 1.8;
+    border-left: 3px solid #FF9800;
+}
+
+.precautions-content {
+    background: #FFF8E1;
+    border-left-color: #FFC107;
+}
+
+.contraindicated-content {
+    background: #FFEBEE;
+    border-left-color: #F44336;
+}
+
+/* 适用人群样式 */
+.suitable-content {
+    background: #E8F5E9;
+    padding: 15px;
+    border-radius: 12px;
+    line-height: 1.8;
+    border-left: 3px solid #4CAF50;
+}
+
+/* 注意事项列表样式 */
+.precautions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.precautions-list li {
+    position: relative;
+    padding: 10px 10px 10px 30px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.precautions-list li::before {
+    content: "⚠️";
+    position: absolute;
+    left: 0;
+    top: 10px;
+}

@@ -482,6 +482,128 @@ function showDetail(id) {
 }
 
 // 渲染食疗方子详情
+// 格式化步骤文本
+function formatSteps(text) {
+    if (!text) return '';
+    
+    // 统一换行符
+    text = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+    
+    // 尝试识别步骤编号
+    const stepPatterns = [
+        /^(\d+)[.、．]\s*/gm,  // 1. 或 1、
+        /^([一二三四五六七八九十]+)[、.]\s*/gm,  // 一、或 一.
+        /^\((\d+)\)\s*/gm  // (1)
+    ];
+    
+    let hasSteps = false;
+    for (const pattern of stepPatterns) {
+        if (pattern.test(text)) {
+            hasSteps = true;
+            break;
+        }
+    }
+    
+    if (hasSteps) {
+        // 将文本按步骤拆分
+        let lines = text.split('\n');
+        let steps = [];
+        let currentStep = '';
+        
+        for (let line of lines) {
+            line = line.trim();
+            if (!line) continue;
+            
+            // 检查是否是新步骤的开始
+            const isNewStep = /^(\d+[.、．]|[一二三四五六七八九十]+[、.]|\(\d+\))/.test(line);
+            
+            if (isNewStep && currentStep) {
+                steps.push(currentStep);
+                currentStep = line;
+            } else if (isNewStep) {
+                currentStep = line;
+            } else if (currentStep) {
+                currentStep += ' ' + line;
+            } else {
+                currentStep = line;
+            }
+        }
+        
+        if (currentStep) {
+            steps.push(currentStep);
+        }
+        
+        // 渲染为有序列表
+        if (steps.length > 0) {
+            return '<ol class="steps-list">' + steps.map(s => {
+                // 去掉步骤编号（因为有序列表会自动编号）
+                s = s.replace(/^(\d+[.、．]|[一二三四五六七八九十]+[、.]|\(\d+\))\s*/, '');
+                return '<li>' + s + '</li>';
+            }).join('') + '</ol>';
+        }
+    }
+    
+    // 如果没有识别到步骤，按段落显示
+    let paragraphs = text.split(/\n\n+/);
+    if (paragraphs.length > 1) {
+        return paragraphs.map(p => '<p>' + p.replace(/\n/g, '<br>') + '</p>').join('');
+    }
+    
+    // 默认按换行显示
+    return text.replace(/\n/g, '<br>');
+}
+
+// 格式化注意事项文本
+function formatPrecautions(text) {
+    if (!text) return '';
+    
+    // 统一换行符
+    text = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+    
+    // 检查是否包含编号列表
+    const numberedPattern = /(\d+)\.\s*/g;
+    
+    if (numberedPattern.test(text)) {
+        // 按数字编号拆分
+        let lines = text.split('\n');
+        let items = [];
+        let currentItem = '';
+        
+        for (let line of lines) {
+            line = line.trim();
+            if (!line) continue;
+            
+            const isNewItem = /^\d+\./.test(line);
+            
+            if (isNewItem && currentItem) {
+                items.push(currentItem);
+                currentItem = line;
+            } else if (isNewItem) {
+                currentItem = line;
+            } else if (currentItem) {
+                currentItem += ' ' + line;
+            } else {
+                currentItem = line;
+            }
+        }
+        
+        if (currentItem) {
+            items.push(currentItem);
+        }
+        
+        if (items.length > 0) {
+            return '<ul class="precautions-list">' + items.map(item => {
+                // 去掉编号
+                item = item.replace(/^\d+\.\s*/, '');
+                return '<li>' + item + '</li>';
+            }).join('') + '</ul>';
+        }
+    }
+    
+    // 默认按段落显示
+    return text.replace(/\n/g, '<br>');
+}
+
 function renderRecipeDetail(recipe) {
     return `
         ${recipe.image ? `<img src="${recipe.image}" alt="${recipe.name}" class="detail-image" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 250%22%3E%3Crect fill=%22%23E8F5E9%22 width=%22400%22 height=%22250%22/%3E%3Ctext x=%22200%22 y=%22125%22 text-anchor=%22middle%22 font-size=%2248%22%3E🌿%3C/text%3E%3C/svg%3E';"/>` : '<div class="detail-image-placeholder">🌿</div>'}
@@ -527,14 +649,14 @@ function renderRecipeDetail(recipe) {
         ${recipe.method ? `
             <div class="detail-section method-section">
                 <h4>📝 制作方法</h4>
-                <div class="method-content">${recipe.method.replace(/\n/g, '<br>')}</div>
+                <div class="method-content">${formatSteps(recipe.method)}</div>
             </div>
         ` : ''}
         
         ${recipe.precautions ? `
             <div class="detail-section precaution-section">
                 <h4>⚠️ 注意事项</h4>
-                <div class="precautions-content">${recipe.precautions.replace(/\n/g, '<br>')}</div>
+                <div class="precautions-content">${formatPrecautions(recipe.precautions)}</div>
             </div>
         ` : ''}
         
