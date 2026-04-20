@@ -444,7 +444,7 @@ function renderRecipeDetail(recipe) {
                     ).join('')}
                 </ul>
             </div>
-        ` : ''}`
+        ` : ''}
         
         ${recipe.method ? `
             <div class="detail-section">
