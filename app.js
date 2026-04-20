@@ -569,8 +569,7 @@ function formatSteps(text) {
     }
     
     // 检查是否包含"xxx："格式的列表（如"女性："、"男性："）
-    const colonPattern = /^[^：:
-]+[：:]/m;
+    const colonPattern = /^[^：:\n]+[：:]/m;
     if (colonPattern.test(text)) {
         const lines = text.split('\n');
         const items = [];
@@ -600,8 +599,7 @@ function formatSteps(text) {
     }
     
     // 检查是否包含"准备工作："等标题
-    const titlePattern = /^[^：:
-]+[：:]/m;
+    const titlePattern = /^[^：:\n]+[：:]/m;
     if (titlePattern.test(text)) {
         const lines = text.split('\n');
         const sections = [];
