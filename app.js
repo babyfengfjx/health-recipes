@@ -242,8 +242,28 @@ function filterData() {
     
     // 获取中文名称（用于匹配数据）
     const seasonName = season ? (state.index?.categories?.seasons?.[season] || season) : '';
-    const recipeTypeName = recipeType ? (state.index?.categories?.recipeTypes?.find(t => t.id === recipeType)?.name || recipeType) : '';
-    const authorName = author ? (state.index?.categories?.authors?.find(a => a.id === author)?.name || author) : '';
+    
+    let recipeTypeName = recipeType || '';
+    const typesArr = state.index?.categories?.recipeTypes;
+    if (recipeType && typesArr) {
+        if (Array.isArray(typesArr)) {
+            const found = typesArr.find(t => t.id === recipeType);
+            if (found) recipeTypeName = found.name;
+        } else {
+            recipeTypeName = typesArr[recipeType] || recipeType;
+        }
+    }
+
+    let authorName = author || '';
+    const authorsArr = state.index?.categories?.authors;
+    if (author && authorsArr) {
+        if (Array.isArray(authorsArr)) {
+            const found = authorsArr.find(a => a.id === author);
+            if (found) authorName = found.name;
+        } else {
+            authorName = authorsArr[author] || author;
+        }
+    }
     
     console.log('筛选条件:', { season, seasonName, symptom, recipeType, recipeTypeName, author, authorName });
     
@@ -268,7 +288,17 @@ function filterData() {
         
         // 症状筛选
         if (symptom) {
-            const symptomName = state.index?.categories?.symptoms?.find(s => s.id === symptom)?.name || symptom;
+            // 兼容数组(旧)和对象(新)格式
+            let symptomName = symptom;
+            const symsArr = state.index?.categories?.symptoms;
+            if (symsArr) {
+                if (Array.isArray(symsArr)) {
+                    const found = symsArr.find(s => s.id === symptom);
+                    if (found) symptomName = found.name;
+                } else {
+                    symptomName = symsArr[symptom] || symptom;
+                }
+            }
             const hasSymptom = (item.symptoms && item.symptoms.some(s => s.includes(symptomName) || symptomName.includes(s))) ||
                               (item.efficacy && item.efficacy.includes(symptomName));
             if (!hasSymptom) return false;
