@@ -1708,3 +1708,13 @@ body {
     background: linear-gradient(135deg, #FF9800 0%, #FFB74D 100%);
     color: white;
 }
+
+/* 来源样式 */
+.source-section {
+    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+    border-left: 4px solid #1976D2;
+}
+
+.source-section h4 {
+    color: #1565C0;
+}

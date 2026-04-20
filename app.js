@@ -754,6 +754,13 @@ function renderRecipeDetail(recipe) {
             </div>
         ` : ''}
         
+        ${recipe.source?.author ? `
+            <div class="detail-section source-section">
+                <h4>📚 来源</h4>
+                <p>${recipe.source.author}${recipe.source.book ? `《${recipe.source.book}》` : ''}</p>
+            </div>
+        ` : ''}
+        
         ${renderActionButtons(recipe)}
     `;
 }
