@@ -518,6 +518,17 @@ function showDetail(id) {
     }
     
     document.getElementById('modalBody').innerHTML = content;
+    
+    // 更新来源标签
+    const sourceEl = document.getElementById('modalSource');
+    if (sourceEl && item.source) {
+        const bookName = item.source.book || item.source || '未知来源';
+        const author = item.source.author || '';
+        sourceEl.textContent = '来源：' + (author ? `${author}《${bookName}》` : bookName);
+    } else if (sourceEl) {
+        sourceEl.textContent = '来源：未知';
+    }
+    
     document.getElementById('recipeModal').classList.add('active');
 }
 
