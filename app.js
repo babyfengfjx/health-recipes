@@ -323,8 +323,8 @@ function filterData() {
             const searchMatch = 
                 (item.name && item.name.toLowerCase().includes(searchLower)) ||
                 (item.efficacy && item.efficacy.toLowerCase().includes(searchLower)) ||
-                (item.symptoms && item.symptoms.some(s => s.toLowerCase().includes(searchLower))) ||
-                (item.ingredients && item.ingredients.some(i => i.name && i.name.toLowerCase().includes(searchLower)));
+                (item.symptoms && Array.isArray(item.symptoms) && item.symptoms.some(s => s.toLowerCase().includes(searchLower))) ||
+                (item.ingredients && Array.isArray(item.ingredients) && item.ingredients.some(i => i.name && i.name.toLowerCase().includes(searchLower)));
             if (!searchMatch) return false;
         }
         
