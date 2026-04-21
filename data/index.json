@@ -879,13 +879,28 @@
     }
   },
   "dataFiles": {
-    "recipe": "data/all_recipes.json"
+    "recipe": "data/all_recipes.json",
+    "acupoint": "data/acupoints.json",
+    "exercise": "data/exercises.json",
+    "knowledge": "data/knowledge.json"
   },
   "categories": {
     "types": {
       "recipe": {
         "name": "食疗方子",
         "icon": "🌿"
+      },
+      "acupoint": {
+        "name": "穴位按摩",
+        "icon": "👆"
+      },
+      "exercise": {
+        "name": "养生功法",
+        "icon": "🧘"
+      },
+      "knowledge": {
+        "name": "健康知识",
+        "icon": "📖"
       }
     },
     "seasons": {
