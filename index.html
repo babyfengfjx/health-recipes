@@ -49,6 +49,13 @@
             <span class="hot-tag" onclick="randomItem()">🎲 随机推荐</span>
         </div>
 
+        <!-- 当前筛选状态 -->
+        <div id="activeFilters" class="active-filters" style="display: none;">
+            <span class="filter-label">🔍 当前筛选：</span>
+            <span id="filterTags"></span>
+            <button class="clear-btn" onclick="clearAllFilters()">✕ 清空全部</button>
+        </div>
+
         <!-- 搜索区域 -->
         <div class="search-section">
             <div class="search-box">

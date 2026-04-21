@@ -1718,3 +1718,72 @@ body {
 .source-section h4 {
     color: #1565C0;
 }
+
+
+/* 热门标签选中状态 */
+.hot-tag.active {
+    background: #4CAF50 !important;
+    color: white !important;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
+}
+
+/* 当前筛选显示区域 */
+.active-filters {
+    padding: 10px 16px;
+    background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+    border-radius: 10px;
+    margin: 10px 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    box-shadow: 0 2px 8px rgba(255, 152, 0, 0.15);
+}
+
+.active-filters .filter-label {
+    color: #e65100;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.active-filters .filter-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    background: #ff9800;
+    color: white;
+    border-radius: 15px;
+    font-size: 13px;
+    cursor: default;
+}
+
+.active-filters .filter-tag .remove {
+    cursor: pointer;
+    font-weight: bold;
+    padding-left: 4px;
+}
+
+.active-filters .filter-tag .remove:hover {
+    color: #ffe0b2;
+}
+
+.active-filters .clear-btn {
+    padding: 6px 16px;
+    background: linear-gradient(135deg, #f44336 0%, #e53935 100%);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: auto;
+    box-shadow: 0 2px 4px rgba(244, 67, 54, 0.3);
+    transition: transform 0.2s;
+}
+
+.active-filters .clear-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(244, 67, 54, 0.4);
+}
