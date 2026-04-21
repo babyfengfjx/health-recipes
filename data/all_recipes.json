@@ -19767,11 +19767,17 @@
         "book": "顺时生活2021健康日历",
         "author": "陈允斌"
       },
-      "categories": [
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季",
+          "秋季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "湿热体质",
         "便秘",
@@ -42073,12 +42079,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "秋季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "脾胃虚弱",
         "湿气重"
@@ -42098,12 +42108,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "秋季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "脾胃虚弱",
         "湿气重"
@@ -42123,12 +42137,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "秋季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "脾胃虚弱",
         "湿气重"
@@ -42148,12 +42166,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "秋季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "脾胃虚弱"
       ],
@@ -42172,12 +42194,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "秋季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "脾胃虚弱"
       ],
@@ -42196,12 +42222,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "秋季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "脾胃虚弱"
       ],
@@ -42220,12 +42250,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "秋季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "湿气重",
         "肾虚"
@@ -42245,12 +42279,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "秋季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "湿气重",
         "肾虚"
@@ -42270,12 +42308,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "秋季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "湿气重",
         "肾虚"
@@ -42295,12 +42337,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "秋季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "脾胃虚弱",
         "湿气重"
@@ -42320,12 +42366,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "秋季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "脾胃虚弱",
         "湿气重"
@@ -42345,12 +42395,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "脾胃虚弱",
         "湿气重"
@@ -42370,12 +42424,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "脾胃虚弱",
         "湿气重"
@@ -42395,12 +42453,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "心气虚",
         "脾胃虚弱"
@@ -42420,12 +42482,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "心气虚",
         "脾胃虚弱"
@@ -42445,12 +42511,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "心气虚",
         "脾胃虚弱"
@@ -42470,12 +42540,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "心气虚",
         "脾胃虚弱",
@@ -42497,12 +42571,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "心气虚",
         "脾胃虚弱",
@@ -42524,12 +42602,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "心气虚",
         "脾胃虚弱",
@@ -42551,12 +42633,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "脾胃虚弱",
         "肾虚"
@@ -42576,12 +42662,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "心气虚"
       ],
@@ -42600,12 +42690,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "心气虚"
       ],
@@ -42624,12 +42718,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "心气虚"
       ],
@@ -42648,12 +42746,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "心气虚"
       ],
@@ -42672,12 +42774,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "心气虚",
         "湿气重"
@@ -42697,12 +42803,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "心气虚",
         "肾虚",
@@ -42723,12 +42833,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "心气虚",
         "肾虚",
@@ -42749,12 +42863,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "心气虚",
         "肾虚",
@@ -42775,12 +42893,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "心气虚",
         "肾虚"
@@ -42800,12 +42922,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "心气虚",
         "肾虚"
@@ -42825,12 +42951,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "心气虚",
         "湿气重",
@@ -42851,12 +42981,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "湿气重"
       ],
@@ -42875,12 +43009,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "湿气重"
       ],
@@ -42899,12 +43037,16 @@
         "book": "徐文兵讲美食课系列",
         "author": "徐文兵"
       },
-      "categories": [
-        "season",
-        "symptom",
-        "ingredient",
-        "type"
-      ],
+      "categories": {
+        "season": [
+          "夏季"
+        ],
+        "symptom": [],
+        "ingredient": [],
+        "type": [
+          "菜品"
+        ]
+      },
       "suitableFor": [
         "湿气重"
       ],

@@ -907,43 +907,43 @@
       }
     },
     "seasons": {
-      "spring": "春季🌸",
-      "summer": "夏季☀️",
-      "autumn": "秋季🍂",
-      "winter": "冬季❄️"
+      "春季": "春季🌸",
+      "夏季": "夏季☀️",
+      "秋季": "秋季🍂",
+      "冬季": "冬季❄️"
     },
     "symptoms": {},
     "recipeTypes": [
       {
-        "id": "tea",
+        "id": "茶饮",
         "name": "茶饮"
       },
       {
-        "id": "soup",
+        "id": "汤品",
         "name": "汤品"
       },
       {
-        "id": "porridge",
+        "id": "粥品",
         "name": "粥品"
       },
       {
-        "id": "dish",
+        "id": "菜品",
         "name": "菜品"
       },
       {
-        "id": "dessert",
+        "id": "甜品",
         "name": "甜品"
       },
       {
-        "id": "herb",
+        "id": "药膳",
         "name": "药膳"
       },
       {
-        "id": "external",
+        "id": "外用",
         "name": "外用"
       },
       {
-        "id": "footbath",
+        "id": "泡脚方",
         "name": "泡脚方"
       }
     ],
