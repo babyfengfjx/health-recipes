@@ -25,6 +25,41 @@ let state = {
     }
 };
 
+
+    // 获取当前季节
+    function getCurrentSeason() {
+        const month = new Date().getMonth() + 1;
+        if (month >= 3 && month <= 5) return '春季';
+        if (month >= 6 && month <= 8) return '夏季';
+        if (month >= 9 && month <= 11) return '秋季';
+        return '冬季';
+    }
+    
+    // 智能排序：当前季节优先
+    function sortBySeason(items) {
+        const currentSeason = getCurrentSeason();
+        return items.sort((a, b) => {
+            const aSeasons = a.categories?.season || [];
+            const bSeasons = b.categories?.season || [];
+            
+            const aCurrent = aSeasons.some(s => s.includes(currentSeason) || currentSeason.includes(s));
+            const bCurrent = bSeasons.some(s => s.includes(currentSeason) || currentSeason.includes(s));
+            
+            const aAll = aSeasons.includes('四季');
+            const bAll = bSeasons.includes('四季');
+            
+            // 当前季节优先
+            if (aCurrent && !bCurrent) return -1;
+            if (!aCurrent && bCurrent) return 1;
+            
+            // 四季通用次之
+            if (aAll && !bAll) return -1;
+            if (!aAll && bAll) return 1;
+            
+            return 0;
+        });
+    }
+    
 // 初始化
 async function init() {
     initEventListeners();
