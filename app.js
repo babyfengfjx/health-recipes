@@ -1,6 +1,42 @@
 // 养生知识库系统 - 主逻辑 v2.0
 
 // 全局配置
+
+// 生成骨架屏HTML
+function renderSkeleton(count = 6) {
+    let html = '';
+    for (let i = 0; i < count; i++) {
+        html += `
+            <div class="skeleton-card">
+                <div class="skeleton skeleton-title"></div>
+                <div class="skeleton skeleton-text"></div>
+                <div class="skeleton skeleton-text-short"></div>
+                <div class="skeleton-tags">
+                    <div class="skeleton skeleton-tag"></div>
+                    <div class="skeleton skeleton-tag"></div>
+                    <div class="skeleton skeleton-tag"></div>
+                </div>
+            </div>
+        `;
+    }
+    return html;
+}
+
+// 显示加载中状态（骨架屏）
+function showLoadingState() {
+    const container = document.getElementById('recipesList');
+    if (container) {
+        container.innerHTML = `
+            <div class="loading-progress">
+                <p>🌿 正在加载养生智慧...</p>
+                <div class="bar"><div class="bar-inner"></div></div>
+            </div>
+            ${renderSkeleton(6)}
+        `;
+    }
+}
+
+
 const CONFIG = {
     dataPath: 'data/',
     indexFile: 'data/index.json',
@@ -112,7 +148,7 @@ async function loadDataType(type) {
     // 显示加载状态
     const listEl = document.getElementById('recipesList');
     if (listEl) {
-        listEl.innerHTML = '<div class="loading"></div>';
+        showLoadingState();
     }
     
     // 即使 dataFiles 不存在，也默认指向 data/all_recipes.json (用于兼容旧缓存)

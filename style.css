@@ -1787,3 +1787,87 @@ body {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(244, 67, 54, 0.4);
 }
+
+
+/* 骨架屏样式 - 优化加载体验 */
+
+/* 骨架屏样式 */
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+}
+
+@keyframes skeleton-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.skeleton-card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.skeleton-title {
+    height: 24px;
+    width: 60%;
+    margin-bottom: 12px;
+    border-radius: 4px;
+}
+
+.skeleton-text {
+    height: 16px;
+    width: 100%;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.skeleton-text-short {
+    height: 16px;
+    width: 80%;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.skeleton-tags {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.skeleton-tag {
+    height: 24px;
+    width: 60px;
+    border-radius: 12px;
+}
+
+.loading-progress {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.loading-progress .bar {
+    width: 200px;
+    height: 4px;
+    background: #e0e0e0;
+    border-radius: 2px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.loading-progress .bar-inner {
+    height: 100%;
+    background: linear-gradient(90deg, #4CAF50, #8BC34A);
+    width: 0%;
+    animation: progress 2s ease-in-out infinite;
+}
+
+@keyframes progress {
+    0% { width: 0%; margin-left: 0; }
+    50% { width: 70%; margin-left: 15%; }
+    100% { width: 0%; margin-left: 100%; }
+}
