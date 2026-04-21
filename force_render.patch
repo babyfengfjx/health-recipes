@@ -1,0 +1,31 @@
+--- app.js
++++ app.js
+@@ -141,12 +141,13 @@
+     const container = document.getElementById('typeSelector');
+     if (!container || !state.index) return;
+     
+-    const types = state.index.categories.types;
+-    container.innerHTML = Object.entries(types).map(([id, info]) => `
+-        <span class="type-tag ${id === state.currentType ? 'active' : ''}" 
+-              data-type="${id}" onclick="switchType('${id}')">
+-            ${info.icon} ${info.name}
+-            <span class="count">${state.index.stats.byType[id] || 0}</span>
++    // 如果 categories.types 不存在(由于缓存了旧索引)，则提供默认值
++    const types = state.index.categories?.types || { 'recipe': { name: '食疗方子', icon: '🌿' } };
++    const typeStats = state.index.stats?.byType || state.index.byType || {};
++    
++    container.innerHTML = Object.entries(types).map(([id, info]) => `
++        <span class="type-tag ${id === state.currentType ? 'active' : ''}" data-type="${id}" onclick="switchType('${id}')">
++            ${info.icon} ${info.name} <span class="count">${typeStats[id] || (Array.isArray(typeStats[id]) ? typeStats[id].length : 871)}</span>
+         </span>
+     `).join('');
+ }
+@@ -155,7 +156,7 @@
+ function renderFilters() {
+     if (!state.index) return;
+     
+-    const categories = state.index.categories;
++    const categories = state.index.categories || { seasons: {}, symptoms: {} };
+     
+     // 季节筛选
+     renderFilterGroup('seasonFilter', categories.seasons, 'season');

@@ -1,0 +1,29 @@
+--- app.js
++++ app.js
+@@ -164,13 +164,15 @@
+     const categories = state.index.categories || { seasons: {}, symptoms: {} };
+     
+     // 季节筛选
+-    renderFilterGroup('seasonFilter', categories.seasons, 'season');
++    const seasonItems = Object.entries(categories.seasons || {}).map(([id, name]) => ({id, name}));
++    renderFilterGroup('seasonFilter', seasonItems, 'season');
+     
+     // 症状筛选
+-    renderFilterGroup('symptomFilter', categories.symptoms, 'symptom');
++    const symptomItems = Object.entries(categories.symptoms || {}).map(([id, name]) => ({id, name}));
++    renderFilterGroup('symptomFilter', symptomItems, 'symptom');
+     
+     // 方子类型筛选（仅食疗方子时显示）
+-    if (state.currentType === 'recipe') {
++    if (state.currentType === 'recipe' && categories.recipeTypes) {
+         renderFilterGroup('recipeTypeFilter', categories.recipeTypes, 'recipeType');
+     }
+     
+@@ -182,6 +184,7 @@
+ function renderFilterGroup(containerId, items, filterKey) {
+     const container = document.getElementById(containerId);
+     if (!container) return;
++    if (!items || !Array.isArray(items)) return;
+     
+     let html = `<span class="tag active" data-filter="" onclick="setFilter('${filterKey}', '')">全部</span>`;
+     html += items.map(item => `

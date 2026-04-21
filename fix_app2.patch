@@ -1,0 +1,12 @@
+--- app.js
++++ app.js
+@@ -83,7 +83,8 @@
+         listEl.innerHTML = '<div class="loading"></div>';
+     }
+     
+-    const dataFile = state.index?.dataFiles?.[type];
++    // 默认使用 all_recipes.json
++    const dataFile = type === 'recipe' ? 'data/all_recipes.json' : state.index?.dataFiles?.[type];
+     console.log('数据文件路径:', dataFile);
+     
+     if (!dataFile) {

@@ -1,0 +1,15 @@
+--- app.js
++++ app.js
+@@ -242,8 +242,10 @@
+     
+     // 获取中文名称（用于匹配数据）
+     const seasonName = season ? (state.index?.categories?.seasons?.[season] || season) : '';
+-    const recipeTypeName = recipeType ? (state.index?.categories?.recipeTypes?.find(t => t.id === recipeType)?.name || recipeType) : '';
+-    const authorName = author ? (state.index?.categories?.authors?.find(a => a.id === author)?.name || author) : '';
++    const recipeTypeName = recipeType ? (Array.isArray(state.index?.categories?.recipeTypes) ? 
++        (state.index.categories.recipeTypes.find(t => t.id === recipeType)?.name || recipeType) : (state.index?.categories?.recipeTypes?.[recipeType] || recipeType)) : '';
++    const authorName = author ? (Array.isArray(state.index?.categories?.authors) ? 
++        (state.index.categories.authors.find(a => a.id === author)?.name || author) : (state.index?.categories?.authors?.[author] || author)) : '';
+     
+     console.log('筛选条件:', { season, seasonName, symptom, recipeType, recipeTypeName, author, authorName });
+     

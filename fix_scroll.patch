@@ -1,0 +1,69 @@
+--- app.js
++++ app.js
+@@ -301,6 +301,11 @@
+     const container = document.getElementById('recipesList');
+     if (!container) return;
+     
++    // 如果是第一页，清空容器；如果是追加加载，不清空
++    if (state.currentPage === 1) {
++        container.innerHTML = '';
++    }
++    
+     if (state.filteredData.length === 0) {
+         container.innerHTML = `
+             <div class="empty-state">
+@@ -319,11 +324,19 @@
+     
+     // 根据类型渲染不同的卡片
+     const typeConfig = state.index?.categories?.types?.[state.currentType] || {};
+-    
+-    container.innerHTML = itemsToShow.map(item => 
++    const newHtml = itemsToShow.map(item => 
+         renderCard(item, typeConfig)
+     ).join('');
+     
++    if (state.currentPage === 1) {
++        container.innerHTML = newHtml;
++    } else {
++        container.insertAdjacentHTML('beforeend', newHtml);
++    }
++    
++    // 更新加载状态标志
++    state.isLoadingMore = false;
++    
+     // 显示/隐藏加载更多
+     document.getElementById('loadMore').style.display = 
+         state.filteredData.length > end ? 'block' : 'none';
+@@ -1043,9 +1056,22 @@
+ 
+ // 加载更多
+ function loadMore() {
++    if (state.isLoadingMore) return;
++    const end = state.currentPage * CONFIG.itemsPerPage;
++    if (state.filteredData && state.filteredData.length <= end) return; // 已经加载完
++    
++    state.isLoadingMore = true;
+     state.currentPage++;
+     renderList();
+ }
++
++// 滚动监听实现自动加载
++function handleScroll() {
++    // 当滚动到距离底部 300px 时自动加载
++    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 300) {
++        loadMore();
++    }
++}
+ 
+ // 关闭模态框
+ function closeModal() {
+@@ -1075,6 +1101,9 @@
+     
+     // 加载更多
+     document.getElementById('loadMoreBtn')?.addEventListener('click', loadMore);
++    
++    // 添加无限滚动监听
++    window.addEventListener('scroll', handleScroll);
+ }
+ 
+ // DOM 加载完成后初始化

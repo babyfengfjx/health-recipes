@@ -1,0 +1,14 @@
+--- app.js
++++ app.js
+@@ -301,6 +301,11 @@
+     const container = document.getElementById('recipesList');
+     if (!container) return;
+     
++    // 如果是第一页，清空容器；如果是追加加载，不清空
++    if (state.currentPage === 1) {
++        container.innerHTML = '';
++    }
++    
+     if (state.filteredData.length === 0) {
+         container.innerHTML = `
+             <div class="empty-state">

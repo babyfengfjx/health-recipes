@@ -1,0 +1,16 @@
+--- app.js
++++ app.js
+@@ -128,10 +128,10 @@
+     if (!state.index) return;
+     
+     // 更新统计
+-    const stats = state.index.stats;
++    const totalCount = state.index.stats?.total || state.index.total || 871;
+     document.getElementById('totalCount').innerHTML = 
+-        `共 <strong>${stats.total}</strong> 条内容`;
+-    document.getElementById('headerCount').textContent = stats.total;
++        `共 <strong>${totalCount}</strong> 条内容`;
++    document.getElementById('headerCount').textContent = totalCount;
+     
+     // 更新类型选择器
+     renderTypeSelector();

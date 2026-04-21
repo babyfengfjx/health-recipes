@@ -1,0 +1,11 @@
+--- app.js
++++ app.js
+@@ -154,7 +154,7 @@
+     
+     container.innerHTML = Object.entries(types).map(([id, info]) => `
+         <span class="type-tag ${id === state.currentType ? 'active' : ''}" data-type="${id}" onclick="switchType('${id}')">
+-            ${info.icon} ${info.name} <span class="count">${typeStats[id] || (Array.isArray(typeStats[id]) ? typeStats[id].length : 871)}</span>
++            ${info.icon} ${info.name} <span class="count">${typeStats[id] !== undefined ? (Array.isArray(typeStats[id]) ? typeStats[id].length : typeStats[id]) : (id === 'recipe' ? 871 : 0)}</span>
+         </span>
+     `).join('');
+ }

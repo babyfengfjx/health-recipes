@@ -1,0 +1,20 @@
+--- app.js
++++ app.js
+@@ -35,7 +35,7 @@
+ // 加载索引
+ async function loadIndex() {
+     try {
+-        const response = await fetch(CONFIG.indexFile);
++        const response = await fetch(`${CONFIG.indexFile}?t=${new Date().getTime()}`);
+         if (response.ok) {
+             state.index = await response.json();
+             console.log('索引加载成功:', state.index.stats);
+@@ -93,7 +93,7 @@
+     
+     try {
+         console.log('正在fetch:', dataFile);
+-        const response = await fetch(dataFile);
++        const response = await fetch(`${dataFile}?t=${new Date().getTime()}`);
+         console.log('fetch响应状态:', response.status);
+         
+         if (response.ok) {

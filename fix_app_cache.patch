@@ -1,0 +1,15 @@
+--- index.html
++++ index.html
+@@ -124,6 +124,10 @@
+         </div>
+     </div>
+ 
+-    <script src="app.js"></script>
++    <script>
++        // 使用动态时间戳加载 app.js，强制绕过所有缓存
++        const script = document.createElement('script');
++        script.src = 'app.js?t=' + new Date().getTime();
++        document.body.appendChild(script);
++    </script>
+ </body>
+ </html>

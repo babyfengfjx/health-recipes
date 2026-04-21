@@ -1,0 +1,24 @@
+--- app.js
++++ app.js
+@@ -35,7 +35,8 @@
+ // 加载索引
+ async function loadIndex() {
+     try {
+-        const response = await fetch(CONFIG.indexFile);
++        // 添加时间戳防止缓存
++        const response = await fetch(`${CONFIG.indexFile}?t=${new Date().getTime()}`);
+         if (response.ok) {
+             state.index = await response.json();
+             console.log('索引加载成功:', state.index.stats);
+@@ -79,7 +80,8 @@
+         console.error('未找到数据文件配置:', type);
+         return;
+     }
+-    
++
++    const fetchUrl = `${dataFile}?t=${new Date().getTime()}`;
+     try {
+         console.log('正在fetch:', dataFile);
+-        const response = await fetch(dataFile);
++        const response = await fetch(fetchUrl);
+         console.log('fetch响应状态:', response.status);

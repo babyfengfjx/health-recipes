@@ -1,0 +1,13 @@
+--- app.js
++++ app.js
+@@ -82,7 +82,9 @@
+         listEl.innerHTML = '<div class="loading"></div>';
+     }
+     
+-    const dataFile = state.index?.dataFiles?.[type];
++    // 即使 dataFiles 不存在，也默认指向 data/all_recipes.json (用于兼容旧缓存)
++    const dataFile = state.index?.dataFiles?.[type] || 
++                     (type === 'recipe' ? 'data/all_recipes.json' : null);
+     console.log('数据文件路径:', dataFile);
+     
+     if (!dataFile) {

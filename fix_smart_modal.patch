@@ -1,0 +1,50 @@
+--- app.js
++++ app.js
+@@ -910,23 +910,23 @@
+ // 创建智能推荐模态框
+ function createSmartRecommendModal() {
+     const modalHtml = `
+-        <div class="modal active" id="smartRecommendModal">
+-            <div class="modal-content smart-recommend-content">
+-                <span class="close-btn" onclick="closeSmartRecommend()">&times;</span>
+-                <h2>🤖 智能养生推荐</h2>
+-                
+-                <div class="recommend-section">
+-                    <h4>📝 请描述您的症状或需求</h4>
+-                    <textarea id="symptomInput" placeholder="例如：最近咳嗽有痰、睡眠不好、容易疲劳..."></textarea>
+-                    <button class="recommend-btn" onclick="analyzeAndRecommend()">🔍 智能分析</button>
+-                </div>
+-                
+-                <div id="recommendResults" class="recommend-results">
+-                    <!-- 分析结果和推荐方子将显示在这里 -->
++        <div class="modal-overlay active" id="smartRecommendModal" onclick="if(event.target===this)closeSmartRecommend()">
++            <div class="modal" style="max-width: 600px;">
++                <div class="modal-header" style="background: linear-gradient(135deg, #1B5E20 0%, #4CAF50 100%);">
++                    <h2 class="modal-title" style="color: white;">🤖 智能养生推荐</h2>
++                    <button class="modal-close" onclick="closeSmartRecommend()">&times;</button>
++                </div>
++                
++                <div class="modal-body">
++                    <div class="seasonal-section">
++                        <h4>📝 请描述您的具体症状</h4>
++                        <textarea id="symptomInput" style="width: 100%; height: 100px; padding: 15px; border-radius: 12px; border: 1px solid #ccc; font-size: 1rem; margin-bottom: 15px; resize: vertical;" placeholder="例如：最近咳嗽有黄痰、晚上睡眠不好、经常容易疲劳..."></textarea>
++                        <button class="copy-btn" style="width: 100%; padding: 12px; border-radius: 12px; background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%); color: white; font-weight: 600; font-size: 1.1rem; border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);" onclick="analyzeAndRecommend()">🔍 智能分析推荐</button>
++                    </div>
++                    
++                    <div id="recommendResults" style="margin-top: 20px;">
++                        <!-- 分析结果和推荐方子将显示在这里 -->
++                    </div>
+                 </div>
+             </div>
+         </div>
+@@ -936,7 +936,9 @@
+ 
+ function closeSmartRecommend() {
+     const modal = document.getElementById('smartRecommendModal');
+-    if (modal) modal.classList.remove('active');
++    if (modal) {
++        modal.remove(); // 直接移除元素而不是隐藏
++    }
+ }
+ 
+ function analyzeAndRecommend() {

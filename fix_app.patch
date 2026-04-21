@@ -1,0 +1,24 @@
+--- app.js
++++ app.js
+@@ -38,7 +38,7 @@
+         const response = await fetch(CONFIG.indexFile);
+         if (response.ok) {
+             state.index = await response.json();
+-            console.log('索引加载成功:', state.index.stats);
++            console.log('索引加载成功:', state.index);
+             updateUI();
+         } else {
+             console.error('索引文件加载失败，状态码:', response.status);
+@@ -129,9 +129,9 @@
+     if (!state.index) return;
+     
+     // 更新统计
+-    const stats = state.index.stats;
++    const total = state.index.total || 871;
+     document.getElementById('totalCount').innerHTML = 
+-        `共 <strong>${stats.total}</strong> 条内容`;
+-    document.getElementById('headerCount').textContent = stats.total;
++        `共 <strong>${total}</strong> 条内容`;
++    document.getElementById('headerCount').textContent = total;
+     
+     // 更新类型选择器

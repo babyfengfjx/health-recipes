@@ -1,0 +1,71 @@
+--- app.js
++++ app.js
+@@ -148,11 +148,22 @@
+     // 如果 categories.types 不存在(由于缓存了旧索引)，则提供默认值
+     const types = state.index.categories?.types || { 'recipe': { name: '食疗方子', icon: '🌿' } };
+     const typeStats = state.index.stats?.byType || state.index.byType || {};
++
++    // 安全获取数量
++    function getCount(id) {
++        if (!typeStats || typeStats[id] === undefined) {
++            return id === 'recipe' ? 871 : 0;
++        }
++        if (Array.isArray(typeStats[id])) {
++            return typeStats[id].length;
++        }
++        return typeStats[id] || 0;
++    }
+     
+     container.innerHTML = Object.entries(types).map(([id, info]) => `
+         <span class="type-tag ${id === state.currentType ? 'active' : ''}" data-type="${id}" onclick="switchType('${id}')">
+-            ${info.icon} ${info.name} <span class="count">${typeStats[id] !== undefined ? (Array.isArray(typeStats[id]) ? typeStats[id].length : typeStats[id]) : (id === 'recipe' ? 871 : 0)}</span>
++            ${info.icon} ${info.name} <span class="count">${getCount(id)}</span>
+         </span>
+     `).join('');
+ }
+ 
+@@ -165,11 +176,15 @@
+     // 季节筛选
+     const seasonItems = Object.entries(categories.seasons || {}).map(([id, name]) => ({id, name}));
+-    renderFilterGroup('seasonFilter', seasonItems, 'season');
++    if (seasonItems.length > 0) {
++        renderFilterGroup('seasonFilter', seasonItems, 'season');
++    }
+     
+     // 症状筛选
+     const symptomItems = Object.entries(categories.symptoms || {}).map(([id, name]) => ({id, name}));
+-    renderFilterGroup('symptomFilter', symptomItems, 'symptom');
++    if (symptomItems.length > 0) {
++        renderFilterGroup('symptomFilter', symptomItems, 'symptom');
++    }
+     
+     // 方子类型筛选（仅食疗方子时显示）
+     if (state.currentType === 'recipe' && categories.recipeTypes) {
+@@ -242,10 +257,14 @@
+     
+     // 获取中文名称（用于匹配数据）
+     const seasonName = season ? (state.index?.categories?.seasons?.[season] || season) : '';
+-    const recipeTypeName = recipeType ? (Array.isArray(state.index?.categories?.recipeTypes) ? 
+-        (state.index.categories.recipeTypes.find(t => t.id === recipeType)?.name || recipeType) : (state.index?.categories?.recipeTypes?.[recipeType] || recipeType)) : '';
+-    const authorName = author ? (Array.isArray(state.index?.categories?.authors) ? 
+-        (state.index.categories.authors.find(a => a.id === author)?.name || author) : (state.index?.categories?.authors?.[author] || author)) : '';
++    
++    let recipeTypeName = recipeType;
++    const typesArr = state.index?.categories?.recipeTypes;
++    if (typesArr && Array.isArray(typesArr)) {
++        const found = typesArr.find(t => t.id === recipeType);
++        if (found) recipeTypeName = found.name;
++    } else if (typesArr && !Array.isArray(typesArr)) {
++        recipeTypeName = typesArr[recipeType] || recipeType;
++    }
++
++    let authorName = author;
++    const authorsArr = state.index?.categories?.authors;
++    if (authorsArr && Array.isArray(authorsArr)) {
++        const found = authorsArr.find(a => a.id === author);
++        if (found) authorName = found.name;
++    } else if (authorsArr && !Array.isArray(authorsArr)) {
++        authorName = authorsArr[author] || author;
++    }
+     
+     console.log('筛选条件:', { season, seasonName, symptom, recipeType, recipeTypeName, author, authorName });

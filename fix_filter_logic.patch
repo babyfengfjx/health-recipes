@@ -1,0 +1,11 @@
+--- app.js
++++ app.js
+@@ -237,7 +237,7 @@
+     const { season, symptom, recipeType, group, search, author } = state.filters;
+     
+     // 获取中文名称（用于匹配数据）
+-    const seasonName = season ? (state.index?.categories?.seasons?.find(s => s.id === season)?.name || season) : '';
++    const seasonName = season ? (state.index?.categories?.seasons?.[season] || season) : '';
+     const recipeTypeName = recipeType ? (state.index?.categories?.recipeTypes?.find(t => t.id === recipeType)?.name || recipeType) : '';
+     const authorName = author ? (state.index?.categories?.authors?.find(a => a.id === author)?.name || author) : '';
+     
