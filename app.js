@@ -277,6 +277,7 @@ function setFilter(key, value) {
     }
     
     filterData();
+    updateActiveFilters();
 }
 
 // 数据筛选
@@ -1364,10 +1365,138 @@ function showSeasonalTipOnLoad() {
 
 // 快速搜索
 function quickSearch(keyword) {
-    state.filters.search = keyword;
-    document.getElementById('searchInput').value = keyword;
+    // 如果点击的是当前选中的标签，则取消选中
+    const currentTag = document.querySelector(`.hot-tag[data-keyword="${keyword}"]`);
+    const isActive = currentTag && currentTag.classList.contains('active');
+    
+    if (isActive && state.filters.search === keyword) {
+        // 取消选中，清空搜索
+        state.filters.search = '';
+        document.getElementById('searchInput').value = '';
+        currentTag.classList.remove('active');
+    } else {
+        // 选中新的标签
+        // 先清除其他热门标签的选中状态
+        document.querySelectorAll('.hot-tag[data-keyword]').forEach(tag => {
+            tag.classList.remove('active');
+        });
+        // 设置新的搜索
+        state.filters.search = keyword;
+        document.getElementById('searchInput').value = keyword;
+        if (currentTag) {
+            currentTag.classList.add('active');
+        }
+    }
+    
     filterData();
+    updateActiveFilters();
     document.getElementById('recipesList').scrollIntoView({ behavior: 'smooth' });
+}
+
+// 清空所有筛选
+function clearAllFilters() {
+    // 清空状态
+    state.filters = {
+        search: '',
+        season: null,
+        symptom: null,
+        ingredient: null,
+        type: null
+    };
+    
+    // 清空UI
+    document.getElementById('searchInput').value = '';
+    document.querySelectorAll('.hot-tag[data-keyword]').forEach(tag => {
+        tag.classList.remove('active');
+    });
+    document.querySelectorAll('.filter-btn.active').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    
+    // 重新筛选
+    filterData();
+    updateActiveFilters();
+}
+
+// 更新当前筛选显示
+function updateActiveFilters() {
+    const container = document.getElementById('activeFilters');
+    const tagsContainer = document.getElementById('filterTags');
+    const filters = state.filters;
+    
+    // 收集所有激活的筛选条件
+    const activeTags = [];
+    
+    // 搜索关键词
+    if (filters.search) {
+        activeTags.push({
+            type: 'search',
+            label: '搜索',
+            value: filters.search,
+            action: () => {
+                filters.search = '';
+                document.getElementById('searchInput').value = '';
+                document.querySelectorAll('.hot-tag[data-keyword]').forEach(tag => {
+                    tag.classList.remove('active');
+                });
+                filterData();
+                updateActiveFilters();
+            }
+        });
+    }
+    
+    // 季节
+    if (filters.season) {
+        activeTags.push({
+            type: 'season',
+            label: '季节',
+            value: filters.season,
+            action: () => setFilter('season', null)
+        });
+    }
+    
+    // 症状
+    if (filters.symptom) {
+        activeTags.push({
+            type: 'symptom',
+            label: '症状',
+            value: filters.symptom,
+            action: () => setFilter('symptom', null)
+        });
+    }
+    
+    // 原料
+    if (filters.ingredient) {
+        activeTags.push({
+            type: 'ingredient',
+            label: '原料',
+            value: filters.ingredient,
+            action: () => setFilter('ingredient', null)
+        });
+    }
+    
+    // 类型
+    if (filters.type) {
+        activeTags.push({
+            type: 'type',
+            label: '类型',
+            value: filters.type,
+            action: () => setFilter('type', null)
+        });
+    }
+    
+    // 显示/隐藏容器
+    if (activeTags.length === 0) {
+        container.style.display = 'none';
+    } else {
+        container.style.display = 'flex';
+        tagsContainer.innerHTML = activeTags.map(tag => `
+            <span class="filter-tag" title="点击移除">
+                <span>${tag.label}: ${tag.value}</span>
+                <span class="remove" onclick="(${tag.action.toString()})()">✕</span>
+            </span>
+        `).join('');
+    }
 }
 
 // 随机推荐
