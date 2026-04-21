@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "generated": "2026-04-21",
-  "total": 712,
+  "total": 711,
   "recipes": [
     {
       "id": "mom-001",
@@ -19619,56 +19619,6 @@
       "image": "https://picsum.photos/seed/powder331/800/500"
     },
     {
-      "id": "epub-332",
-      "name": "3. 清痘排毒茶",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "清热解毒、祛痘",
-      "symptoms": [],
-      "ingredients": [
-        {
-          "name": "马齿苋",
-          "amount": ""
-        },
-        {
-          "name": "蒲公英",
-          "amount": ""
-        }
-      ],
-      "method": "功效：和中，益气，除热。用于调理胃虚呕吐、烦渴。\n平时如果长痘一般在什么部位？\n□ 在脸颊和鼻子，伴有便秘\n预防：喝清痘排毒茶（见8月24日）。\n□ 每个月定期在下巴部位长\n预防：喝姜枣茶加花椒（汉宫椒枣茶）。\n□ 每个月定期在面部长\n预防：喝三花陈皮茶。\n□ 正在长痘\n对策：加服新鲜鱼腥草榨汁，或银花甘草茶加倍（见7月8日），用马齿苋汁外擦。\n故饮食饱甚，汗出\n（“汗出”疑为“必伤”，下同）\n孔子诞辰日\n世界狂犬病日",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
-      "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
-        "author": "陈允斌"
-      },
-      "feedback": [],
-      "_file": "/home/ut003483@uos/.openclaw/workspace/health-website/data/recipes-171.json",
-      "_source": "陈允斌二十四节气顺时饮食法冬藏",
-      "image": "https://picsum.photos/seed/tea332/800/500"
-    },
-    {
       "id": "epub-333",
       "name": "4.辛丑岁全年保健方：莲杞顺时粥",
       "categories": {
@@ -19807,52 +19757,31 @@
     {
       "id": "epub-336",
       "name": "清痘排毒茶",
-      "categories": {
-        "season": [
-          "待分类"
-        ],
-        "symptom": [
-          "待分类"
-        ],
-        "ingredient": [
-          "待分类"
-        ],
-        "type": [
-          "待分类"
-        ]
-      },
-      "efficacy": "清湿热；适合鼻部、面颊长青春痘同时经常便秘的人饮用。",
-      "symptoms": [],
       "ingredients": [
-        {
-          "name": "马齿苋",
-          "amount": "10克"
-        },
-        {
-          "name": "蒲公英10克",
-          "amount": ""
-        }
+        "马齿苋10克",
+        "蒲公英10克"
       ],
-      "method": "平时如果长痘一般在什么部位？\n□ 在脸颊和鼻子，伴有便秘\n预防：喝清痘排毒茶（见8月24日）。\n□ 每个月定期在下巴部位长\n预防：喝姜枣茶加花椒（汉宫椒枣茶）。\n□ 每个月定期在面部长\n预防：喝三花陈皮茶。\n□ 正在长痘\n对策：加服新鲜鱼腥草榨汁，或银花甘草茶加倍（见7月8日），用马齿苋汁外擦。\n故饮食饱甚，汗出\n功效：解众药毒。\n今天是至圣先师孔子（名丘，字仲尼）2572周年诞辰日。古人说：“天不生仲尼，万古如长夜。”《论语》给后人的启迪，就像明灯照亮黑夜一般。在这部经典中，也包含着生活的智慧。\n《论语》论“食”：\n1. 强调主食的重要性。\n“肉虽多，不使胜食气。”\n（9月29日继续）\n在饮食过饱的时候，必然伤坏胃腑。\n世界步行日",
-      "precautions": "",
-      "suitableFor": [],
-      "contraindicatedFor": [],
-      "difficulty": "待分类",
-      "prepTime": "待分类",
-      "cookTime": "待分类",
-      "bestTimeToEat": "待分类",
-      "frequency": "待分类",
-      "storage": "待分类",
-      "keywords": [],
-      "tags": [],
+      "method": "沸水冲泡，代茶饮。",
+      "efficacy": "清湿热；适合鼻部、面颊长青春痘同时经常便秘的人饮用。",
       "source": {
-        "book": "陈允斌二十四节气顺时饮食法冬藏",
+        "book": "顺时生活2021健康日历",
         "author": "陈允斌"
       },
-      "feedback": [],
-      "_file": "/home/ut003483@uos/.openclaw/workspace/health-website/data/recipes-171.json",
-      "_source": "陈允斌二十四节气顺时饮食法冬藏",
-      "image": "https://picsum.photos/seed/tea336/800/500"
+      "categories": [
+        "symptom",
+        "ingredient",
+        "type"
+      ],
+      "suitableFor": [
+        "湿热体质",
+        "便秘",
+        "青春痘"
+      ],
+      "tags": [
+        "夏",
+        "秋"
+      ],
+      "image": "https://picsum.photos/seed/epub336/800/500"
     },
     {
       "id": "epub-337",
