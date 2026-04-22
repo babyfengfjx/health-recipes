@@ -234,12 +234,10 @@ function renderTypeSelector() {
 function renderFilters() {
     if (!state.index) return;
     
-    const categories = state.index.categories || { seasons: [], symptoms: {} };
+    const categories = state.index.categories || { seasons: {}, symptoms: {} };
     
-    // 季节筛选（兼容数组和对象格式）
-    const seasonItems = Array.isArray(categories.seasons) 
-        ? categories.seasons 
-        : Object.entries(categories.seasons || {}).map(([id, name]) => ({id, name}));
+    // 季节筛选
+    const seasonItems = Object.entries(categories.seasons || {}).map(([id, name]) => ({id, name}));
     renderFilterGroup('seasonFilter', seasonItems, 'season');
     
     // 症状筛选（从stats.bySymptom获取，只显示出现次数>=5的症状）
@@ -1433,38 +1431,23 @@ function quickSearch(keyword) {
 
 // 清空所有筛选
 function clearAllFilters() {
-    // 清空状态 - 与 state.filters 定义一致
+    // 清空状态
     state.filters = {
-        season: '',
-        symptom: '',
-        recipeType: '',
-        group: '',
         search: '',
-        author: ''
+        season: null,
+        symptom: null,
+        ingredient: null,
+        type: null
     };
     
-    // 清空搜索框
+    // 清空UI
     document.getElementById('searchInput').value = '';
-    
-    // 清空热门搜索标签的active状态
     document.querySelectorAll('.hot-tag[data-keyword]').forEach(tag => {
         tag.classList.remove('active');
     });
-    
-    // 重置所有筛选标签为"全部"状态
-    const filterGroups = ['seasonFilter', 'symptomFilter', 'recipeTypeFilter', 'authorFilter'];
-    filterGroups.forEach(containerId => {
-        const container = document.getElementById(containerId);
-        if (container) {
-            container.querySelectorAll('.tag').forEach(tag => {
-                // 只有 data-filter 为空的才是"全部"
-                tag.classList.toggle('active', tag.dataset.filter === '');
-            });
-        }
+    document.querySelectorAll('.filter-btn.active').forEach(btn => {
+        btn.classList.remove('active');
     });
-    
-    // 重置页码
-    state.currentPage = 1;
     
     // 重新筛选
     filterData();
