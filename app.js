@@ -234,10 +234,12 @@ function renderTypeSelector() {
 function renderFilters() {
     if (!state.index) return;
     
-    const categories = state.index.categories || { seasons: {}, symptoms: {} };
+    const categories = state.index.categories || { seasons: [], symptoms: {} };
     
-    // 季节筛选
-    const seasonItems = Object.entries(categories.seasons || {}).map(([id, name]) => ({id, name}));
+    // 季节筛选（兼容数组和对象格式）
+    const seasonItems = Array.isArray(categories.seasons) 
+        ? categories.seasons 
+        : Object.entries(categories.seasons || {}).map(([id, name]) => ({id, name}));
     renderFilterGroup('seasonFilter', seasonItems, 'season');
     
     // 症状筛选（从stats.bySymptom获取，只显示出现次数>=5的症状）
