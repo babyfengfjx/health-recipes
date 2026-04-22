@@ -195,6 +195,16 @@ body {
     box-shadow: 0 8px 25px rgba(27, 94, 32, 0.3);
 }
 
+.search-box .clear-btn {
+    background: linear-gradient(135deg, #f44336 0%, #e53935 100%);
+    padding: 16px 24px;
+}
+
+.search-box .clear-btn:hover {
+    background: linear-gradient(135deg, #d32f2f 0%, #c62828 100%);
+    box-shadow: 0 8px 25px rgba(244, 67, 54, 0.3);
+}
+
 /* ============================================
    🏷️ 筛选器 - 彩色标签
    ============================================ */
