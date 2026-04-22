@@ -1431,23 +1431,38 @@ function quickSearch(keyword) {
 
 // 清空所有筛选
 function clearAllFilters() {
-    // 清空状态
+    // 清空状态 - 与 state.filters 定义一致
     state.filters = {
+        season: '',
+        symptom: '',
+        recipeType: '',
+        group: '',
         search: '',
-        season: null,
-        symptom: null,
-        ingredient: null,
-        type: null
+        author: ''
     };
     
-    // 清空UI
+    // 清空搜索框
     document.getElementById('searchInput').value = '';
+    
+    // 清空热门搜索标签的active状态
     document.querySelectorAll('.hot-tag[data-keyword]').forEach(tag => {
         tag.classList.remove('active');
     });
-    document.querySelectorAll('.filter-btn.active').forEach(btn => {
-        btn.classList.remove('active');
+    
+    // 重置所有筛选标签为"全部"状态
+    const filterGroups = ['seasonFilter', 'symptomFilter', 'recipeTypeFilter', 'authorFilter'];
+    filterGroups.forEach(containerId => {
+        const container = document.getElementById(containerId);
+        if (container) {
+            container.querySelectorAll('.tag').forEach(tag => {
+                // 只有 data-filter 为空的才是"全部"
+                tag.classList.toggle('active', tag.dataset.filter === '');
+            });
+        }
     });
+    
+    // 重置页码
+    state.currentPage = 1;
     
     // 重新筛选
     filterData();
