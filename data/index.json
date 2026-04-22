@@ -2,12 +2,12 @@
   "version": "1.8",
   "generated": "2026-04-23",
   "stats": {
-    "total": 719,
+    "total": 725,
     "byType": {
       "recipe": 719,
-      "acupoint": 0,
-      "exercise": 0,
-      "knowledge": 0
+      "acupoint": 3,
+      "exercise": 2,
+      "knowledge": 1
     },
     "bySeason": {
       "春季": 91,
@@ -804,6 +804,14 @@
       {
         "id": "徐文兵",
         "name": "徐文兵"
+      },
+      {
+        "id": "传统穴位",
+        "name": "传统穴位"
+      },
+      {
+        "id": "传统",
+        "name": "传统"
       }
     ]
   }
