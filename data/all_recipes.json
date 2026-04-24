@@ -42019,18 +42019,23 @@
     },
     {
       "id": "luodalun-164",
-      "name": "脾胃气虚之人的经典养胃茶",
+      "name": "麦芽养胃茶",
       "categories": {
         "season": [],
         "symptom": [],
         "ingredient": [],
         "type": []
       },
-      "efficacy": "健脾养胃，调理脾胃气虚",
+      "efficacy": "健脾养胃，调理脾胃气虚，生发胃气",
       "symptoms": [],
-      "ingredients": [],
-      "method": "泡茶喝。 叮嘱：1.一定要用生麦芽，有生发胃气的功能。不要用炒麦芽，它是把气往下降的，而生麦芽是把气往上升的。有的老中医碰到舌苔没了的病重患者，除了开药外，一般会嘱咐病人喝麦芽养胃茶，让其赶快生发胃气。一直喝到舌苔生出来了，病就好了。 2.还可以用生黄芪3克、怀山药6克、生麦芽9克，煮水，代茶饮，坚持喝几周，对胃气的生发也是有好处的。 （2）气虚体质之人的经典除湿方 那么，当一个人脾虚、湿气重的时候，该怎么办呢？可以先去除湿气。但是，一定要记住，湿气去掉以后，马上要补脾。因为脾在中医五行属土，土克水，所以真正能控制水湿的，是脾。 a.祛湿三仁汤",
-      "precautions": "",
+      "ingredients": [
+        {
+          "name": "生麦芽",
+          "amount": "适量"
+        }
+      ],
+      "method": "泡茶喝。",
+      "precautions": "一定要用生麦芽，有生发胃气的功能。不要用炒麦芽，它是把气往下降的，而生麦芽是把气往上升的。有的老中医碰到舌苔没了的病重患者，除了开药外，一般会嘱咐病人喝麦芽养胃茶，让其赶快生发胃气。一直喝到舌苔生出来了，病就好了。",
       "source": {
         "book": "罗大伦教您用中医方法，轻松呵护全家老小的身心健康",
         "author": "罗大伦"
@@ -43859,7 +43864,7 @@
           "amount": "3钱"
         }
       ],
-      "method": "",
+      "method": "水煎服。热甚者，加生地黄五六钱。",
       "precautions": "",
       "suitableFor": [],
       "contraindicatedFor": [],
@@ -44149,7 +44154,7 @@
           "散剂"
         ]
       },
-      "efficacy": "治疗消渴症。",
+      "efficacy": "治疗消渴症（糖尿病），补气养阴，生津止渴。",
       "symptoms": [
         "糖尿病"
       ],
@@ -44191,7 +44196,7 @@
           "amount": "4钱"
         }
       ],
-      "method": "",
+      "method": "水煎服，每日一剂，分两次服用。",
       "precautions": "",
       "suitableFor": [],
       "contraindicatedFor": [],
@@ -44237,7 +44242,7 @@
           "药膳"
         ]
       },
-      "efficacy": "治疗胸闷、呼吸困难。",
+      "efficacy": "治疗胸闷、呼吸困难、大气下陷。",
       "symptoms": [
         "气短",
         "胸闷",
@@ -44259,7 +44264,7 @@
           "amount": "2钱"
         }
       ],
-      "method": "",
+      "method": "水煎服。",
       "precautions": "",
       "suitableFor": [],
       "contraindicatedFor": [],
@@ -44305,7 +44310,7 @@
           "药膳"
         ]
       },
-      "efficacy": "将上述药材一起熬开锅，再泡到烧酒里。",
+      "efficacy": "补气升阳，调理大气下陷。",
       "symptoms": [
         "咳嗽",
         "气短",
@@ -44335,7 +44340,7 @@
           "amount": "1斤"
         }
       ],
-      "method": "",
+      "method": "将上述药材一起熬开锅，再泡到烧酒里。适量饮用。",
       "precautions": "",
       "suitableFor": [],
       "contraindicatedFor": [],
@@ -44446,7 +44451,7 @@
           "药膳"
         ]
       },
-      "efficacy": "像泡茶一样泡水喝，喝一天。",
+      "efficacy": "补气养身，日常保健。",
       "symptoms": [
         "水肿",
         "瘀血"
@@ -44457,7 +44462,7 @@
           "amount": ""
         }
       ],
-      "method": "",
+      "method": "像泡茶一样泡水喝，喝一天。可加枸杞。",
       "precautions": "",
       "suitableFor": [],
       "contraindicatedFor": [],
@@ -44799,7 +44804,7 @@
           "amount": "2钱"
         }
       ],
-      "method": "",
+      "method": "水煎服。",
       "precautions": "",
       "suitableFor": [],
       "contraindicatedFor": [],
@@ -44861,7 +44866,7 @@
           "amount": "2钱"
         }
       ],
-      "method": "",
+      "method": "水煎服。",
       "precautions": "",
       "suitableFor": [],
       "contraindicatedFor": [],
@@ -44961,7 +44966,7 @@
           "药膳"
         ]
       },
-      "efficacy": "将上述药材煮水喝即可。",
+      "efficacy": "补气养阴，清热生津。",
       "symptoms": [],
       "ingredients": [
         {
@@ -44973,7 +44978,7 @@
           "amount": ""
         }
       ],
-      "method": "",
+      "method": "煮水喝即可。",
       "precautions": "",
       "suitableFor": [],
       "contraindicatedFor": [],
@@ -45031,7 +45036,7 @@
           "amount": "5钱"
         }
       ],
-      "method": "熬水。",
+      "method": "熬水服用。",
       "precautions": "",
       "suitableFor": [],
       "contraindicatedFor": [],
@@ -45249,7 +45254,7 @@
           "amount": "2钱"
         }
       ],
-      "method": "",
+      "method": "水煎服。",
       "precautions": "",
       "suitableFor": [],
       "contraindicatedFor": [],
@@ -45295,7 +45300,7 @@
           "药膳"
         ]
       },
-      "efficacy": "治因心肺阳虚，致脾湿不升，胃郁不降，饮食不能运化精微，变为饮邪，停于胃口为满闷，溢于膈上为短气，渍满肺窍为喘促，滞腻咽喉为咳吐黏涎。甚或阴霾布满上焦，心肺之阳不能畅舒，转郁而作热。或阴气逼阳外出为身热，迫阳气上浮为耳聋。",
+      "efficacy": "温阳化饮，治心肺阳虚、脾湿不升、胃郁不降。",
       "symptoms": [
         "咳嗽",
         "哮喘",
@@ -45337,7 +45342,7 @@
           "amount": "1.5钱"
         }
       ],
-      "method": "",
+      "method": "水煎服。",
       "precautions": "",
       "suitableFor": [],
       "contraindicatedFor": [],
@@ -45381,7 +45386,7 @@
           "药膳"
         ]
       },
-      "efficacy": "治吐衄脉虚濡而迟，饮食停滞胃口，不能消化。",
+      "efficacy": "温中降逆，治脾胃受寒、饮食停滞、吐衄。",
       "symptoms": [
         "咳嗽",
         "腹泻",
@@ -45421,7 +45426,7 @@
           "amount": "2钱"
         }
       ],
-      "method": "",
+      "method": "水煎服。",
       "precautions": "",
       "suitableFor": [],
       "contraindicatedFor": [],
@@ -45464,7 +45469,7 @@
           "药膳"
         ]
       },
-      "efficacy": "治疗外感导致的腹泻。",
+      "efficacy": "治疗外感导致的腹泻，补肾精。",
       "symptoms": [
         "腹泻",
         "肾虚"
@@ -45487,7 +45492,7 @@
           "amount": "3钱"
         }
       ],
-      "method": "煎汤。",
+      "method": "煎汤服用。",
       "precautions": "",
       "suitableFor": [],
       "contraindicatedFor": [],
