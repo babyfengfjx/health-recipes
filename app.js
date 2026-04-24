@@ -549,7 +549,7 @@ function renderArticleCard(article) {
     const readTime = article.readingTime || '5分钟';
     
     return `
-        <div class="recipe-card article-card" onclick="showDetail('${article.id}')">
+        <div class="recipe-card article-card" onclick="openArticle('${article.id}')">
             <div class="card-content">
                 <h3 class="article-title">${article.title}</h3>
                 <div class="article-meta">
@@ -561,6 +561,11 @@ function renderArticleCard(article) {
             </div>
         </div>
     `;
+}
+
+// 打开文章独立页面
+function openArticle(id) {
+    window.location.href = `article.html?id=${id}`;
 }
 
 // 显示详情

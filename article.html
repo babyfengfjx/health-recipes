@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章详情 - 养生知识库</title>
+    
+    <!-- Open Graph 分享信息 -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="养生知识库">
+    <meta id="ogTitle" property="og:title" content="">
+    <meta id="ogDesc" property="og:description" content="">
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #2E7D32;
+            --primary-light: #4CAF50;
+            --primary-dark: #1B5E20;
+            --accent-color: #7B1FA2;
+            --text-color: #333;
+            --text-light: #666;
+            --bg-color: #FAFAFA;
+            --card-bg: #fff;
+            --border-color: #E8F5E9;
+            --shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            font-size: 16px;
+        }
+        
+        /* 阅读进度条 */
+        .reading-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
+            z-index: 1000;
+            transition: width 0.1s ease;
+        }
+        
+        /* 导航栏 */
+        .article-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 999;
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .article-nav.scrolled {
+            box-shadow: var(--shadow);
+        }
+        
+        .nav-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .back-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 14px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: var(--border-color);
+            color: var(--primary-color);
+        }
+        
+        .nav-title {
+            font-size: 14px;
+            color: var(--text-light);
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        .nav-actions {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .action-btn {
+            padding: 8px 16px;
+            border: 1px solid var(--border-color);
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 13px;
+            color: var(--text-light);
+            transition: all 0.3s ease;
+        }
+        
+        .action-btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        /* 文章容器 */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 100px 24px 60px;
+        }
+        
+        /* 文章头部 */
+        .article-header {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .article-category {
+            display: inline-block;
+            padding: 4px 12px;
+            background: linear-gradient(135deg, var(--border-color), #C8E6C9);
+            border-radius: 15px;
+            font-size: 13px;
+            color: var(--primary-dark);
+            margin-bottom: 16px;
+        }
+        
+        .article-main-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-color);
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+        
+        .article-meta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 14px;
+            color: var(--text-light);
+            margin-bottom: 16px;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .author-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 20px;
+            background: linear-gradient(135deg, #F3E5F5, #E1BEE7);
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+        
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-color), #9C27B0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .author-details {
+            flex: 1;
+        }
+        
+        .author-name {
+            font-weight: 600;
+            color: var(--accent-color);
+            font-size: 15px;
+        }
+        
+        .author-intro {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-top: 2px;
+        }
+        
+        /* 文章摘要 */
+        .article-summary {
+            padding: 24px;
+            background: linear-gradient(135deg, #FFF8E1, #FFECB3);
+            border-radius: 16px;
+            margin-bottom: 40px;
+            border-left: 4px solid #FFA000;
+        }
+        
+        .summary-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: #E65100;
+            margin-bottom: 8px;
+        }
+        
+        .summary-text {
+            font-size: 15px;
+            color: #5D4037;
+            line-height: 1.8;
+        }
+        
+        /* 目录导航 */
+        .toc-container {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 20px 24px;
+            margin-bottom: 40px;
+        }
+        
+        .toc-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .toc-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .toc-item {
+            padding: 6px 14px;
+            background: var(--bg-color);
+            border-radius: 15px;
+            font-size: 13px;
+            color: var(--text-light);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+        
+        .toc-item:hover {
+            background: var(--border-color);
+            color: var(--primary-color);
+            border-color: var(--primary-light);
+        }
+        
+        .toc-item.active {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        /* 文章正文 */
+        .article-content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+            margin-bottom: 40px;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--primary-light);
+            display: inline-block;
+        }
+        
+        .section-content p {
+            margin-bottom: 18px;
+            text-align: justify;
+            font-size: 16px;
+            line-height: 2;
+            color: var(--text-color);
+        }
+        
+        .section-content p:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* 引用块 */
+        .quote-block {
+            margin: 24px 0;
+            padding: 20px 24px;
+            background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+            border-left: 4px solid #1976D2;
+            border-radius: 0 12px 12px 0;
+            font-size: 15px;
+            color: #1565C0;
+            line-height: 1.8;
+        }
+        
+        .quote-block::before {
+            content: '"';
+            font-size: 2.5rem;
+            color: #1976D2;
+            line-height: 0;
+            vertical-align: -0.4em;
+            margin-right: 8px;
+            font-family: Georgia, serif;
+        }
+        
+        /* 重点内容 */
+        .highlight-box {
+            margin: 24px 0;
+            padding: 20px 24px;
+            background: linear-gradient(135deg, #FCE4EC, #F8BBD9);
+            border-radius: 12px;
+            border-left: 4px solid #E91E63;
+        }
+        
+        .highlight-box p {
+            margin: 0;
+            color: #880E4F;
+            font-size: 15px;
+        }
+        
+        /* 重点摘录 */
+        .key-points {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .key-points-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .key-point {
+            padding: 16px 20px;
+            background: linear-gradient(135deg, #FAFAFA, #F5F5F5);
+            border-radius: 12px;
+            margin-bottom: 12px;
+            border-left: 3px solid var(--primary-light);
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--text-color);
+        }
+        
+        .key-point:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* 文章标签 */
+        .article-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .article-tag {
+            padding: 6px 14px;
+            background: var(--border-color);
+            border-radius: 15px;
+            font-size: 13px;
+            color: var(--primary-dark);
+            transition: all 0.3s ease;
+        }
+        
+        .article-tag:hover {
+            background: var(--primary-light);
+            color: white;
+        }
+        
+        /* 文章底部 */
+        .article-footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-light);
+            font-size: 14px;
+        }
+        
+        .article-footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        /* 加载状态 */
+        .loading-state {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--border-color);
+            border-top-color: var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* 错误状态 */
+        .error-state {
+            text-align: center;
+            padding: 80px 20px;
+        }
+        
+        .error-state h2 {
+            color: #C62828;
+            margin-bottom: 16px;
+        }
+        
+        .error-state a {
+            color: var(--primary-color);
+        }
+        
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 80px 16px 40px;
+            }
+            
+            .article-content {
+                padding: 24px;
+            }
+            
+            .article-main-title {
+                font-size: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.2rem;
+            }
+            
+            .nav-title {
+                display: none;
+            }
+            
+            .section-content p {
+                font-size: 15px;
+                line-height: 1.9;
+            }
+            
+            .article-meta-row {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+        
+        /* 滚动条美化 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-light);
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-color);
+        }
+        
+        /* 分享提示 */
+        .share-toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 14px;
+            z-index: 1001;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .share-toast.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- 阅读进度条 -->
+    <div class="reading-progress" id="readingProgress"></div>
+    
+    <!-- 导航栏 -->
+    <nav class="article-nav" id="articleNav">
+        <div class="nav-content">
+            <a href="index.html" class="back-btn">
+                <span>←</span>
+                <span>返回首页</span>
+            </a>
+            <div class="nav-title" id="navTitle"></div>
+            <div class="nav-actions">
+                <button class="action-btn" onclick="copyLink()">🔗 复制链接</button>
+                <button class="action-btn" onclick="shareArticle()">📤 分享</button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- 文章容器 -->
+    <main class="article-container" id="articleContainer">
+        <div class="loading-state">
+            <div class="loading-spinner"></div>
+            <p>正在加载文章...</p>
+        </div>
+    </main>
+    
+    <!-- 分享提示 -->
+    <div class="share-toast" id="shareToast">链接已复制到剪贴板</div>
+
+    <script>
+        // 从URL获取文章ID
+        const urlParams = new URLSearchParams(window.location.search);
+        const articleId = urlParams.get('id');
+        
+        // 文章数据
+        let currentArticle = null;
+        
+        // 初始化
+        document.addEventListener('DOMContentLoaded', async () => {
+            if (!articleId) {
+                showError('未指定文章ID');
+                return;
+            }
+            
+            try {
+                // 加载文章数据
+                const response = await fetch('data/articles.json');
+                const data = await response.json();
+                
+                currentArticle = data.articles.find(a => a.id === articleId);
+                
+                if (!currentArticle) {
+                    showError('文章不存在');
+                    return;
+                }
+                
+                renderArticle();
+                setupScrollListener();
+            } catch (e) {
+                showError('加载文章失败: ' + e.message);
+            }
+        });
+        
+        // 渲染文章
+        function renderArticle() {
+            const container = document.getElementById('articleContainer');
+            
+            // 更新页面标题和分享信息
+            document.title = `${currentArticle.title} - 养生知识库`;
+            document.getElementById('navTitle').textContent = currentArticle.title;
+            document.getElementById('ogTitle').content = currentArticle.title;
+            document.getElementById('ogDesc').content = currentArticle.summary;
+            
+            // 渲染内容
+            container.innerHTML = `
+                <!-- 文章头部 -->
+                <header class="article-header">
+                    <div class="article-category">📚 养生文章</div>
+                    <h1 class="article-main-title">${currentArticle.title}</h1>
+                    
+                    <div class="article-meta-row">
+                        <div class="meta-item">
+                            <span>📖</span>
+                            <span>阅读时长 ${currentArticle.readingTime || '10分钟'}</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>📝</span>
+                            <span>约 ${currentArticle.wordCount || '5000'} 字</span>
+                        </div>
+                        ${currentArticle.difficulty ? `
+                        <div class="meta-item">
+                            <span>📊</span>
+                            <span>难度：${currentArticle.difficulty}</span>
+                        </div>
+                        ` : ''}
+                    </div>
+                    
+                    ${currentArticle.author ? `
+                    <div class="author-info">
+                        <div class="author-avatar">${currentArticle.author.charAt(0)}</div>
+                        <div class="author-details">
+                            <div class="author-name">${currentArticle.author}</div>
+                            ${currentArticle.authorIntro ? `<div class="author-intro">${currentArticle.authorIntro}</div>` : ''}
+                        </div>
+                    </div>
+                    ` : ''}
+                </header>
+                
+                <!-- 文章摘要 -->
+                ${currentArticle.summary ? `
+                <div class="article-summary">
+                    <div class="summary-label">📝 内容摘要</div>
+                    <div class="summary-text">${currentArticle.summary}</div>
+                </div>
+                ` : ''}
+                
+                <!-- 目录 -->
+                ${currentArticle.sections && currentArticle.sections.length > 1 ? `
+                <div class="toc-container">
+                    <div class="toc-title">📑 目录导航</div>
+                    <ul class="toc-list">
+                        ${currentArticle.sections.map((s, i) => `
+                            <li class="toc-item" onclick="scrollToSection(${i})">${s.title}</li>
+                        `).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+                
+                <!-- 文章正文 -->
+                <article class="article-content">
+                    ${currentArticle.sections.map((section, index) => `
+                        <section class="section" id="section-${index}">
+                            <h2 class="section-title">${section.title}</h2>
+                            <div class="section-content">
+                                ${formatContent(section.content)}
+                            </div>
+                        </section>
+                    `).join('')}
+                    
+                    <!-- 标签 -->
+                    ${currentArticle.tags && currentArticle.tags.length > 0 ? `
+                    <div class="article-tags">
+                        ${currentArticle.tags.map(t => `<span class="article-tag">#${t}</span>`).join('')}
+                    </div>
+                    ` : ''}
+                </article>
+                
+                <!-- 重点摘录 -->
+                ${currentArticle.highlights && currentArticle.highlights.length > 0 ? `
+                <div class="key-points">
+                    <div class="key-points-title">💎 重点摘录</div>
+                    ${currentArticle.highlights.map(h => `
+                        <div class="key-point">${h}</div>
+                    `).join('')}
+                </div>
+                ` : ''}
+                
+                <!-- 底部 -->
+                <footer class="article-footer">
+                    <p>感谢阅读 · <a href="index.html">返回首页</a> · 分享健康智慧</p>
+                </footer>
+            `;
+        }
+        
+        // 格式化内容
+        function formatContent(content) {
+            if (!content) return '';
+            
+            // 分段处理
+            const paragraphs = content.split('\n\n').filter(p => p.trim());
+            
+            return paragraphs.map(p => {
+                const text = p.trim();
+                
+                // 检查是否是引用（以「」包裹的句子）
+                if (text.startsWith('「') && text.endsWith('」')) {
+                    return `<div class="quote-block">${text}</div>`;
+                }
+                
+                // 检查是否是【xxx】开头的小标题
+                if (text.match(/^【.+】/)) {
+                    return `<div class="highlight-box"><p>${text.replace(/\n/g, '<br>')}</p></div>`;
+                }
+                
+                // 普通段落
+                return `<p>${text.replace(/\n/g, '<br>')}</p>`;
+            }).join('');
+        }
+        
+        // 滚动到章节
+        function scrollToSection(index) {
+            const section = document.getElementById(`section-${index}`);
+            if (section) {
+                const navHeight = document.getElementById('articleNav').offsetHeight;
+                const top = section.offsetTop - navHeight - 20;
+                window.scrollTo({ top, behavior: 'smooth' });
+            }
+        }
+        
+        // 设置滚动监听
+        function setupScrollListener() {
+            const nav = document.getElementById('articleNav');
+            const progress = document.getElementById('readingProgress');
+            
+            window.addEventListener('scroll', () => {
+                // 导航栏阴影
+                if (window.scrollY > 10) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+                
+                // 阅读进度
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progressPercent = (scrollTop / docHeight) * 100;
+                progress.style.width = `${Math.min(progressPercent, 100)}%`;
+            });
+        }
+        
+        // 复制链接
+        function copyLink() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                showToast('链接已复制到剪贴板');
+            });
+        }
+        
+        // 分享文章
+        function shareArticle() {
+            if (navigator.share) {
+                navigator.share({
+                    title: currentArticle.title,
+                    text: currentArticle.summary,
+                    url: window.location.href
+                }).catch(() => {
+                    copyLink();
+                });
+            } else {
+                copyLink();
+            }
+        }
+        
+        // 显示提示
+        function showToast(message) {
+            const toast = document.getElementById('shareToast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2000);
+        }
+        
+        // 显示错误
+        function showError(message) {
+            document.getElementById('articleContainer').innerHTML = `
+                <div class="error-state">
+                    <h2>😢 ${message}</h2>
+                    <p style="margin: 20px 0;"><a href="index.html">返回首页</a></p>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
