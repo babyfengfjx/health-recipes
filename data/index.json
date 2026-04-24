@@ -1,13 +1,14 @@
 {
-  "version": "1.8",
-  "generated": "2026-04-23",
+  "version": "1.9",
+  "generated": "2026-04-24",
   "stats": {
-    "total": 725,
+    "total": 726,
     "byType": {
       "recipe": 719,
       "acupoint": 3,
       "exercise": 2,
-      "knowledge": 1
+      "knowledge": 1,
+      "article": 1
     },
     "bySeason": {
       "春季": 91,
@@ -592,6 +593,10 @@
       "knowledge": {
         "name": "健康知识",
         "icon": "📖"
+      },
+      "article": {
+        "name": "养生文章",
+        "icon": "📚"
       }
     },
     "seasons": {
@@ -814,5 +819,8 @@
         "name": "传统"
       }
     ]
+  },
+  "dataFiles": {
+    "article": "data/articles.json"
   }
 }

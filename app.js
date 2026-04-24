@@ -173,7 +173,8 @@ async function loadDataType(type) {
             const data = await response.json();
             console.log('解析到的数据:', data);
             
-            state.allData[type] = data.recipes || data.items || data;
+            // 支持多种数据格式：recipes, articles, items, 或直接数组
+            state.allData[type] = data.recipes || data.articles || data.items || data;
             state.currentType = type;
             
             console.log(`加载 ${type} 数据成功，共 ${state.allData[type].length} 条`);
@@ -473,6 +474,8 @@ function renderCard(item, typeConfig) {
         return renderAcupointCard(item);
     } else if (state.currentType === 'exercise') {
         return renderExerciseCard(item);
+    } else if (state.currentType === 'article') {
+        return renderArticleCard(item);
     }
     return renderDefaultCard(item);
 }
@@ -537,6 +540,29 @@ function renderDefaultCard(item) {
     `;
 }
 
+// 渲染文章卡片
+function renderArticleCard(article) {
+    const categoryTags = (article.categories || []).slice(0, 3).map(c => 
+        `<span class="tag">${c}</span>`
+    ).join('');
+    
+    const readTime = article.readingTime || '5分钟';
+    
+    return `
+        <div class="recipe-card article-card" onclick="showDetail('${article.id}')">
+            <div class="card-content">
+                <h3 class="article-title">${article.title}</h3>
+                <div class="article-meta">
+                    <span class="author">✍️ ${article.author || '佚名'}</span>
+                    <span class="read-time">📖 ${readTime}</span>
+                </div>
+                <div class="article-summary">${article.summary || ''}</div>
+                <div class="card-tags">${categoryTags}</div>
+            </div>
+        </div>
+    `;
+}
+
 // 显示详情
 function showDetail(id) {
     const item = state.allData[state.currentType]?.find(i => i.id === id);
@@ -550,6 +576,8 @@ function showDetail(id) {
         content = renderAcupointDetail(item);
     } else if (state.currentType === 'exercise') {
         content = renderExerciseDetail(item);
+    } else if (state.currentType === 'article') {
+        content = renderArticleDetail(item);
     } else {
         content = renderDefaultDetail(item);
     }
@@ -927,6 +955,109 @@ function renderDefaultDetail(item) {
         </div>
         ${renderActionButtons(item)}
     `;
+}
+
+// 渲染文章详情
+function renderArticleDetail(article) {
+    // 作者信息
+    const authorInfo = article.author ? `
+        <div class="article-author-info">
+            <span class="author-name">✍️ ${article.author}</span>
+            ${article.authorIntro ? `<span class="author-intro">${article.authorIntro}</span>` : ''}
+        </div>
+    ` : '';
+    
+    // 文章元信息
+    const metaInfo = `
+        <div class="article-meta-info">
+            ${article.readingTime ? `<span>📖 阅读时长：${article.readingTime}</span>` : ''}
+            ${article.wordCount ? `<span>📝 字数：约${article.wordCount}字</span>` : ''}
+            ${article.difficulty ? `<span>📊 难度：${article.difficulty}</span>` : ''}
+        </div>
+    `;
+    
+    // 适合人群
+    const suitableFor = article.suitableFor && article.suitableFor.length > 0 ? `
+        <div class="article-suitable">
+            <h4>👥 适合人群</h4>
+            <div class="suitable-tags">
+                ${article.suitableFor.map(s => `<span class="suitable-tag">${s}</span>`).join('')}
+            </div>
+        </div>
+    ` : '';
+    
+    // 渲染章节内容
+    const sectionsHtml = (article.sections || []).map(section => `
+        <div class="article-section" id="section-${section.id}">
+            <h3 class="section-title">${section.title}</h3>
+            <div class="section-content">
+                ${formatArticleContent(section.content)}
+            </div>
+        </div>
+    `).join('');
+    
+    // 重点摘录
+    const highlights = article.highlights && article.highlights.length > 0 ? `
+        <div class="article-highlights">
+            <h4>💎 重点摘录</h4>
+            <div class="highlights-list">
+                ${article.highlights.map(h => `
+                    <div class="highlight-item">
+                        <span class="highlight-icon">"</span>
+                        <span class="highlight-text">${h}</span>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    ` : '';
+    
+    return `
+        <article class="article-detail">
+            <header class="article-header">
+                <h1 class="article-main-title">${article.title}</h1>
+                ${authorInfo}
+                ${metaInfo}
+                ${suitableFor}
+            </header>
+            
+            <div class="article-summary-box">
+                <p>${article.summary || ''}</p>
+            </div>
+            
+            <div class="article-body">
+                ${sectionsHtml}
+            </div>
+            
+            ${highlights}
+            
+            <footer class="article-footer">
+                <div class="article-tags">
+                    ${(article.tags || []).map(t => `<span class="article-tag">#${t}</span>`).join('')}
+                </div>
+            </footer>
+        </article>
+    `;
+}
+
+// 格式化文章内容（段落处理）
+function formatArticleContent(content) {
+    if (!content) return '';
+    
+    // 统一换行符，然后按段落分割
+    const paragraphs = content
+        .replace(/\r\n/g, '\n')
+        .replace(/\r/g, '\n')
+        .split(/\n\n+/)
+        .filter(p => p.trim());
+    
+    return paragraphs.map(p => {
+        const text = p.trim();
+        // 检查是否是引用句（以「」或""包裹）
+        if (text.startsWith('「') || text.startsWith('"') || text.startsWith('"')) {
+            return `<blockquote class="article-quote">${text}</blockquote>`;
+        }
+        return `<p>${text.replace(/\n/g, '<br>')}</p>`;
+    }).join('');
 }
 
 // 渲染操作按钮
