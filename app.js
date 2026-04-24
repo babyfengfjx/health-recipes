@@ -542,8 +542,8 @@ function renderDefaultCard(item) {
 
 // 渲染文章卡片
 function renderArticleCard(article) {
-    const categoryTags = (article.categories || []).slice(0, 3).map(c => 
-        `<span class="tag">${c}</span>`
+    const categoryTags = (article.tags || []).slice(0, 3).map(c =>
+        `<span class="tag">#${c}</span>`
     ).join('');
     
     const readTime = article.readingTime || '5分钟';
