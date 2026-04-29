@@ -1,2198 +1,935 @@
-/* ============================================
-   🔧 强制修复类型选择器样式
-   ============================================ */
+/**
+ * 养生智慧 v3.0 - 全新设计系统
+ * 设计理念：简洁、温暖、易用
+ */
 
-.type-selector {
-    display: flex !important;
-    gap: 15px !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    padding: 20px !important;
-    background: #ffffff !important;
-    border-radius: 16px !important;
-    margin-bottom: 20px !important;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08) !important;
-}
-
-.type-tag {
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 8px !important;
-    padding: 12px 24px !important;
-    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%) !important;
-    border-radius: 25px !important;
-    cursor: pointer !important;
-    font-size: 1rem !important;
-    font-weight: 500 !important;
-    transition: all 0.3s ease !important;
-    border: 2px solid transparent !important;
-    user-select: none !important;
-}
-
-.type-tag:hover {
-    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%) !important;
-    border-color: #4CAF50 !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2) !important;
-}
-
-.type-tag.active {
-    background: linear-gradient(135deg, #1B5E20 0%, #4CAF50 100%) !important;
-    color: white !important;
-    border-color: #0D3312 !important;
-    box-shadow: 0 6px 20px rgba(27, 94, 32, 0.3) !important;
-}
-
-.type-tag .count {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    min-width: 28px !important;
-    height: 28px !important;
-    padding: 0 8px !important;
-    background: rgba(255, 255, 255, 0.3) !important;
-    border-radius: 14px !important;
-    font-size: 0.85rem !important;
-    font-weight: 600 !important;
-}
-
-.type-tag.active .count {
-    background: rgba(255, 255, 255, 0.25) !important;
-    color: white !important;
-}
-
-/* ============================================
-   🌿 养生智慧 - 层次分明的设计系统
-   ============================================ */
-
+/* ========== CSS 变量 ========== */
 :root {
-    /* 主色 */
-    --primary: #1B5E20;
-    --primary-light: #4CAF50;
-    --primary-dark: #0D3312;
+    /* 主色系 - 温暖的自然绿 */
+    --primary: #2D5A27;
+    --primary-light: #4A7C40;
+    --primary-lighter: #E8F0E6;
+    --primary-dark: #1E3D1A;
     
-    /* 功能色 - 高饱和度用于区分 */
-    --benefit: #E65100;
-    --benefit-bg: #FFF3E0;
-    --ingredient: #1565C0;
-    --ingredient-bg: #E3F2FD;
-    --step: #2E7D32;
-    --step-bg: #E8F5E9;
-    --warning: #C62828;
-    --warning-bg: #FFEBEE;
-    --info: #6A1B9A;
-    --info-bg: #F3E5F5;
+    /* 辅助色 */
+    --accent: #D4A574;          /* 温暖的琥珀色 */
+    --accent-light: #F5E6D3;
     
-    /* 中性 */
-    --bg: #FAFAFA;
-    --card: #FFFFFF;
-    --text: #212121;
-    --text-secondary: #616161;
+    /* 功能色 */
+    --success: #4CAF50;
+    --warning: #FF9800;
+    --danger: #E53935;
+    --info: #2196F3;
+    
+    /* 内容类型色 */
+    --recipe-color: #4CAF50;
+    --article-color: #9C27B0;
+    --acupoint-color: #FF7043;
+    --exercise-color: #00BCD4;
+    
+    /* 中性色 */
+    --bg-primary: #FAFAFA;
+    --bg-secondary: #FFFFFF;
+    --bg-tertiary: #F5F5F5;
+    --text-primary: #212121;
+    --text-secondary: #757575;
+    --text-hint: #9E9E9E;
     --border: #E0E0E0;
+    --divider: #EEEEEE;
     
-    /* 类型标签色 */
-    --tea: #FF9800;
-    --tea-bg: #FFF8E1;
-    --food: #8BC34A;
-    --food-bg: #F1F8E9;
-    --soup: #00BCD4;
-    --soup-bg: #E0F7FA;
+    /* 阴影 */
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+    --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+    
+    /* 圆角 */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    
+    /* 间距 */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    
+    /* 字体 */
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/* ========== 重置与基础 ========== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
-    background: var(--bg);
-    color: var(--text);
+    font-family: var(--font-family);
+    background: var(--bg-primary);
+    color: var(--text-primary);
     line-height: 1.6;
+    min-height: 100vh;
 }
 
-.container {
-    max-width: 1400px;
+/* ========== 应用容器 ========== */
+.app-container {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding-bottom: 80px;
 }
 
-/* ============================================
-   🎨 头部 - 渐变层次感
-   ============================================ */
-.header {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-    color: white;
-    padding: 40px;
-    border-radius: 20px;
-    text-align: center;
-    margin-bottom: 30px;
-    box-shadow: 0 10px 40px rgba(27, 94, 32, 0.3);
-}
-
-.header h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-}
-
-.header .subtitle {
-    font-size: 1.1rem;
-    opacity: 0.9;
-}
-
-.header strong {
-    background: rgba(255,255,255,0.2);
-    padding: 4px 12px;
-    border-radius: 20px;
-}
-
-/* ============================================
-   🔍 搜索区域 - 卡片式
-   ============================================ */
-.search-section {
-    background: var(--card);
-    padding: 25px;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    margin-bottom: 25px;
-    border: 2px solid var(--border);
-}
-
-.search-box {
+/* ========== 顶部导航 ========== */
+.top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(10px);
 }
 
-.search-box input {
-    flex: 1;
-    padding: 16px 24px;
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.brand-icon {
+    font-size: 1.5rem;
+}
+
+.brand-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.nav-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.nav-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--primary-lighter);
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.nav-btn:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.nav-btn:hover .nav-icon {
+    transform: scale(1.1);
+}
+
+.fav-count {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    min-width: 18px;
+    height: 18px;
+    background: var(--danger);
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========== 搜索英雄区 ========== */
+.search-hero {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary-lighter) 0%, var(--bg-secondary) 100%);
+}
+
+.hero-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: var(--spacing-md);
+    font-size: 1.25rem;
+    color: var(--text-hint);
+}
+
+#mainSearch {
+    width: 100%;
+    padding: var(--spacing-md) var(--spacing-lg);
+    padding-left: 48px;
     font-size: 1rem;
     border: 2px solid var(--border);
-    border-radius: 12px;
+    border-radius: var(--radius-xl);
+    background: var(--bg-secondary);
+    transition: all 0.2s;
+}
+
+#mainSearch:focus {
     outline: none;
-    transition: all 0.3s;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px var(--primary-lighter);
 }
 
-.search-box input:focus {
-    border-color: var(--primary-light);
-    box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.1);
+.search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: var(--spacing-xs);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    z-index: 50;
+    display: none;
 }
 
-.search-box button {
-    padding: 16px 32px;
+.search-suggestions.show {
+    display: block;
+}
+
+.suggestion-item {
+    padding: var(--spacing-md);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.suggestion-item:hover {
+    background: var(--bg-tertiary);
+}
+
+.suggestion-item:first-child {
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.suggestion-item:last-child {
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+}
+
+/* ========== 节气卡片 ========== */
+.seasonal-card {
+    margin: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, var(--accent-light) 0%, var(--bg-secondary) 100%);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--accent);
+}
+
+.seasonal-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.seasonal-date {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.seasonal-term {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.seasonal-tip {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+}
+
+.seasonal-btn {
+    padding: var(--spacing-sm) var(--spacing-md);
     background: var(--primary);
     color: white;
     border: none;
-    border-radius: 12px;
-    font-size: 1rem;
-    font-weight: 600;
+    border-radius: var(--radius-sm);
     cursor: pointer;
-    transition: all 0.3s;
+    font-size: 0.875rem;
+    transition: all 0.2s;
 }
 
-.search-box button:hover {
-    background: var(--primary-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(27, 94, 32, 0.3);
+.seasonal-btn:hover {
+    background: var(--primary-light);
+    transform: translateX(4px);
 }
 
-.search-box .clear-btn {
-    background: linear-gradient(135deg, #f44336 0%, #e53935 100%);
-    padding: 16px 24px;
+/* ========== 快捷入口 ========== */
+.quick-entry {
+    padding: 0 var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
 }
 
-.search-box .clear-btn:hover {
-    background: linear-gradient(135deg, #d32f2f 0%, #c62828 100%);
-    box-shadow: 0 8px 25px rgba(244, 67, 54, 0.3);
-}
-
-/* ============================================
-   🏷️ 筛选器 - 彩色标签
-   ============================================ */
-.filter-section {
-    background: var(--card);
-    padding: 20px 25px;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    margin-bottom: 25px;
-}
-
-.filter-group {
+.section-title {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 12px;
+    gap: var(--spacing-sm);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
 }
 
-.filter-group:last-child { margin-bottom: 0; }
+.symptom-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: var(--spacing-sm);
+}
 
-.filter-group label {
-    font-weight: 700;
-    color: var(--primary);
-    min-width: 60px;
-    font-size: 0.9rem;
+.symptom-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-md);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.symptom-category:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.symptom-category .cat-icon {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.symptom-category .cat-name {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+/* ========== 热门调理 ========== */
+.hot-remedies {
+    padding: 0 var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.symptom-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: var(--spacing-sm);
+}
+
+.symptom-card {
+    padding: var(--spacing-md);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.symptom-card:hover {
+    border-color: var(--primary-light);
+    background: var(--primary-lighter);
+}
+
+.symptom-card .symptom-name {
+    font-weight: 500;
+    margin-bottom: var(--spacing-xs);
+}
+
+.symptom-card .symptom-count {
+    font-size: 0.75rem;
+    color: var(--text-hint);
+}
+
+/* ========== 内容类型标签 ========== */
+.content-types {
+    padding: 0 var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+.type-tabs {
+    display: flex;
+    gap: var(--spacing-sm);
+    overflow-x: auto;
+    padding-bottom: var(--spacing-sm);
+}
+
+.type-tab {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.type-tab:hover {
+    border-color: var(--primary);
+}
+
+.type-tab.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+.tab-count {
+    padding: 2px 6px;
+    background: var(--bg-tertiary);
+    border-radius: 10px;
+    font-size: 0.75rem;
+}
+
+.type-tab.active .tab-count {
+    background: rgba(255,255,255,0.2);
+}
+
+/* ========== 简化筛选器 ========== */
+.simple-filters {
+    padding: 0 var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+.filter-row {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+.filter-label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
 }
 
 .filter-tags {
     display: flex;
+    gap: var(--spacing-xs);
     flex-wrap: wrap;
-    gap: 10px;
 }
 
-.tag {
-    padding: 8px 16px;
-    background: #F5F5F5;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    font-size: 0.85rem;
+.filter-tag {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: var(--bg-tertiary);
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
     cursor: pointer;
     transition: all 0.2s;
-    font-weight: 500;
 }
 
-.tag:hover {
-    background: var(--primary-light);
-    color: white;
-    transform: translateY(-2px);
+.filter-tag:hover {
+    background: var(--primary-lighter);
 }
 
-.tag.active {
+.filter-tag.active {
     background: var(--primary);
     color: white;
-    box-shadow: 0 4px 12px rgba(27, 94, 32, 0.3);
 }
 
-/* 季节标签特殊色 */
-#seasonFilter .tag[data-value="春"] { background: #E8F5E9; color: #2E7D32; }
-#seasonFilter .tag[data-value="夏"] { background: #FFF3E0; color: #EF6C00; }
-#seasonFilter .tag[data-value="秋"] { background: #FFF8E1; color: #F9A825; }
-#seasonFilter .tag[data-value="冬"] { background: #E3F2FD; color: #1565C0; }
-#seasonFilter .tag.active { background: var(--primary) !important; color: white !important; }
+/* ========== 内容列表 ========== */
+.content-list {
+    padding: 0 var(--spacing-lg);
+}
 
-/* ============================================
-   📊 统计栏 - 醒目
-   ============================================ */
-.stats {
+.list-header {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(90deg, var(--primary-bg, #E8F5E9) 0%, white 100%);
-    padding: 18px 25px;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    border-left: 5px solid var(--primary);
-    font-weight: 600;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
 }
 
-.stats strong {
-    color: var(--primary);
-    font-size: 1.2rem;
+.result-count {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
 }
 
-/* ============================================
-   📋 方子卡片 - 强层次感设计
-   ============================================ */
-.recipes-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-    gap: 25px;
-    margin-bottom: 40px;
-}
-
-.recipe-card {
-    background: var(--card);
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    border: 1px solid var(--border);
-    transition: all 0.3s;
+.sort-btn {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: var(--bg-tertiary);
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
     cursor: pointer;
 }
 
-.recipe-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+/* ========== 卡片样式 ========== */
+.item-card {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.item-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
     border-color: var(--primary-light);
 }
 
-/* 卡片顶部彩色条 */
-.recipe-card::before {
-    content: '';
-    display: block;
-    height: 6px;
-    background: linear-gradient(90deg, var(--primary) 0%, var(--primary-light) 100%);
+.card-header {
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--divider);
 }
 
-.recipe-card.tea::before { background: linear-gradient(90deg, var(--tea) 0%, #FFB74D 100%); }
-.recipe-card.food::before { background: linear-gradient(90deg, var(--food) 0%, #AED581 100%); }
-.recipe-card.soup::before { background: linear-gradient(90deg, var(--soup) 0%, #4DD0E1 100%); }
-
-.recipe-card-header {
-    padding: 20px 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.recipe-card h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--text);
-    line-height: 1.4;
-    margin-bottom: 12px;
-}
-
-/* 类型徽章 */
-.recipe-type-badge {
-    padding: 6px 14px;
-    border-radius: 20px;
+.card-type-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
     font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    margin-bottom: var(--spacing-xs);
 }
 
-.recipe-type-badge.tea { background: var(--tea-bg); color: var(--tea); }
-.recipe-type-badge.food { background: var(--food-bg); color: #558B2F; }
-.recipe-type-badge.soup { background: var(--soup-bg); color: #00838F; }
+.card-type-badge.recipe { background: var(--recipe-color); color: white; }
+.card-type-badge.article { background: var(--article-color); color: white; }
+.card-type-badge.acupoint { background: var(--acupoint-color); color: white; }
+.card-type-badge.exercise { background: var(--exercise-color); color: white; }
 
-/* 功效 - 橙色高亮 */
-.recipe-benefit {
-    background: var(--benefit-bg);
-    border-left: 4px solid var(--benefit);
-    padding: 12px 16px;
-    margin: 0 20px 15px;
-    border-radius: 0 8px 8px 0;
-    font-size: 0.95rem;
-    color: var(--text);
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.card-source {
+    font-size: 0.75rem;
+    color: var(--text-hint);
+}
+
+.card-body {
+    padding: var(--spacing-md);
+}
+
+.card-efficacy {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
     line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
-.recipe-benefit::before {
-    content: '✨ ';
-    color: var(--benefit);
-    font-weight: bold;
-}
-
-/* 食材预览 - 蓝色 */
-.recipe-ingredients-preview {
-    background: var(--ingredient-bg);
-    padding: 12px 16px;
-    margin: 0 20px 15px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-}
-
-.recipe-ingredients-preview::before {
-    content: '🥬 食材: ';
-    color: var(--ingredient);
-    font-weight: 700;
-}
-
-/* 底部标签 */
-.recipe-card-footer {
-    padding: 0 20px 20px;
+.card-tags {
     display: flex;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-sm);
     flex-wrap: wrap;
-    gap: 8px;
 }
 
-.recipe-tag {
-    padding: 5px 12px;
-    background: #F5F5F5;
-    border-radius: 15px;
-    font-size: 0.8rem;
+.card-tag {
+    padding: 2px 6px;
+    background: var(--bg-tertiary);
+    border-radius: 4px;
+    font-size: 0.75rem;
     color: var(--text-secondary);
 }
 
-.recipe-tag.symptom { background: #FFEBEE; color: var(--warning); }
-.recipe-tag.season { background: #E8F5E9; color: var(--step); }
+.card-tag.season { background: var(--primary-lighter); color: var(--primary); }
+.card-tag.symptom { background: #E3F2FD; color: #1565C0; }
 
-/* ============================================
-   📱 详情弹窗 - 彩色区块设计
-   ============================================ */
-
-.content-body {
-    padding: 20px;
-    background: white;
-}
-
-/* 功效 - 橙色 */
-.content-block.benefit .content-header {
-    background: var(--benefit);
-    color: white;
-}
-
-.content-block.benefit .content-body {
-    background: var(--benefit-bg);
-}
-
-/* 食材 - 蓝色 */
-.content-block.ingredients .content-header {
-    background: var(--ingredient);
-    color: white;
-}
-
-.content-block.ingredients .content-body {
-    background: var(--ingredient-bg);
-}
-
-.content-block.ingredients ul {
-    list-style: none;
-}
-
-.content-block.ingredients li {
-    padding: 8px 0;
-    border-bottom: 1px dashed rgba(21, 101, 192, 0.2);
+/* ========== 加载状态 ========== */
+.loading-state {
+    grid-column: 1 / -1;
     display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.content-block.ingredients li::before {
-    content: '•';
-    color: var(--ingredient);
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-/* 做法 - 绿色 */
-.content-block.steps .content-header {
-    background: var(--step);
-    color: white;
-}
-
-.content-block.steps .content-body {
-    background: var(--step-bg);
-}
-
-.content-block.steps ol {
-    padding-left: 0;
-    list-style: none;
-    counter-reset: step;
-}
-
-.content-block.steps li {
-    counter-increment: step;
-    padding: 12px 0 12px 50px;
-    position: relative;
-    border-bottom: 1px dashed rgba(46, 125, 50, 0.2);
-}
-
-.content-block.steps li::before {
-    content: counter(step);
-    position: absolute;
-    left: 0;
-    top: 8px;
-    width: 36px;
-    height: 36px;
-    background: var(--step);
-    color: white;
-    border-radius: 50%;
-    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-}
-
-/* 适用人群 - 紫色 */
-.content-block.suitable .content-header {
-    background: var(--info);
-    color: white;
-}
-
-.content-block.suitable .content-body {
-    background: var(--info-bg);
-}
-
-/* 禁忌 - 红色 */
-.content-block.warning .content-header {
-    background: var(--warning);
-    color: white;
-}
-
-.content-block.warning .content-body {
-    background: var(--warning-bg);
-}
-
-/* 弹窗底部 */
-.modal-footer {
-    background: #F5F5F5;
-    padding: 20px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid var(--border);
-}
-
-.source-tag {
-    padding: 10px 20px;
-    background: white;
-    border-radius: 20px;
-    font-size: 0.9rem;
+    padding: var(--spacing-xl);
     color: var(--text-secondary);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.modal-tags {
-    display: flex;
-    gap: 10px;
-}
-
-.modal-tag {
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 600;
-}
-
-.modal-tag.symptom { background: #FFEBEE; color: var(--warning); }
-.modal-tag.season { background: #E8F5E9; color: var(--step); }
-.modal-tag.type { background: var(--ingredient-bg); color: var(--ingredient); }
-
-/* ============================================
-   ⏳ 加载动画
-   ============================================ */
-.loading {
-    text-align: center;
-    padding: 60px;
 }
 
 .loading-spinner {
-    width: 60px;
-    height: 60px;
-    border: 4px solid var(--border);
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--border);
     border-top-color: var(--primary);
     border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin: 0 auto 20px;
+    animation: spin 0.8s linear infinite;
 }
 
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
 
-/* ============================================
-   📱 响应式
-   ============================================ */
-@media (max-width: 768px) {
-    .container { padding: 15px; }
-    .header { padding: 25px; }
-    .header h1 { font-size: 1.75rem; }
-    .recipes-list { grid-template-columns: 1fr; gap: 15px; }
-    .search-box { flex-direction: column; }
-
-/* ============================================
-   🏷️ 类型选择器 - 新增样式
-   ============================================ */
-
-
-
-
-
-
-/* 筛选器组样式优化 */
-.filter-group {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
-    flex-wrap: wrap;
+/* ========== 加载更多 ========== */
+.load-more {
+    text-align: center;
+    padding: var(--spacing-lg);
 }
 
-.filter-group label {
-    font-weight: 600;
-    color: var(--text-secondary);
-    min-width: 60px;
-}
-
-.filter-tags {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-}
-
-.filter-tags .tag {
-    padding: 6px 14px;
-    background: #f5f5f5;
-    border-radius: 18px;
+.load-more-btn {
+    padding: var(--spacing-sm) var(--spacing-xl);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
     cursor: pointer;
-    font-size: 0.9rem;
     transition: all 0.2s;
-    border: 1px solid transparent;
 }
 
-.filter-tags .tag:hover {
-    background: #e8f5e9;
-    border-color: var(--primary-light);
-}
-
-.filter-tags .tag.active {
-    background: var(--primary-light);
-    color: white;
+.load-more-btn:hover {
+    background: var(--primary-lighter);
     border-color: var(--primary);
 }
 
-/* ============================================
-   📋 详情弹窗 - 优化样式
-   ============================================ */
-
-/* 弹窗容器 */
-
-    padding: 12px 16px;
-    border-radius: 10px;
-    font-size: 0.95rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    border: 1px solid #e0e0e0;
-    transition: all 0.2s;
-}
-
-.ingredients-list li:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* 做法/方法 */
-.method-content {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    line-height: 2;
-    white-space: pre-wrap;
-}
-
-/* 注意事项 */
-.detail-section:has(h4:contains("注意")) {
-    background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
-    border-left-color: #f44336;
-}
-
-.detail-section:has(h4:contains("注意")) h4 {
-    color: #c62828;
-}
-
-.warning-text {
-    color: #c62828;
-    font-weight: 500;
-}
-
-/* 适用人群 */
-.detail-section:has(h4:contains("适用")) {
-    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
-    border-left-color: #4caf50;
-}
-
-/* 来源信息 */
-.source-info {
-    background: #f5f5f5;
-    padding: 15px 20px;
-    border-radius: 10px;
-    margin-top: 25px;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    text-align: center;
-    border: 1px solid #e0e0e0;
-}
-
-/* 症状标签 */
-.symptom-tag {
-    display: inline-block;
-    background: var(--primary-light);
-    color: white;
-    padding: 6px 14px;
-    border-radius: 15px;
-    font-size: 0.85rem;
-    margin: 4px;
-}
-
-/* 操作按钮 */
-.action-buttons {
-    display: flex;
-    gap: 15px;
-    margin-top: 25px;
-    padding-top: 20px;
-    border-top: 1px solid #e0e0e0;
-}
-
-.action-btn {
-    flex: 1;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    transition: all 0.3s;
-}
-
-.action-btn.primary {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-    color: white;
-}
-
-.action-btn.primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(27, 94, 32, 0.3);
-}
-
-.action-btn.secondary {
-    background: white;
-    border: 2px solid var(--primary);
-    color: var(--primary);
-}
-
-.action-btn.secondary:hover {
-    background: #e8f5e9;
-}
-
-/* 响应式 */
-@media (max-width: 768px) {
-    .modal-body {
-        padding: 25px;
-    }
-    
-    .modal-body h2 {
-        font-size: 1.5rem;
-    }
-    
-    .ingredients-list {
-        grid-template-columns: 1fr;
-    }
-    
-    .action-buttons {
-        flex-direction: column;
-    }
-}
-
-/* ============================================
-   📋 详情弹窗 - 修复版
-   ============================================ */
-
-/* 弹窗外层遮罩 */
+/* ========== 覆盖层 ========== */
+.symptom-nav-overlay,
+.favorites-overlay,
 .modal-overlay {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 1000;
-    overflow-y: auto;
-    padding: 20px;
-}
-
-.modal-overlay.active {
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 200;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: var(--spacing-lg);
 }
 
-/* 弹窗内容容器 */
-.modal-overlay .modal {
-    background: white !important;
-    border-radius: 20px;
-    max-width: 800px;
+.symptom-nav-content,
+.favorites-content,
+.modal-content {
     width: 100%;
-    max-height: 90vh;
-    overflow-y: auto;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    position: relative;
-    display: block;
-    margin: auto;
+    max-width: 600px;
+    max-height: 80vh;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
-/* 弹窗头部 */
+.symptom-nav-header,
+.favorites-header,
 .modal-header {
-    padding: 25px 30px 15px;
-    border-bottom: 1px solid #e0e0e0;
-    position: sticky;
-    top: 0;
-    background: white;
-    z-index: 10;
-}
-
-.modal-title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--primary);
-    margin: 0;
-    padding-right: 40px;
-}
-
-/* 关闭按钮 */
-.modal-close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 36px;
-    height: 36px;
-    background: #f5f5f5;
-    border: none;
-    border-radius: 50%;
-    font-size: 24px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s;
-    color: #666;
-}
-
-.modal-close:hover {
-    background: #e0e0e0;
-    transform: rotate(90deg);
-    color: #333;
-}
-
-/* 弹窗主体 */
-.modal-body {
-    padding: 25px 30px;
-}
-
-/* 弹窗底部 */
-.modal-footer {
-    padding: 15px 30px 25px;
-    border-top: 1px solid #e0e0e0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
+    padding: var(--spacing-lg);
+    border-bottom: 1px solid var(--border);
 }
 
-.badge {
-    background: #f5f5f5;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-}
-
-/* 详情图片 */
-.detail-image {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* 详情区块 */
-
-.detail-section h4 {
-    font-size: 1.1rem;
+.symptom-nav-header h2,
+.favorites-header h2,
+.modal-header h2 {
+    font-size: 1.25rem;
     font-weight: 600;
-    color: var(--primary);
-    margin-bottom: 12px;
+}
+
+.close-btn {
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
-    gap: 8px;
-}
-
-.detail-section p {
-    color: var(--text);
-    line-height: 1.8;
+    justify-content: center;
+    background: var(--bg-tertiary);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
     font-size: 1rem;
 }
 
-/* 食材列表 */
-.ingredients-list {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 12px;
-    margin-top: 15px;
+.close-btn:hover {
+    background: var(--border);
 }
 
-.ingredients-list li {
-    background: white;
-    padding: 12px 16px;
-    border-radius: 10px;
-    font-size: 0.95rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    border: 1px solid #e0e0e0;
+/* ========== 症状导航 ========== */
+.symptom-search {
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-bottom: 1px solid var(--divider);
 }
 
-/* 做法 */
-.method-content,
-.precautions-content {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    line-height: 1.8;
-    white-space: pre-wrap;
+.symptom-search input {
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
 }
 
-/* 注意事项警告 */
-.warning-text {
-    color: #c62828;
+.body-systems {
+    padding: var(--spacing-md);
+    overflow-y: auto;
+    flex: 1;
+}
+
+.system-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.system-title {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
     font-weight: 500;
-}
-
-/* 来源 */
-.source-info {
-    background: #f5f5f5;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-size: 0.9rem;
     color: var(--text-secondary);
-    margin-top: 20px;
+    font-size: 0.875rem;
 }
 
-/* 响应式 */
-@media (max-width: 768px) {
-    .modal-body {
-        padding: 20px;
-    }
-    
-    .modal-title {
-        font-size: 1.5rem;
-    }
-    
-    .ingredients-list {
-        grid-template-columns: 1fr;
-    }
-    
-    .modal-footer {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.system-symptoms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    padding-left: var(--spacing-lg);
 }
 
-/* 强制覆盖 - 确保弹窗可见 */
-.modal-overlay.active {
-    background: rgba(0, 0, 0, 0.7) !important;
-}
-
-.modal-overlay .modal {
-    background: #ffffff !important;
-    border: 1px solid #e0e0e0;
-}
-
-.modal-header {
-    background: #fafafa !important;
-}
-
-.modal-body {
-    background: #ffffff !important;
-}
-
-.modal-footer {
-    background: #f5f5f5 !important;
-}
-
-
-/* ============================================
-   📋 详情区块 - 彩色主题区分
-   ============================================ */
-
-/* 基础区块样式 */
-.detail-section {
-    padding: 20px 25px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    border-left: 4px solid;
+.symptom-item {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    cursor: pointer;
     transition: all 0.2s;
 }
 
-.detail-section:hover {
-    transform: translateX(3px);
+.symptom-item:hover {
+    background: var(--primary-lighter);
 }
 
-.detail-section h4 {
-    font-size: 1.05rem;
-    font-weight: 600;
-    margin-bottom: 12px;
+/* ========== 详情模态框 ========== */
+.modal-header {
+    flex-wrap: wrap;
+}
+
+.modal-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+    width: 100%;
+    margin-top: var(--spacing-sm);
+}
+
+.action-btn {
     display: flex;
     align-items: center;
-    gap: 8px;
-}
-
-.detail-section p {
-    color: #333;
-    line-height: 1.8;
-    font-size: 1rem;
-}
-
-/* 📌 功效 - 橙黄色 */
-.detail-section.efficacy-section {
-    background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
-    border-left-color: #FF9800;
-}
-
-.detail-section.efficacy-section h4 {
-    color: #E65100;
-}
-
-/* 🎯 适应症状 - 蓝色 */
-.detail-section.symptom-section {
-    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
-    border-left-color: #2196F3;
-}
-
-.detail-section.symptom-section h4 {
-    color: #1565C0;
-}
-
-/* ✅ 适用人群 - 绿色 */
-.detail-section.suitable-section {
-    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
-    border-left-color: #4CAF50;
-}
-
-.detail-section.suitable-section h4 {
-    color: #2E7D32;
-}
-
-/* ❌ 禁忌人群 - 红色 */
-.detail-section.warning-section {
-    background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);
-    border-left-color: #F44336;
-}
-
-.detail-section.warning-section h4 {
-    color: #C62828;
-}
-
-/* 🥄 所需食材 - 紫色 */
-.detail-section.ingredient-section {
-    background: linear-gradient(135deg, #F3E5F5 0%, #E1BEE7 100%);
-    border-left-color: #9C27B0;
-}
-
-.detail-section.ingredient-section h4 {
-    color: #7B1FA2;
-}
-
-/* 📝 制作方法 - 青色 */
-.detail-section.method-section {
-    background: linear-gradient(135deg, #E0F7FA 0%, #B2EBF2 100%);
-    border-left-color: #00BCD4;
-}
-
-.detail-section.method-section h4 {
-    color: #00838F;
-}
-
-/* ⚠️ 注意事项 - 深红 */
-.detail-section.precaution-section {
-    background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);
-    border-left-color: #E53935;
-}
-
-.detail-section.precaution-section h4 {
-    color: #B71C1C;
-}
-
-/* 📍 位置 - 灰色 */
-.detail-section.location-section {
-    background: linear-gradient(135deg, #FAFAFA 0%, #EEEEEE 100%);
-    border-left-color: #757575;
-}
-
-.detail-section.location-section h4 {
-    color: #424242;
-}
-
-/* 复制按钮样式 */
-.action-buttons {
-    display: flex;
-    gap: 15px;
-    margin-top: 25px;
-    padding-top: 20px;
-    border-top: 2px solid #E0E0E0;
-}
-
-.copy-btn {
-    flex: 1;
-    padding: 14px 24px;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--bg-tertiary);
     border: none;
-    border-radius: 12px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.action-btn:hover {
+    background: var(--border);
+}
+
+.action-btn.favorited .action-icon {
+    color: var(--danger);
+}
+
+.modal-body {
+    padding: var(--spacing-lg);
+    overflow-y: auto;
+    flex: 1;
+}
+
+/* 详情区块 */
+.detail-section {
+    margin-bottom: var(--spacing-lg);
+}
+
+.detail-section-title {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
     font-size: 1rem;
     font-weight: 600;
-    cursor: pointer;
-    background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
-    color: white;
-    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
-    transition: all 0.3s;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
 }
 
-.copy-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+.detail-section-content {
+    padding: var(--spacing-md);
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-sm);
+    line-height: 1.8;
 }
 
-.copy-btn:active {
-    transform: translateY(0);
+/* 功效 */
+.efficacy-section .detail-section-content {
+    background: linear-gradient(135deg, #FFF8E1 0%, var(--bg-tertiary) 100%);
+    border-left: 3px solid var(--warning);
 }
 
-/* ============================================
-   🌸 节气养生弹窗样式
-   ============================================ */
-
-#seasonalModal {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    background: rgba(0, 0, 0, 0.7) !important;
-    z-index: 2000 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+/* 食材 */
+.ingredients-list {
+    list-style: none;
 }
 
-.seasonal-content {
-    background: white !important;
-    border-radius: 20px !important;
-    max-width: 500px !important;
-    width: 90% !important;
-    max-height: 80vh !important;
-    overflow-y: auto !important;
-    position: relative !important;
-    padding: 0 !important;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3) !important;
+.ingredients-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-xs) 0;
+    border-bottom: 1px dashed var(--divider);
 }
 
-.seasonal-content .close-btn {
-    position: absolute !important;
-    top: 15px !important;
-    right: 15px !important;
-    width: 32px !important;
-    height: 32px !important;
-    background: rgba(255, 255, 255, 0.9) !important;
-    border-radius: 50% !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    font-size: 24px !important;
-    cursor: pointer !important;
-    z-index: 10 !important;
-    color: #666 !important;
-    border: none !important;
-}
-
-.seasonal-content .close-btn:hover {
-    background: #f5f5f5 !important;
-    color: #333 !important;
-}
-
-.seasonal-header {
-    background: linear-gradient(135deg, #FF9800 0%, #FFB74D 100%) !important;
-    color: white !important;
-    padding: 30px 25px !important;
-    text-align: center !important;
-    border-radius: 20px 20px 0 0 !important;
-}
-
-.seasonal-header h2 {
-    margin: 0 0 8px 0 !important;
-    font-size: 1.8rem !important;
-    font-weight: 700 !important;
-}
-
-.seasonal-header .term-date {
-    margin: 0 !important;
-    opacity: 0.9 !important;
-    font-size: 0.95rem !important;
-}
-
-.seasonal-tips,
-.seasonal-recipes,
-.seasonal-acupoints {
-    padding: 20px 25px !important;
-    border-bottom: 1px solid #e0e0e0 !important;
-}
-
-.seasonal-tips:last-child,
-.seasonal-recipes:last-child,
-.seasonal-acupoints:last-child {
-    border-bottom: none !important;
-}
-
-.seasonal-tips h4,
-.seasonal-recipes h4,
-.seasonal-acupoints h4 {
-    color: #1B5E20 !important;
-    font-size: 1.1rem !important;
-    margin: 0 0 12px 0 !important;
-}
-
-.seasonal-tips p,
-.seasonal-acupoints p {
-    color: #333 !important;
-    line-height: 1.8 !important;
-    margin: 0 !important;
-}
-
-.recipe-mini-cards {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 10px !important;
-}
-
-.recipe-mini-card {
-    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%) !important;
-    padding: 10px 16px !important;
-    border-radius: 20px !important;
-    cursor: pointer !important;
-    font-size: 0.95rem !important;
-    color: #1B5E20 !important;
-    border: 1px solid #A5D6A7 !important;
-    transition: all 0.3s !important;
-}
-
-.recipe-mini-card:hover {
-    background: linear-gradient(135deg, #C8E6C9 0%, #A5D6A7 100%) !important;
-    transform: translateY(-2px) !important;
-}
-
-.recipe-name {
-    background: #f5f5f5 !important;
-    padding: 8px 14px !important;
-    border-radius: 16px !important;
-    font-size: 0.9rem !important;
-    color: #666 !important;
-}
-
-/* 热门标签高亮 */
-.hot-tag.highlight {
-    background: linear-gradient(135deg, #FF9800 0%, #FFB74D 100%) !important;
-    color: white !important;
-    font-weight: 600 !important;
-    padding: 8px 16px !important;
-    border-radius: 20px !important;
-    cursor: pointer !important;
-    transition: all 0.3s !important;
-}
-
-.hot-tag.highlight:hover {
-    transform: scale(1.05) !important;
-    box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3) !important;
-}
-
-/* 节气养生弹窗内部区块 */
-.seasonal-section {
-    padding: 15px 0;
-    border-bottom: 1px solid #E0E0E0;
-}
-
-.seasonal-section:last-child {
+.ingredients-list li:last-child {
     border-bottom: none;
 }
 
-.seasonal-section h4 {
-    color: #1B5E20;
-    font-size: 1.05rem;
-    font-weight: 600;
-    margin: 0 0 10px 0;
+.ingredient-name {
+    font-weight: 500;
 }
 
-.seasonal-section p {
-    color: #333;
-    line-height: 1.7;
-    margin: 0;
+.ingredient-amount {
+    color: var(--text-secondary);
 }
 
-/* ============================================
-   🔥 热门搜索标签样式
-   ============================================ */
-
-.hot-searches {
-    display: flex !important;
-    align-items: center !important;
-    flex-wrap: wrap !important;
-    gap: 10px !important;
-    padding: 15px 20px !important;
-    background: white !important;
-    border-radius: 12px !important;
-    margin-bottom: 15px !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+/* 注意事项 */
+.warning-section .detail-section-content {
+    background: linear-gradient(135deg, #FFEBEE 0%, var(--bg-tertiary) 100%);
+    border-left: 3px solid var(--danger);
 }
 
-.hot-label {
-    color: #666 !important;
-    font-size: 0.95rem !important;
-    font-weight: 600 !important;
-    margin-right: 5px !important;
+/* 收藏列表 */
+.favorites-list {
+    padding: var(--spacing-md);
+    overflow-y: auto;
+    flex: 1;
 }
 
-.hot-tag {
-    display: inline-flex !important;
-    align-items: center !important;
-    padding: 8px 16px !important;
-    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%) !important;
-    border-radius: 20px !important;
-    font-size: 0.9rem !important;
-    color: #333 !important;
-    cursor: pointer !important;
-    transition: all 0.3s ease !important;
-    border: 1px solid #e0e0e0 !important;
-    user-select: none !important;
-}
-
-.hot-tag:hover {
-    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%) !important;
-    border-color: #4CAF50 !important;
-    color: #1B5E20 !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2) !important;
-}
-
-/* 高亮标签 - 橙色 */
-.hot-tag.highlight {
-    background: linear-gradient(135deg, #FF9800 0%, #FFB74D 100%) !important;
-    color: white !important;
-    border-color: #F57C00 !important;
-    font-weight: 600 !important;
-}
-
-.hot-tag.highlight:hover {
-    background: linear-gradient(135deg, #F57C00 0%, #FF9800 100%) !important;
-    transform: translateY(-2px) scale(1.02) !important;
-    box-shadow: 0 6px 16px rgba(255, 152, 0, 0.35) !important;
-}
-
-/* 筛选标签样式 */
-.filter-tags {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 8px !important;
-    flex: 1 !important;
-}
-
-.filter-tags .tag {
-    display: inline-flex !important;
-    align-items: center !important;
-    padding: 6px 14px !important;
-    background: #f5f5f5 !important;
-    border-radius: 16px !important;
-    font-size: 0.85rem !important;
-    color: #666 !important;
-    cursor: pointer !important;
-    transition: all 0.2s !important;
-    border: 1px solid #e0e0e0 !important;
-}
-
-.filter-tags .tag:hover {
-    background: #e8f5e9 !important;
-    color: #1B5E20 !important;
-    border-color: #4CAF50 !important;
-}
-
-.filter-tags .tag.active {
-    background: linear-gradient(135deg, #1B5E20 0%, #4CAF50 100%) !important;
-    color: white !important;
-    border-color: #1B5E20 !important;
-}
-
-/* 卡片图片样式 */
-.card-image {
-    width: 100%;
-    height: 180px; /* 固定高度，占比较小 */
-    overflow: hidden;
-    position: relative;
-    border-bottom: 1px solid #eee;
-}
-
-.card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* 保证图片不变形，填满容器 */
-    transition: transform 0.5s ease;
-}
-
-.recipe-card:hover .card-image img {
-    transform: scale(1.05); /* 悬停时轻微放大效果 */
-}
-
-/* 调整有图片的卡片内容区内边距 */
-.recipe-card.has-image .card-content {
-    padding: 15px 20px 20px;
-}
-
-.recipe-card .card-content h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-/* 详情页图片也限制高度 */
-.detail-image {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 12px 12px 0 0;
-    margin-bottom: 20px;
-    margin-top: -25px; /* 让图片顶到弹窗头部下面 */
-    margin-left: -30px;
-    width: calc(100% + 60px); /* 撑满弹窗宽度 */
-    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
-}
-
-/* 图片加载失败时的占位样式 */
-.detail-image[src=""],
-.detail-image:not([src]),
-.detail-image[src="undefined"] {
-    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+.favorite-item {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: var(--spacing-md);
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--spacing-sm);
+    cursor: pointer;
 }
 
-.detail-image::before {
-    content: "🌿";
-    font-size: 4rem;
+.favorite-item:hover {
+    background: var(--primary-lighter);
+}
+
+.fav-item-info {
+    flex: 1;
+}
+
+.fav-item-title {
+    font-weight: 500;
+    margin-bottom: var(--spacing-xs);
+}
+
+.fav-item-meta {
+    font-size: 0.75rem;
+    color: var(--text-hint);
+}
+
+.remove-fav {
+    padding: var(--spacing-xs);
+    background: none;
+    border: none;
+    cursor: pointer;
     opacity: 0.5;
 }
 
-/* ============================================
-   🔄 无限滚动加载动画
-   ============================================ */
-
-.load-more {
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 10px;
-    width: 100%;
-}
-
-.loading-more-text {
-    display: inline-block;
-    color: #4CAF50;
-    font-weight: 600;
-    font-size: 1.1rem;
-    letter-spacing: 2px;
-}
-
-.loading-more-text span {
-    display: inline-block;
-    animation: bounce 1.4s infinite ease-in-out both;
-}
-
-.loading-more-text span:nth-child(1) { animation-delay: -0.32s; }
-.loading-more-text span:nth-child(2) { animation-delay: -0.16s; }
-.loading-more-text span:nth-child(3) { animation-delay: 0s; }
-
-@keyframes bounce {
-    0%, 80%, 100% { transform: scale(0); opacity: 0.5; }
-    40% { transform: scale(1); opacity: 1; }
-}
-
-.no-more-data {
-    color: #9E9E9E;
-    font-size: 0.95rem;
-    position: relative;
-    display: inline-block;
-    padding: 0 15px;
-}
-
-.no-more-data::before,
-.no-more-data::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width: 30px;
-    height: 1px;
-    background: #E0E0E0;
-}
-
-.no-more-data::before { right: 100%; }
-.no-more-data::after { left: 100%; }
-
-/* 图片占位div样式 */
-.detail-image-placeholder {
-    width: 100%;
-    height: 250px;
-    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
-    border-radius: 12px 12px 0 0;
-    margin-bottom: 20px;
-    margin-top: -25px;
-    margin-left: -30px;
-    width: calc(100% + 60px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-    opacity: 0.6;
-}
-
-/* 卡片图片占位样式 */
-.card-image-placeholder {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    opacity: 0.6;
-}
-
-/* 步骤列表样式 */
-.steps-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    counter-reset: step-counter;
-}
-
-.steps-list li {
-    position: relative;
-    padding: 15px 15px 15px 50px;
-    margin-bottom: 12px;
-    background: linear-gradient(135deg, #F5F5F5 0%, #FAFAFA 100%);
-    border-radius: 12px;
-    line-height: 1.8;
-    border-left: 3px solid #4CAF50;
-    counter-increment: step-counter;
-}
-
-.steps-list li::before {
-    content: counter(step-counter);
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 28px;
-    height: 28px;
-    background: linear-gradient(135deg, #4CAF50 0%, #81C784 100%);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-.steps-list li:last-child {
-    margin-bottom: 0;
-}
-
-/* 注意事项和禁忌事项的样式优化 */
-.precautions-content,
-.contraindicated-content {
-    background: #FFF3E0;
-    padding: 15px;
-    border-radius: 12px;
-    line-height: 1.8;
-    border-left: 3px solid #FF9800;
-}
-
-.precautions-content {
-    background: #FFF8E1;
-    border-left-color: #FFC107;
-}
-
-.contraindicated-content {
-    background: #FFEBEE;
-    border-left-color: #F44336;
-}
-
-/* 适用人群样式 */
-.suitable-content {
-    background: #E8F5E9;
-    padding: 15px;
-    border-radius: 12px;
-    line-height: 1.8;
-    border-left: 3px solid #4CAF50;
-}
-
-/* 注意事项列表样式 */
-.precautions-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.precautions-list li {
-    position: relative;
-    padding: 10px 10px 10px 30px;
-    margin-bottom: 8px;
-    line-height: 1.6;
-}
-
-.precautions-list li::before {
-    content: "⚠️";
-    position: absolute;
-    left: 0;
-    top: 10px;
-}
-
-/* 方法步骤样式 */
-.method-step {
-    margin-bottom: 20px;
-    padding: 15px;
-    background: linear-gradient(135deg, #F5F5F5 0%, #FAFAFA 100%);
-    border-radius: 12px;
-    border-left: 4px solid #4CAF50;
-}
-
-.method-step:last-child {
-    margin-bottom: 0;
-}
-
-.step-title {
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: #2E7D32;
-    margin-bottom: 10px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #E0E0E0;
-}
-
-.step-content {
-    line-height: 1.8;
-    color: #424242;
-}
-
-/* 方法区块样式 */
-.method-section {
-    margin-bottom: 20px;
-    padding: 15px;
-    background: #FAFAFA;
-    border-radius: 12px;
-}
-
-.method-section:last-child {
-    margin-bottom: 0;
-}
-
-.method-section > .step-title {
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: #1565C0;
-    margin-bottom: 12px;
-}
-
-.method-section > .step-content {
-    line-height: 1.8;
-}
-
-.method-section .steps-list {
-    margin-top: 10px;
-}
-
-/* Toast 提示框样式 */
-.toast {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.8);
-    padding: 20px 40px;
-    border-radius: 16px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    z-index: 10000;
-    opacity: 0;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-    pointer-events: none;
-}
-
-.toast.show {
+.remove-fav:hover {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+    color: var(--danger);
 }
 
-.toast-success {
-    background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
-    color: white;
-}
-
-.toast-error {
-    background: linear-gradient(135deg, #F44336 0%, #EF5350 100%);
-    color: white;
-}
-
-.toast-info {
-    background: linear-gradient(135deg, #2196F3 0%, #42A5F5 100%);
-    color: white;
-}
-
-.toast-warning {
-    background: linear-gradient(135deg, #FF9800 0%, #FFB74D 100%);
-    color: white;
-}
-
-/* 来源样式 */
-.source-section {
-    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
-    border-left: 4px solid #1976D2;
-}
-
-.source-section h4 {
-    color: #1565C0;
-}
-
-
-/* 热门标签选中状态 */
-.hot-tag.active {
-    background: #4CAF50 !important;
-    color: white !important;
-    font-weight: bold;
-    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
-}
-
-/* 当前筛选显示区域 */
-.active-filters {
-    padding: 10px 16px;
-    background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
-    border-radius: 10px;
-    margin: 10px 16px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    box-shadow: 0 2px 8px rgba(255, 152, 0, 0.15);
-}
-
-.active-filters .filter-label {
-    color: #e65100;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.active-filters .filter-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 5px 12px;
-    background: #ff9800;
-    color: white;
-    border-radius: 15px;
-    font-size: 13px;
-    cursor: default;
-}
-
-.active-filters .filter-tag .remove {
-    cursor: pointer;
-    font-weight: bold;
-    padding-left: 4px;
-}
-
-.active-filters .filter-tag .remove:hover {
-    color: #ffe0b2;
-}
-
-.active-filters .clear-btn {
-    padding: 6px 16px;
-    background: linear-gradient(135deg, #f44336 0%, #e53935 100%);
-    color: white;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: bold;
-    margin-left: auto;
-    box-shadow: 0 2px 4px rgba(244, 67, 54, 0.3);
-    transition: transform 0.2s;
-}
-
-.active-filters .clear-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(244, 67, 54, 0.4);
-}
-
-
-/* 骨架屏样式 - 优化加载体验 */
-
-/* 骨架屏样式 */
-.skeleton {
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-    background-size: 200% 100%;
-    animation: skeleton-loading 1.5s infinite;
-}
-
-@keyframes skeleton-loading {
-    0% { background-position: 200% 0; }
-    100% { background-position: -200% 0; }
-}
-
-.skeleton-card {
-    background: white;
-    border-radius: 12px;
-    padding: 16px;
-    margin-bottom: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.skeleton-title {
-    height: 24px;
-    width: 60%;
-    margin-bottom: 12px;
-    border-radius: 4px;
-}
-
-.skeleton-text {
-    height: 16px;
-    width: 100%;
-    margin-bottom: 8px;
-    border-radius: 4px;
-}
-
-.skeleton-text-short {
-    height: 16px;
-    width: 80%;
-    margin-bottom: 8px;
-    border-radius: 4px;
-}
-
-.skeleton-tags {
-    display: flex;
-    gap: 8px;
-    margin-top: 12px;
-}
-
-.skeleton-tag {
-    height: 24px;
-    width: 60px;
-    border-radius: 12px;
-}
-
-.loading-progress {
+.empty-state {
     text-align: center;
-    padding: 20px;
-    color: #666;
+    padding: var(--spacing-xl);
+    color: var(--text-hint);
 }
 
-.loading-progress .bar {
-    width: 200px;
-    height: 4px;
-    background: #e0e0e0;
-    border-radius: 2px;
-    margin: 10px auto;
-    overflow: hidden;
-}
-
-.loading-progress .bar-inner {
-    height: 100%;
-    background: linear-gradient(90deg, #4CAF50, #8BC34A);
-    width: 0%;
-    animation: progress 2s ease-in-out infinite;
-}
-
-@keyframes progress {
-    0% { width: 0%; margin-left: 0; }
-    50% { width: 70%; margin-left: 15%; }
-    100% { width: 0%; margin-left: 100%; }
-}
-
-/* ========== 文章模块样式 ========== */
-
-/* 文章卡片 */
-.article-card {
-    background: linear-gradient(135deg, #FAFAFA 0%, #F5F5F5 100%);
-    border-left: 4px solid #7B1FA2;
-    padding: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.article-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(123, 31, 162, 0.15);
-    border-left-color: #9C27B0;
-}
-
-.article-card .article-title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #333;
-    margin: 0 0 10px 0;
-    line-height: 1.4;
-}
-
-.article-card .article-meta {
-    display: flex;
-    gap: 15px;
-    font-size: 0.85rem;
-    color: #888;
-    margin-bottom: 12px;
-}
-
-.article-card .article-summary {
-    color: #666;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    margin-bottom: 12px;
-}
-
-/* 文章详情页 */
-.article-detail {
-    padding: 0;
-    line-height: 1.8;
-}
-
-.article-header {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #E8F5E9;
-}
-
-.article-main-title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #1B5E20;
-    margin: 0 0 15px 0;
-    line-height: 1.4;
-}
-
-.article-author-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.article-author-info .author-name {
-    font-weight: 600;
-    color: #7B1FA2;
-    font-size: 1rem;
-}
-
-.article-author-info .author-intro {
-    color: #888;
-    font-size: 0.9rem;
-}
-
-.article-meta-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    font-size: 0.85rem;
-    color: #666;
-    padding: 10px 15px;
-    background: #F5F5F5;
-    border-radius: 8px;
-    margin-top: 15px;
-}
-
-.article-suitable {
-    margin-top: 15px;
-    padding: 15px;
-    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
-    border-radius: 12px;
-}
-
-.article-suitable h4 {
-    font-size: 0.95rem;
-    color: #2E7D32;
-    margin: 0 0 10px 0;
-}
-
-.suitable-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.suitable-tag {
-    padding: 4px 12px;
-    background: white;
-    border-radius: 15px;
-    font-size: 0.85rem;
-    color: #388E3C;
-}
-
-/* 文章摘要框 */
-.article-summary-box {
-    padding: 20px;
-    background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
-    border-radius: 12px;
-    margin-bottom: 25px;
-    border-left: 4px solid #FFA000;
-}
-
-.article-summary-box p {
-    margin: 0;
-    color: #5D4037;
-    font-size: 1rem;
-    line-height: 1.7;
-}
-
-/* 文章正文 */
-.article-body {
-    margin-bottom: 30px;
-}
-
-.article-section {
-    margin-bottom: 30px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #E8F5E9;
-}
-
-.article-section:last-child {
-    border-bottom: none;
-}
-
-.section-title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #2E7D32;
-    margin: 0 0 18px 0;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #81C784;
-    display: inline-block;
-}
-
-.section-content p {
-    margin: 0 0 15px 0;
-    text-align: justify;
-    color: #333;
-    font-size: 1rem;
-    line-height: 1.9;
-}
-
-.section-content p:last-child {
-    margin-bottom: 0;
-}
-
-/* 文章引用块 */
-.article-quote {
-    margin: 20px 0;
-    padding: 15px 20px;
-    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
-    border-left: 4px solid #1976D2;
-    border-radius: 0 8px 8px 0;
-    font-style: normal;
-    color: #1565C0;
-    font-size: 1rem;
-}
-
-.article-quote::before {
-    content: '"';
-    font-size: 2rem;
-    color: #1976D2;
-    line-height: 0;
-    vertical-align: -0.3em;
-    margin-right: 5px;
-}
-
-/* 重点摘录 */
-.article-highlights {
-    padding: 20px;
-    background: linear-gradient(135deg, #FCE4EC 0%, #F8BBD9 100%);
-    border-radius: 12px;
-    margin-bottom: 25px;
-}
-
-.article-highlights h4 {
-    font-size: 1rem;
-    color: #C2185B;
-    margin: 0 0 15px 0;
-}
-
-.highlights-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.highlight-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 12px 15px;
-    background: white;
-    border-radius: 8px;
-}
-
-.highlight-icon {
-    font-size: 1.5rem;
-    color: #E91E63;
-    line-height: 1;
-}
-
-.highlight-text {
-    color: #333;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    flex: 1;
-}
-
-/* 文章底部 */
-.article-footer {
-    padding-top: 20px;
-    margin-top: 20px;
-    border-top: 1px solid #E0E0E0;
-}
-
-.article-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.article-tag {
-    padding: 5px 12px;
-    background: #E8F5E9;
-    border-radius: 15px;
-    font-size: 0.85rem;
-    color: #2E7D32;
-    transition: all 0.2s ease;
-}
-
-.article-tag:hover {
-    background: #C8E6C9;
-}
-
-/* 响应式调整 */
+/* ========== 响应式 ========== */
 @media (max-width: 768px) {
-    .article-main-title {
+    .hero-title {
         font-size: 1.5rem;
     }
     
-    .section-title {
-        font-size: 1.15rem;
+    .symptom-categories {
+        grid-template-columns: repeat(4, 1fr);
     }
     
-    .article-meta-info {
-        flex-direction: column;
-        gap: 8px;
+    .symptom-cards {
+        grid-template-columns: repeat(2, 1fr);
     }
     
-    .article-card .article-meta {
-        flex-direction: column;
-        gap: 5px;
+    .items-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .type-tabs {
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .nav-text {
+        display: none;
     }
 }
 
-/* 文章详情模态框 - 更宽更适合阅读 */
-.modal-overlay:has(.article-detail) .modal {
-    max-width: 900px;
+@media (max-width: 480px) {
+    .symptom-categories {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .symptom-category .cat-name {
+        font-size: 0.75rem;
+    }
 }
 
-.modal-overlay:has(.article-detail) .modal-body {
-    padding: 30px 40px;
-    max-height: calc(90vh - 100px);
-    overflow-y: auto;
-}
-
-/* 文章详情滚动条美化 */
-.modal-overlay:has(.article-detail) .modal-body::-webkit-scrollbar {
-    width: 8px;
-}
-
-.modal-overlay:has(.article-detail) .modal-body::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 4px;
-}
-
-.modal-overlay:has(.article-detail) .modal-body::-webkit-scrollbar-thumb {
-    background: #81C784;
-    border-radius: 4px;
-}
-
-.modal-overlay:has(.article-detail) .modal-body::-webkit-scrollbar-thumb:hover {
-    background: #66BB6A;
-}
-
+/* ========== 工具类 ========== */
+.hidden { display: none !important; }
+.text-center { text-align: center; }
+.text-muted { color: var(--text-hint); }

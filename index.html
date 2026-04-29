@@ -3,138 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>养生知识库 - 顺时而养，健康常伴</title>
-    
-    <script>
-        document.write('<link rel="stylesheet" href="style.css?v=' + new Date().getTime() + '">');
-    </script>
-
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>养生智慧 - 顺时而养，健康常伴</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script>document.write('<link rel="stylesheet" href="style.css?v=' + Date.now() + '">');</script>
 </head>
 <body>
-    <div class="container">
-        <!-- 头部 -->
-        <header class="header">
-            <h1>🌿 养生知识库</h1>
-            <p class="subtitle">顺时而养，健康常伴 | 收录 <strong id="headerCount">0</strong> 条内容</p>
+    <div class="app-container">
+        <!-- 顶部导航 -->
+        <header class="top-nav">
+            <div class="nav-brand">
+                <span class="brand-icon">🌿</span>
+                <span class="brand-text">养生智慧</span>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-btn" id="favoriteBtn" onclick="showFavorites()">
+                    <span class="nav-icon">❤️</span>
+                    <span class="nav-text">收藏</span>
+                    <span class="fav-count" id="favCount" style="display:none">0</span>
+                </button>
+            </div>
         </header>
-        
-        <!-- 内容类型选择器 -->
-        <div class="type-selector" id="typeSelector">
-            <span class="type-tag active" data-type="recipe">
-                🌿 食疗方子 <span class="count">0</span>
-            </span>
-            <span class="type-tag" data-type="article">
-                📚 养生文章 <span class="count">0</span>
-            </span>
-            <span class="type-tag" data-type="acupoint">
-                👆 穴位按摩 <span class="count">0</span>
-            </span>
-            <span class="type-tag" data-type="exercise">
-                🧘 养生功法 <span class="count">0</span>
-            </span>
-            <span class="type-tag" data-type="knowledge">
-                📖 健康知识 <span class="count">0</span>
-            </span>
-        </div>
-        
-        <!-- 热门搜索 -->
-        <div class="hot-searches">
-            <span class="hot-label">🔥 热门：</span>
-            <span class="hot-tag" data-keyword="感冒" onclick="quickSearch('感冒')">感冒</span>
-            <span class="hot-tag" data-keyword="咳嗽" onclick="quickSearch('咳嗽')">咳嗽</span>
-            <span class="hot-tag" data-keyword="失眠" onclick="quickSearch('失眠')">失眠</span>
-            <span class="hot-tag" data-keyword="补血" onclick="quickSearch('补血')">补血</span>
-            <span class="hot-tag" data-keyword="姜枣茶" onclick="quickSearch('姜枣茶')">姜枣茶</span>
-            <span class="hot-tag" data-keyword="银耳" onclick="quickSearch('银耳')">银耳</span>
-            <span class="hot-tag highlight" onclick="openSmartRecommend()">🤖 智能推荐</span>
-            <span class="hot-tag highlight" onclick="showSeasonalTip()">🌸 节气养生</span>
-            <span class="hot-tag" onclick="randomItem()">🎲 随机推荐</span>
-        </div>
 
-        <!-- 当前筛选状态 -->
-        <div id="activeFilters" class="active-filters" style="display: none;">
-            <span class="filter-label">🔍 当前筛选：</span>
-            <span id="filterTags"></span>
-        </div>
+        <!-- 主页内容 -->
+        <main class="main-content" id="mainContent">
+            <!-- 搜索区 -->
+            <section class="search-hero">
+                <h1 class="hero-title">今天想调理什么？</h1>
+                <div class="search-container">
+                    <div class="search-input-wrapper">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="mainSearch" placeholder="输入症状、食材、方子名称..." autocomplete="off">
+                        <div class="search-suggestions" id="searchSuggestions"></div>
+                    </div>
+                </div>
+            </section>
 
-        <!-- 搜索区域 -->
-        <div class="search-section">
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="搜索内容、症状、食材...">
-                <button id="searchBtn">🔍 搜索</button>
-                <button class="clear-btn" onclick="clearAllFilters()">✕ 清空筛选</button>
+            <!-- 今日节气卡片 -->
+            <section class="seasonal-card" id="seasonalCard">
+                <div class="seasonal-header">
+                    <span class="seasonal-date" id="seasonalDate"></span>
+                    <span class="seasonal-term" id="seasonalTerm"></span>
+                </div>
+                <p class="seasonal-tip" id="seasonalTip"></p>
+                <div class="seasonal-actions">
+                    <button class="seasonal-btn" onclick="showSeasonalRecipes()">查看节气食方 →</button>
+                </div>
+            </section>
+
+            <!-- 快捷入口：症状导航 -->
+            <section class="quick-entry">
+                <h2 class="section-title">
+                    <span class="title-icon">🎯</span>
+                    按症状查找
+                </h2>
+                <div class="symptom-categories" id="symptomCategories">
+                    <!-- 动态生成 -->
+                </div>
+            </section>
+
+            <!-- 热门调理 -->
+            <section class="hot-remedies">
+                <h2 class="section-title">
+                    <span class="title-icon">🔥</span>
+                    热门调理
+                </h2>
+                <div class="symptom-cards" id="hotSymptoms">
+                    <!-- 动态生成 -->
+                </div>
+            </section>
+
+            <!-- 内容类型切换 -->
+            <section class="content-types">
+                <div class="type-tabs" id="typeTabs">
+                    <button class="type-tab active" data-type="recipe">
+                        <span class="tab-icon">🍵</span>
+                        <span class="tab-name">食疗方子</span>
+                        <span class="tab-count" id="recipeCount">0</span>
+                    </button>
+                    <button class="type-tab" data-type="article">
+                        <span class="tab-icon">📚</span>
+                        <span class="tab-name">养生文章</span>
+                        <span class="tab-count" id="articleCount">0</span>
+                    </button>
+                    <button class="type-tab" data-type="acupoint">
+                        <span class="tab-icon">👆</span>
+                        <span class="tab-name">穴位按摩</span>
+                        <span class="tab-count" id="acupointCount">0</span>
+                    </button>
+                    <button class="type-tab" data-type="exercise">
+                        <span class="tab-icon">🧘</span>
+                        <span class="tab-name">养生功法</span>
+                        <span class="tab-count" id="exerciseCount">0</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- 简化筛选器 -->
+            <section class="simple-filters" id="simpleFilters">
+                <div class="filter-row">
+                    <span class="filter-label">季节</span>
+                    <div class="filter-tags" id="seasonTags"></div>
+                </div>
+            </section>
+
+            <!-- 内容列表 -->
+            <section class="content-list">
+                <div class="list-header">
+                    <span class="result-count">共 <strong id="totalCount">0</strong> 条</span>
+                    <button class="sort-btn" id="sortBtn">按季节排序 ▾</button>
+                </div>
+                <div class="items-grid" id="itemsGrid">
+                    <div class="loading-state">
+                        <div class="loading-spinner"></div>
+                        <p>正在加载养生智慧...</p>
+                    </div>
+                </div>
+                <div class="load-more" id="loadMore" style="display:none">
+                    <button class="load-more-btn" onclick="loadMore()">加载更多</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- 症状导航页（覆盖层） -->
+        <div class="symptom-nav-overlay" id="symptomNavOverlay" style="display:none">
+            <div class="symptom-nav-content">
+                <div class="symptom-nav-header">
+                    <h2>选择你的症状</h2>
+                    <button class="close-btn" onclick="closeSymptomNav()">✕</button>
+                </div>
+                <div class="symptom-search">
+                    <input type="text" id="symptomSearch" placeholder="搜索症状...">
+                </div>
+                <div class="body-systems" id="bodySystems">
+                    <!-- 动态生成身体系统分类 -->
+                </div>
             </div>
         </div>
 
-        <!-- 分类筛选 -->
-        <div class="filter-section">
-            <div class="filter-group" id="seasonFilterGroup">
-                <label>季节：</label>
-                <div class="filter-tags" id="seasonFilter">
+        <!-- 收藏页面（覆盖层） -->
+        <div class="favorites-overlay" id="favoritesOverlay" style="display:none">
+            <div class="favorites-content">
+                <div class="favorites-header">
+                    <h2>我的收藏</h2>
+                    <button class="close-btn" onclick="closeFavorites()">✕</button>
+                </div>
+                <div class="favorites-list" id="favoritesList">
                     <!-- 动态生成 -->
                 </div>
             </div>
-            <div class="filter-group" id="symptomFilterGroup">
-                <label>症状：</label>
-                <div class="filter-tags" id="symptomFilter">
-                    <!-- 动态生成 -->
+        </div>
+
+        <!-- 详情模态框 -->
+        <div class="modal-overlay" id="detailModal" style="display:none">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <div class="modal-actions">
+                        <button class="action-btn" id="favoriteAction" onclick="toggleFavorite()">
+                            <span class="action-icon">🤍</span>
+                            <span class="action-text">收藏</span>
+                        </button>
+                        <button class="action-btn" onclick="shareItem()">
+                            <span class="action-icon">📤</span>
+                            <span class="action-text">分享</span>
+                        </button>
+                        <button class="close-btn" onclick="closeModal()">✕</button>
+                    </div>
                 </div>
-            </div>
-            <div class="filter-group" id="recipeTypeFilterGroup">
-                <label>类型：</label>
-                <div class="filter-tags" id="recipeTypeFilter">
-                    <!-- 动态生成 -->
-                </div>
-            </div>
-            <div class="filter-group" id="authorFilterGroup">
-                <label>作者：</label>
-                <div class="filter-tags" id="authorFilter">
-                    <!-- 动态生成 -->
+                <div class="modal-body" id="modalBody">
+                    <!-- 详情内容 -->
                 </div>
             </div>
         </div>
-
-        <!-- 统计信息 -->
-        <div class="stats">
-            <span id="totalCount">共 <strong>0</strong> 条内容</span>
-            <span id="filteredCount">当前显示 <strong>0</strong> 条</span>
-        </div>
-
-        <!-- 内容列表 -->
-        <div class="recipes-list" id="recipesList">
-            <div class="loading">
-                <div class="loading-spinner"></div>
-                <p class="loading-text">正在加载养生智慧...</p>
-            </div>
-        </div>
-
-        <!-- 加载更多动画占位 -->
-        <div class="load-more" id="loadMore" style="display: none;"></div>
     </div>
 
-    <!-- 详情模态框 -->
-    <div class="modal-overlay" id="recipeModal">
-        <div class="modal">
-            <div class="modal-header">
-                <h2 class="modal-title" id="modalTitle">养生方法详情</h2>
-                <button class="modal-close" id="closeModal">&times;</button>
-            </div>
-            <div class="modal-body" id="modalBody">
-                <!-- 详情内容 -->
-            </div>
-            <div class="modal-footer" id="modalFooter">
-                <span class="badge" id="modalSource">来源：陈允斌养生著作</span>
-                <div id="modalTags"></div>
-            </div>
-        </div>
-    </div>
-
-    
-    <!-- 强制禁用 app.js 缓存 -->
-    <script>
-        document.write('<script src="app.js?v=' + new Date().getTime() + '"><\/script>');
-    </script>
-
+    <script>document.write('<script src="app.js?v=' + Date.now() + '"><\/script>');</script>
 </body>
 </html>
