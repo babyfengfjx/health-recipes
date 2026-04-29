@@ -690,11 +690,90 @@ function renderExerciseDetail(item) {
 }
 
 function renderArticleDetail(item) {
-    return `
-        <div class="detail-section">
-            <div class="detail-section-content">${item.content || item.summary || ''}</div>
-        </div>
-    `;
+    let html = '';
+    
+    // 作者信息
+    if (item.author || item.authorIntro) {
+        html += `
+            <div class="detail-section">
+                <p class="text-muted">✍️ ${item.author || ''}</p>
+                ${item.authorIntro ? `<p class="text-muted" style="font-size:0.85rem;margin-top:4px">${item.authorIntro}</p>` : ''}
+            </div>
+        `;
+    }
+    
+    // 摘要
+    if (item.summary) {
+        html += `
+            <div class="detail-section efficacy-section">
+                <h3 class="detail-section-title">📋 摘要</h3>
+                <div class="detail-section-content">${item.summary}</div>
+            </div>
+        `;
+    }
+    
+    // 阅读信息
+    if (item.readingTime || item.wordCount) {
+        html += `
+            <div class="detail-section">
+                <p class="text-muted">📖 ${item.readingTime || ''} · ${item.wordCount ? item.wordCount + '字' : ''}</p>
+            </div>
+        `;
+    }
+    
+    // 章节内容
+    if (item.sections && item.sections.length > 0) {
+        item.sections.forEach((section, index) => {
+            html += `
+                <div class="article-section">
+                    <h3 class="article-section-title">${section.title}</h3>
+                    <div class="article-content">${section.content}</div>
+                </div>
+            `;
+        });
+    } else if (item.content) {
+        html += `
+            <div class="article-section">
+                <div class="article-content">${item.content}</div>
+            </div>
+        `;
+    }
+    
+    // 重点摘录
+    if (item.highlights && item.highlights.length > 0) {
+        html += `
+            <div class="detail-section" style="margin-top: 32px;">
+                <h3 class="detail-section-title">💎 重点摘录</h3>
+                <div class="detail-section-content">
+                    ${item.highlights.map(h => `<p style="margin:8px 0;padding-left:12px;border-left:2px solid var(--primary)">"${h}"</p>`).join('')}
+                </div>
+            </div>
+        `;
+    }
+    
+    // 适合人群
+    if (item.suitableFor && item.suitableFor.length > 0) {
+        html += `
+            <div class="detail-section">
+                <h3 class="detail-section-title">👥 适合人群</h3>
+                <div class="detail-section-content">${item.suitableFor.join('、')}</div>
+            </div>
+        `;
+    }
+    
+    // 标签
+    if (item.tags && item.tags.length > 0) {
+        html += `
+            <div class="detail-section">
+                <h3 class="detail-section-title">🏷️ 标签</h3>
+                <div style="display:flex;flex-wrap:wrap;gap:8px">
+                    ${item.tags.map(tag => `<span class="card-tag">${tag}</span>`).join('')}
+                </div>
+            </div>
+        `;
+    }
+    
+    return html || '<p>暂无内容</p>';
 }
 
 function formatMethod(method) {
