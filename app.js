@@ -547,6 +547,7 @@ function showDetail(id) {
     const isFav = isFavorite(id);
     favBtn.classList.toggle('favorited', isFav);
     favBtn.querySelector('.action-icon').textContent = isFav ? '❤️' : '🤍';
+    showToast(isFav ? '❤️ 已添加到收藏' : '已取消收藏', 'success');
     
     body.innerHTML = renderDetailContent(item);
     
@@ -747,6 +748,7 @@ function toggleFavorite() {
     const favBtn = document.getElementById('favoriteAction');
     favBtn.classList.toggle('favorited', isFav);
     favBtn.querySelector('.action-icon').textContent = isFav ? '❤️' : '🤍';
+    showToast(isFav ? '❤️ 已添加到收藏' : '已取消收藏', 'success');
 }
 
 function updateFavoriteCount() {
@@ -800,6 +802,24 @@ function removeFavorite(id) {
     favs = favs.filter(f => f.id !== id);
     saveFavorites(favs);
     showFavorites();
+}
+
+
+// ========== Toast 提示 ==========
+function showToast(message, type = 'success', duration = 2000) {
+    const toast = document.getElementById('toast');
+    if (!toast) return;
+    
+    toast.textContent = message;
+    toast.className = 'toast ' + type;
+    
+    // 显示
+    setTimeout(() => toast.classList.add('show'), 10);
+    
+    // 自动隐藏
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, duration);
 }
 
 // ========== 工具函数 ==========
@@ -867,7 +887,9 @@ function shareItem() {
         });
     } else {
         navigator.clipboard.writeText(text).then(() => {
-            alert('已复制到剪贴板');
+            showToast('✓ 已复制到剪贴板', 'success');
+        }).catch(() => {
+            showToast('复制失败，请重试', 'warning');
         });
     }
 }

@@ -1085,3 +1085,35 @@ button {
 .modal-body::-webkit-scrollbar-thumb:hover {
     background: var(--text-hint);
 }
+
+
+/* ========== Toast 提示 ========== */
+.toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--primary);
+    color: white;
+    padding: var(--spacing-md) var(--spacing-xl);
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    box-shadow: var(--shadow-lg);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.toast.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.toast.success {
+    background: var(--success);
+}
+
+.toast.warning {
+    background: var(--warning);
+}
