@@ -123,56 +123,56 @@
                 </div>
             </section>
         </main>
+    </div>
 
-        <!-- 症状导航页（覆盖层） -->
-        <div class="symptom-nav-overlay" id="symptomNavOverlay" style="display:none">
-            <div class="symptom-nav-content">
-                <div class="symptom-nav-header">
-                    <h2>选择你的症状</h2>
-                    <button class="close-btn" onclick="closeSymptomNav()">✕</button>
-                </div>
-                <div class="symptom-search">
-                    <input type="text" id="symptomSearch" placeholder="搜索症状...">
-                </div>
-                <div class="body-systems" id="bodySystems">
-                    <!-- 动态生成身体系统分类 -->
-                </div>
+    <!-- 症状导航页（覆盖层） -->
+    <div class="symptom-nav-overlay" id="symptomNavOverlay" style="display:none" onclick="closeSymptomNav()">
+        <div class="symptom-nav-content" onclick="event.stopPropagation()">
+            <div class="symptom-nav-header">
+                <h2>选择你的症状</h2>
+                <button class="close-btn" onclick="closeSymptomNav()">✕</button>
+            </div>
+            <div class="symptom-search">
+                <input type="text" id="symptomSearch" placeholder="搜索症状...">
+            </div>
+            <div class="body-systems" id="bodySystems">
+                <!-- 动态生成身体系统分类 -->
             </div>
         </div>
+    </div>
 
-        <!-- 收藏页面（覆盖层） -->
-        <div class="favorites-overlay" id="favoritesOverlay" style="display:none">
-            <div class="favorites-content">
-                <div class="favorites-header">
-                    <h2>我的收藏</h2>
-                    <button class="close-btn" onclick="closeFavorites()">✕</button>
-                </div>
-                <div class="favorites-list" id="favoritesList">
-                    <!-- 动态生成 -->
-                </div>
+    <!-- 收藏页面（覆盖层） -->
+    <div class="favorites-overlay" id="favoritesOverlay" style="display:none" onclick="closeFavorites()">
+        <div class="favorites-content" onclick="event.stopPropagation()">
+            <div class="favorites-header">
+                <h2>我的收藏</h2>
+                <button class="close-btn" onclick="closeFavorites()">✕</button>
+            </div>
+            <div class="favorites-list" id="favoritesList">
+                <!-- 动态生成 -->
             </div>
         </div>
+    </div>
 
-        <!-- 详情模态框 -->
-        <div class="modal-overlay" id="detailModal" style="display:none">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title" id="modalTitle"></h2>
-                    <div class="modal-actions">
-                        <button class="action-btn" id="favoriteAction" onclick="toggleFavorite()">
-                            <span class="action-icon">🤍</span>
-                            <span class="action-text">收藏</span>
-                        </button>
-                        <button class="action-btn" onclick="shareItem()">
-                            <span class="action-icon">📤</span>
-                            <span class="action-text">分享</span>
-                        </button>
-                        <button class="close-btn" onclick="closeModal()">✕</button>
-                    </div>
+    <!-- 详情模态框 -->
+    <div class="modal-overlay" id="detailModal" style="display:none" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">详情</h2>
+                <div class="modal-actions">
+                    <button class="action-btn" id="favoriteAction" onclick="toggleFavorite()">
+                        <span class="action-icon">🤍</span>
+                        <span class="action-text">收藏</span>
+                    </button>
+                    <button class="action-btn" onclick="shareItem()">
+                        <span class="action-icon">📤</span>
+                        <span class="action-text">分享</span>
+                    </button>
+                    <button class="close-btn" onclick="closeModal()">✕</button>
                 </div>
-                <div class="modal-body" id="modalBody">
-                    <!-- 详情内容 -->
-                </div>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- 详情内容 -->
             </div>
         </div>
     </div>

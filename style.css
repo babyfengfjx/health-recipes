@@ -933,3 +933,155 @@ body {
 .hidden { display: none !important; }
 .text-center { text-align: center; }
 .text-muted { color: var(--text-hint); }
+
+
+/* ========== 模态框增强样式 ========== */
+.modal-content {
+    width: 100%;
+    max-width: 600px;
+    max-height: 85vh;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-lg);
+}
+
+.modal-header {
+    padding: var(--spacing-lg);
+    border-bottom: 1px solid var(--divider);
+    background: var(--bg-secondary);
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.modal-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.modal-body {
+    padding: var(--spacing-lg);
+    overflow-y: auto;
+    flex: 1;
+    background: var(--bg-primary);
+}
+
+/* 详情区块增强 */
+.detail-section {
+    margin-bottom: var(--spacing-lg);
+}
+
+.detail-section-title {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.detail-section-content {
+    padding: var(--spacing-md);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-sm);
+    line-height: 1.8;
+    color: var(--text-primary);
+}
+
+.detail-section-content p {
+    margin-bottom: var(--spacing-sm);
+}
+
+.detail-section-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* 食材列表增强 */
+.ingredients-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.ingredients-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-bottom: 1px dashed var(--divider);
+}
+
+.ingredients-list li:last-child {
+    border-bottom: none;
+}
+
+.ingredient-name {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.ingredient-amount {
+    color: var(--text-secondary);
+}
+
+/* 功效区块 */
+.efficacy-section .detail-section-content {
+    background: linear-gradient(135deg, #FFF8E1 0%, var(--bg-secondary) 100%);
+    border-left: 4px solid var(--warning);
+}
+
+/* 警告区块 */
+.warning-section .detail-section-content {
+    background: linear-gradient(135deg, #FFEBEE 0%, var(--bg-secondary) 100%);
+    border-left: 4px solid var(--danger);
+}
+
+/* 点击遮罩关闭模态框 */
+.modal-overlay {
+    cursor: pointer;
+}
+
+.modal-content {
+    cursor: default;
+}
+
+/* 文本工具类 */
+.text-muted {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+/* 按钮通用样式 */
+button {
+    font-family: inherit;
+}
+
+/* 滚动条美化 */
+.modal-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+    background: var(--bg-tertiary);
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 3px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+    background: var(--text-hint);
+}

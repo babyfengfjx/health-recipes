@@ -111,17 +111,10 @@ const SOLAR_TERMS = [
 async function init() {
     console.log('🌿 养生智慧 v3.0 初始化中...');
     
-    // 显示加载状态
     showLoadingState();
-    
-    // 初始化事件监听
     initEventListeners();
-    
-    // 加载数据
     await loadIndex();
     await loadDataType('recipe');
-    
-    // 渲染首页组件
     renderSeasonalCard();
     renderSymptomCategories();
     renderHotSymptoms();
@@ -132,7 +125,6 @@ async function init() {
 
 // ========== 事件监听 ==========
 function initEventListeners() {
-    // 搜索框
     const searchInput = document.getElementById('mainSearch');
     if (searchInput) {
         searchInput.addEventListener('input', debounce(handleSearchInput, 300));
@@ -141,19 +133,16 @@ function initEventListeners() {
         });
     }
     
-    // 类型标签切换
     document.querySelectorAll('.type-tab').forEach(tab => {
         tab.addEventListener('click', () => switchType(tab.dataset.type));
     });
     
-    // 点击外部关闭搜索建议
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.search-input-wrapper')) {
             hideSearchSuggestions();
         }
     });
     
-    // 症状导航搜索
     const symptomSearch = document.getElementById('symptomSearch');
     if (symptomSearch) {
         symptomSearch.addEventListener('input', filterSymptomsInNav);
@@ -200,9 +189,17 @@ async function loadDataType(type) {
         const response = await fetch(`${dataFile}?t=${Date.now()}`);
         if (response.ok) {
             const data = await response.json();
-            state.allData[type] = data.recipes || data.articles || data.items || data;
+            let items = data.recipes || data.articles || data.items || data;
+            
+            // 【关键修复】为每条数据添加 type 字段
+            items = items.map(item => ({
+                ...item,
+                type: item.type || type
+            }));
+            
+            state.allData[type] = items;
             state.currentType = type;
-            console.log(`✅ 加载 ${type}: ${state.allData[type].length} 条`);
+            console.log(`✅ 加载 ${type}: ${items.length} 条`);
             filterAndRender();
         } else {
             throw new Error(`HTTP ${response.status}`);
@@ -229,10 +226,8 @@ function renderSeasonalCard() {
     const monthDay = String(today.getMonth() + 1).padStart(2, '0') + '-' + 
                      String(today.getDate()).padStart(2, '0');
     
-    // 找到当前节气
     let currentTerm = SOLAR_TERMS.find(term => term.date === monthDay);
     if (!currentTerm) {
-        // 找最近的过去节气
         for (let i = SOLAR_TERMS.length - 1; i >= 0; i--) {
             if (SOLAR_TERMS[i].date <= monthDay) {
                 currentTerm = SOLAR_TERMS[i];
@@ -296,7 +291,6 @@ function filterAndRender() {
     const { season, symptom, search } = state.filters;
     
     state.filteredData = data.filter(item => {
-        // 搜索过滤
         if (search) {
             const searchLower = search.toLowerCase();
             const match = (item.name && item.name.toLowerCase().includes(searchLower)) ||
@@ -305,14 +299,12 @@ function filterAndRender() {
             if (!match) return false;
         }
         
-        // 季节过滤
         if (season && item.categories?.season) {
             if (!item.categories.season.some(s => s.includes(season) || season.includes(s))) {
                 return false;
             }
         }
         
-        // 症状过滤
         if (symptom) {
             const hasSymptom = (item.symptoms && item.symptoms.some(s => s.includes(symptom))) ||
                               (item.efficacy && item.efficacy.includes(symptom));
@@ -349,11 +341,8 @@ function renderItems() {
     }
     
     container.innerHTML = itemsToShow.map(item => renderCard(item)).join('');
-    
-    // 更新统计
     document.getElementById('totalCount').textContent = state.filteredData.length;
     
-    // 显示/隐藏加载更多
     if (loadMore) {
         loadMore.style.display = state.filteredData.length > end ? 'block' : 'none';
     }
@@ -397,7 +386,6 @@ function handleSearchInput(e) {
         return;
     }
     
-    // 生成搜索建议
     const suggestions = generateSuggestions(query);
     showSearchSuggestions(suggestions);
 }
@@ -407,7 +395,6 @@ function generateSuggestions(query) {
     const data = state.allData[state.currentType] || [];
     const queryLower = query.toLowerCase();
     
-    // 搜索名称
     data.forEach(item => {
         if (item.name && item.name.toLowerCase().includes(queryLower)) {
             suggestions.push({ type: 'name', text: item.name, item });
@@ -415,7 +402,6 @@ function generateSuggestions(query) {
         if (suggestions.length >= 5) return;
     });
     
-    // 搜索症状
     if (state.index?.stats?.bySymptom) {
         Object.keys(state.index.stats.bySymptom).forEach(symptom => {
             if (symptom.includes(query) && suggestions.length < 8) {
@@ -466,8 +452,6 @@ function searchBySymptom(symptom) {
     state.filters.symptom = symptom;
     closeSymptomNav();
     filterAndRender();
-    
-    // 滚动到列表
     document.querySelector('.content-list')?.scrollIntoView({ behavior: 'smooth' });
 }
 
@@ -475,12 +459,10 @@ function searchBySymptom(symptom) {
 function switchType(type) {
     if (type === state.currentType) return;
     
-    // 更新UI
     document.querySelectorAll('.type-tab').forEach(tab => {
         tab.classList.toggle('active', tab.dataset.type === type);
     });
     
-    // 加载数据
     loadDataType(type);
 }
 
@@ -488,7 +470,6 @@ function switchType(type) {
 function setSeasonFilter(season) {
     state.filters.season = season;
     
-    // 更新UI
     document.querySelectorAll('#seasonTags .filter-tag').forEach(tag => {
         tag.classList.toggle('active', tag.textContent.trim() === (season || '全部'));
     });
@@ -519,7 +500,6 @@ function openSymptomNav(systemId = null) {
     
     overlay.style.display = 'flex';
     
-    // 如果指定了系统，滚动到该系统
     if (systemId) {
         const group = container.querySelector(`[data-system="${systemId}"]`);
         group?.scrollIntoView({ behavior: 'smooth' });
@@ -546,8 +526,14 @@ function filterSymptomsInNav(e) {
 
 // ========== 详情模态框 ==========
 function showDetail(id) {
+    console.log('showDetail called with id:', id);
     const item = findItemById(id);
-    if (!item) return;
+    console.log('Found item:', item);
+    
+    if (!item) {
+        console.error('未找到项目:', id);
+        return;
+    }
     
     state.currentItemId = id;
     
@@ -558,32 +544,32 @@ function showDetail(id) {
     
     title.textContent = item.name || item.title;
     
-    // 更新收藏按钮状态
     const isFav = isFavorite(id);
     favBtn.classList.toggle('favorited', isFav);
     favBtn.querySelector('.action-icon').textContent = isFav ? '❤️' : '🤍';
     
-    // 渲染详情内容
     body.innerHTML = renderDetailContent(item);
     
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
 }
 
-function closeDetailModal() {
+function closeModal() {
     document.getElementById('detailModal').style.display = 'none';
     document.body.style.overflow = '';
     state.currentItemId = null;
 }
 
 function renderDetailContent(item) {
-    if (item.type === 'recipe') {
+    const type = item.type || 'recipe';
+    
+    if (type === 'recipe') {
         return renderRecipeDetail(item);
-    } else if (item.type === 'acupoint') {
+    } else if (type === 'acupoint') {
         return renderAcupointDetail(item);
-    } else if (item.type === 'exercise') {
+    } else if (type === 'exercise') {
         return renderExerciseDetail(item);
-    } else if (item.type === 'article') {
+    } else if (type === 'article') {
         return renderArticleDetail(item);
     }
     return '<p>暂无详情</p>';
@@ -592,7 +578,6 @@ function renderDetailContent(item) {
 function renderRecipeDetail(item) {
     let html = '';
     
-    // 来源
     if (item.source?.author || item.source?.book) {
         html += `
             <div class="detail-section">
@@ -601,7 +586,6 @@ function renderRecipeDetail(item) {
         `;
     }
     
-    // 功效
     if (item.efficacy) {
         html += `
             <div class="detail-section efficacy-section">
@@ -611,7 +595,6 @@ function renderRecipeDetail(item) {
         `;
     }
     
-    // 食材
     if (item.ingredients && item.ingredients.length > 0) {
         html += `
             <div class="detail-section">
@@ -628,7 +611,6 @@ function renderRecipeDetail(item) {
         `;
     }
     
-    // 做法
     if (item.method) {
         html += `
             <div class="detail-section">
@@ -638,7 +620,6 @@ function renderRecipeDetail(item) {
         `;
     }
     
-    // 适用症状
     if (item.symptoms && item.symptoms.length > 0) {
         html += `
             <div class="detail-section">
@@ -648,7 +629,6 @@ function renderRecipeDetail(item) {
         `;
     }
     
-    // 注意事项
     if (item.precautions || (item.contraindicatedFor && item.contraindicatedFor.length > 0)) {
         html += `
             <div class="detail-section warning-section">
@@ -661,7 +641,7 @@ function renderRecipeDetail(item) {
         `;
     }
     
-    return html;
+    return html || '<p>暂无详细信息</p>';
 }
 
 function renderAcupointDetail(item) {
@@ -717,8 +697,9 @@ function renderArticleDetail(item) {
 }
 
 function formatMethod(method) {
-    // 将换行符转换为段落
-    return method.split(/\n|\r\n/).filter(s => s.trim()).map(s => `<p>${s}</p>`).join('');
+    if (!method) return '';
+    // 处理换行符
+    return method.split(/\n|\r\n|\n/).filter(s => s.trim()).map(s => `<p>${s}</p>`).join('');
 }
 
 // ========== 收藏功能 ==========
@@ -762,7 +743,6 @@ function toggleFavorite() {
     
     saveFavorites(favs);
     
-    // 更新按钮状态
     const isFav = index < 0;
     const favBtn = document.getElementById('favoriteAction');
     favBtn.classList.toggle('favorited', isFav);
@@ -886,7 +866,6 @@ function shareItem() {
             url: window.location.href
         });
     } else {
-        // 复制到剪贴板
         navigator.clipboard.writeText(text).then(() => {
             alert('已复制到剪贴板');
         });
@@ -897,11 +876,6 @@ function shareItem() {
 function loadMore() {
     state.currentPage++;
     renderItems();
-}
-
-// 关闭模态框的快捷函数
-function closeModal() {
-    closeDetailModal();
 }
 
 // ========== 启动 ==========
