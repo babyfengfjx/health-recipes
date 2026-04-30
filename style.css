@@ -228,7 +228,36 @@ body {
     left: var(--spacing-lg);
     font-size: 1.25rem;
     color: var(--text-tertiary);
-    pointer-events: none;
+    /* pointer-events: none; 移除以允许点击 */
+    transition: transform var(--transition-base);
+}
+
+.search-icon:hover {
+    transform: scale(1.1);
+}
+
+/* 搜索按钮 */
+.search-btn {
+    position: absolute;
+    right: 8px;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.search-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+}
+
+.search-btn:active {
+    transform: scale(0.98);
 }
 
 #mainSearch {

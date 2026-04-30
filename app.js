@@ -9,7 +9,7 @@ const CONFIG = {
     indexFile: 'data/index.json',
     itemsPerPage: 20,
     cacheKey: 'health_wisdom_cache',
-    favoritesKey: 'health_wisdom_favorites'
+    // favoritesKey removed - no account system
 };
 
 // ========== 全局状态 ==========
@@ -118,7 +118,6 @@ async function init() {
     renderSeasonalCard();
     renderSymptomCategories();
     renderHotSymptoms();
-    updateFavoriteCount();
     
     console.log('✅ 初始化完成');
 }
@@ -278,12 +277,15 @@ function renderSeasonFilter() {
     if (!container) return;
     
     const seasons = ['全部', '春季', '夏季', '秋季', '冬季', '四季'];
-    container.innerHTML = seasons.map(s => `
-        <button class="filter-tag ${s === '全部' ? 'active' : ''}" 
+    const currentSeason = state.filters.season;
+    
+    container.innerHTML = seasons.map(s => {
+        const isActive = (s === '全部' && !currentSeason) || (s === currentSeason);
+        return `<button class="filter-tag ${isActive ? 'active' : ''}" 
                 onclick="setSeasonFilter('${s === '全部' ? '' : s}')">
             ${s}
-        </button>
-    `).join('');
+        </button>`;
+    }).join('');
 }
 
 function filterAndRender() {
@@ -444,6 +446,19 @@ function performSearch() {
     state.filters.symptom = '';
     hideSearchSuggestions();
     filterAndRender();
+    
+    // 滚动到结果区域
+    document.querySelector('.content-list')?.scrollIntoView({ behavior: 'smooth' });
+    
+    // 显示搜索反馈
+    if (query) {
+        showToast(`🔍 搜索"${query}"，找到 ${state.filteredData.length} 条结果`, 'success');
+    }
+}
+
+// 点击搜索图标触发搜索
+function clickSearch() {
+    performSearch();
 }
 
 function searchBySymptom(symptom) {
@@ -782,106 +797,18 @@ function formatMethod(method) {
     return method.split(/\n|\r\n|\n/).filter(s => s.trim()).map(s => `<p>${s}</p>`).join('');
 }
 
-// ========== 收藏功能 ==========
-function getFavorites() {
-    try {
-        return JSON.parse(localStorage.getItem(CONFIG.favoritesKey) || '[]');
-    } catch {
-        return [];
-    }
-}
+// ========== 收藏功能（已禁用） ==========
+// 因无账号系统，收藏功能已移除
+function getFavorites() { return []; }
+function saveFavorites(favs) {}
+function isFavorite(id) { return false; }
+function toggleFavorite() { showToast('收藏功能暂未开放', 'warning'); }
+function updateFavoriteCount() {}
+function showFavorites() { showToast('收藏功能暂未开放', 'warning'); }
+function closeFavorites() {}
+function showFavoriteItem(id) {}
+function removeFavorite(id) {}
 
-function saveFavorites(favs) {
-    localStorage.setItem(CONFIG.favoritesKey, JSON.stringify(favs));
-    updateFavoriteCount();
-}
-
-function isFavorite(id) {
-    return getFavorites().some(f => f.id === id);
-}
-
-function toggleFavorite() {
-    if (!state.currentItemId) return;
-    
-    const item = findItemById(state.currentItemId);
-    if (!item) return;
-    
-    let favs = getFavorites();
-    const index = favs.findIndex(f => f.id === state.currentItemId);
-    
-    if (index >= 0) {
-        favs.splice(index, 1);
-    } else {
-        favs.push({
-            id: state.currentItemId,
-            name: item.name || item.title,
-            type: item.type,
-            efficacy: item.efficacy?.substring(0, 50),
-            addedAt: Date.now()
-        });
-    }
-    
-    saveFavorites(favs);
-    
-    const isFav = index < 0;
-    const favBtn = document.getElementById('favoriteAction');
-    favBtn.classList.toggle('favorited', isFav);
-    favBtn.querySelector('.action-icon').textContent = isFav ? '❤️' : '🤍';
-    showToast(isFav ? '❤️ 已添加到收藏' : '已取消收藏', 'success');
-}
-
-function updateFavoriteCount() {
-    const count = getFavorites().length;
-    const countEl = document.getElementById('favCount');
-    if (countEl) {
-        countEl.textContent = count;
-        countEl.style.display = count > 0 ? 'flex' : 'none';
-    }
-}
-
-function showFavorites() {
-    const overlay = document.getElementById('favoritesOverlay');
-    const list = document.getElementById('favoritesList');
-    
-    const favs = getFavorites();
-    
-    if (favs.length === 0) {
-        list.innerHTML = `
-            <div class="empty-state">
-                <p>❤️ 暂无收藏</p>
-                <p class="text-muted">浏览时点击收藏按钮添加</p>
-            </div>
-        `;
-    } else {
-        list.innerHTML = favs.map(fav => `
-            <div class="favorite-item" onclick="showFavoriteItem('${fav.id}')">
-                <div class="fav-item-info">
-                    <div class="fav-item-title">${fav.name}</div>
-                    <div class="fav-item-meta">${fav.efficacy || ''}</div>
-                </div>
-                <button class="remove-fav" onclick="event.stopPropagation(); removeFavorite('${fav.id}')">🗑️</button>
-            </div>
-        `).join('');
-    }
-    
-    overlay.style.display = 'flex';
-}
-
-function closeFavorites() {
-    document.getElementById('favoritesOverlay').style.display = 'none';
-}
-
-function showFavoriteItem(id) {
-    closeFavorites();
-    showDetail(id);
-}
-
-function removeFavorite(id) {
-    let favs = getFavorites();
-    favs = favs.filter(f => f.id !== id);
-    saveFavorites(favs);
-    showFavorites();
-}
 
 
 // ========== Toast 提示 ==========
