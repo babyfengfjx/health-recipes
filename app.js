@@ -555,15 +555,8 @@ function showDetail(id) {
     const modal = document.getElementById('detailModal');
     const title = document.getElementById('modalTitle');
     const body = document.getElementById('modalBody');
-    const favBtn = document.getElementById('favoriteAction');
     
     title.textContent = item.name || item.title;
-    
-    const isFav = isFavorite(id);
-    favBtn.classList.toggle('favorited', isFav);
-    favBtn.querySelector('.action-icon').textContent = isFav ? '❤️' : '🤍';
-    showToast(isFav ? '❤️ 已添加到收藏' : '已取消收藏', 'success');
-    
     body.innerHTML = renderDetailContent(item);
     
     modal.style.display = 'flex';
