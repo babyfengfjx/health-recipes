@@ -876,7 +876,7 @@ function shareItem() {
     const item = findItemById(state.currentItemId);
     if (!item) return;
     
-    const text = `【${item.name}】\n${item.efficacy || ''}\n\n来自养生智慧`;
+    const text = formatShareText(item);
     
     if (navigator.share) {
         navigator.share({
@@ -891,6 +891,62 @@ function shareItem() {
             showToast('复制失败，请重试', 'warning');
         });
     }
+}
+
+// 格式化分享文本
+function formatShareText(item) {
+    let text = `【${item.name || item.title}】\n`;
+    
+    // 来源
+    if (item.source?.author || item.source?.book) {
+        text += `📖 ${item.source?.author || ''}《${item.source?.book || ''}》\n`;
+    }
+    
+    // 功效
+    if (item.efficacy) {
+        text += `\n💡 功效\n${item.efficacy}\n`;
+    }
+    
+    // 食材
+    if (item.ingredients && item.ingredients.length > 0) {
+        text += `\n🥄 食材\n`;
+        item.ingredients.forEach(ing => {
+            if (typeof ing === 'string') {
+                text += `  • ${ing}\n`;
+            } else {
+                text += `  • ${ing.name} ${ing.amount || ''}\n`;
+            }
+        });
+    }
+    
+    // 做法
+    if (item.method) {
+        text += `\n👨‍🍳 做法\n${item.method}\n`;
+    }
+    
+    // 适用症状
+    if (item.symptoms && item.symptoms.length > 0) {
+        text += `\n🎯 适用症状\n${item.symptoms.join('、')}\n`;
+    }
+    
+    // 注意事项
+    if (item.precautions) {
+        text += `\n⚠️ 注意事项\n${item.precautions}\n`;
+    }
+    
+    // 文章摘要
+    if (item.summary && !item.method) {
+        text += `\n📋 摘要\n${item.summary}\n`;
+    }
+    
+    // 位置（穴位）
+    if (item.location) {
+        text += `\n📍 位置\n${item.location}\n`;
+    }
+    
+    text += `\n——来自「养生智慧」`;
+    
+    return text;
 }
 
 // ========== 加载更多 ==========
