@@ -2381,7 +2381,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "中等",
       "prepTime": "2分钟",
       "cookTime": "无需煮制",
@@ -2465,7 +2467,9 @@
         "失眠者",
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "中等",
       "prepTime": "5分钟",
       "cookTime": "无需煮制",
@@ -3288,7 +3292,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "中等",
       "prepTime": "5分钟",
       "cookTime": "5-10分钟",
@@ -3602,7 +3608,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "2分钟",
       "cookTime": "10分钟",
@@ -4066,7 +4074,9 @@
         "一般人群",
         "女性"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "2分钟",
       "cookTime": "5-10分钟",
@@ -4123,7 +4133,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "2分钟",
       "cookTime": "无需煮制",
@@ -6453,7 +6465,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "5分钟",
       "cookTime": "5-10分钟",
@@ -6584,7 +6598,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "5分钟",
       "cookTime": "5-10分钟",
@@ -7321,7 +7337,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "5分钟",
       "cookTime": "5-10分钟",
@@ -10367,7 +10385,9 @@
       "suitableFor": [
         "产妇"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "中等",
       "prepTime": "10分钟",
       "cookTime": "10分钟",
@@ -10432,7 +10452,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "5分钟",
       "cookTime": "5-10分钟",
@@ -11392,7 +11414,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "2分钟",
       "cookTime": "5-10分钟",
@@ -11653,7 +11677,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "5分钟",
       "cookTime": "5-10分钟",
@@ -12050,7 +12076,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "5分钟",
       "cookTime": "5-10分钟",
@@ -12972,7 +13000,9 @@
         "压力大者",
         "血脉不通者"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "2分钟",
       "cookTime": "无需煮制（冲泡）",
@@ -15027,7 +15057,8 @@
         "气血不足者"
       ],
       "contraindicatedFor": [
-        "阴虚火旺者"
+        "阴虚火旺者",
+        "孕妇"
       ],
       "difficulty": "中等",
       "prepTime": "20分钟",
@@ -19128,7 +19159,9 @@
         "女性",
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "2分钟",
       "cookTime": "5-10分钟",
@@ -19320,7 +19353,9 @@
       "method": "\n1.先把黄芪和当归用清水泡上半小时。",
       "precautions": "",
       "suitableFor": [],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "待分类",
       "prepTime": "待分类",
       "cookTime": "待分类",
@@ -29378,7 +29413,9 @@
       "method": "",
       "precautions": "",
       "suitableFor": [],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "待分类",
       "prepTime": "待分类",
       "cookTime": "待分类",
@@ -30783,7 +30820,9 @@
         "一般人群",
         "失眠者"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "2分钟",
       "cookTime": "无需煮制",
@@ -32765,7 +32804,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "2分钟",
       "cookTime": "无需煮制",
@@ -33219,7 +33260,9 @@
         "一般人群",
         "失眠者"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "5分钟",
       "cookTime": "无需煮制",
@@ -34106,7 +34149,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "中等",
       "prepTime": "10分钟",
       "cookTime": "30-60分钟",
@@ -34304,7 +34349,8 @@
         "一般人群"
       ],
       "contraindicatedFor": [
-        "阴虚火旺者"
+        "阴虚火旺者",
+        "孕妇"
       ],
       "difficulty": "简单",
       "prepTime": "2分钟",
@@ -37144,7 +37190,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "中等",
       "prepTime": "10分钟",
       "cookTime": "5-10分钟",
@@ -38351,7 +38399,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "中等",
       "prepTime": "10分钟",
       "cookTime": "30-60分钟",
@@ -40548,7 +40598,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "2分钟",
       "cookTime": "10分钟",
@@ -42018,7 +42070,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "2分钟",
       "cookTime": "10分钟",
@@ -42701,7 +42755,9 @@
         "女性",
         "产妇"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "2分钟",
       "cookTime": "10分钟",
@@ -44496,7 +44552,9 @@
       "suitableFor": [
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "2分钟",
       "cookTime": "无需煮制",
@@ -44554,7 +44612,9 @@
         "女性",
         "一般人群"
       ],
-      "contraindicatedFor": [],
+      "contraindicatedFor": [
+        "孕妇"
+      ],
       "difficulty": "简单",
       "prepTime": "2分钟",
       "cookTime": "无需煮制",
